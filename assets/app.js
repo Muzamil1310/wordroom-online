@@ -70,7 +70,7 @@
           lbl_words: 'Words', lbl_characters: 'Characters', lbl_charactersNoSpaces: 'Characters (no spaces)',
           lbl_sentences: 'Sentences', lbl_paragraphs: 'Paragraphs', lbl_lines: 'Lines', lbl_unique: 'Unique lines',
           lbl_reading: 'Reading time', lbl_speaking: 'Speaking time', lbl_avgSentence: 'Avg sentence',
-          case_ap: 'AP style — lowercase short prepositions', case_chicago: 'Chicago style — more words lowercased', case_mla: 'MLA style',
+           case_ap: 'AP style — lowercase short prepositions', case_chicago: 'Chicago style — more words lowercased',
           case_titleCase: 'Title Case', case_sentenceCase: 'Sentence case', case_capitalise: 'Capitalise Each Word',
           case_uppercase: 'UPPERCASE', case_lowercase: 'lowercase',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -143,7 +143,7 @@
           lbl_words: 'Palabras', lbl_characters: 'Caracteres', lbl_charactersNoSpaces: 'Caracteres (sin espacios)',
           lbl_sentences: 'Oraciones', lbl_paragraphs: 'Párrafos', lbl_lines: 'Líneas', lbl_unique: 'Líneas únicas',
           lbl_reading: 'Tiempo de lectura', lbl_speaking: 'Tiempo de habla', lbl_avgSentence: 'Oración prom.',
-          case_ap: 'Estilo AP — minúsculas en preposiciones cortas', case_chicago: 'Estilo Chicago — más palabras en minúsculas', case_mla: 'Estilo MLA',
+           case_ap: 'Estilo AP — minúsculas en preposiciones cortas', case_chicago: 'Estilo Chicago — más palabras en minúsculas',
           case_titleCase: 'Mayúsculas de título', case_sentenceCase: 'Mayúsculas de oración', case_capitalise: 'Capitalizar cada palabra',
           case_uppercase: 'MAYÚSCULAS', case_lowercase: 'minúsculas',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -216,7 +216,7 @@
           lbl_words: '単語', lbl_characters: '文字', lbl_charactersNoSpaces: '文字（スペースなし）',
           lbl_sentences: '文', lbl_paragraphs: '段落', lbl_lines: '行', lbl_unique: 'ユニーク行',
           lbl_reading: '読む時間', lbl_speaking: '話す時間', lbl_avgSentence: '平均文長',
-          case_ap: 'APスタイル — 短い前置詞は小文字', case_chicago: 'Chicagoスタイル — より多くの単語を小文字に', case_mla: 'MLAスタイル',
+           case_ap: 'APスタイル — 短い前置詞は小文字', case_chicago: 'Chicagoスタイル — より多くの単語を小文字に',
           case_titleCase: 'タイトルケース', case_sentenceCase: 'センテンスケース', case_capitalise: 'すべての単語の大文字化',
           case_uppercase: '大文字', case_lowercase: '小文字',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -289,7 +289,7 @@
           lbl_words: 'Mots', lbl_characters: 'Caractères', lbl_charactersNoSpaces: 'Caractères (sans espaces)',
           lbl_sentences: 'Phrases', lbl_paragraphs: 'Paragraphes', lbl_lines: 'Lignes', lbl_unique: 'Lignes uniques',
           lbl_reading: 'Temps de lecture', lbl_speaking: 'Temps de parole', lbl_avgSentence: 'Phrase moy.',
-          case_ap: 'Style AP — minuscules pour les prépositions courtes', case_chicago: 'Style Chicago — plus de mots en minuscules', case_mla: 'Style MLA',
+           case_ap: 'Style AP — minuscules pour les prépositions courtes', case_chicago: 'Style Chicago — plus de mots en minuscules',
           case_titleCase: 'Majuscules de titre', case_sentenceCase: 'Minuscules', case_capitalise: 'Capitaliser chaque mot',
           case_uppercase: 'MAJUSCULES', case_lowercase: 'minuscules',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -362,7 +362,7 @@
           lbl_words: 'Wörter', lbl_characters: 'Zeichen', lbl_charactersNoSpaces: 'Zeichen (ohne Leerzeichen)',
           lbl_sentences: 'Sätze', lbl_paragraphs: 'Absätze', lbl_lines: 'Zeilen', lbl_unique: 'Einzigartige Zeilen',
           lbl_reading: 'Lesezeit', lbl_speaking: 'Sprechzeit', lbl_avgSentence: 'Durchschn. Satz',
-          case_ap: 'AP-Stil — kleine Präpositionen klein', case_chicago: 'Chicago-Stil — mehr Wörter klein', case_mla: 'MLA-Stil',
+           case_ap: 'AP-Stil — kleine Präpositionen klein', case_chicago: 'Chicago-Stil — mehr Wörter klein',
           case_titleCase: 'Überschriftengroßschreibung', case_sentenceCase: 'Satzgroßschreibung', case_capitalise: 'Jedes Wort großschreiben',
           case_uppercase: 'GROSSBUCHSTABEN', case_lowercase: 'kleinbuchstaben',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -435,7 +435,7 @@
           lbl_words: 'Palavras', lbl_characters: 'Caracteres', lbl_charactersNoSpaces: 'Caracteres (sem espaços)',
           lbl_sentences: 'Frases', lbl_paragraphs: 'Parágrafos', lbl_lines: 'Linhas', lbl_unique: 'Linhas únicas',
           lbl_reading: 'Tempo de leitura', lbl_speaking: 'Tempo de fala', lbl_avgSentence: 'Frase média',
-          case_ap: 'Estilo AP — minúsculas em preposições curtas', case_chicago: 'Estilo Chicago — mais palavras em minúsculas', case_mla: 'Estilo MLA',
+           case_ap: 'Estilo AP — minúsculas em preposições curtas', case_chicago: 'Estilo Chicago — mais palavras em minúsculas',
           case_titleCase: 'Maiúsculas de título', case_sentenceCase: 'Maiúsculas de frase', case_capitalise: 'Capitalizar cada palavra',
           case_uppercase: 'MAIÚSCULAS', case_lowercase: 'minúsculas',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -508,7 +508,7 @@
           lbl_words: '단어', lbl_characters: '문자', lbl_charactersNoSpaces: '문자 (공백 제외)',
           lbl_sentences: '문장', lbl_paragraphs: '단락', lbl_lines: '줄', lbl_unique: '고유 줄',
           lbl_reading: '읽기 시간', lbl_speaking: '말하기 시간', lbl_avgSentence: '평균 문장',
-          case_ap: 'AP 스타일 — 짧은 전치사 소문자', case_chicago: 'Chicago 스타일 — 더 많은 단어 소문자', case_mla: 'MLA 스타일',
+           case_ap: 'AP 스타일 — 짧은 전치사 소문자', case_chicago: 'Chicago 스타일 — 더 많은 단어 소문자',
           case_titleCase: '제목 대문자', case_sentenceCase: '문장 대문자', case_capitalise: '모든 단어 대문자',
           case_uppercase: '대문자', case_lowercase: '소문자',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -581,7 +581,7 @@
           lbl_words: 'Parole', lbl_characters: 'Caratteri', lbl_charactersNoSpaces: 'Caratteri (senza spazi)',
           lbl_sentences: 'Frasi', lbl_paragraphs: 'Paragrafi', lbl_lines: 'Righe', lbl_unique: 'Righe uniche',
           lbl_reading: 'Tempo di lettura', lbl_speaking: 'Tempo di parola', lbl_avgSentence: 'Frase media',
-          case_ap: 'Stile AP — minuscole per le preposizioni corte', case_chicago: 'Stile Chicago — più parole in minuscolo', case_mla: 'Stile MLA',
+           case_ap: 'Stile AP — minuscole per le preposizioni corte', case_chicago: 'Stile Chicago — più parole in minuscolo',
           case_titleCase: 'Maiuscole di titolo', case_sentenceCase: 'Maiuscole di frase', case_capitalise: 'Maiuscolizzare ogni parola',
           case_uppercase: 'MAIUSCOLE', case_lowercase: 'minuscole',
           case_alternating: 'aLtErNaTiNg', case_inverse: 'iNVERSE CASE',
@@ -654,7 +654,7 @@
           lbl_words: 'Слова', lbl_characters: 'Символы', lbl_charactersNoSpaces: 'Символы (без пробелов)',
           lbl_sentences: 'Предложения', lbl_paragraphs: 'Абзацы', lbl_lines: 'Строки', lbl_unique: 'Уникальные строки',
           lbl_reading: 'Время чтения', lbl_speaking: 'Время речи', lbl_avgSentence: 'Ср. предложение',
-          case_ap: 'Стиль AP — строчные короткие предлоги', case_chicago: 'Стиль Chicago — больше слов строчными', case_mla: 'Стиль MLA',
+           case_ap: 'Стиль AP — строчные короткие предлоги', case_chicago: 'Стиль Chicago — больше слов строчными',
           case_titleCase: 'Заглавный регистр', case_sentenceCase: 'Регистр предложений', case_capitalise: 'Выделить каждое слово заглавной',
           case_uppercase: 'ПРОПИСНЫЕ', case_lowercase: 'строчные',
           case_alternating: 'аЛтЕрНиРуЮшИй', case_inverse: 'иНВЕРСНЫЙ РЕГИСТР',
@@ -982,7 +982,6 @@ the paragraph split while joining these lines.`;
           `<select class="sel" id="caseStyle">
              <option value="ap">${_t('case_ap')}</option>
              <option value="chicago">${_t('case_chicago')}</option>
-             <option value="mla">${_t('case_mla')}</option>
            </select>
            <p class="hint">${_t('titleCaseHint')}</p>`) +
         card(_t('convert'), `<div class="acts" id="caseActs"></div>`) +

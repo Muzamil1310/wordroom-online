@@ -377,7 +377,7 @@ TOOLS_T = {
             "h1": "Case converter",
             "eyebrow": "Convert",
             "title": "Case Converter — Title Case, Sentence Case & 12 More",
-            "desc": "Convert text between title case, sentence case, UPPERCASE, camelCase, snake_case and more. Title case follows real AP, Chicago and MLA rules instead of capitalising every word.",
+            "desc": "Convert text between title case, sentence case, UPPERCASE, camelCase, snake_case and more. Title case follows real AP and Chicago rules instead of capitalising every word.",
             "lede": "Thirteen conversions, with title case that follows actual style-guide rules rather than capitalising everything.",
             "ph": "Paste the text you want to convert. Try a headline with short prepositions in it.",
         },
@@ -433,7 +433,7 @@ TOOLS_T = {
             "h1": "Convertidor de mayúsculas",
             "eyebrow": "Convertir",
             "title": "Convertidor de Mayúsculas — Mayúsculas de Título, Minúsculas y 12 Más",
-            "desc": "Convierte texto entre mayúsculas de título, minúsculas, MAYÚSCULAS, camelCase, snake_case y más. Las mayúsculas de título siguen las reglas reales de AP, Chicago y MLA en lugar de capitalizar cada palabra.",
+            "desc": "Convierte texto entre mayúsculas de título, minúsculas, MAYÚSCULAS, camelCase, snake_case y más. Las mayúsculas de título siguen las reglas reales de AP y Chicago en lugar de capitalizar cada palabra.",
             "lede": "Trece conversiones, con mayúsculas de título que siguen las reglas reales de estilo en lugar de capitalizar todo.",
             "ph": "Pega el texto que deseas convertir. Prueba un titular con preposiciones cortas.",
         },
@@ -489,7 +489,7 @@ TOOLS_T = {
             "h1": "ケースコンバーター",
             "eyebrow": "変換",
             "title": "ケースコンバーター — タイトルケース、センテンスケース他12種",
-            "desc": "タイトルケース、センテンスケース、大文字、camelCase、snake_caseなどにテキストを変換。タイトルケースはすべての単語を大文字にするのではなく、実際のAP、Chicago、MLAのルールに従います。",
+            "desc": "タイトルケース、センテンスケース、大文字、camelCase、snake_caseなどにテキストを変換。タイトルケースはすべての単語を大文字にするのではなく、実際のAPとChicagoのルールに従います。",
             "lede": "13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。",
             "ph": "変換したいテキストを貼り付けてください。短い前置詞を含む見出しを試してみてください。",
         },
@@ -545,7 +545,7 @@ TOOLS_T = {
             "h1": "Convertisseur de casse",
             "eyebrow": "Convertir",
             "title": "Convertisseur de Casse — Majuscules de Titre, Minuscules et 12 Autres",
-            "desc": "Convertissez le texte entre majuscules de titre, minuscules, MAJUSCULES, camelCase, snake_case et plus. Les majuscules de titre suivent les vraies règles AP, Chicago et MLA au lieu de capitaliser chaque mot.",
+            "desc": "Convertissez le texte entre majuscules de titre, minuscules, MAJUSCULES, camelCase, snake_case et plus. Les majuscules de titre suivent les vraies règles AP et Chicago au lieu de capitaliser chaque mot.",
             "lede": "Treize conversions, avec des majuscules de titre qui suivent les véritables règles de style au lieu de tout capitaliser.",
             "ph": "Collez le texte à convertir. Essayez un titre avec des prépositions courtes.",
         },
@@ -601,7 +601,7 @@ TOOLS_T = {
             "h1": "Fallkonverter",
             "eyebrow": "Konvertieren",
             "title": "Fallkonverter — Überschriftengroßschreibung, Satzgroßschreibung & 12 Weitere",
-            "desc": "Konvertieren Sie Text zwischen Überschriftengroßschreibung, Satzgroßschreibung, GROSSBUCHSTABEN, camelCase, snake_case und mehr. Überschriftengroßschreibung folgt den echten AP-, Chicago- und MLA-Regeln.",
+            "desc": "Konvertieren Sie Text zwischen Überschriftengroßschreibung, Satzgroßschreibung, GROSSBUCHSTABEN, camelCase, snake_case und mehr. Überschriftengroßschreibung folgt den echten AP- und Chicago-Regeln.",
             "lede": "Dreizehn Konvertierungen, mit Überschriftengroßschreibung, die den echten Styleguide-Regeln folgt.",
             "ph": "Fügen Sie den zu konvertierenden Text ein. Probieren Sie eine Überschrift mit kurzen Präpositionen.",
         },
@@ -657,7 +657,7 @@ TOOLS_T = {
             "h1": "Conversor de maiúsculas",
             "eyebrow": "Converter",
             "title": "Conversor de Maiúsculas — Título em Maiúsculas, Primeira Maiúscula e Mais 12",
-            "desc": "Converta texto entre título em maiúsculas, primeira maiúscula, MAIÚSCULAS, camelCase, snake_case e mais. O título em maiúsculas segue as regras reais de AP, Chicago e MLA.",
+            "desc": "Converta texto entre título em maiúsculas, primeira maiúscula, MAIÚSCULAS, camelCase, snake_case e mais. O título em maiúsculas segue as regras reais de AP e Chicago.",
             "lede": "Treze conversões, com título em maiúsculas que segue as regras reais de estilo em vez de capitalizar tudo.",
             "ph": "Cole o texto que deseja converter. Experimente um título com preposições curtas.",
         },
@@ -713,7 +713,7 @@ TOOLS_T = {
             "h1": "대소문자 변환기",
             "eyebrow": "변환",
             "title": "대소문자 변환기 — 제목 대문자, 문장 대문자 외 12가지",
-            "desc": "제목 대문자, 문장 대문자, 대문자, camelCase, snake_case 등으로 텍스트를 변환합니다. 제목 대문자는 모든 단어를 대문자로 만들지 않고 실제 AP, Chicago, MLA 규칙을 따릅니다.",
+            "desc": "제목 대문자, 문장 대문자, 대문자, camelCase, snake_case 등으로 텍스트를 변환합니다. 제목 대문자는 모든 단어를 대문자로 만들지 않고 실제 AP와 Chicago 규칙을 따릅니다.",
             "lede": "13가지 변환. 모든 것을 대문자로 만들지 않고 실제 스타일 가이드 규칙을 따르는 제목 대문자.",
             "ph": "변환할 텍스트를 붙여넣으세요. 짧은 전치사가 포함된 제목을 시도해 보세요.",
         },
@@ -769,7 +769,7 @@ TOOLS_T = {
             "h1": "Convertitore di maiuscole",
             "eyebrow": "Converti",
             "title": "Convertitore di Maiuscole — Maiuscolo di Titolo, Maiuscolo dopo il Punto e 12 Altre",
-            "desc": "Convertite il testo tra maiuscolo di titolo, maiuscolo dopo il punto, MAIUSCOLE, camelCase, snake_case e altro. Le maiuscole di titolo seguono le vere regole AP, Chicago e MLA.",
+            "desc": "Convertite il testo tra maiuscolo di titolo, maiuscolo dopo il punto, MAIUSCOLE, camelCase, snake_case e altro. Le maiuscole di titolo seguono le vere regole AP e Chicago.",
             "lede": "Tredici conversioni, con maiuscole di titolo che seguono le vere regole di stile anziché capitalizzare tutto.",
             "ph": "Incollate il testo da convertire. Provate un titolo con preposizioni corte.",
         },
@@ -825,7 +825,7 @@ TOOLS_T = {
             "h1": "Преобразователь регистра",
             "eyebrow": "Преобразование",
             "title": "Преобразователь регистра — Заглавный регистр, регистр предложений и ещё 12",
-            "desc": "Преобразуйте текст между заглавным регистром, регистром предложений, ПРОПИСНЫМИ, camelCase, snake_case и другими формами. Заглавный регистр следует реальным правилам AP, Chicago и MLA.",
+            "desc": "Преобразуйте текст между заглавным регистром, регистром предложений, ПРОПИСНЫМИ, camelCase, snake_case и другими формами. Заглавный регистр следует реальным правилам AP и Chicago.",
             "lede": "Тринадцать преобразований с заглавным регистром, следующим реальным правилам стиля, а не просто выделением каждого слова заглавной буквой.",
             "ph": "Вставьте текст для преобразования. Попробуйте заголовок с короткими предлогами.",
         },
@@ -894,7 +894,7 @@ FAQS_T = {
             ("What is the difference between title case and capitalise each word?",
              "Capitalise Each Word capitalises everything. Title case follows a style guide, which lowercases short articles, conjunctions and prepositions unless they are the first or last word. \"The Guide to SEO for Small Businesses\" is title case; \"The Guide To SEO For Small Businesses\" is not."),
             ("Which title case style should I use?",
-             "AP style for journalism, press releases and most web headlines. Chicago for books, academic writing and formal publishing. MLA for humanities papers. If nobody has told you, AP is the safer default for online content."),
+             "AP style for journalism, press releases and most web headlines. Chicago for books, academic writing and formal publishing. If nobody has told you, AP is the safer default for online content."),
             ("Will sentence case break my proper nouns?",
              "It can. Sentence case lowercases the text before recapitalising each sentence start, so names of people and places lose their capitals. No offline tool can reliably identify proper nouns without a language model, and running one would mean sending your text to a server. Check names afterwards."),
             ("Does it handle hyphenated words correctly?",
@@ -952,7 +952,7 @@ FAQS_T = {
             ("¿Cuál es la diferencia entre mayúsculas de título y capitalizar cada palabra?",
              "Capitalizar Cada Palabra capitaliza todo. Las mayúsculas de título siguen una guía de estilo, que pone en minúsculas artículos cortos, conjunciones y preposiciones a menos que sean la primera o última palabra. \"La Guía de SEO para Pequeñas Empresas\" es mayúsculas de título; \"La Guía De SEO Para Pequeñas Empresas\" no lo es."),
             ("¿Qué estilo de mayúsculas de título debo usar?",
-             "Estilo AP para periodismo, comunicados de prensa y la mayoría de titulares web. Chicago para libros, escritura académica y publicación formal. MLA para trabajos de humanidades. Si nadie te lo ha dicho, AP es la opción más segura para contenido en línea."),
+             "Estilo AP para periodismo, comunicados de prensa y la mayoría de titulares web. Chicago para libros, escritura académica y publicación formal. Si nadie te lo ha dicho, AP es la opción más segura para contenido en línea."),
             ("¿Las minúsculas romperán mis nombres propios?",
              "Puede ser. Las minúsculas ponen el texto en minúsculas antes de rec capitalizar cada inicio de oración, por lo que nombres de personas y lugares pierden sus mayúsculas. Ninguna herramienta offline puede identificar nombres propios de forma fiable sin un modelo de lenguaje, y ejecutar uno significaría enviar tu texto a un servidor. Verifica los nombres después."),
             ("¿Maneja correctamente las palabras con guiones?",
@@ -1010,7 +1010,7 @@ FAQS_T = {
             ("タイトルケースと各単語の大文字化の違いは何ですか？",
              "「各単語の大文字化」はすべてを大文字にします。タイトルケースはスタイルガイドに従い、短い冠詞、接続詞、前置詞が最初や最後の単語でない限り小文字にします。\"The Guide to SEO for Small Businesses\"はタイトルケースです。\"The Guide To SEO For Small Businesses\"ではありません。"),
             ("どのタイトルケーススタイルを使うべきですか？",
-             "ジャーナリズム、プレスリリース、ほとんどのWeb見出しにはAPスタイル。書籍、学術論文、正式な出版にはChicago。人文学の論文にはMLA。何も言われていない場合は、オンラインコンテンツにはAPがより安全なデフォルトです。"),
+             "ジャーナリズム、プレスリリース、ほとんどのWeb見出しにはAPスタイル。書籍、学術論文、正式な出版にはChicago。何も言われていない場合は、オンラインコンテンツにはAPがより安全なデフォルトです。"),
             ("センテンスケースは固有名詞を壊しますか？",
              "その可能性があります。センテンスケースは各文の冒頭を再大文字化する前にすべてのテキストを小文字にするため、人名や地名が大文字を失います。オフラインツールでは言語モデルなしに固有名詞を確実に識別できません。実行するとテキストをサーバーに送信することになります。後で名前を確認してください。"),
             ("ハイフンで繋がれた単語を正しく処理しますか？",
@@ -1068,7 +1068,7 @@ FAQS_T = {
             ("Quelle est la différence entre les majuscules de titre et capitaliser chaque mot ?",
              "Capitaliser Chaque Mot capitalise tout. Les majuscules de titre suivent un guide de style, qui met en minuscules les articles courts, les conjonctions et les prépositions sauf s'ils sont le premier ou le dernier mot. \"Le Guide du SEO pour les Petites Entreprises\" est en majuscules de titre ; \"Le Guide Du SEO Pour Les Petites Entreprises\" ne l'est pas."),
             ("Quel style de majuscules de titre dois-je utiliser ?",
-             "Style AP pour le journalisme, les communiqués de presse et la plupart des titres web. Chicago pour les livres, l'écriture académique et la publication formelle. MLA pour les articles d'humanités. Si personne ne vous l'a dit, AP est l'option la plus sûre pour le contenu en ligne."),
+             "Style AP pour le journalisme, les communiqués de presse et la plupart des titres web. Chicago pour les livres, l'écriture académique et la publication formelle. Si personne ne vous l'a dit, AP est l'option la plus sûre pour le contenu en ligne."),
             ("Les minuscules vont-elles casser mes noms propres ?",
              "C'est possible. Les minuscules mettent le texte en minuscules avant de re-capitaliser le début de chaque phrase, donc les noms de personnes et de lieux perdent leurs majuscules. Aucun outil hors ligne ne peut identifier fiablement les noms propres sans un modèle de langue, et en exécuter un signifierait envoyer votre texte à un serveur. Vérifiez les noms après."),
             ("Gère-t-il correctement les mots avec des traits d'union ?",
@@ -1126,7 +1126,7 @@ FAQS_T = {
             ("Was ist der Unterschied zwischen Überschriftengroßschreibung und Großschreibung jedes Wortes?",
              "Großschreibung Jedes Wort großgeschrieben alles. Überschriftengroßschreibung folgt einem Styleguide, der kurze Artikel, Konjunktionen und Präpositionen klein schreibt, es sei denn, sie sind das erste oder letzte Wort. \"Der Leitfaden zur SEO für kleine Unternehmen\" ist Überschriftengroßschreibung; \"Der Leitfaden Zur SEO Für Kleine Unternehmen\" ist es nicht."),
             ("Welchen Überschriftengroßschreibungsstil sollte ich verwenden?",
-             "AP-Stil für Journalismus, Pressemitteilungen und die meisten Web-Überschriften. Chicago für Bücher, akademisches Schreiben und formale Veröffentlichung. MLA für Geisteswissenschaften. Wenn Ihnen niemand etwas gesagt hat, ist AP die sicherere Standardoption für Online-Inhalte."),
+             "AP-Stil für Journalismus, Pressemitteilungen und die meisten Web-Überschriften. Chicago für Bücher, akademisches Schreiben und formale Veröffentlichung. Wenn Ihnen niemand etwas gesagt hat, ist AP die sicherere Standardoption für Online-Inhalte."),
             ("Wird Satzgroßschreibung meine Eigennamen kaputtmachen?",
              "Es kann. Satzgroßschreibung kleinschreibt den Text vor dem Re-Großschreiben jedes Satzanfangs, sodass Namen von Personen und Orten ihre Großschreibung verlieren. Kein Offline-Tool kann Eigennamen zuverlässig ohne ein Sprachmodell erkennen, und eines auszuführen würde bedeuten, Ihren Text an einen Server zu senden. Überprüfen Sie die Namen danach."),
             ("Behandelt es korrekt zusammengesetzte Wörter mit Bindestrichen?",
@@ -1184,7 +1184,7 @@ FAQS_T = {
             ("Qual é a diferença entre maiúsculas de título e capitalizar cada palavra?",
              "Capitalizar Cada Palavra capitaliza tudo. Maiúsculas de título seguem um guia de estilo, que coloca em minúsculas artigos curtos, conjunções e preposições, a menos que sejam a primeira ou última palavra. \"O Guia de SEO para Pequenas Empresas\" é maiúsculas de título; \"O Guia De SEO Para Pequenas Empresas\" não é."),
             ("Qual estilo de maiúsculas de título devo usar?",
-             "Estilo AP para jornalismos, comunicados de imprensa e a maioria dos títulos web. Chicago para livros, escrita acadêmica e publicação formal. MLA para trabalhos de humanidades. Se ninguém te disse, AP é a opção mais segura para conteúdo online."),
+             "Estilo AP para jornalismos, comunicados de imprensa e a maioria dos títulos web. Chicago para livros, escrita acadêmica e publicação formal. Se ninguém te disse, AP é a opção mais segura para conteúdo online."),
             ("As minúsculas vão quebrar meus nomes próprios?",
              "Pode ser. Minúsculas coloca o texto em minúsculas antes de rec capitalizar o início de cada frase, então nomes de pessoas e lugares perdem suas maiúsculas. Nenhuma ferramenta offline pode identificar nomes próprios de forma confiável sem um modelo de linguagem, e executar um significaria enviar seu texto para um servidor. Verifique os nomes depois."),
             ("Lida corretamente com palavras com hífen?",
@@ -1242,7 +1242,7 @@ FAQS_T = {
             ("제목 대문자와 각 단어 대문자의 차이점은 무엇인가요?",
              "\"각 단어 대문자\"는 모든 것을 대문자로 만듭니다. 제목 대문자는 스타일 가이드를 따르며, 짧은 관사, 접속사, 전치사가 첫 번째나 마지막 단어가 아닌 한 소문자로 만듭니다. \"중소기업을 위한 SEO 가이드\"는 제목 대문자입니다. \"중소기업을 위한 SEO 가이드\"는 아닙니다."),
             ("어떤 제목 대문자 스타일을 사용해야 하나요?",
-             "저널리즘, 보도자료, 대부분의 웹 헤드라인에는 AP 스타일. 서적, 학술 글쓰기, 공식 출판에는 Chicago. 인문학 논문에는 MLA. 아무도 말해주지 않았다면, 온라인 콘텐츠에는 AP가 더 안전한 기본값입니다."),
+             "저널리즘, 보도자료, 대부분의 웹 헤드라인에는 AP 스타일. 서적, 학술 글쓰기, 공식 출판에는 Chicago. 아무도 말해주지 않았다면, 온라인 콘텐츠에는 AP가 더 안전한 기본값입니다."),
             ("문장 대문자가 고유 명사를 망가뜨리나요?",
              "그럴 수 있습니다. 문장 대문자는 각 문장의 시작을 다시 대문자로 만들기 전에 모든 텍스트를 소문자로 만듭니다. 사람과 장소 이름이 대문자를 잃게 됩니다. 오프라인 도구는 언어 모델 없이 고유 명사를 안정적으로 식별할 수 없으며, 실행하면 텍스트를 서버로 보내게 됩니다. 이름은 나중에 확인하세요."),
             ("하이픈으로 연결된 단어를 올바르게 처리하나요?",
@@ -1300,7 +1300,7 @@ FAQS_T = {
             ("Qual è la differenza tra maiuscolo di titolo e maiuscolizzazione di ogni parola?",
              "Maiuscolizzare Ogni Parola maiuscolizza tutto. La maiuscolo di titolo segue una guida di stile, che mette in minuscolo gli articoli corti, le congiunzioni e le preposizioni a meno che non siano la prima o l'ultima parola. \"La Guida al SEO per Piccole Imprese\" è maiuscolo di titolo; \"La Guida Al SEO Per Piccole Imprese\" non lo è."),
             ("Quale stile di maiuscolo di titolo dovrei usare?",
-             "Stile AP per giornalismo, comunicati stampa e la maggior parte dei titoli web. Chicago per libri, scrittura accademica e pubblicazione formale. MLA per lavori di umanistica. Se nessuno ve lo ha detto, AP è l'opzione più sicura per i contenuti online."),
+             "Stile AP per giornalismo, comunicati stampa e la maggior parte dei titoli web. Chicago per libri, scrittura accademica e pubblicazione formale. Se nessuno ve lo ha detto, AP è l'opzione più sicura per i contenuti online."),
             ("Le minuscole danneggeranno i miei nomi propri?",
              "Può darsi. Le minuscole mettono il testo in minuscolo prima di ri-maiuscolizzare l'inizio di ogni frase, quindi i nomi di persone e luoghi perdono le loro maiuscole. Nessuno strumento offline può identificare in modo affidabile i nomi propri senza un modello linguistico, ed eseguirne uno significherebbe inviare il vostro testo a un server. Verificate i nomi dopo."),
             ("Gestisce correttamente le parole con trattino?",
@@ -1358,7 +1358,7 @@ FAQS_T = {
             ("Какова разница между заглавным регистром и выделением каждого слова заглавной буквой?",
              "Выделение каждого слова заглавной буквой делает всё заглавным. Заглавный регистр следует руководству по стилю, которое переводит в строчные короткие артикли, союзы и предлоги, если они не первое и не последнее слово. «Руководство по SEO для малого бизнеса» — заглавный регистр; «Руководство По SEO Для Малого Бизнеса» — нет."),
             ("Какой стиль заглавного регистра мне использовать?",
-             "Стиль AP для журналистики, пресс-релизов и большинства веб-заголовков. Chicago для книг, академических текстов и формальных публикаций. MLA для работ по гуманитарным наукам. Если никто не сказал вам, AP — более безопасный вариант для онлайн-контента."),
+             "Стиль AP для журналистики, пресс-релизов и большинства веб-заголовков. Chicago для книг, академических текстов и формальных публикаций. Если никто не сказал вам, AP — более безопасный вариант для онлайн-контента."),
             ("Сломает ли регистр предложений мои имена собственные?",
              "Это возможно. Регистр предложений переводит текст в строчные перед повторным выделением заглавной буквы каждого предложения, поэтому имена людей и мест теряют заглавные буквы. Никакой офлайн-инструмент не может надёжно определить имена собственные без языковой модели, а её запуск означал бы отправку текста на сервер. Проверьте имена после."),
             ("Правильно ли обрабатываются слова с дефисами?",
@@ -1429,7 +1429,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("Title case is a style decision, not a rule", """<p>Most case converters implement title case as "capitalise the first letter of every word." No style guide actually says that. Every major guide lowercases certain short words unless they fall first or last in the title, and they disagree about which words qualify.</p>
-<p>AP style lowercases articles, coordinating conjunctions and prepositions of three letters or fewer. Chicago lowercases all prepositions regardless of length, along with articles and coordinating conjunctions. MLA follows a similar pattern to Chicago. The practical result is that the same headline is capitalised three different ways depending on which guide you are writing for.</p>
+<p>AP style lowercases articles, coordinating conjunctions and prepositions of three letters or fewer. Chicago lowercases all prepositions regardless of length, along with articles and coordinating conjunctions. The practical result is that the same headline is capitalised differently depending on which guide you are writing for.</p>
 <table><thead><tr><th>Style</th><th>Result</th></tr></thead><tbody>
 <tr><td>Naive converter</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -1531,7 +1531,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("Las mayúsculas de título son una decisión de estilo, no una regla", """<p>La mayoría de los convertidores de mayúsculas implementan las mayúsculas de título como "capitalizar la primera letra de cada palabra". Ninguna guía de estilo dice eso realmente. Cada guía importante pone en minúsculas ciertas palabras cortas a menos que estén primera o última en el título, y no coinciden en qué palabras califican.</p>
-<p>El estilo AP pone en minúsculas artículos, conjunciones coordinativas y preposiciones de tres letras o menos. Chicago pone en minúsculas todas las preposiciones independientemente de su longitud, junto con artículos y conjunciones coordinativas. MLA sigue un patrón similar a Chicago. El resultado práctico es que el mismo titular se capitaliza de tres maneras diferentes dependiendo de qué guía estés escribiendo.</p>
+<p>El estilo AP pone en minúsculas artículos, conjunciones coordinativas y preposiciones de tres letras o menos. Chicago pone en minúsculas todas las preposiciones independientemente de su longitud, junto con artículos y conjunciones coordinativas. El resultado práctico es que el mismo titular se capitaliza de maneras diferentes dependiendo de qué guía estés escribiendo.</p>
 <table><thead><tr><th>Estilo</th><th>Resultado</th></tr></thead><tbody>
 <tr><td>Convertidor simple</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -1633,7 +1633,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("タイトルケースはスタイルの決断であり、ルールではない", """<p>ほとんどのケースコンバーターはタイトルケースを「各単語の最初の文字を大文字にする」として実装しています。どんなスタイルガイドも実際にはそう言いません。すべての主要ガイドは、最初や最後の単語でない限り、特定の短い単語を小文字にしますが、どの単語が該当するかについては一致しません。</p>
-<p>APスタイルは冠詞、並列接続詞、3文字以下の前置詞を小文字にします。Chicagoは長さに関係なくすべての前置詞を小文字にし、冠詞と並列接続詞も同様です。MLAはChicagoと同様のパターンに従います。実用的な結果は、同じ見出しがどのガイドで書いているかによって3つの異なる方法で資本化されることです。</p>
+<p>APスタイルは冠詞、並列接続詞、3文字以下の前置詞を小文字にします。Chicagoは長さに関係なくすべての前置詞を小文字にし、冠詞と並列接続詞も同様です。実用的な結果は、同じ見出しがどのガイドで書いているかによって異なる方法で資本化されることです。</p>
 <table><thead><tr><th>スタイル</th><th>結果</th></tr></thead><tbody>
 <tr><td>単純なコンバーター</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -1735,7 +1735,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("Les majuscules de titre sont une décision de style, pas une règle", """<p>La plupart des convertisseurs de casse implémentent les majuscules de titre comme « capitaliser la première lettre de chaque mot ». Aucun guide de style ne dit en fait cela. Chaque guide majeur met en minuscules certains mots courts sauf s'ils tombent en premier ou dernier dans le titre, et ils ne sont pas d'accord sur quels mots qualifient.</p>
-<p>Le style AP met en minuscules les articles, les conjonctions de coordination et les prépositions de trois lettres ou moins. Chicago met en minuscules toutes les prépositions quelle que soit leur longueur, ainsi que les articles et les conjonctions de coordination. MLA suit un schéma similaire à Chicago. Le résultat pratique est que le même titre est capitalisé de trois manières différentes selon le guide pour lequel vous écrivez.</p>
+<p>Le style AP met en minuscules les articles, les conjonctions de coordination et les prépositions de trois lettres ou moins. Chicago met en minuscules toutes les prépositions quelle que soit leur longueur, ainsi que les articles et les conjonctions de coordination. Le résultat pratique est que le même titre est capitalisé de manières différentes selon le guide pour lequel vous écrivez.</p>
 <table><thead><tr><th>Style</th><th>Résultat</th></tr></thead><tbody>
 <tr><td>Convertisseur naif</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -1837,7 +1837,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("Überschriftengroßschreibung ist eine Stilentcheidung, keine Regel", """<p>Die meisten Fallkonverter implementieren Überschriftengroßschreibung als „den ersten Buchstaben jedes Wortes großschreiben." Kein Styleguide sagt das tatsächlich. Jeder große Guide kleinschreibt bestimmte kurze Wörter, es sei denn, sie stehen an erster oder letzter Stelle im Titel, und sie sind sich nicht einig, welche Wörter qualifizieren.</p>
-<p>AP-Stil kleinschreibt Artikel, Koordinationskonjunktionen und Präpositionen von drei oder weniger Buchstaben. Chicago kleinschreibt alle Präpositionen unabhängig von der Länge, zusammen mit Artikeln und Koordinationskonjunktionen. MLA folgt einem ähnlichen Schema wie Chicago. Das praktische Ergebnis ist, dass dieselbe Überschrift auf drei verschiedene Arten kapitalisiert wird, je nachdem, für welchen Guide Sie schreiben.</p>
+<p>AP-Stil kleinschreibt Artikel, Koordinationskonjunktionen und Präpositionen von drei oder weniger Buchstaben. Chicago kleinschreibt alle Präpositionen unabhängig von der Länge, zusammen mit Artikeln und Koordinationskonjunktionen. Das praktische Ergebnis ist, dass dieselbe Überschrift auf verschiedene Arten kapitalisiert wird, je nachdem, für welchen Guide Sie schreiben.</p>
 <table><thead><tr><th>Stil</th><th>Ergebnis</th></tr></thead><tbody>
 <tr><td>Naiver Konverter</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -1939,7 +1939,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("Maiúsculas de título são uma decisão de estilo, não uma regra", """<p>A maioria dos conversores de maiúsculas implementa maiúsculas de título como \"capitalizar a primeira letra de cada palavra\". Nenhuma guia de estilo diz isso na verdade. Cada guia importante coloca em minúsculas certas palavras curtas, a menos que sejam a primeira ou última palavra do título, e eles discordam sobre quais palavras qualificam.</p>
-<p>O estilo AP coloca em minúsculas artigos, conjunções coordenativas e preposições de três letras ou menos. Chicago coloca em minúsculas todas as preposições independentemente do comprimento, junto com artigos e conjunções coordenativas. MLA segue um padrão semelhante ao Chicago. O resultado prático é que o mesmo título é capitalizado de três maneiras diferentes dependendo para qual guia você está escrevendo.</p>
+<p>O estilo AP coloca em minúsculas artigos, conjunções coordenativas e preposições de três letras ou menos. Chicago coloca em minúsculas todas as preposições independentemente do comprimento, junto com artigos e conjunções coordenativas. O resultado prático é que o mesmo título é capitalizado de maneiras diferentes dependendo para qual guia você está escrevendo.</p>
 <table><thead><tr><th>Estilo</th><th>Resultado</th></tr></thead><tbody>
 <tr><td>Conversor simples</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -2041,7 +2041,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("제목 대문자는 스타일 결정이지 규칙이 아닙니다", """<p>대부분의 대소문자 변환기는 제목 대문자를 "각 단어의 첫 글자를 대문자로 만드는 것"으로 구현합니다. 어떤 스타일 가이드도 실제로 그렇게 말하지 않습니다. 모든 주요 가이드는 제목에서 첫 번째나 마지막 단어가 아닌 한 특정 짧은 단어를 소문자로 만들며, 어떤 단어가 해당하는지에 대해서는 동의하지 않습니다.</p>
-<p>AP 스타일은 관사, 열거 접속사, 세 글자 이하의 전치사를 소문자로 만듭니다. Chicago는 길이에 관계없이 모든 전치사를 소문자로 만들며, 관사와 열거 접속사도 마찬가지입니다. MLA는 Chicago와 유사한 패턴을 따릅니다. 실용적인 결과는 동일한 헤드라인이 작성하는 가이드에 따라 세 가지 다른 방식으로 대문자가 된다는 것입니다.</p>
+<p>AP 스타일은 관사, 열거 접속사, 세 글자 이하의 전치사를 소문자로 만듭니다. Chicago는 길이에 관계없이 모든 전치사를 소문자로 만들며, 관사와 열거 접속사도 마찬가지입니다. 실용적인 결과는 동일한 헤드라인이 작성하는 가이드에 따라 다른 방식으로 대문자가 된다는 것입니다.</p>
 <table><thead><tr><th>스타일</th><th>결과</th></tr></thead><tbody>
 <tr><td>단순 변환기</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -2143,7 +2143,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("Le maiuscole di titolo sono una decisione di stile, non una regola", """<p>La maggior parte dei convertitori di maiuscole implementa le maiuscole di titolo come \"maiuscolizzare la prima lettera di ogni parola\". Nessuna guida di stile dice in realtà questo. Ogni guida principale mette in minuscolo certe parole corte a meno che non siano la prima o l'ultima parola del titolo, e non concordano su quali parole qualificano.</p>
-<p>Lo stile AP mette in minuscolo gli articoli, le congiunzioni coordinative e le preposizioni di tre lettere o meno. Chicago mette in minuscolo tutte le preposizioni indipendentemente dalla lunghezza, insieme agli articoli e alle congiunzioni coordinative. MLA segue un modello simile a Chicago. Il risultato pratico è che lo stesso titolo viene maiuscolizzato in tre modi diversi a seconda della guida per cui state scrivendo.</p>
+<p>Lo stile AP mette in minuscolo gli articoli, le congiunzioni coordinative e le preposizioni di tre lettere o meno. Chicago mette in minuscolo tutte le preposizioni indipendentemente dalla lunghezza, insieme agli articoli e alle congiunzioni coordinative. Il risultato pratico è che lo stesso titolo viene maiuscolizzato in modi diversi a seconda della guida per cui state scrivendo.</p>
 <table><thead><tr><th>Stile</th><th>Risultato</th></tr></thead><tbody>
 <tr><td>Convertitore naif</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -2245,7 +2245,7 @@ REFS_T = {
         ],
         "case-converter": [
             ("Заглавный регистр — это решение стиля, а не правило", """<p>Большинство преобразователей регистра реализуют заглавный регистр как «выделение заглавной буквой каждого слова». Ни одно руководство по стилю на самом деле этого не говорит. Каждое крупное руководство переводит в строчные определённые короткие слова, если они не первые или последние в заголовке, и они расходятся в том, какие слова подходят.</p>
-<p>Стиль AP переводит в строчные артикли, сочинительные союзы и предлоги из трёх букв или меньше. Chicago переводит в строчные все предлоги независимо от длины, а также артикли и сочинительные союзы. MLA следует схеме, аналогичной Chicago. Практический результат: один и тот же заголовок выделяется тремя разными способами в зависимости от руководства.</p>
+<p>Стиль AP переводит в строчные артикли, сочинительные союзы и предлоги из трёх букв или меньше. Chicago переводит в строчные все предлоги независимо от длины, а также артикли и сочинительные союзы. Практический результат: один и тот же заголовок выделяется по-разному в зависимости от руководства.</p>
 <table><thead><tr><th>Стиль</th><th>Результат</th></tr></thead><tbody>
 <tr><td>Примитивный преобразователь</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
