@@ -224,7 +224,7 @@ FAQS = {
  ("How do I count words in text online?",
    "Paste your text into the editor above. The word count, character count, sentence count and paragraph count all update live as you type. Nothing is sent to a server — every calculation happens in your browser."),
  ("Is this a free word counting tool?",
-   "Yes. The tool is completely free with no sign-up, no file upload limit, and no ads. All processing happens locally in your browser."),
+   "Yes. The tool is completely free with no sign-up and no file upload limit. All processing happens locally in your browser."),
  ("Can I use this as an essay word count checker?",
    "Yes. Paste your essay into the editor and the word count updates in real time. Switch on Academic mode to exclude citations and reference lists from the countable total, matching your institution's conventions."),
  ("How does the online text analyzer work?",
@@ -464,7 +464,7 @@ def refs_html(slug, locale="en"):
     rel = [t for t in TOOLS if t["slug"] != slug][:3]
     loc_tools = TOOLS_T.get(locale, TOOLS_T.get("en", {}))
     parts.append(f"<section><h2>{_REL_H.get(locale, 'Related tools')}</h2><div class=\"rel\">" + "".join(
-        f'<a class="relcard" href="{t["slug"]}"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])[:64]}…</span></a>' for t in rel
+        f'<a class="relcard" href="{t["slug"]}"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])}</span></a>' for t in rel
     ) + "</div></section>")
     return '<div class="refs">' + "".join(parts) + '</div>'
 
