@@ -40,6 +40,14 @@
 <link rel="stylesheet" href="assets/base.css">
 <link rel="stylesheet" href="assets/app.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Sort lines", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Sort any list of lines alphabetically, by length, in reverse or shuffled. Supports natural number ordering and locale-aware alphabetising for non-English lists.", "url": "https://wordroomonline.com/sort-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why did my list sort with capitals first?", "acceptedAnswer": {"@type": "Answer", "text": "That happens with tools that compare raw character codes, where every uppercase letter precedes every lowercase one. This tool uses locale-aware collation and ignores case by default, so you get the ordering a person would expect. Switch on Case sensitive if you need the strict version."}}, {"@type": "Question", "name": "Why does item 10 come before item 2?", "acceptedAnswer": {"@type": "Answer", "text": "Compared as text, \"1\" is less than \"2\", so \"item 10\" sorts first. Turn on Natural number order to compare the numeric runs as numbers, which gives item 1, item 2, item 10. It is on by default."}}, {"@type": "Question", "name": "Is the shuffle actually random?", "acceptedAnswer": {"@type": "Answer", "text": "It uses a Fisher-Yates shuffle, where every possible ordering is equally likely. Shuffling by passing a random comparator to a sort function is a common shortcut and produces measurably biased results."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Sort lines", "item": "https://wordroomonline.com/sort-lines"}]}]}</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H94B49VY8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H94B49VY8R');
+</script>
 </head><body data-tool="sort-lines" lang="en">
 <div class="app">
 <header class="hdr">
