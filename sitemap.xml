@@ -10,6 +10,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/"/>
   </url>
   <url><loc>https://wordroomonline.com/word-counter</loc>
@@ -21,6 +22,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/word-counter"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/word-counter"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/word-counter"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/word-counter"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/word-counter"/>
   </url>
   <url><loc>https://wordroomonline.com/case-converter</loc>
@@ -32,6 +34,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/case-converter"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/case-converter"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/case-converter"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/case-converter"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/case-converter"/>
   </url>
   <url><loc>https://wordroomonline.com/readability-checker</loc>
@@ -43,6 +46,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/readability-checker"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/readability-checker"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/readability-checker"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/readability-checker"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/readability-checker"/>
   </url>
   <url><loc>https://wordroomonline.com/remove-line-breaks</loc>
@@ -54,6 +58,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-line-breaks"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-line-breaks"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-line-breaks"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-line-breaks"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-line-breaks"/>
   </url>
   <url><loc>https://wordroomonline.com/sort-lines</loc>
@@ -65,6 +70,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines"/>
   </url>
   <url><loc>https://wordroomonline.com/remove-duplicate-lines</loc>
@@ -76,6 +82,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-duplicate-lines"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-duplicate-lines"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-duplicate-lines"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines"/>
   </url>
   <url><loc>https://wordroomonline.com/privacy</loc>
@@ -87,6 +94,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/privacy"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/privacy"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/privacy"/>
   </url>
   <url><loc>https://wordroomonline.com/about</loc>
@@ -98,6 +106,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/about"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/about"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/about"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/about"/>
   </url>
   <url><loc>https://wordroomonline.com/terms</loc>
@@ -109,6 +118,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/terms"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/terms"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/terms"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/terms"/>
   </url>
   <url><loc>https://wordroomonline.com/contact</loc>
@@ -120,6 +130,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/contact"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/contact"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/contact"/>
   </url>
 </urlset>
