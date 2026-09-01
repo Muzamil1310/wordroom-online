@@ -425,10 +425,10 @@ SHEET_BAR = """<div class="sheet__bar">
 
 _FAQ_H = {"en": "Common questions", "es": "Preguntas frecuentes", "ja": "よくある質問",
            "fr": "Questions fréquentes", "de": "Häufige Fragen", "pt": "Perguntas frequentes",
-           "ko": "자주 묻는 질문", "it": "Domande frequenti"}
+           "ko": "자주 묻는 질문", "it": "Domande frequenti", "ru": "Частые вопросы"}
 _REL_H = {"en": "Related tools", "es": "Herramientas relacionadas", "ja": "関連ツール",
            "fr": "Outils connexes", "de": "Verwandte Tools", "pt": "Ferramentas relacionadas",
-           "ko": "관련 도구", "it": "Strumenti correlati"}
+           "ko": "관련 도구", "it": "Strumenti correlati", "ru": "Похожие инструменты"}
 
 def refs_html(slug, locale="en"):
     parts = []
