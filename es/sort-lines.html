@@ -6,21 +6,26 @@
 <title>Ordenar Líneas Alfabéticamente — Ordenador de Líneas Online | WordRoom</title>
 <meta name="description" content="Ordena cualquier lista de líneas alfabéticamente, por longitud, en reverso o aleatoriamente. Soporta ordenación numérica natural y ordenación alfabética adaptada al idioma para listas en otros idiomas.">
 <link rel="canonical" href="https://wordroomonline.com/es/sort-lines">
-<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines.html">
-<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines.html">
-<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines.html">
-<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines.html">
-<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines.html">
-<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines.html">
-<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines.html">
-<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines.html">
-<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines.html">
-<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines.html">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines">
+<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines">
 <meta property="og:title" content="Ordenar Líneas Alfabéticamente — Ordenador de Líneas Online">
 <meta property="og:description" content="Ordena cualquier lista de líneas alfabéticamente, por longitud, en reverso o aleatoriamente. Soporta ordenación numérica natural y ordenación alfabética adaptada al idioma para listas en otros idiomas.">
+<meta property="og:url" content="https://wordroomonline.com/es/sort-lines">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="WordRoom">
+<meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ordenar Líneas Alfabéticamente — Ordenador de Líneas Online">
+<meta name="twitter:description" content="Ordena cualquier lista de líneas alfabéticamente, por longitud, en reverso o aleatoriamente. Soporta ordenación numérica natural y ordenación alfabética adaptada al idioma para listas en otros idiomas.">
 <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
@@ -39,13 +44,13 @@
 <div class="app">
 <header class="hdr">
   <button class="iconbtn" id="railToggle" aria-label="Abrir menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  <a class="hdr__brand" href="/es/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <a class="hdr__brand" href="/es/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
   <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacidad</span></span>
   <div class="lang-switcher">
   <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
     <option value="" selected>Español</option>
-    <option value="/sort-lines.html">English</option><option value="/ja/sort-lines.html">日本語</option><option value="/fr/sort-lines.html">Français</option><option value="/de/sort-lines.html">Deutsch</option><option value="/pt/sort-lines.html">Português</option><option value="/ko/sort-lines.html">한국어</option><option value="/it/sort-lines.html">Italiano</option><option value="/ru/sort-lines.html">Русский</option>
+    <option value="/sort-lines">English</option><option value="/ja/sort-lines">日本語</option><option value="/fr/sort-lines">Français</option><option value="/de/sort-lines">Deutsch</option><option value="/pt/sort-lines">Português</option><option value="/ko/sort-lines">한국어</option><option value="/it/sort-lines">Italiano</option><option value="/ru/sort-lines">Русский</option>
   </select>
 </div>
   <button class="kbtrigger" data-pal-open type="button" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Buscar</span><kbd>⌘K</kbd></button>
@@ -56,18 +61,18 @@
 <nav class="rail" aria-label="Tools">
   <button class="iconbtn rail__close" aria-label="Cerrar menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <div class="rail__group"><p class="rail__label">Contar</p>
-    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Contador de palabras</span></a>
+    <a class="rail__link" href="word-counter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Contador de palabras</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Convertir</p>
-    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertidor de mayúsculas</span></a>
+    <a class="rail__link" href="case-converter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertidor de mayúsculas</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Analizar</p>
-    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Verificador de legibilidad</span></a>
+    <a class="rail__link" href="readability-checker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Verificador de legibilidad</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Limpiar</p>
-    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Eliminar saltos de línea</span></a>
-    <a class="rail__link" href="sort-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordenar líneas</span></a>
-    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Eliminar líneas duplicadas</span></a>
+    <a class="rail__link" href="remove-line-breaks"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Eliminar saltos de línea</span></a>
+    <a class="rail__link" href="sort-lines" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordenar líneas</span></a>
+    <a class="rail__link" href="remove-duplicate-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Eliminar líneas duplicadas</span></a>
   </div>
 </nav>
 
@@ -113,13 +118,13 @@ Se ordena mientras escribes."></textarea>
 <li><strong>Invertir orden actual</strong> — voltea la lista sin ordenarla, que es lo que generalmente quieres para un registro cronológico.</li>
 <li><strong>Aleatorio</strong> — un aleatorio Fisher–Yates, donde cada ordenación posible es igualmente probable. Los aleatorios simples que usan un comparador aleatorio están sesgados.</li>
 </ul>
-<p>Las líneas vacías se eliminan por defecto, ya que una lista ordenada con un bloque de espacios en un extremo raramente es lo que cualquiera quiere. Desactívalo si las líneas vacías tienen significado.</p></section><section><h2>Preguntas frecuentes</h2><details class="faq"><summary>¿Por qué mi lista se ordenó con mayúsculas primero?</summary><div><p>Eso ocurre con herramientas que comparan códigos de caracteres brutos, donde cada letra mayúscula precede a cada minúscula. Esta herramienta usa comparación adaptada al idioma e ignora mayúsculas por defecto, por lo que obtienes el orden que una persona esperaría. Activa sensible a mayúsculas si necesitas la versión estricta.</p></div></details><details class="faq"><summary>¿Por qué el elemento 10 viene antes del 2?</summary><div><p>Comparados como texto, &quot;1&quot; es menor que &quot;2&quot;, por lo que &quot;elemento 10&quot; se ordena primero. Activa el orden numérico natural para comparar los segmentos numéricos como números, lo que da elemento 1, elemento 2, elemento 10. Está activado por defecto.</p></div></details><details class="faq"><summary>¿El aleatorio es realmente aleatorio?</summary><div><p>Usa un aleatorio Fisher-Yates, donde cada ordenación posible es igualmente probable. Aleatorizar pasando un comparador aleatorio a una función de orden es un atajo común y produce resultados sesgados mediblemente.</p></div></details></section><section><h2>Herramientas relacionadas</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Contador de palabras</strong><span>Recuentos en tiempo real mientras escribes, con exclusiones acad…</span></a><a class="relcard" href="case-converter.html"><strong>Convertidor de mayúsculas</strong><span>Trece conversiones, con mayúsculas de título que siguen las regl…</span></a><a class="relcard" href="readability-checker.html"><strong>Verificador de legibilidad</strong><span>Seis fórmulas, además de las oraciones específicas que frenan tu…</span></a></div></section></div>
+<p>Las líneas vacías se eliminan por defecto, ya que una lista ordenada con un bloque de espacios en un extremo raramente es lo que cualquiera quiere. Desactívalo si las líneas vacías tienen significado.</p></section><section><h2>Preguntas frecuentes</h2><details class="faq"><summary>¿Por qué mi lista se ordenó con mayúsculas primero?</summary><div><p>Eso ocurre con herramientas que comparan códigos de caracteres brutos, donde cada letra mayúscula precede a cada minúscula. Esta herramienta usa comparación adaptada al idioma e ignora mayúsculas por defecto, por lo que obtienes el orden que una persona esperaría. Activa sensible a mayúsculas si necesitas la versión estricta.</p></div></details><details class="faq"><summary>¿Por qué el elemento 10 viene antes del 2?</summary><div><p>Comparados como texto, &quot;1&quot; es menor que &quot;2&quot;, por lo que &quot;elemento 10&quot; se ordena primero. Activa el orden numérico natural para comparar los segmentos numéricos como números, lo que da elemento 1, elemento 2, elemento 10. Está activado por defecto.</p></div></details><details class="faq"><summary>¿El aleatorio es realmente aleatorio?</summary><div><p>Usa un aleatorio Fisher-Yates, donde cada ordenación posible es igualmente probable. Aleatorizar pasando un comparador aleatorio a una función de orden es un atajo común y produce resultados sesgados mediblemente.</p></div></details></section><section><h2>Herramientas relacionadas</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Contador de palabras</strong><span>Recuentos en tiempo real mientras escribes, con exclusiones acad…</span></a><a class="relcard" href="case-converter"><strong>Convertidor de mayúsculas</strong><span>Trece conversiones, con mayúsculas de título que siguen las regl…</span></a><a class="relcard" href="readability-checker"><strong>Verificador de legibilidad</strong><span>Seis fórmulas, además de las oraciones específicas que frenan tu…</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__inner">
       <span class="ftr__copy">&copy; 2026 WordRoom</span>
-      <nav class="ftr__links" aria-label="Legal"><a href="/es/privacy.html">Política de Privacidad</a> <a href="/es/about.html">Sobre Nosotros</a> <a href="/es/terms.html">Términos y Condiciones</a> <a href="/es/contact.html">Contáctenos</a></nav>
+      <nav class="ftr__links" aria-label="Legal"><a href="/es/privacy">Política de Privacidad</a> <a href="/es/about">Sobre Nosotros</a> <a href="/es/terms">Términos y Condiciones</a> <a href="/es/contact">Contáctenos</a></nav>
     </div>
   </div>
 </footer>

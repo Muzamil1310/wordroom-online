@@ -6,21 +6,26 @@
 <title>Trier les Lignes par Ordre Alphabétique — Trieur en Ligne | WordRoom</title>
 <meta name="description" content="Triez n&#x27;importe quelle liste de lignes par ordre alphabétique, par longueur, à l&#x27;envers ou mélangé. Prend en charge l&#x27;ordre numérique naturel et le tri alphabétique adapté à la langue pour les listes non anglaises.">
 <link rel="canonical" href="https://wordroomonline.com/fr/sort-lines">
-<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines.html">
-<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines.html">
-<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines.html">
-<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines.html">
-<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines.html">
-<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines.html">
-<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines.html">
-<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines.html">
-<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines.html">
-<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines.html">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines">
+<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines">
 <meta property="og:title" content="Trier les Lignes par Ordre Alphabétique — Trieur en Ligne">
 <meta property="og:description" content="Triez n&#x27;importe quelle liste de lignes par ordre alphabétique, par longueur, à l&#x27;envers ou mélangé. Prend en charge l&#x27;ordre numérique naturel et le tri alphabétique adapté à la langue pour les listes non anglaises.">
+<meta property="og:url" content="https://wordroomonline.com/fr/sort-lines">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="WordRoom">
+<meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Trier les Lignes par Ordre Alphabétique — Trieur en Ligne">
+<meta name="twitter:description" content="Triez n&#x27;importe quelle liste de lignes par ordre alphabétique, par longueur, à l&#x27;envers ou mélangé. Prend en charge l&#x27;ordre numérique naturel et le tri alphabétique adapté à la langue pour les listes non anglaises.">
 <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
@@ -39,13 +44,13 @@
 <div class="app">
 <header class="hdr">
   <button class="iconbtn" id="railToggle" aria-label="Ouvrir le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  <a class="hdr__brand" href="/fr/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <a class="hdr__brand" href="/fr/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
   <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Confidentialité</span></span>
   <div class="lang-switcher">
   <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
     <option value="" selected>Français</option>
-    <option value="/sort-lines.html">English</option><option value="/es/sort-lines.html">Español</option><option value="/ja/sort-lines.html">日本語</option><option value="/de/sort-lines.html">Deutsch</option><option value="/pt/sort-lines.html">Português</option><option value="/ko/sort-lines.html">한국어</option><option value="/it/sort-lines.html">Italiano</option><option value="/ru/sort-lines.html">Русский</option>
+    <option value="/sort-lines">English</option><option value="/es/sort-lines">Español</option><option value="/ja/sort-lines">日本語</option><option value="/de/sort-lines">Deutsch</option><option value="/pt/sort-lines">Português</option><option value="/ko/sort-lines">한국어</option><option value="/it/sort-lines">Italiano</option><option value="/ru/sort-lines">Русский</option>
   </select>
 </div>
   <button class="kbtrigger" data-pal-open type="button" aria-label="Rechercher"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Rechercher</span><kbd>⌘K</kbd></button>
@@ -56,18 +61,18 @@
 <nav class="rail" aria-label="Tools">
   <button class="iconbtn rail__close" aria-label="Fermer le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <div class="rail__group"><p class="rail__label">Compter</p>
-    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Compteur de mots</span></a>
+    <a class="rail__link" href="word-counter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Compteur de mots</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Convertir</p>
-    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertisseur de casse</span></a>
+    <a class="rail__link" href="case-converter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertisseur de casse</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Analyser</p>
-    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Vérificateur de lisibilité</span></a>
+    <a class="rail__link" href="readability-checker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Vérificateur de lisibilité</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Nettoyer</p>
-    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Supprimer les sauts de ligne</span></a>
-    <a class="rail__link" href="sort-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Trier les lignes</span></a>
-    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Supprimer les lignes en double</span></a>
+    <a class="rail__link" href="remove-line-breaks"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Supprimer les sauts de ligne</span></a>
+    <a class="rail__link" href="sort-lines" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Trier les lignes</span></a>
+    <a class="rail__link" href="remove-duplicate-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Supprimer les lignes en double</span></a>
   </div>
 </nav>
 
@@ -113,13 +118,13 @@ Elle se trie au fur et à mesure."></textarea>
 <li><strong>Inverser l'ordre actuel</strong> — retourne la liste sans la trier, ce que vous voulez généralement pour un journal chronologique.</li>
 <li><strong>Mélanger</strong> — un mélange Fisher–Yates, donc chaque ordre possible est également probable. Les mélanges naifs utilisant un comparateur aléatoire sont biaisés.</li>
 </ul>
-<p>Les lignes vides sont supprimées par défaut, car une liste triée avec un bloc de blancs à une extrémité est rarement ce que les gens veulent. Désactivez-le si les lignes vides portent un sens.</p></section><section><h2>Questions fréquentes</h2><details class="faq"><summary>Pourquoi ma liste s&#x27;est-elle triée avec les majuscules en premier ?</summary><div><p>Cela se produit avec les outils qui comparent les codes de caractères bruts, où chaque lettre majuscule précède chaque minuscule. Cet outil utilise une comparaison adaptée à la langue et ignore la casse par défaut, donc vous obtenez l&#x27;ordre qu&#x27;une personne attendrait. Activez la sensibilité à la casse si vous avez besoin de la version stricte.</p></div></details><details class="faq"><summary>Pourquoi l&#x27;élément 10 vient-il avant l&#x27;élément 2 ?</summary><div><p>Comparés comme texte, &quot;1&quot; est inférieur à &quot;2&quot;, donc &quot;élément 10&quot; se trie en premier. Activez l&#x27;ordre numérique naturel pour comparer les portions numériques en tant que nombres, ce qui donne élément 1, élément 2, élément 10. C&#x27;est activé par défaut.</p></div></details><details class="faq"><summary>Le mélange est-il vraiment aléatoire ?</summary><div><p>Il utilise un mélange Fisher-Yates, où chaque ordre possible est également probable. Mélanger en passant un comparateur aléatoire à une fonction de tri est un raccourci courant et produit des résultats biaisés mesurables.</p></div></details></section><section><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions acad…</span></a><a class="relcard" href="case-converter.html"><strong>Convertisseur de casse</strong><span>Treize conversions, avec des majuscules de titre qui suivent les…</span></a><a class="relcard" href="readability-checker.html"><strong>Vérificateur de lisibilité</strong><span>Six formules, plus les phrases spécifiques qui freinent votre sc…</span></a></div></section></div>
+<p>Les lignes vides sont supprimées par défaut, car une liste triée avec un bloc de blancs à une extrémité est rarement ce que les gens veulent. Désactivez-le si les lignes vides portent un sens.</p></section><section><h2>Questions fréquentes</h2><details class="faq"><summary>Pourquoi ma liste s&#x27;est-elle triée avec les majuscules en premier ?</summary><div><p>Cela se produit avec les outils qui comparent les codes de caractères bruts, où chaque lettre majuscule précède chaque minuscule. Cet outil utilise une comparaison adaptée à la langue et ignore la casse par défaut, donc vous obtenez l&#x27;ordre qu&#x27;une personne attendrait. Activez la sensibilité à la casse si vous avez besoin de la version stricte.</p></div></details><details class="faq"><summary>Pourquoi l&#x27;élément 10 vient-il avant l&#x27;élément 2 ?</summary><div><p>Comparés comme texte, &quot;1&quot; est inférieur à &quot;2&quot;, donc &quot;élément 10&quot; se trie en premier. Activez l&#x27;ordre numérique naturel pour comparer les portions numériques en tant que nombres, ce qui donne élément 1, élément 2, élément 10. C&#x27;est activé par défaut.</p></div></details><details class="faq"><summary>Le mélange est-il vraiment aléatoire ?</summary><div><p>Il utilise un mélange Fisher-Yates, où chaque ordre possible est également probable. Mélanger en passant un comparateur aléatoire à une fonction de tri est un raccourci courant et produit des résultats biaisés mesurables.</p></div></details></section><section><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions acad…</span></a><a class="relcard" href="case-converter"><strong>Convertisseur de casse</strong><span>Treize conversions, avec des majuscules de titre qui suivent les…</span></a><a class="relcard" href="readability-checker"><strong>Vérificateur de lisibilité</strong><span>Six formules, plus les phrases spécifiques qui freinent votre sc…</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__inner">
       <span class="ftr__copy">&copy; 2026 WordRoom</span>
-      <nav class="ftr__links" aria-label="Legal"><a href="/fr/privacy.html">Politique de Confidentialité</a> <a href="/fr/about.html">À Propos</a> <a href="/fr/terms.html">Conditions Générales</a> <a href="/fr/contact.html">Contactez-Nous</a></nav>
+      <nav class="ftr__links" aria-label="Legal"><a href="/fr/privacy">Politique de Confidentialité</a> <a href="/fr/about">À Propos</a> <a href="/fr/terms">Conditions Générales</a> <a href="/fr/contact">Contactez-Nous</a></nav>
     </div>
   </div>
 </footer>
