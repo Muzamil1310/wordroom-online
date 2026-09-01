@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Counter — Live Word, Character &amp; Sentence Count | WordRoom</title>
+<meta name="description" content="Count words, characters, sentences and paragraphs as you type. Handles Telugu, Hindi and CJK correctly, and can exclude citations and reference lists for academic word limits.">
+<link rel="canonical" href="https://wordroomonline.com/word-counter">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/word-counter.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/word-counter.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/word-counter.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/word-counter.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/word-counter.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/word-counter.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/word-counter.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/word-counter.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/word-counter.html">
+<meta property="og:title" content="Word Counter — Live Word, Character &amp; Sentence Count">
+<meta property="og:description" content="Count words, characters, sentences and paragraphs as you type. Handles Telugu, Hindi and CJK correctly, and can exclude citations and reference lists for academic word limits.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Word counter", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Count words, characters, sentences and paragraphs as you type. Handles Telugu, Hindi and CJK correctly, and can exclude citations and reference lists for academic word limits.", "url": "https://wordroomonline.com/word-counter", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does the word count include citations and references?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your institution, and the tool lets you match either convention. Reference lists are almost always excluded from a stated word limit; in-text citations are excluded by many but not all universities. Switch on the relevant exclusions in Academic mode and compare the raw and countable totals. Your course handbook is the authority."}}, {"@type": "Question", "name": "Is my text uploaded anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. Every calculation runs in your browser using JavaScript. There is no server that receives your text, no account, and no analytics on what you type. You can confirm this by opening your browser's network tab \u2014 nothing is sent after the page itself loads."}}, {"@type": "Question", "name": "Why does the character count differ from Microsoft Word?", "acceptedAnswer": {"@type": "Answer", "text": "Word counts UTF-16 code units in some contexts, which inflates the count for emoji, Indic scripts and other characters outside the basic Latin range. This tool counts grapheme clusters \u2014 characters as a reader perceives them. For plain English text the two agree."}}, {"@type": "Question", "name": "How is reading time calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Words divided by 238 words per minute, the mean silent reading rate for English prose from Brysbaert's 2019 meta-analysis. Speaking time uses a deliberately conservative 130 words per minute."}}, {"@type": "Question", "name": "Does it count words in Telugu or Hindi correctly?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The tool detects the script and applies Unicode word-boundary rules for it rather than splitting on spaces, so combining marks and conjuncts are handled properly. Mixed-script documents are counted with the rules for the dominant non-Latin script."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Word counter", "item": "https://wordroomonline.com/word-counter"}]}]}</script>
+</head><body data-tool="word-counter" lang="en">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/index.html"><img width="22" height="22" src="assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacy</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>English</option>
+    <option value="/es/word-counter.html">Español</option><option value="/ja/word-counter.html">日本語</option><option value="/fr/word-counter.html">Français</option><option value="/de/word-counter.html">Deutsch</option><option value="/pt/word-counter.html">Português</option><option value="/ko/word-counter.html">한국어</option><option value="/it/word-counter.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Switch theme"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Close menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Count</p>
+    <a class="rail__link" href="word-counter.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Word counter</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Convert</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Case converter</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analyse</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Readability checker</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Clean up</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Remove line breaks</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Sort lines</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Remove duplicate lines</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Count</p>
+  <h1>Word counter</h1>
+  <p>Live counts as you type, with academic exclusions and correct segmentation for Indic and CJK scripts.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Paste or write your text here. Counts update as you type, and nothing is sent anywhere."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>How word counting actually works</h2><p>A word counter has to decide where one word ends and the next begins. For English that looks trivial — split on spaces — which is why almost every online counter does exactly that, and why almost every one of them is wrong for a large part of the world.</p>
+<p>Splitting on whitespace fails immediately outside the Latin script. Chinese and Japanese do not put spaces between words. Thai does not either. Telugu, Hindi and Tamil use spaces, but they also use combining marks that naive counters miscount as separate characters. This tool uses the browser's built-in Unicode segmentation instead, which applies the proper word-boundary rules for the script it detects.</p>
+<p>Character counting has the same trap. The JavaScript expression <code>"నమస్తే".length</code> returns 6, because it counts UTF-16 code units rather than characters a reader would recognise. A single emoji can return 2, and a flag emoji 4. This tool counts grapheme clusters, so the number matches what you would get by counting on screen.</p></section><section><h2>Word limits and what your marker counts</h2><p>Academic word limits are the most common reason people reach for a counter, and the number your word processor reports is frequently not the number that will be marked. Institutions differ, but the usual pattern is that the body text counts and the scaffolding does not.</p>
+<table><thead><tr><th>Element</th><th>Commonly counted</th></tr></thead><tbody>
+<tr><td>Body paragraphs</td><td>Yes</td></tr>
+<tr><td>In-text citations, e.g. (Smith, 2020)</td><td>Often excluded</td></tr>
+<tr><td>Reference list or bibliography</td><td>Almost always excluded</td></tr>
+<tr><td>Footnotes and endnotes</td><td>Varies — check your handbook</td></tr>
+<tr><td>Headings and subheadings</td><td>Varies</td></tr>
+<tr><td>Block quotations</td><td>Usually counted</td></tr>
+<tr><td>Tables, figures and captions</td><td>Usually excluded</td></tr>
+<tr><td>Abstract, title page, appendices</td><td>Usually excluded</td></tr>
+</tbody></table>
+<p>Academic mode lets you switch each of these off and shows both the raw and the countable total, so you can match whatever your handbook specifies rather than guessing. Where a rule is ambiguous, the handbook wins — this tool models the common conventions, not your specific institution's policy.</p></section><section><h2>Reading and speaking time</h2><p>Reading time here uses 238 words per minute, the mean silent reading rate for English prose found in Brysbaert's 2019 meta-analysis of 190 studies. Many sites use 200 or 250 without saying where the figure came from; the difference on a 3,000-word piece is over two minutes.</p>
+<p>Speaking time uses 130 words per minute, which is deliberately slower than conversational speech. Presenters read prepared text faster than they should when nervous, and rehearsal timings that assume 150 words per minute tend to leave people over-running. If you are timing a speech, treat the figure as a floor and rehearse aloud.</p>
+<p>Both figures are averages across readers and text types. Dense technical prose reads slower; familiar narrative reads faster.</p></section><section><h2>Common questions</h2><details class="faq"><summary>Does the word count include citations and references?</summary><div><p>It depends on your institution, and the tool lets you match either convention. Reference lists are almost always excluded from a stated word limit; in-text citations are excluded by many but not all universities. Switch on the relevant exclusions in Academic mode and compare the raw and countable totals. Your course handbook is the authority.</p></div></details><details class="faq"><summary>Is my text uploaded anywhere?</summary><div><p>No. Every calculation runs in your browser using JavaScript. There is no server that receives your text, no account, and no analytics on what you type. You can confirm this by opening your browser&#x27;s network tab — nothing is sent after the page itself loads.</p></div></details><details class="faq"><summary>Why does the character count differ from Microsoft Word?</summary><div><p>Word counts UTF-16 code units in some contexts, which inflates the count for emoji, Indic scripts and other characters outside the basic Latin range. This tool counts grapheme clusters — characters as a reader perceives them. For plain English text the two agree.</p></div></details><details class="faq"><summary>How is reading time calculated?</summary><div><p>Words divided by 238 words per minute, the mean silent reading rate for English prose from Brysbaert&#x27;s 2019 meta-analysis. Speaking time uses a deliberately conservative 130 words per minute.</p></div></details><details class="faq"><summary>Does it count words in Telugu or Hindi correctly?</summary><div><p>Yes. The tool detects the script and applies Unicode word-boundary rules for it rather than splitting on spaces, so combining marks and conjuncts are handled properly. Mixed-script documents are counted with the rules for the dominant non-Latin script.</p></div></details></section><section><h2>Related tools</h2><div class="rel"><a class="relcard" href="case-converter.html"><strong>Case converter</strong><span>Thirteen conversions, with title case that follows actual style-…</span></a><a class="relcard" href="readability-checker.html"><strong>Readability checker</strong><span>Six formulas, plus the specific sentences holding your score bac…</span></a><a class="relcard" href="remove-line-breaks.html"><strong>Remove line breaks</strong><span>Join lines broken by a PDF column or an email client, while keep…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Search tools…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Tools</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="assets/lib.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

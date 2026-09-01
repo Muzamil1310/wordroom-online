@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>可読性チェッカー — Flesch Reading Ease と読解レベル | WordRoom</title>
+<meta name="description" content="Flesch Reading Ease、Flesch-Kincaid、Gunning Fog、SMOG、Coleman-Liau、ARIで文章を評価。スコアを下げている具体的な文を表示します。">
+<link rel="canonical" href="https://wordroomonline.com/ja/readability-checker">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/readability-checker.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/readability-checker.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/readability-checker.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/readability-checker.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/readability-checker.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/readability-checker.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/readability-checker.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/readability-checker.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/readability-checker.html">
+<meta property="og:title" content="可読性チェッカー — Flesch Reading Ease と読解レベル">
+<meta property="og:description" content="Flesch Reading Ease、Flesch-Kincaid、Gunning Fog、SMOG、Coleman-Liau、ARIで文章を評価。スコアを下げている具体的な文を表示します。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "\u53ef\u8aad\u6027\u30c1\u30a7\u30c3\u30ab\u30fc", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Flesch Reading Ease\u3001Flesch-Kincaid\u3001Gunning Fog\u3001SMOG\u3001Coleman-Liau\u3001ARI\u3067\u6587\u7ae0\u3092\u8a55\u4fa1\u3002\u30b9\u30b3\u30a2\u3092\u4e0b\u3052\u3066\u3044\u308b\u5177\u4f53\u7684\u306a\u6587\u3092\u8868\u793a\u3057\u307e\u3059\u3002", "url": "https://wordroomonline.com/ja/readability-checker", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u826f\u3044Flesch Reading Ease\u30b9\u30b3\u30a2\u3068\u306f\u4f55\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u4e00\u822c\u7684\u306aWeb\u6587\u7ae0\u306e\u5834\u5408\u306f60\u4ee5\u4e0a\u3002\u653f\u5e9c\u3084\u533b\u7642\u5206\u91ce\u306eplain-language\u57fa\u6e96\u306f\u901a\u5e3860\u304b\u308970\u3092\u76ee\u6a19\u3068\u3057\u307e\u3059\u3002\u5c02\u9580\u5bb6\u5411\u3051\u306e\u6280\u8853\u6587\u66f8\u306f40\u53f0\u306b\u7559\u307e\u308b\u3053\u3068\u304c\u591a\u304f\u3001\u305d\u306e audience \u306b\u306f\u9069\u5207\u3067\u3059\u300230\u4ee5\u4e0b\u306f\u307b\u307c\u8ab0\u306b\u3068\u3063\u3066\u3082\u8aad\u307f\u3065\u3089\u3044\u3067\u3059\u3002"}}, {"@type": "Question", "name": "\u306a\u305c\u5404\u5f0f\u304c\u7570\u306a\u308b\u5b66\u5e74\u30ec\u30d9\u30eb\u3092\u51fa\u3059\u306e\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u7570\u306a\u308b\u76ee\u7684\u3067\u69cb\u7bc9\u3055\u308c\u3001\u5165\u529b\u306e\u91cd\u307f\u4ed8\u3051\u304c\u7570\u306a\u308a\u307e\u3059\u3002Gunning Fog\u306f\u591a\u97f3\u7bc0\u8a9e\u3092\u5f37\u304f\u7f70\u3057\u3001Coleman-Liau\u306f\u97f3\u7bc0\u3067\u306f\u306a\u304f\u6587\u5b57\u6570\u3092\u4f7f\u7528\u3057\u3001SMOG\u306f\u77ed\u3044\u5065\u5eb7\u6587\u7ae0\u5411\u3051\u306b\u8a2d\u8a08\u3055\u308c\u307e\u3057\u305f\u3002\u5f0f\u9593\u306e\u5927\u304d\u306a\u5dee\u306f\u3001\u901a\u5e38\u30c6\u30ad\u30b9\u30c8\u304c\u4e0d\u5747\u4e00\u3067\u3042\u308b\u3053\u3068\u3092\u610f\u5473\u3057\u3001\u7279\u5b9a\u306e\u5f0f\u304c\u9593\u9055\u3063\u3066\u3044\u308b\u308f\u3051\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002"}}, {"@type": "Question", "name": "\u97f3\u7bc0\u30ab\u30a6\u30f3\u30c8\u306e\u7cbe\u5ea6\u306f\u3069\u306e\u7a0b\u5ea6\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u3053\u308c\u306f\u30d2\u30e5\u30fc\u30ea\u30b9\u30c6\u30a3\u30c3\u30af\u3067\u3059\u3002\u3053\u308c\u3089\u306e\u3059\u3079\u3066\u306e\u5f0f\u306e\u5b9f\u88c5\u306b\u304a\u3044\u3066\u540c\u69d8\u3067\u3059\u3002\u82f1\u8a9e\u306e\u7db4\u308a\u306f\u97f3\u7bc0\u306b\u304d\u308c\u3044\u306b\u30de\u30c3\u30d4\u30f3\u30b0\u3055\u308c\u306a\u3044\u305f\u3081\u3001\u4e00\u90e8\u306e\u5358\u8a9e\u306f\u8aa4\u3063\u3066\u30ab\u30a6\u30f3\u30c8\u3055\u308c\u307e\u3059\u3002\u3053\u308c\u306f\u3059\u3079\u3066\u306e\u53ef\u8aad\u6027\u30c4\u30fc\u30eb\u306b\u540c\u69d8\u306b\u5f71\u97ff\u3057\u307e\u3059\u3002Coleman-Liau\u306f\u6587\u5b57\u3092\u30ab\u30a6\u30f3\u30c8\u3059\u308b\u3053\u3068\u3067\u3053\u306e\u554f\u984c\u3092\u56de\u907f\u3057\u3066\u304a\u308a\u3001\u97f3\u7bc0\u30d9\u30fc\u30b9\u306e\u30b9\u30b3\u30a2\u3068\u4e00\u7dd2\u306b\u8aad\u3080\u4fa1\u5024\u304c\u3042\u308a\u307e\u3059\u3002"}}, {"@type": "Question", "name": "\u30b9\u30b3\u30a2\u3092\u6700\u3082\u901f\u304f\u6539\u5584\u3059\u308b\u306b\u306f\u3069\u3046\u3059\u308c\u3070\u3044\u3044\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u6700\u3082\u9577\u3044\u6587\u3092\u5206\u5272\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u6587\u306e\u9577\u3055\u306fFlesch Reading Ease\u306e2\u3064\u306e\u5165\u529b\u306e1\u3064\u3067\u3042\u308b\u305f\u3081\u300145\u8a9e\u306e\u6587\u30923\u3064\u306b\u5206\u5272\u3059\u308b\u3053\u3068\u306f\u3001\u3042\u3089\u3086\u308b\u8a9e\u5f59\u306e\u5909\u66f4\u3088\u308a\u3082\u30b9\u30b3\u30a2\u3092\u5927\u304d\u304f\u52d5\u304b\u3057\u307e\u3059\u3002\u30d1\u30cd\u30eb\u304c\u3042\u306a\u305f\u306e\u6700\u3082\u96e3\u3057\u3044\u6587\u3092\u30ea\u30b9\u30c8\u3059\u308b\u306e\u306f\u307e\u3055\u306b\u3053\u306e\u7406\u7531\u306e\u305f\u3081\u3067\u3059\u3002"}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "\u53ef\u8aad\u6027\u30c1\u30a7\u30c3\u30ab\u30fc", "item": "https://wordroomonline.com/ja/readability-checker"}]}]}</script>
+</head><body data-tool="readability-checker" lang="ja">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ja/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>日本語</option>
+    <option value="/readability-checker.html">English</option><option value="/es/readability-checker.html">Español</option><option value="/fr/readability-checker.html">Français</option><option value="/de/readability-checker.html">Deutsch</option><option value="/pt/readability-checker.html">Português</option><option value="/ko/readability-checker.html">한국어</option><option value="/it/readability-checker.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="検索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>検索</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="テーマ切替"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="メニューを閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">カウント</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>ワードカウンター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">変換</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">分析</p>
+    <a class="rail__link" href="readability-checker.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">整理</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>改行を除去</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">分析</p>
+  <h1>可読性チェッカー</h1>
+  <p>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="段落または完成した下書きを貼り付けてください。スコアを出すには少なくとも1つの完全な文が必要です。"></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>スコアが何を意味するか</h2><p>Flesch Reading Easeはテキストを0〜100のスケールにマッピングし、高いほど簡単です。2つの入力のみで構築されます：平均文長と平均音節数。その単純さは長所であり限界でもあります — 安定で再現可能ですが、議論が意味するかどうかは判断できません。</p>
+<table><thead><tr><th>スコア</th><th>読める感じ</th><th>対象読者</th></tr></thead><tbody>
+<tr><td>90〜100</td><td>非常に簡単</td><td>小学5年生</td></tr>
+<tr><td>80〜89</td><td>簡単</td><td>小学6年生</td></tr>
+<tr><td>70〜79</td><td>かなり簡単</td><td>中学1年生</td></tr>
+<tr><td>60〜69</td><td>平易な英語</td><td>中学2〜3年生</td></tr>
+<tr><td>50〜59</td><td>かなり難しい</td><td>高校1〜3年生</td></tr>
+<tr><td>30〜49</td><td>難しい</td><td>大学</td></tr>
+<tr><td>30未満</td><td>非常に難しい</td><td>大学卒業生</td></tr>
+</tbody></table>
+<p>一般的なWeb文章の場合は60以上を目指してください。政府と医療分野の平易な言語ガイドは通常60〜70を目標とします。専門家向けの技術文書が40台にあることは失敗ではありません。その audience には語彙があります。</p></section><section><h2>6つの式と一致しない場所</h2><p>ここで使用される6つの式はすべて、文長、単語長、音節カウントの純粋な算術です。異なる目的で開発され、互いに一致しません。これはバグではなく機能です — 大きな差はテキストが不均一であることを告げています。</p>
+<ul>
+<li><strong>Flesch–Kincaid学年</strong> — Reading Easeと同じ入力がアメリカの学校学年で表現。</li>
+<li><strong>Gunning Fog</strong> — 多音節語を重く評価。専門用語を罰する。</li>
+<li><strong>SMOG</strong> — 健康材料向けに設計。短い段落で信頼できるとされる。</li>
+<li><strong>Coleman–Liau</strong> — 音節ではなく文字数を使用するため、音節推定エラーを回避。</li>
+<li><strong>自動可読性指数</strong> — 1語あたりの文字数に文長を加算。</li>
+</ul>
+<p>音節カウントが弱点です。英語の正字法は音節にきれいにマッピングされないため、すべての実装がヒューリスティックを使用し、すべての実装が一部の単語で間違っています。Coleman–Liauは文字をカウントすることでこの問題を回避し、単独でではなく他の式と並べて読む価値があるのはそのためです。</p></section><section><h2>文を修正し、単語を修正しない</h2><p>文長は2つの入力の1つであるため、長い文を分割することはあらゆる類義語の置換よりもスコアを大きく動かします。45語の文を3つに分割することは意味の損失なしに、Reading Easeを10ポイント以上変えることができます。</p>
+<p>これがパネルが合計を表示するだけでなく、最も難しい個別文をリストする理由です。それ以外は明確なページに1つの60語の文があると平均を下げ、ドキュメントレベルのスコアでは見えなくなります。外れ値を最初に修正し、次に語彙を見てください。</p>
+<p>受動態の検出はここでは正規表現ヒューリスティックです — 「be」の形に過去分詞のように見えるものが続きます。過剰にフラグを立てます。カウントを再読の提示として扱い、判決としては扱わないでください。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>良いFlesch Reading Easeスコアとは何ですか？</summary><div><p>一般的なWeb文章の場合は60以上。政府や医療分野のplain-language基準は通常60から70を目標とします。専門家向けの技術文書は40台に留まることが多く、その audience には適切です。30以下はほぼ誰にとっても読みづらいです。</p></div></details><details class="faq"><summary>なぜ各式が異なる学年レベルを出すのですか？</summary><div><p>異なる目的で構築され、入力の重み付けが異なります。Gunning Fogは多音節語を強く罰し、Coleman-Liauは音節ではなく文字数を使用し、SMOGは短い健康文章向けに設計されました。式間の大きな差は、通常テキストが不均一であることを意味し、特定の式が間違っているわけではありません。</p></div></details><details class="faq"><summary>音節カウントの精度はどの程度ですか？</summary><div><p>これはヒューリスティックです。これらのすべての式の実装において同様です。英語の綴りは音節にきれいにマッピングされないため、一部の単語は誤ってカウントされます。これはすべての可読性ツールに同様に影響します。Coleman-Liauは文字をカウントすることでこの問題を回避しており、音節ベースのスコアと一緒に読む価値があります。</p></div></details><details class="faq"><summary>スコアを最も速く改善するにはどうすればいいですか？</summary><div><p>最も長い文を分割してください。文の長さはFlesch Reading Easeの2つの入力の1つであるため、45語の文を3つに分割することは、あらゆる語彙の変更よりもスコアを大きく動かします。パネルがあなたの最も難しい文をリストするのはまさにこの理由のためです。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。…</span></a><a class="relcard" href="case-converter.html"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="remove-line-breaks.html"><strong>改行を除去</strong><span>PDFのカラムやメールクライアントで壊れた行を結合しつつ、本物の段落区切りを保持。…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="ツールを検索…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

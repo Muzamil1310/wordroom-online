@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strumenti di testo e scrittura privati che funzionano nel vostro browser | WordRoom</title>
+<meta name="description" content="Uno spazio di lavoro di strumenti di testo guidato dalla tastiera — contaparole, convertitore di maiuscole/minuscole, controllo di leggibilità e utilità di pulizia. Tutto funziona localmente nel vostro browser. Niente caricamenti, niente account, niente pubblicità.">
+<link rel="canonical" href="https://wordroomonline.com/it/">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/index.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/index.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/index.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/index.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/index.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/index.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/index.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/index.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/index.html">
+<meta property="og:title" content="Strumenti di testo e scrittura privati che funzionano nel vostro browser">
+<meta property="og:description" content="Uno spazio di lavoro di strumenti di testo guidato dalla tastiera — contaparole, convertitore di maiuscole/minuscole, controllo di leggibilità e utilità di pulizia. Tutto funziona localmente nel vostro browser. Niente caricamenti, niente account, niente pubblicità.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "WordRoom", "url": "https://wordroomonline.com/it/", "description": "Uno spazio di lavoro privato e guidato dalla tastiera di strumenti di testo e scrittura che funzionano interamente nel vostro browser."}</script>
+</head><body data-tool="home" lang="it">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Apri menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/it/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacy</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>Italiano</option>
+    <option value="/index.html">English</option><option value="/es/index.html">Español</option><option value="/ja/index.html">日本語</option><option value="/fr/index.html">Français</option><option value="/de/index.html">Deutsch</option><option value="/pt/index.html">Português</option><option value="/ko/index.html">한국어</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Cerca"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Cerca</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Cambia tema"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Chiudi menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Conta</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Contaparole</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Converti</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertitore di maiuscole</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analizza</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Controllore di leggibilità</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Pulisci</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Rimuovi interruzioni di riga</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordina righe</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Rimuovi righe duplicate</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="hero">
+  <p class="eyebrow">Un unico spazio di lavoro, non sessanta landing page</p>
+  <h1>Strumenti di testo che mantengono il vostro <em>testo</em> per voi.</h1>
+  <p>Un editor condiviso. Ogni strumento funziona su di esso. Niente di ciò che digitate esce dal vostro browser — niente caricamenti, niente account, niente pubblicità.</p>
+  <div class="herobtns">
+    <a class="btn" href="word-counter.html">Aprire lo spazio di lavoro</a>
+    <button class="btn btn--ghost" data-pal-open type="button">Cerca strumenti <kbd>⌘K</kbd></button>
+  </div>
+</div>
+
+<div class="refs" style="max-width:var(--content-wide);margin-top:var(--space-12)">
+  <section><h2>Tutti gli strumenti</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Contaparole</strong><span>Conteggi in tempo reale mentre digitate, con esclusioni accademiche e segmentazione corretta per scritture indiane e CJK.</span></a><a class="relcard" href="case-converter.html"><strong>Convertitore di maiuscole</strong><span>Tredici conversioni, con maiuscole di titolo che seguono le vere regole di stile anziché capitalizzare tutto.</span></a><a class="relcard" href="readability-checker.html"><strong>Controllore di leggibilità</strong><span>Sei formule, più le frasi specifiche che frenano il vostro punteggio — non solo un numero.</span></a><a class="relcard" href="remove-line-breaks.html"><strong>Rimuovi interruzioni di riga</strong><span>Unite le righe spezzate da una colonna di PDF o un client di posta, mantenendo le vere interruzioni di paragrafo.</span></a><a class="relcard" href="sort-lines.html"><strong>Ordina righe</strong><span>Ordinate alfabeticamente, per lunghezza, invertite o mescolate — con ordinamento numerico naturale e confronto locale.</span></a><a class="relcard" href="remove-duplicate-lines.html"><strong>Rimuovi righe duplicate</strong><span>Trovate le ripetizioni prima di eliminarle, con controllo su maiuscole/minuscole e spazi.</span></a></div></section>
+  <section>
+    <h2>Perché è diverso</h2>
+    <h3>Un unico buffer, tutti gli strumenti</h3>
+    <p>I siti concorrenti vi costringono a incollare di nuovo il testo su ogni pagina. Qui il testo vi accompagna: contatelo, pulitelo, convertitelo, valutatelo, senza mai reincollore. Premete ⌘K e applicate qualsiasi trasformazione al testo che avete già.</p>
+    <h3>La privacy è il prodotto, non una pagina di politiche</h3>
+    <p>Tutti i calcoli avvengono nel vostro browser. Non c'è nessun endpoint che riceva il vostro testo, il che significa che non c'è nulla da far trapelare, nulla da registrare e nessun limite di dimensione del file. Aprite la scheda di rete e osservatela rimanere in silenzi mentre digitate.</p>
+    <h3>Corretto, non approssimativamente corretto</h3>
+    <p>I conteggi di parole seguono le regole di segmentazione Unicode, quindi telugu, hindi e cinese sono conteggiati correttamente anziché essere divisi dagli spazi. Le maiuscole di titolo seguono le regole reali di AP e Chicago anziché capitalizzare ogni parola. La modalità accademica esclude ciò che il vostro relatore esclude.</p>
+    <h3>Pensato per la tastiera</h3>
+    <p>Ogni azione ha una scorciatoia da tastiera. ⌘K apre la palette, / mette a fuoco la ricerca, ⌘⇧F entra in modalità focus. Nessun modale da cui non possiate uscire, nessuna schermata intermedia prima di un risultato.</p>
+  </section>
+</div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Cerca strumenti…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Strumenti</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
