@@ -19,6 +19,8 @@
   background: color-mix(in srgb, var(--bg) 86%, transparent);
   backdrop-filter: blur(12px) saturate(1.4);
   border-bottom: 1px solid var(--divider);
+  overflow: hidden;
+  min-width: 0;
 }
 .hdr__brand {
   display: flex; align-items: center; gap: var(--space-2);
@@ -26,7 +28,10 @@
   letter-spacing: -0.015em; font-size: var(--text-sm);
   padding: var(--space-1) var(--space-2); margin-inline-start: calc(var(--space-2) * -1);
   border-radius: var(--radius-md);
+  flex-shrink: 0;
+  min-width: 0;
 }
+.hdr__brand span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .hdr__brand:hover { color: var(--text); background: var(--surface-2); }
 .hdr__brand svg { color: var(--accent); flex-shrink: 0; }
 .hdr__spacer { flex: 1; }
@@ -35,6 +40,7 @@
   display: inline-grid; place-items: center;
   width: 34px; height: 34px; border-radius: var(--radius-md);
   color: var(--text-muted); border: 1px solid transparent;
+  flex-shrink: 0;
 }
 .iconbtn:hover { background: var(--surface-2); color: var(--text); border-color: var(--border); }
 .iconbtn:active { transform: scale(0.94); }
@@ -46,6 +52,7 @@
   font-size: var(--text-xs); color: var(--text-muted);
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius-md);
+  flex-shrink: 0;
 }
 .kbtrigger:hover { border-color: var(--border-strong); color: var(--text); background: var(--surface-2); }
 kbd {
@@ -64,6 +71,7 @@ kbd {
   color: var(--success); background: var(--success-soft);
   border: 1px solid color-mix(in srgb, var(--success) 22%, transparent);
   cursor: default;
+  flex-shrink: 0;
 }
 .privacy__dot {
   width: 6px; height: 6px; border-radius: 50%; background: var(--success);
@@ -77,6 +85,7 @@ kbd {
 /* Language switcher */
 .lang-switcher {
   display: inline-flex; align-items: center;
+  flex-shrink: 0;
 }
 .lang-switcher select {
   height: 30px; padding-inline: 8px 24px;
@@ -90,7 +99,6 @@ kbd {
 }
 .lang-switcher select:hover { border-color: var(--border-strong); color: var(--text); background-color: var(--surface-2); }
 .lang-switcher select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-@media (max-width: 620px) { .lang-switcher { display: none; } }
 /* No Cmd key on a phone: collapse the palette trigger to its icon. */
 @media (max-width: 560px) {
   .kbtrigger span, .kbtrigger kbd { display: none; }
