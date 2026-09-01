@@ -55,16 +55,7 @@
           tool_wordCounter: 'Word counter', tool_caseConverter: 'Case converter', tool_readabilityChecker: 'Readability checker',
           tool_removeLineBreaks: 'Remove line breaks', tool_sortLines: 'Sort lines', tool_removeDuplicateLines: 'Remove duplicate lines',
           group_count: 'Count', group_convert: 'Convert', group_analyse: 'Analyse', group_cleanUp: 'Clean up',
-          pal_tools: 'Tools', pal_runOnText: 'Run on current text',
-          act_uppercase: 'UPPERCASE', act_lowercase: 'lowercase', act_titleCase: 'Title case', act_sentenceCase: 'Sentence case',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: 'Remove duplicate lines', act_reverseText: 'Reverse text',
-          act_removeLineBreaks: 'Remove line breaks',
-          act_collapseSpaces: 'Collapse extra spaces', act_smartQuotes: 'Smart quotes', act_straightQuotes: 'Straight quotes',
-          act_stripHtml: 'Strip HTML tags', act_removeInvisible: 'Remove invisible characters', act_makeUrlSlug: 'Make URL slug',
-          act_copy: 'Copy to clipboard', act_clear: 'Clear the editor',
-          act_removeEmptyLines: 'Remove empty lines', act_trimLines: 'Trim each line', act_sortLinesAZ: 'Sort lines A–Z',
+          pal_tools: 'Tools',
           toast_uppercase: 'Converted to uppercase', toast_lowercase: 'Converted to lowercase',
           toast_titleCase: 'Converted to title case', toast_sentenceCase: 'Converted to sentence case',
           toast_snake: 'Converted to snake_case', toast_camel: 'Converted to camelCase',
@@ -137,16 +128,7 @@
           tool_wordCounter: 'Contador de palabras', tool_caseConverter: 'Convertidor de mayúsculas', tool_readabilityChecker: 'Verificador de legibilidad',
           tool_removeLineBreaks: 'Eliminar saltos de línea', tool_sortLines: 'Ordenar líneas', tool_removeDuplicateLines: 'Eliminar líneas duplicadas',
           group_count: 'Contar', group_convert: 'Convertir', group_analyse: 'Analizar', group_cleanUp: 'Limpiar',
-          pal_tools: 'Herramientas', pal_runOnText: 'Ejecutar en el texto actual',
-          act_uppercase: 'MAYÚSCULAS', act_lowercase: 'minúsculas', act_titleCase: 'Mayúsculas de título', act_sentenceCase: 'Mayúsculas de oración',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: 'Eliminar líneas duplicadas', act_reverseText: 'Invertir texto',
-          act_removeLineBreaks: 'Eliminar saltos de línea',
-          act_collapseSpaces: 'Colapsar espacios dobles', act_smartQuotes: 'Comillas inteligentes', act_straightQuotes: 'Comillas rectas',
-          act_stripHtml: 'Eliminar etiquetas HTML', act_removeInvisible: 'Eliminar caracteres invisibles', act_makeUrlSlug: 'Crear slug de URL',
-          act_copy: 'Copiar al portapapeles', act_clear: 'Limpiar editor',
-          act_removeEmptyLines: 'Eliminar líneas vacías', act_trimLines: 'Recortar cada línea', act_sortLinesAZ: 'Ordenar líneas A–Z',
+          pal_tools: 'Herramientas',
           toast_uppercase: 'Convertido a mayúsculas', toast_lowercase: 'Convertido a minúsculas',
           toast_titleCase: 'Convertido a mayúsculas de título', toast_sentenceCase: 'Convertido a mayúsculas de oración',
           toast_snake: 'Convertido a snake_case', toast_camel: 'Convertido a camelCase',
@@ -219,16 +201,7 @@
           tool_wordCounter: 'ワードカウンター', tool_caseConverter: 'ケースコンバーター', tool_readabilityChecker: '可読性チェッカー',
           tool_removeLineBreaks: '改行を除去', tool_sortLines: '行を並べ替え', tool_removeDuplicateLines: '重複行を除去',
           group_count: 'カウント', group_convert: '変換', group_analyse: '分析', group_cleanUp: '整理',
-          pal_tools: 'ツール', pal_runOnText: '現在のテキストで実行',
-          act_uppercase: '大文字', act_lowercase: '小文字', act_titleCase: 'タイトルケース', act_sentenceCase: 'センテンスケース',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: '重複行を除去', act_reverseText: 'テキストを反転',
-          act_removeLineBreaks: '改行を除去',
-          act_collapseSpaces: '二重スペースを統合', act_smartQuotes: 'スマートクォート', act_straightQuotes: 'ストレートクォート',
-          act_stripHtml: 'HTMLタグを除去', act_removeInvisible: '不可視文字を除去', act_makeUrlSlug: 'URLスラッグを作成',
-          act_copy: 'クリップボードにコピー', act_clear: 'エディターをクリア',
-          act_removeEmptyLines: '空行を除去', act_trimLines: '各行をトリム', act_sortLinesAZ: '行をA–Z順にソート',
+          pal_tools: 'ツール',
           toast_uppercase: '大文字に変換しました', toast_lowercase: '小文字に変換しました',
           toast_titleCase: 'タイトルケースに変換しました', toast_sentenceCase: 'センテンスケースに変換しました',
           toast_snake: 'snake_caseに変換しました', toast_camel: 'camelCaseに変換しました',
@@ -301,16 +274,7 @@
           tool_wordCounter: 'Compteur de mots', tool_caseConverter: 'Convertisseur de casse', tool_readabilityChecker: 'Vérificateur de lisibilité',
           tool_removeLineBreaks: 'Supprimer les sauts de ligne', tool_sortLines: 'Trier les lignes', tool_removeDuplicateLines: 'Supprimer les lignes en double',
           group_count: 'Compter', group_convert: 'Convertir', group_analyse: 'Analyser', group_cleanUp: 'Nettoyer',
-          pal_tools: 'Outils', pal_runOnText: 'Exécuter sur le texte actuel',
-          act_uppercase: 'MAJUSCULES', act_lowercase: 'minuscules', act_titleCase: 'Majuscules de titre', act_sentenceCase: 'Majuscules de phrase',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: 'Supprimer les lignes en double', act_reverseText: 'Inverser le texte',
-          act_removeLineBreaks: 'Supprimer les sauts de ligne',
-          act_collapseSpaces: 'Réduire les doubles espaces', act_smartQuotes: 'Guillemets intelligents', act_straightQuotes: 'Guillemets droits',
-          act_stripHtml: 'Supprimer les balises HTML', act_removeInvisible: 'Supprimer les caractères invisibles', act_makeUrlSlug: 'Créer un slug URL',
-          act_copy: 'Copier dans le presse-papiers', act_clear: 'Effacer l\'éditeur',
-          act_removeEmptyLines: 'Supprimer les lignes vides', act_trimLines: 'Rogner chaque ligne', act_sortLinesAZ: 'Trier lignes A–Z',
+          pal_tools: 'Outils',
           toast_uppercase: 'Converti en majuscules', toast_lowercase: 'Converti en minuscules',
           toast_titleCase: 'Converti en majuscules de titre', toast_sentenceCase: 'Converti en majuscules de phrase',
           toast_snake: 'Converti en snake_case', toast_camel: 'Converti en camelCase',
@@ -383,16 +347,7 @@
           tool_wordCounter: 'Wortzähler', tool_caseConverter: 'Fallkonverter', tool_readabilityChecker: 'Lesbarkeitsprüfer',
           tool_removeLineBreaks: 'Zeilenumbrüche entfernen', tool_sortLines: 'Zeilen sortieren', tool_removeDuplicateLines: 'Doppelte Zeilen entfernen',
           group_count: 'Zählen', group_convert: 'Konvertieren', group_analyse: 'Analysieren', group_cleanUp: 'Aufräumen',
-          pal_tools: 'Tools', pal_runOnText: 'Auf aktuellem Text ausführen',
-          act_uppercase: 'GROSSBUCHSTABEN', act_lowercase: 'kleinbuchstaben', act_titleCase: 'Überschriftengroßschreibung', act_sentenceCase: 'Satzgroßschreibung',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: 'Doppelte Zeilen entfernen', act_reverseText: 'Text umkehren',
-          act_removeLineBreaks: 'Zeilenumbrüche entfernen',
-          act_collapseSpaces: 'Doppelte Leerzeichen kollabieren', act_smartQuotes: 'Anführungszeichen intelligent', act_straightQuotes: 'Anführungszeichen gerade',
-          act_stripHtml: 'HTML-Tags entfernen', act_removeInvisible: 'Unsichtbare Zeichen entfernen', act_makeUrlSlug: 'URL-Slug erstellen',
-          act_copy: 'In die Zwischenablage kopieren', act_clear: 'Editor leeren',
-          act_removeEmptyLines: 'Leere Zeilen entfernen', act_trimLines: 'Jede Zeile trimmen', act_sortLinesAZ: 'Zeilen A–Z sortieren',
+          pal_tools: 'Tools',
           toast_uppercase: 'In Großbuchstaben konvertiert', toast_lowercase: 'In Kleinbuchstaben konvertiert',
           toast_titleCase: 'In Überschriftengroßschreibung konvertiert', toast_sentenceCase: 'In Satzgroßschreibung konvertiert',
           toast_snake: 'In snake_case konvertiert', toast_camel: 'In camelCase konvertiert',
@@ -465,16 +420,7 @@
           tool_wordCounter: 'Contador de palavras', tool_caseConverter: 'Conversor de maiúsculas', tool_readabilityChecker: 'Verificador de legibilidade',
           tool_removeLineBreaks: 'Remover quebras de linha', tool_sortLines: 'Ordenar linhas', tool_removeDuplicateLines: 'Remover linhas duplicadas',
           group_count: 'Contar', group_convert: 'Converter', group_analyse: 'Analisar', group_cleanUp: 'Limpar',
-          pal_tools: 'Ferramentas', pal_runOnText: 'Executar no texto atual',
-          act_uppercase: 'MAIÚSCULAS', act_lowercase: 'minúsculas', act_titleCase: 'Maiúsculas de título', act_sentenceCase: 'Maiúsculas de frase',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: 'Remover linhas duplicadas', act_reverseText: 'Inverter texto',
-          act_removeLineBreaks: 'Remover quebras de linha',
-          act_collapseSpaces: 'Colapsar espaços duplos', act_smartQuotes: 'Aspas inteligentes', act_straightQuotes: 'Aspas retas',
-          act_stripHtml: 'Remover tags HTML', act_removeInvisible: 'Remover caracteres invisíveis', act_makeUrlSlug: 'Criar slug de URL',
-          act_copy: 'Copiar para a área de transferência', act_clear: 'Limpar editor',
-          act_removeEmptyLines: 'Remover linhas vazias', act_trimLines: 'Recortar cada linha', act_sortLinesAZ: 'Ordenar linhas A–Z',
+          pal_tools: 'Ferramentas',
           toast_uppercase: 'Convertido para maiúsculas', toast_lowercase: 'Convertido para minúsculas',
           toast_titleCase: 'Convertido para maiúsculas de título', toast_sentenceCase: 'Convertido para maiúsculas de frase',
           toast_snake: 'Convertido para snake_case', toast_camel: 'Convertido para camelCase',
@@ -547,16 +493,7 @@
           tool_wordCounter: '단어 수 세기', tool_caseConverter: '대소문자 변환기', tool_readabilityChecker: '가독성 검사기',
           tool_removeLineBreaks: '줄바꿈 제거', tool_sortLines: '줄 정렬', tool_removeDuplicateLines: '중복 줄 제거',
           group_count: '세기', group_convert: '변환', group_analyse: '분석', group_cleanUp: '정리',
-          pal_tools: '도구', pal_runOnText: '현재 텍스트에서 실행',
-          act_uppercase: '대문자', act_lowercase: '소문자', act_titleCase: '제목 대문자', act_sentenceCase: '문장 대문자',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: '중복 줄 제거', act_reverseText: '텍스트 반전',
-          act_removeLineBreaks: '줄바꿈 제거',
-          act_collapseSpaces: '이중 공백 통합', act_smartQuotes: '스마트 따옴표', act_straightQuotes: '직선 따옴표',
-          act_stripHtml: 'HTML 태그 제거', act_removeInvisible: '보이지 않는 문자 제거', act_makeUrlSlug: 'URL 슬러그 만들기',
-          act_copy: '클립보드에 복사', act_clear: '에디터 지우기',
-          act_removeEmptyLines: '빈 줄 제거', act_trimLines: '각 줄 트리밍', act_sortLinesAZ: '줄 A–Z 정렬',
+          pal_tools: '도구',
           toast_uppercase: '대문자로 변환됨', toast_lowercase: '소문자로 변환됨',
           toast_titleCase: '제목 대문자로 변환됨', toast_sentenceCase: '문장 대문자로 변환됨',
           toast_snake: 'snake_case로 변환됨', toast_camel: 'camelCase로 변환됨',
@@ -629,16 +566,7 @@
           tool_wordCounter: 'Contaparole', tool_caseConverter: 'Convertitore di maiuscole', tool_readabilityChecker: 'Controllore di leggibilità',
           tool_removeLineBreaks: 'Rimuovere interruzioni di riga', tool_sortLines: 'Ordinare righe', tool_removeDuplicateLines: 'Rimuovere righe duplicate',
           group_count: 'Conta', group_convert: 'Converti', group_analyse: 'Analizza', group_cleanUp: 'Pulisci',
-          pal_tools: 'Strumenti', pal_runOnText: 'Esegui sul testo attuale',
-          act_uppercase: 'MAIUSCOLE', act_lowercase: 'minuscole', act_titleCase: 'Maiuscole di titolo', act_sentenceCase: 'Maiuscole di frase',
-          act_snakeCase: 'snake_case', act_camelCase: 'camelCase', act_kebabCase: 'kebab-case', act_pascalCase: 'PascalCase',
-          act_constantCase: 'CONSTANT_CASE', act_dotCase: 'dot.case',
-          act_removeDuplicates: 'Rimuovere righe duplicate', act_reverseText: 'Invertire testo',
-          act_removeLineBreaks: 'Rimuovere interruzioni di riga',
-          act_collapseSpaces: 'Comprimere spazi doppi', act_smartQuotes: 'Virgolette intelligenti', act_straightQuotes: 'Virgolette diritte',
-          act_stripHtml: 'Rimuovere tag HTML', act_removeInvisible: 'Rimuovere caratteri invisibili', act_makeUrlSlug: 'Creare slug URL',
-          act_copy: 'Copia negli appunti', act_clear: 'Cancellare editor',
-          act_removeEmptyLines: 'Rimuovere righe vuote', act_trimLines: 'Tagliare ogni riga', act_sortLinesAZ: 'Ordinare righe A–Z',
+          pal_tools: 'Strumenti',
           toast_uppercase: 'Convertito in maiuscole', toast_lowercase: 'Convertito in minuscole',
           toast_titleCase: 'Convertito in maiuscole di titolo', toast_sentenceCase: 'Convertito in maiuscole di frase',
           toast_snake: 'Convertito in snake_case', toast_camel: 'Convertito in camelCase',
@@ -753,29 +681,7 @@
   }
 
   // Actions available from the palette on every page.
-  const ACTIONS = [
-    ['act_uppercase', () => setText(TK.CASES.upper(editor.value), _t('toast_uppercase'))],
-    ['act_lowercase', () => setText(TK.CASES.lower(editor.value), _t('toast_lowercase'))],
-    ['act_titleCase', () => setText(TK.CASES.title(editor.value, { style: 'ap' }), _t('toast_titleCase'))],
-    ['act_sentenceCase', () => setText(TK.CASES.sentence(editor.value, state.locale), _t('toast_sentenceCase'))],
-    ['act_camelCase', () => setText(TK.CASES.camel(editor.value), _t('toast_camel'))],
-    ['act_snakeCase', () => setText(TK.CASES.snake(editor.value), _t('toast_snake'))],
-    ['act_kebabCase', () => setText(TK.CASES.kebab(editor.value), _t('toast_kebab'))],
-    ['act_removeLineBreaks', () => setText(TK.LINES.removeBreaks(editor.value, { keepParagraphs: true }), _t('toast_lineBreaks'))],
-    ['act_removeEmptyLines', () => setText(TK.LINES.removeEmpty(editor.value), _t('toast_emptyLines'))],
-    ['act_trimLines', () => setText(TK.LINES.trimLines(editor.value), _t('toast_trimmed'))],
-    ['act_sortLinesAZ', () => setText(TK.LINES.sort(editor.value, {}), _t('toast_sorted'))],
-    ['act_removeDuplicates', () => { const r = TK.LINES.dedupe(editor.value, {}); setText(r.text, typeof _t('toast_dedupe') === 'function' ? _t('toast_dedupe')(r.removed) : `${r.removed} duplicates removed`); }],
-    ['act_reverseText', () => setText(TK.LINES.reverseText(editor.value, {}), _t('toast_reverse'))],
-    ['act_collapseSpaces', () => setText(TK.UTIL.collapseSpaces(editor.value), _t('toast_collapse'))],
-    ['act_smartQuotes', () => setText(TK.UTIL.smartQuotes(editor.value), _t('toast_smartQuotes'))],
-    ['act_straightQuotes', () => setText(TK.UTIL.straightQuotes(editor.value), _t('toast_straightQuotes'))],
-    ['act_stripHtml', () => setText(TK.UTIL.stripHtml(editor.value), _t('toast_stripHtml'))],
-    ['act_removeInvisible', () => setText(TK.UTIL.zeroWidth(editor.value), _t('toast_invisible'))],
-    ['act_makeUrlSlug', () => setText(TK.UTIL.slug(editor.value), _t('toast_slug'))],
-    ['act_copy', () => copy()],
-    ['act_clear', () => setText('', _t('cleared'))],
-  ];
+
 
   (() => {
     const pal = $('.pal'); if (!pal) return;
@@ -794,18 +700,13 @@
     function render() {
       const q = input.value.trim().toLowerCase();
       const tools = TOOLS.map(([labelKey, href, grpKey]) => ({ label: _t(labelKey), href, grp: _t(grpKey), s: score(_t(labelKey), q) })).filter((x) => x.s);
-      const acts = editor ? ACTIONS.map(([labelKey, fn]) => ({ label: _t(labelKey), fn, s: score(_t(labelKey), q) })).filter((x) => x.s) : [];
-      tools.sort((a, b) => b.s - a.s); acts.sort((a, b) => b.s - a.s);
-      items = [...tools, ...acts];
+      tools.sort((a, b) => b.s - a.s);
+      items = [...tools];
       if (!items.length) { list.innerHTML = `<p class="pal__none">${_t('noMatch')}</p>`; return; }
       let html = '';
       if (tools.length) {
         html += `<p class="pal__grp">${_t('pal_tools')}</p>`;
         tools.forEach((t) => { html += `<a class="pal__it" href="${t.href}" data-i="${items.indexOf(t)}">${ICON.doc}${esc(t.label)}<small>${t.grp}</small></a>`; });
-      }
-      if (acts.length) {
-        html += `<p class="pal__grp">${_t('pal_runOnText')}</p>`;
-        acts.forEach((a) => { html += `<button class="pal__it" type="button" data-i="${items.indexOf(a)}">${ICON.doc}${esc(a.label)}</button>`; });
       }
       list.innerHTML = html;
       sel = 0; mark();
@@ -818,7 +719,7 @@
     const run = (i) => {
       const it = items[i]; if (!it) return;
       close();
-      if (it.href) location.href = it.href; else it.fn();
+      if (it.href) location.href = it.href;
     };
     const open = () => { pal.dataset.open = '1'; input.value = ''; render(); setTimeout(() => input.focus(), 40); };
     const close = () => { pal.dataset.open = ''; };
