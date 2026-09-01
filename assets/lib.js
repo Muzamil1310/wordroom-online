@@ -228,7 +228,6 @@ const TK = (() => {
   // four letters — except as the first or last word. Every competitor gets this wrong.
   const MINOR_AP = new Set(['a','an','and','at','but','by','for','in','nor','of','on','or','so','the','to','up','yet','as','if','per','via']);
   const MINOR_CHICAGO = new Set([...MINOR_AP, 'from','into','like','over','with','upon','than','that','when','once','onto','down','off','out','past','till','unto']);
-  const ALWAYS_LOWER_MLA = MINOR_CHICAGO;
 
   // A token the writer capitalised on purpose: an acronym (SEO, NASA, PDF) or an
   // internal capital (iPhone, McDonald, JavaScript). Preserving these is the single
@@ -250,7 +249,7 @@ const TK = (() => {
   }
 
   function titleCase(text, style = 'ap') {
-    const minor = style === 'chicago' ? MINOR_CHICAGO : style === 'mla' ? ALWAYS_LOWER_MLA : MINOR_AP;
+    const minor = style === 'chicago' ? MINOR_CHICAGO : MINOR_AP;
     // Split per line so each title or heading gets its own first/last word.
     return text.split(/(\n)/).map((chunk) => {
       if (chunk === '\n') return chunk;

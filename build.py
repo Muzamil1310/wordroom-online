@@ -36,7 +36,7 @@ TOOLS = [
     dict(slug="case-converter", nav="Case converter", icon="case", group="Convert",
          h1="Case converter", eyebrow="Convert",
          title="Case Converter — Title Case, Sentence Case & 12 More",
-         desc="Convert text between title case, sentence case, UPPERCASE, camelCase, snake_case and more. Title case follows real AP, Chicago and MLA rules instead of capitalising every word.",
+         desc="Convert text between title case, sentence case, UPPERCASE, camelCase, snake_case and more. Title case follows real AP and Chicago rules instead of capitalising every word.",
          lede="Thirteen conversions, with title case that follows actual style-guide rules rather than capitalising everything.",
          ph="Paste the text you want to convert. Try a headline with short prepositions in it."),
     dict(slug="readability-checker", nav="Readability checker", icon="gauge", group="Analyse",
@@ -106,7 +106,7 @@ REFS = {
 "case-converter": [
  ("Title case is a style decision, not a rule", """
 <p>Most case converters implement title case as "capitalise the first letter of every word." No style guide actually says that. Every major guide lowercases certain short words unless they fall first or last in the title, and they disagree about which words qualify.</p>
-<p>AP style lowercases articles, coordinating conjunctions and prepositions of three letters or fewer. Chicago lowercases all prepositions regardless of length, along with articles and coordinating conjunctions. MLA follows a similar pattern to Chicago. The practical result is that the same headline is capitalised three different ways depending on which guide you are writing for.</p>
+<p>AP style lowercases articles, coordinating conjunctions and prepositions of three letters or fewer. Chicago lowercases all prepositions regardless of length, along with articles and coordinating conjunctions. The practical result is that the same headline is capitalised differently depending on which guide you are writing for.</p>
 <table><thead><tr><th>Style</th><th>Result</th></tr></thead><tbody>
 <tr><td>Naive converter</td><td>The Guide To SEO For Small Businesses</td></tr>
 <tr><td>AP</td><td>The Guide to SEO for Small Businesses</td></tr>
@@ -234,7 +234,7 @@ FAQS = {
  ("What is the difference between title case and capitalise each word?",
   "Capitalise Each Word capitalises everything. Title case follows a style guide, which lowercases short articles, conjunctions and prepositions unless they are the first or last word. \"The Guide to SEO for Small Businesses\" is title case; \"The Guide To SEO For Small Businesses\" is not."),
  ("Which title case style should I use?",
-  "AP style for journalism, press releases and most web headlines. Chicago for books, academic writing and formal publishing. MLA for humanities papers. If nobody has told you, AP is the safer default for online content."),
+  "AP style for journalism, press releases and most web headlines. Chicago for books, academic writing and formal publishing. If nobody has told you, AP is the safer default for online content."),
  ("Will sentence case break my proper nouns?",
   "It can. Sentence case lowercases the text before recapitalising each sentence start, so names of people and places lose their capitals. No offline tool can reliably identify proper nouns without a language model, and running one would mean sending your text to a server. Check names afterwards."),
  ("Does it handle hyphenated words correctly?",
