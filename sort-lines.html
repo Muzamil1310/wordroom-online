@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sort Lines Alphabetically — Online Line Sorter | WordRoom</title>
+<meta name="description" content="Sort any list of lines alphabetically, by length, in reverse or shuffled. Supports natural number ordering and locale-aware alphabetising for non-English lists.">
+<link rel="canonical" href="https://wordroomonline.com/sort-lines">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines.html">
+<meta property="og:title" content="Sort Lines Alphabetically — Online Line Sorter">
+<meta property="og:description" content="Sort any list of lines alphabetically, by length, in reverse or shuffled. Supports natural number ordering and locale-aware alphabetising for non-English lists.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Sort lines", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Sort any list of lines alphabetically, by length, in reverse or shuffled. Supports natural number ordering and locale-aware alphabetising for non-English lists.", "url": "https://wordroomonline.com/sort-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why did my list sort with capitals first?", "acceptedAnswer": {"@type": "Answer", "text": "That happens with tools that compare raw character codes, where every uppercase letter precedes every lowercase one. This tool uses locale-aware collation and ignores case by default, so you get the ordering a person would expect. Switch on Case sensitive if you need the strict version."}}, {"@type": "Question", "name": "Why does item 10 come before item 2?", "acceptedAnswer": {"@type": "Answer", "text": "Compared as text, \"1\" is less than \"2\", so \"item 10\" sorts first. Turn on Natural number order to compare the numeric runs as numbers, which gives item 1, item 2, item 10. It is on by default."}}, {"@type": "Question", "name": "Is the shuffle actually random?", "acceptedAnswer": {"@type": "Answer", "text": "It uses a Fisher-Yates shuffle, where every possible ordering is equally likely. Shuffling by passing a random comparator to a sort function is a common shortcut and produces measurably biased results."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Sort lines", "item": "https://wordroomonline.com/sort-lines"}]}]}</script>
+</head><body data-tool="sort-lines" lang="en">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/index.html"><img width="22" height="22" src="assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacy</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>English</option>
+    <option value="/es/sort-lines.html">Español</option><option value="/ja/sort-lines.html">日本語</option><option value="/fr/sort-lines.html">Français</option><option value="/de/sort-lines.html">Deutsch</option><option value="/pt/sort-lines.html">Português</option><option value="/ko/sort-lines.html">한국어</option><option value="/it/sort-lines.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Switch theme"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Close menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Count</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Word counter</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Convert</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Case converter</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analyse</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Readability checker</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Clean up</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Remove line breaks</span></a>
+    <a class="rail__link" href="sort-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Sort lines</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Remove duplicate lines</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Clean up</p>
+  <h1>Sort lines</h1>
+  <p>Alphabetise, sort by length, reverse or shuffle — with natural number ordering and locale-aware collation.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="One item per line.
+Paste your list here.
+It sorts as you go."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>Alphabetical is not one thing</h2><p>Sorting looks like a solved problem until you sort real data. A naive sort compares code points, which puts every capital letter before every lowercase one — so "Zebra" sorts before "apple", and a list of names comes out in an order no human would call alphabetical.</p>
+<p>This tool uses locale-aware collation instead, which is the same machinery your operating system uses to sort a file listing. Accented characters sort next to their base letters rather than at the end, and case is ignored by default because that is what people mean by alphabetical.</p>
+<p>Natural number ordering is the other common surprise. Compared as text, "item 10" sorts before "item 2", because "1" is less than "2". Natural ordering compares the numeric runs as numbers, giving item 1, item 2, item 10. Leave it on for anything with numbers in it.</p></section><section><h2>Sort modes</h2><ul>
+<li><strong>Alphabetical</strong> — locale-aware, case-insensitive by default. Turn on Descending for Z to A.</li>
+<li><strong>By line length</strong> — shortest first, ties broken alphabetically. Useful for spotting outliers in a list of keywords or headlines.</li>
+<li><strong>Reverse current order</strong> — flips the list without sorting it, which is what you usually want for a chronological log.</li>
+<li><strong>Shuffle</strong> — a Fisher–Yates shuffle, so every ordering is equally likely. Naive shuffles using a random comparator are biased.</li>
+</ul>
+<p>Empty lines are dropped by default, since a sorted list with a block of blanks at one end is rarely what anyone wants. Switch it off if the blank lines carry meaning.</p></section><section><h2>Common questions</h2><details class="faq"><summary>Why did my list sort with capitals first?</summary><div><p>That happens with tools that compare raw character codes, where every uppercase letter precedes every lowercase one. This tool uses locale-aware collation and ignores case by default, so you get the ordering a person would expect. Switch on Case sensitive if you need the strict version.</p></div></details><details class="faq"><summary>Why does item 10 come before item 2?</summary><div><p>Compared as text, &quot;1&quot; is less than &quot;2&quot;, so &quot;item 10&quot; sorts first. Turn on Natural number order to compare the numeric runs as numbers, which gives item 1, item 2, item 10. It is on by default.</p></div></details><details class="faq"><summary>Is the shuffle actually random?</summary><div><p>It uses a Fisher-Yates shuffle, where every possible ordering is equally likely. Shuffling by passing a random comparator to a sort function is a common shortcut and produces measurably biased results.</p></div></details></section><section><h2>Related tools</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Word counter</strong><span>Live counts as you type, with academic exclusions and correct se…</span></a><a class="relcard" href="case-converter.html"><strong>Case converter</strong><span>Thirteen conversions, with title case that follows actual style-…</span></a><a class="relcard" href="readability-checker.html"><strong>Readability checker</strong><span>Six formulas, plus the specific sentences holding your score bac…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Search tools…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Tools</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="assets/lib.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>重複行を除去 — 重複を見つけて削除 | WordRoom</title>
+<meta name="description" content="あらゆるリストから重複行を見つけ出し削除。大文字小文字と周囲の空白がカウントされるかどうかを選択でき、削除前にどの値が重複しているかを確認できます。">
+<link rel="canonical" href="https://wordroomonline.com/ja/remove-duplicate-lines">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<meta property="og:title" content="重複行を除去 — 重複を見つけて削除">
+<meta property="og:description" content="あらゆるリストから重複行を見つけ出し削除。大文字小文字と周囲の空白がカウントされるかどうかを選択でき、削除前にどの値が重複しているかを確認できます。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "\u91cd\u8907\u884c\u3092\u9664\u53bb", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "\u3042\u3089\u3086\u308b\u30ea\u30b9\u30c8\u304b\u3089\u91cd\u8907\u884c\u3092\u898b\u3064\u3051\u51fa\u3057\u524a\u9664\u3002\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u3068\u5468\u56f2\u306e\u7a7a\u767d\u304c\u30ab\u30a6\u30f3\u30c8\u3055\u308c\u308b\u304b\u3069\u3046\u304b\u3092\u9078\u629e\u3067\u304d\u3001\u524a\u9664\u524d\u306b\u3069\u306e\u5024\u304c\u91cd\u8907\u3057\u3066\u3044\u308b\u304b\u3092\u78ba\u8a8d\u3067\u304d\u307e\u3059\u3002", "url": "https://wordroomonline.com/ja/remove-duplicate-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u6700\u521d\u306e\u30b3\u30d4\u30fc\u3068\u6700\u5f8c\u306e\u30b3\u30d4\u30fc\u306e\u3069\u3061\u3089\u3092\u4fdd\u6301\u3057\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u6700\u521d\u306e\u30b3\u30d4\u30fc\u3092\u4fdd\u6301\u3057\u3001\u6b8b\u308a\u306e\u884c\u306e\u9806\u5e8f\u306f\u4fdd\u6301\u3055\u308c\u307e\u3059\u3002\u30ea\u30b9\u30c8\u306f\u6697\u9ed9\u7684\u306b\u518d\u30bd\u30fc\u30c8\u3055\u308c\u307e\u305b\u3093\u3002\u30bd\u30fc\u30c8\u3082\u5fc5\u8981\u306a\u3089\u3001\u305d\u308c\u306f\u5225\u306e\u64cd\u4f5c\u3067\u3059\u3002"}}, {"@type": "Question", "name": "\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u306e\u307f\u304c\u7570\u306a\u308b\u884c\u306f\u91cd\u8907\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u30c7\u30d5\u30a9\u30eb\u30c8\u3067\u306f\u306f\u3044\u3002\u3053\u308c\u306f\u901a\u5e38\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3068\u30ad\u30fc\u30ef\u30fc\u30c9\u3067\u6b63\u3057\u3044\u3067\u3059\u3002\u30d1\u30b9\u30ef\u30fc\u30c9\u3001ID\u3001\u30b3\u30fc\u30c9\u306a\u3069\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u304c\u610f\u5473\u3092\u6301\u3064\u5834\u5408\u306f\u300c\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u3092\u533a\u5225\u300d\u3092\u30aa\u30f3\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002"}}, {"@type": "Question", "name": "\u524a\u9664\u524d\u306b\u91cd\u8907\u3092\u78ba\u8a8d\u3067\u304d\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u306f\u3044\u3002\u30d1\u30cd\u30eb\u306f\u5165\u529b\u3057\u306a\u304c\u3089\u7e70\u308a\u8fd4\u3055\u308c\u308b\u884c\u6570\u3068\u6700\u3082\u7e70\u308a\u8fd4\u3055\u308c\u308b\u5024\u3092\u30ea\u30b9\u30c8\u3057\u3001\u300c\u91cd\u8907\u306e\u307f\u3092\u4fdd\u6301\u300d\u306f\u64cd\u4f5c\u3092\u53cd\u8ee2\u3055\u305b\u3066\u3001\u4f55\u304c\u7e70\u308a\u8fd4\u3055\u308c\u3066\u3044\u308b\u304b\u3092\u6b63\u78ba\u306b\u78ba\u8a8d\u3067\u304d\u307e\u3059\u3002"}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "\u91cd\u8907\u884c\u3092\u9664\u53bb", "item": "https://wordroomonline.com/ja/remove-duplicate-lines"}]}]}</script>
+</head><body data-tool="remove-duplicate-lines" lang="ja">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ja/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>日本語</option>
+    <option value="/remove-duplicate-lines.html">English</option><option value="/es/remove-duplicate-lines.html">Español</option><option value="/fr/remove-duplicate-lines.html">Français</option><option value="/de/remove-duplicate-lines.html">Deutsch</option><option value="/pt/remove-duplicate-lines.html">Português</option><option value="/ko/remove-duplicate-lines.html">한국어</option><option value="/it/remove-duplicate-lines.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="検索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>検索</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="テーマ切替"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="メニューを閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">カウント</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>ワードカウンター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">変換</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">分析</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">整理</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>改行を除去</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">整理</p>
+  <h1>重複行を除去</h1>
+  <p>削除前に重複を確認。大文字小文字と空白が違いとしてカウントされるかどうかを制御可能。</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="重複を含むリストを貼り付けてください。メールアドレス、キーワード、IDなど。"></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>何が重複とみなされるか</h2><p>重複削除は「同じ」が何を意味するかを決めて初めて適切に定義され、デフォルトはアルゴリズムよりも重要です。3つの質問が答えを決めます。</p>
+<p><strong>大文字小文字が重要ですか？</strong> メールアドレスの場合、いいえ — ローカル部分は技術的に大文字区別ですが、実際には決してそのように扱われないため、<code>Hello@example.com</code>と<code>hello@example.com</code>は同じアドレスです。パスワードやIDの場合は大文字小文字が絶対に重要です。デフォルトは大文字区別なしです。</p>
+<p><strong>周囲の空白が重要ですか？</strong> ほぼ重要ではありません。トレーリングスペースがある行はない行と同じ値で、スプレッドシートからコピーされたリストにはそれらが一杯です。デフォルトは比較前にトリムすることです。</p>
+<p><strong>どのコピーが残りますか？</strong> このツールは最初の出現を保持し、残りの元の順序を保持するため、リストは暗黙的に再ソートされません。ソートも必要なら、それは別の操作です。</p></section><section><h2>削除前にインスペクト</h2><p>ほとんどの重複削除ツールのデフォルトの動作は、短いリストを返して何が失われたかを何も言わないことです。これは入力を信頼している場合には問題ありませんが、信頼していない場合にはリスクがあります — 冒頭の余分なスペースや予期しない大文字小文字の違いは、ツールが必要だったものを削除したか、重複だと思っていたものを保持したことを意味する可能性があります。</p>
+<p>パネルは適用前に、何行が削除されたか、いくつの一意の値が繰り返されたか、どの値が最も繰り返されたかを表示します。「重複のみを保持」は操作を反転させて、正確に何が繰り返されているかを確認できるようにします — メーリングリストの監査やキーワードセットでの偶然のコピペを検出するのに便利です。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>最初のコピーと最後のコピーのどちらを保持しますか？</summary><div><p>最初のコピーを保持し、残りの行の順序は保持されます。リストは暗黙的に再ソートされません。ソートも必要なら、それは別の操作です。</p></div></details><details class="faq"><summary>大文字小文字のみが異なる行は重複ですか？</summary><div><p>デフォルトでははい。これは通常メールアドレスとキーワードで正しいです。パスワード、ID、コードなど大文字小文字が意味を持つ場合は「大文字小文字を区別」をオンにしてください。</p></div></details><details class="faq"><summary>削除前に重複を確認できますか？</summary><div><p>はい。パネルは入力しながら繰り返される行数と最も繰り返される値をリストし、「重複のみを保持」は操作を反転させて、何が繰り返されているかを正確に確認できます。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。…</span></a><a class="relcard" href="case-converter.html"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="readability-checker.html"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="ツールを検索…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

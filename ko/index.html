@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>브라우저에서 작동하는 프라이버시 중심 텍스트 및 글쓰기 도구 | WordRoom</title>
+<meta name="description" content="키보드 중심의 텍스트 도구 작업 공간 — 단어 수 세기, 대소문자 변환, 가독성 검사, 정리 도구. 모든 것이 브라우저에서 로컬로 작동합니다. 업로드 불필요, 계정 불필요, 광고 없음.">
+<link rel="canonical" href="https://wordroomonline.com/ko/">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/index.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/index.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/index.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/index.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/index.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/index.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/index.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/index.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/index.html">
+<meta property="og:title" content="브라우저에서 작동하는 프라이버시 중심 텍스트 및 글쓰기 도구">
+<meta property="og:description" content="키보드 중심의 텍스트 도구 작업 공간 — 단어 수 세기, 대소문자 변환, 가독성 검사, 정리 도구. 모든 것이 브라우저에서 로컬로 작동합니다. 업로드 불필요, 계정 불필요, 광고 없음.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "WordRoom", "url": "https://wordroomonline.com/ko/", "description": "\ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c \uc644\uc804\ud788 \uc791\ub3d9\ud558\ub294 \ud504\ub77c\uc774\ubc84\uc2dc \uc911\uc2ec \ud0a4\ubcf4\ub4dc \uae30\ubc18 \ud14d\uc2a4\ud2b8 \ubc0f \uae00\uc4f0\uae30 \ub3c4\uad6c \uc791\uc5c5 \uacf5\uac04."}</script>
+</head><body data-tool="home" lang="ko">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="메뉴 열기"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ko/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>개인정보 보호</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>한국어</option>
+    <option value="/index.html">English</option><option value="/es/index.html">Español</option><option value="/ja/index.html">日本語</option><option value="/fr/index.html">Français</option><option value="/de/index.html">Deutsch</option><option value="/pt/index.html">Português</option><option value="/it/index.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="검색"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="테마 전환"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="메뉴 닫기"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">세기</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>단어 수 세기</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">변환</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>대소문자 변환기</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">분석</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>가독성 검사기</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">정리</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>줄 바꿈 제거</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>줄 정렬</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>중복 줄 제거</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="hero">
+  <p class="eyebrow">랜딩 페이지 60개 대신 작업 공간 1개</p>
+  <h1>텍스트를 <em>텍스트</em>로 유지하는 도구.</h1>
+  <p>공유 에디터 하나. 모든 도구가 여기서 작동합니다. 입력한 내용이 브라우저를 벗어나지 않습니다. 업로드 불필요, 계정 불필요, 광고 없음.</p>
+  <div class="herobtns">
+    <a class="btn" href="word-counter.html">작업 공간 열기</a>
+    <button class="btn btn--ghost" data-pal-open type="button">도구 검색 <kbd>⌘K</kbd></button>
+  </div>
+</div>
+
+<div class="refs" style="max-width:var(--content-wide);margin-top:var(--space-12)">
+  <section><h2>모든 도구</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>단어 수 세기</strong><span>실시간 카운트, 학술 제외 기능 및 인도어/CJK 스크립트의 올바른 세그멘테이션 지원.</span></a><a class="relcard" href="case-converter.html"><strong>대소문자 변환기</strong><span>13가지 변환. 모든 것을 대문자로 만들지 않고 실제 스타일 가이드 규칙을 따르는 제목 대문자.</span></a><a class="relcard" href="readability-checker.html"><strong>가독성 검사기</strong><span>6개의 공식과 점수를 끌어내리고 있는 구체적인 문장 — 숫자만이 아닙니다.</span></a><a class="relcard" href="remove-line-breaks.html"><strong>줄 바꿈 제거</strong><span>PDF 열이나 이메일 클라이언트로 인해 깨진 줄을 실제 단락 구분을 유지하면서 연결합니다.</span></a><a class="relcard" href="sort-lines.html"><strong>줄 정렬</strong><span>알파벳순, 길이순, 역순 또는 셔플 — 자연수 정렬 및 로케일 인식 정렬.</span></a><a class="relcard" href="remove-duplicate-lines.html"><strong>중복 줄 제거</strong><span>삭제 전에 반복을 확인. 대소문자와 공백이 차이로 카운트되는지를 제어 가능.</span></a></div></section>
+  <section>
+    <h2>여기가 다른 점</h2>
+    <h3>하나의 버퍼, 모든 도구</h3>
+    <p>다른 사이트에서는 모든 페이지에서 텍스트를 다시 붙여야 합니다. 여기서는 텍스트가 여러분과 함께합니다: 다시 붙이지 않고도 세고, 정리하고, 변환하고, 평가하세요. ⌘K를 눌러 기존 텍스트에 변환을 적용하세요.</p>
+    <h3>프라이버시가 제품이지 정책 페이지가 아닙니다</h3>
+    <p>모든 계산이 브라우저에서 이루어집니다. 텍스트를 수신하는 엔드포인트가 없어 유출할 것도, 기록할 것도, 파일 크기 제한도 없습니다. 네트워크 탭을 열고 입력하는 동안 조용히 유지되는 것을 확인하세요.</p>
+    <h3>정확합니다, 대충 정확한 것이 아닙니다</h3>
+    <p>단어 수는 Unicode 세그멘테이션 규칙을 따르므로, 텔루구어, 힌디어, 중국어가 공백으로 분할되지 않고 올바르게 계산됩니다. 제목 대문자는 모든 단어를 대문자로 만들지 않고 실제 AP와 Chicago 규칙을 따릅니다. 학술 모드는 평가자가 제외하는 것을 제외합니다.</p>
+    <h3>키보드를 위해 구축</h3>
+    <p>모든 작업에 키보드 경로가 있습니다. ⌘K로 팔레트를 열고, /로 검색에 포커스하고, ⌘⇧F로 포커스 모드를 활성화합니다. 닫을 수 없는 모달도, 결과 전의 중간 화면도 없습니다.</p>
+  </section>
+</div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="도구 검색…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> 도구</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>行をアルファベット順にソート — オンライン行ソーター | WordRoom</title>
+<meta name="description" content="行のリストをアルファベット順、長さ順、逆順、シャッフルでソート。自然数の順序付けと、非英語リストのロケール対応アルファベット順をサポート。">
+<link rel="canonical" href="https://wordroomonline.com/ja/sort-lines">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines.html">
+<meta property="og:title" content="行をアルファベット順にソート — オンライン行ソーター">
+<meta property="og:description" content="行のリストをアルファベット順、長さ順、逆順、シャッフルでソート。自然数の順序付けと、非英語リストのロケール対応アルファベット順をサポート。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "\u884c\u3092\u4e26\u3079\u66ff\u3048", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "\u884c\u306e\u30ea\u30b9\u30c8\u3092\u30a2\u30eb\u30d5\u30a1\u30d9\u30c3\u30c8\u9806\u3001\u9577\u3055\u9806\u3001\u9006\u9806\u3001\u30b7\u30e3\u30c3\u30d5\u30eb\u3067\u30bd\u30fc\u30c8\u3002\u81ea\u7136\u6570\u306e\u9806\u5e8f\u4ed8\u3051\u3068\u3001\u975e\u82f1\u8a9e\u30ea\u30b9\u30c8\u306e\u30ed\u30b1\u30fc\u30eb\u5bfe\u5fdc\u30a2\u30eb\u30d5\u30a1\u30d9\u30c3\u30c8\u9806\u3092\u30b5\u30dd\u30fc\u30c8\u3002", "url": "https://wordroomonline.com/ja/sort-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u306a\u305c\u79c1\u306e\u30ea\u30b9\u30c8\u304c\u5927\u6587\u5b57\u304c\u5148\u306b\u4e26\u3073\u307e\u3057\u305f\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u3053\u308c\u306f\u6587\u5b57\u30b3\u30fc\u30c9\u3092\u305d\u306e\u307e\u307e\u6bd4\u8f03\u3059\u308b\u30c4\u30fc\u30eb\u3067\u767a\u751f\u3057\u307e\u3059\u3002\u3059\u3079\u3066\u306e\u5927\u6587\u5b57\u304c\u5c0f\u6587\u5b57\u306e\u524d\u306b\u6765\u307e\u3059\u3002\u3053\u306e\u30c4\u30fc\u30eb\u306f\u30ed\u30b1\u30fc\u30eb\u5bfe\u5fdc\u306e\u7167\u5408\u3092\u4f7f\u7528\u3057\u3001\u30c7\u30d5\u30a9\u30eb\u30c8\u3067\u306f\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u3092\u7121\u8996\u3059\u308b\u305f\u3081\u3001\u4eba\u304c\u671f\u5f85\u3059\u308b\u9806\u5e8f\u306b\u306a\u308a\u307e\u3059\u3002\u53b3\u5bc6\u306a\u30d0\u30fc\u30b8\u30e7\u30f3\u304c\u5fc5\u8981\u306a\u5834\u5408\u306f\u300c\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u3092\u533a\u5225\u300d\u3092\u30aa\u30f3\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002"}}, {"@type": "Question", "name": "\u306a\u305c\u30a2\u30a4\u30c6\u30e010\u304c\u30a2\u30a4\u30c6\u30e02\u306e\u524d\u306b\u6765\u308b\u306e\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u30c6\u30ad\u30b9\u30c8\u3068\u3057\u3066\u6bd4\u8f03\u3059\u308b\u3068\"1\"\u306f\"2\"\u3088\u308a\u5c0f\u3055\u3044\u305f\u3081\u3001\"\u30a2\u30a4\u30c6\u30e010\"\u304c\u5148\u306b\u4e26\u3073\u307e\u3059\u3002\u300c\u81ea\u7136\u6570\u9806\u5e8f\u300d\u3092\u30aa\u30f3\u306b\u3059\u308b\u3068\u6570\u5024\u90e8\u5206\u304c\u6570\u5024\u3068\u3057\u3066\u6bd4\u8f03\u3055\u308c\u3001\u30a2\u30a4\u30c6\u30e01\u3001\u30a2\u30a4\u30c6\u30e02\u3001\u30a2\u30a4\u30c6\u30e010\u306e\u9806\u306b\u306a\u308a\u307e\u3059\u3002\u30c7\u30d5\u30a9\u30eb\u30c8\u3067\u30aa\u30f3\u3067\u3059\u3002"}}, {"@type": "Question", "name": "\u30b7\u30e3\u30c3\u30d5\u30eb\u306f\u672c\u5f53\u306b\u30e9\u30f3\u30c0\u30e0\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "Fisher-Yates\u30b7\u30e3\u30c3\u30d5\u30eb\u3092\u4f7f\u7528\u3057\u3066\u304a\u308a\u3001\u3059\u3079\u3066\u306e\u53ef\u80fd\u306a\u9806\u5e8f\u304c\u7b49\u3057\u3044\u78ba\u7387\u3067\u767a\u751f\u3057\u307e\u3059\u3002\u30e9\u30f3\u30c0\u30e0\u306a\u6bd4\u8f03\u95a2\u6570\u3092\u30bd\u30fc\u30c8\u95a2\u6570\u306b\u6e21\u3059\u30b7\u30e3\u30c3\u30d5\u30eb\u306f\u4e00\u822c\u7684\u306a\u6377\u5f84\u3067\u3001\u504f\u308a\u306e\u3042\u308b\u7d50\u679c\u3092\u751f\u307f\u51fa\u3057\u307e\u3059\u3002"}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "\u884c\u3092\u4e26\u3079\u66ff\u3048", "item": "https://wordroomonline.com/ja/sort-lines"}]}]}</script>
+</head><body data-tool="sort-lines" lang="ja">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ja/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>日本語</option>
+    <option value="/sort-lines.html">English</option><option value="/es/sort-lines.html">Español</option><option value="/fr/sort-lines.html">Français</option><option value="/de/sort-lines.html">Deutsch</option><option value="/pt/sort-lines.html">Português</option><option value="/ko/sort-lines.html">한국어</option><option value="/it/sort-lines.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="検索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>検索</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="テーマ切替"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="メニューを閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">カウント</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>ワードカウンター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">変換</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">分析</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">整理</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>改行を除去</span></a>
+    <a class="rail__link" href="sort-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">整理</p>
+  <h1>行を並べ替え</h1>
+  <p>アルファベット順、長さ順、逆順、シャッフル — 自然数の順序付けとロケール対応の照合順序。</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="1行に1つの項目。
+リストをここに貼り付けてください。
+入力的同时にソートされます。"></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>アルファベット順は一つではない</h2><p>ソートは実際のデータをソートするまで解決済み問題のように見えます。単純なソートはコードポイントを比較し、すべての大文字をすべての小文字の前に配置します — そのため「Zebra」は「apple」の前にソートされ、名前のリストは人間がアルファベット順と呼ぶことのない順序になります。</p>
+<p>このツールは代わりにロケール対応の照合を使用し、これはオペレーティングシステムがファイルリストをソートするために使用するのと同じメカニズムです。アクセント付き文字は末尾ではなくベース文字の隣にソートされ、大文字小文字はデフォルトで無視されます。それがアルファベット順の意味するところだからです。</p>
+<p>自然数の順序付けはもう一つの一般的な驚きです。テキストとして比較すると「アイテム10」は「アイテム2」の前にソートされます。「1」は「2」より小さいためです。自然数の順序付けは数値部分を数値として比較し、アイテム1、アイテム2、アイテム10となります。数字を含むものにはオンのままにしておいてください。</p></section><section><h2>ソートモード</h2><ul>
+<li><strong>アルファベット順</strong> — ロケール対応、デフォルトで大文字小文字を無視。降順でZからAに変更可能。</li>
+<li><strong>行長順</strong> — 最短が最初、同率はアルファベット順。キーワードや見出しのリストで外れ値を特定するのに便利。</li>
+<li><strong>現在の順序を反転</strong> — ソートせずにリストを反転。時系列ログに通常必要なもの。</li>
+<li><strong>シャッフル</strong> — Fisher–Yatesシャッフルで、すべての順序が等しい確率。ランダムな比較関数を使用する単純なシャッフルは偏っています。</li>
+</ul>
+<p>空行はデフォルトで削除されます。片端に空白のブロックがあるソートされたリストは誰も望まないものだからです。空行に意味がある場合はオフにしてください。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>なぜ私のリストが大文字が先に並びましたか？</summary><div><p>これは文字コードをそのまま比較するツールで発生します。すべての大文字が小文字の前に来ます。このツールはロケール対応の照合を使用し、デフォルトでは大文字小文字を無視するため、人が期待する順序になります。厳密なバージョンが必要な場合は「大文字小文字を区別」をオンにしてください。</p></div></details><details class="faq"><summary>なぜアイテム10がアイテム2の前に来るのですか？</summary><div><p>テキストとして比較すると&quot;1&quot;は&quot;2&quot;より小さいため、&quot;アイテム10&quot;が先に並びます。「自然数順序」をオンにすると数値部分が数値として比較され、アイテム1、アイテム2、アイテム10の順になります。デフォルトでオンです。</p></div></details><details class="faq"><summary>シャッフルは本当にランダムですか？</summary><div><p>Fisher-Yatesシャッフルを使用しており、すべての可能な順序が等しい確率で発生します。ランダムな比較関数をソート関数に渡すシャッフルは一般的な捷径で、偏りのある結果を生み出します。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。…</span></a><a class="relcard" href="case-converter.html"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="readability-checker.html"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="ツールを検索…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

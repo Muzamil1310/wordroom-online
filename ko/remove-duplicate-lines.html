@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>중복 줄 제거 — 반복 찾아서 삭제 | WordRoom</title>
+<meta name="description" content="모든 목록에서 중복 줄을 찾아 제거합니다. 대소문자와 주변 공백이 카운트되는지 선택하고, 삭제하기 전에 어떤 값이 반복되는지 확인할 수 있습니다.">
+<link rel="canonical" href="https://wordroomonline.com/ko/remove-duplicate-lines">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<meta property="og:title" content="중복 줄 제거 — 반복 찾아서 삭제">
+<meta property="og:description" content="모든 목록에서 중복 줄을 찾아 제거합니다. 대소문자와 주변 공백이 카운트되는지 선택하고, 삭제하기 전에 어떤 값이 반복되는지 확인할 수 있습니다.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "\uc911\ubcf5 \uc904 \uc81c\uac70", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "\ubaa8\ub4e0 \ubaa9\ub85d\uc5d0\uc11c \uc911\ubcf5 \uc904\uc744 \ucc3e\uc544 \uc81c\uac70\ud569\ub2c8\ub2e4. \ub300\uc18c\ubb38\uc790\uc640 \uc8fc\ubcc0 \uacf5\ubc31\uc774 \uce74\uc6b4\ud2b8\ub418\ub294\uc9c0 \uc120\ud0dd\ud558\uace0, \uc0ad\uc81c\ud558\uae30 \uc804\uc5d0 \uc5b4\ub5a4 \uac12\uc774 \ubc18\ubcf5\ub418\ub294\uc9c0 \ud655\uc778\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.", "url": "https://wordroomonline.com/ko/remove-duplicate-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\uccab \ubc88\uc9f8\uc640 \ub9c8\uc9c0\ub9c9 \uc0ac\ubcf8 \uc911 \uc5b4\ub290 \uac83\uc744 \uc720\uc9c0\ud558\ub098\uc694?", "acceptedAnswer": {"@type": "Answer", "text": "\uccab \ubc88\uc9f8\ub97c \uc720\uc9c0\ud558\uba70, \ub0a8\uc740 \uc904\uc758 \uc21c\uc11c\uac00 \ubcf4\uc874\ub429\ub2c8\ub2e4. \ubaa9\ub85d\uc740 \uc554\ubb35\uc801\uc73c\ub85c \ub2e4\uc2dc \uc815\ub82c\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \uc815\ub82c\ub3c4 \uc6d0\ud55c\ub2e4\uba74 \ubcc4\ub3c4\uc758 \uc791\uc5c5\uc785\ub2c8\ub2e4."}}, {"@type": "Question", "name": "\ub300\uc18c\ubb38\uc790\ub9cc \ub2e4\ub978 \uc904\uc740 \uc911\ubcf5\uc778\uac00\uc694?", "acceptedAnswer": {"@type": "Answer", "text": "\uae30\ubcf8\uc801\uc73c\ub85c\ub294 \uc608. \uc774\ub294 \uc77c\ubc18\uc801\uc73c\ub85c \uc774\uba54\uc77c \uc8fc\uc18c\uc640 \ud0a4\uc6cc\ub4dc\uc5d0 \ub9de\uc2b5\ub2c8\ub2e4. \ube44\ubc00\ubc88\ud638, ID, \ucf54\ub4dc \ub4f1 \ub300\uc18c\ubb38\uc790\uac00 \uc758\ubbf8 \uc788\uc744 \ub54c\ub294 \"\ub300\uc18c\ubb38\uc790 \uad6c\ubd84\"\uc744 \ucf1c\uc138\uc694."}}, {"@type": "Question", "name": "\uc0ad\uc81c\ud558\uae30 \uc804\uc5d0 \uc911\ubcf5\uc744 \ubcfc \uc218 \uc788\ub098\uc694?", "acceptedAnswer": {"@type": "Answer", "text": "\uc608. \ud328\ub110\uc740 \uc785\ub825\ud558\ub294 \ub3d9\uc548 \uba87 \uc904\uc774 \ubc18\ubcf5\ub418\ub294\uc9c0, \uc5b4\ub5a4 \uac12\uc774 \uac00\uc7a5 \ub9ce\uc774 \ubc18\ubcf5\ub418\ub294\uc9c0\ub97c \ubcf4\uc5ec\uc8fc\uba70, \"\uc911\ubcf5\ub9cc \uc720\uc9c0\"\ub294 \uc791\uc5c5\uc744 \ubc18\uc804\uc2dc\ucf1c \uc815\ud655\ud788 \ubb34\uc5c7\uc774 \ubc18\ubcf5\ub418\ub294\uc9c0 \ud655\uc778\ud560 \uc218 \uc788\uac8c \ud569\ub2c8\ub2e4."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "\uc911\ubcf5 \uc904 \uc81c\uac70", "item": "https://wordroomonline.com/ko/remove-duplicate-lines"}]}]}</script>
+</head><body data-tool="remove-duplicate-lines" lang="ko">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="메뉴 열기"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ko/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>개인정보 보호</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>한국어</option>
+    <option value="/remove-duplicate-lines.html">English</option><option value="/es/remove-duplicate-lines.html">Español</option><option value="/ja/remove-duplicate-lines.html">日本語</option><option value="/fr/remove-duplicate-lines.html">Français</option><option value="/de/remove-duplicate-lines.html">Deutsch</option><option value="/pt/remove-duplicate-lines.html">Português</option><option value="/it/remove-duplicate-lines.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="검색"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="테마 전환"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="메뉴 닫기"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">세기</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>단어 수 세기</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">변환</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>대소문자 변환기</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">분석</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>가독성 검사기</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">정리</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>줄 바꿈 제거</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>줄 정렬</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>중복 줄 제거</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">정리</p>
+  <h1>중복 줄 제거</h1>
+  <p>삭제 전에 반복을 확인. 대소문자와 공백이 차이로 카운트되는지를 제어 가능.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="중복이 포함된 목록을 붙여넣으세요. 이메일 주소, 키워드, ID 등."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>무엇이 중복으로 간주되는지</h2><p>중복 제거는 "동일함"이 무엇을 의미하는지 결정해야만 잘 정의되며, 기본값이 알고리즘보다 중요합니다. 세 가지 질문이 답을 결정합니다.</p>
+<p><strong>대소문자가 중요합니까?</strong> 이메일 주소의 경우 아니요 — 로컬 부분은 기술적으로 대소문자를 구분하지만 실제로는 그렇게 취급되지 않으므로, <code>Hello@example.com</code>과 <code>hello@example.com</code>은 같은 주소입니다. 비밀번호나 ID의 경우 대소문자가 절대적으로 중요합니다. 여기서의 기본값은 대소문자 무시입니다.</p>
+<p><strong>주변 공백이 중요합니까?</strong> 거의 중요하지 않습니다. 트레일링 공백이 있는 줄은 없는 줄과 같은 값이며, 스프레드시트에서 복사된 목록은 그것으로 가득합니다. 기본값은 비교 전에 트리밍하는 것입니다.</p>
+<p><strong>어떤 사본이 살아남습니까?</strong> 이 도구는 첫 번째 발생을 유지하고 나머지의 원래 순서를 보존하므로, 목록은 암묵적으로 다시 정렬되지 않습니다. 정렬도 필요하다면, 그것은 별도의 작업입니다.</p></section><section><h2>삭제 전에 검사</h2><p>대부분의 중복 제거 도구의 기본 동작은 짧은 목록을 반환하고 사라진 것에 대해 아무 말도 하지 않는 것입니다. 이것은 입력을 신뢰할 때는 괜찮지만, 신뢰하지 않을 때는 위험합니다 — 예상치 못한 선행 공백이나 대소문자 차이는 도구가 필요했던 것을 삭제했거나, 중복이라고 생각했던 것을 유지했을 수 있습니다.</p>
+<p>패널은 적용 전에 몇 줄이 제거되었는지, 몇 개의 고유 값이 반복되었는지, 어떤 값이 가장 많이 반복되었는지를 보여줍니다. "중복만 유지"는 작업을 반전시켜 정확히 무엇이 반복되는지 볼 수 있게 합니다 — 메일링 리스트 감사나 키워드 집합에서 우연한 복사 붙여넣기를 찾는 데 유용합니다.</p></section><section><h2>자주 묻는 질문</h2><details class="faq"><summary>첫 번째와 마지막 사본 중 어느 것을 유지하나요?</summary><div><p>첫 번째를 유지하며, 남은 줄의 순서가 보존됩니다. 목록은 암묵적으로 다시 정렬되지 않습니다. 정렬도 원한다면 별도의 작업입니다.</p></div></details><details class="faq"><summary>대소문자만 다른 줄은 중복인가요?</summary><div><p>기본적으로는 예. 이는 일반적으로 이메일 주소와 키워드에 맞습니다. 비밀번호, ID, 코드 등 대소문자가 의미 있을 때는 &quot;대소문자 구분&quot;을 켜세요.</p></div></details><details class="faq"><summary>삭제하기 전에 중복을 볼 수 있나요?</summary><div><p>예. 패널은 입력하는 동안 몇 줄이 반복되는지, 어떤 값이 가장 많이 반복되는지를 보여주며, &quot;중복만 유지&quot;는 작업을 반전시켜 정확히 무엇이 반복되는지 확인할 수 있게 합니다.</p></div></details></section><section><h2>관련 도구</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>단어 수 세기</strong><span>실시간 카운트, 학술 제외 기능 및 인도어/CJK 스크립트의 올바른 세그멘테이션 지원.…</span></a><a class="relcard" href="case-converter.html"><strong>대소문자 변환기</strong><span>13가지 변환. 모든 것을 대문자로 만들지 않고 실제 스타일 가이드 규칙을 따르는 제목 대문자.…</span></a><a class="relcard" href="readability-checker.html"><strong>가독성 검사기</strong><span>6개의 공식과 점수를 끌어내리고 있는 구체적인 문장 — 숫자만이 아닙니다.…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="도구 검색…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> 도구</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

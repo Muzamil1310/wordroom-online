@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contaparole — Conteggio in Tempo Reale di Parole, Caratteri e Frasi | WordRoom</title>
+<meta name="description" content="Conta parole, caratteri, frasi e paragrafi mentre digitate. Gestisce correttamente telugu, hindi e CJK, e può escludere citazioni e bibliografie per i limiti accademici.">
+<link rel="canonical" href="https://wordroomonline.com/it/word-counter">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/word-counter.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/word-counter.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/word-counter.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/word-counter.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/word-counter.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/word-counter.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/word-counter.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/word-counter.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/word-counter.html">
+<meta property="og:title" content="Contaparole — Conteggio in Tempo Reale di Parole, Caratteri e Frasi">
+<meta property="og:description" content="Conta parole, caratteri, frasi e paragrafi mentre digitate. Gestisce correttamente telugu, hindi e CJK, e può escludere citazioni e bibliografie per i limiti accademici.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Contaparole", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Conta parole, caratteri, frasi e paragrafi mentre digitate. Gestisce correttamente telugu, hindi e CJK, e pu\u00f2 escludere citazioni e bibliografie per i limiti accademici.", "url": "https://wordroomonline.com/it/word-counter", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Il conteggio delle parole include citazioni e riferimenti?", "acceptedAnswer": {"@type": "Answer", "text": "Dipende dalla vostra istituzione, e lo strumento vi permette di adattarvi a entrambe le convenzioni. Gli elenchi di riferimento sono quasi sempre esclusi da un limite di parole; le citazioni nel testo sono escluse da molte, ma non tutte, le universit\u00e0. Attivate le esclusioni rilevanti in modalit\u00e0 Accademica e confrontate i totali grezzi e conteggiabili. Il vostro manuale del corso \u00e8 l'autorit\u00e0."}}, {"@type": "Question", "name": "Il mio testo viene caricato da qualche parte?", "acceptedAnswer": {"@type": "Answer", "text": "No. Ogni calcolo viene eseguito nel vostro browser usando JavaScript. Non c'\u00e8 nessun server che riceva il vostro testo, nessun account e nessuna analisi di ci\u00f2 che digitate. Potete confermarlo aprendo la scheda di rete del vostro browser: nulla viene inviato dopo il caricamento della pagina."}}, {"@type": "Question", "name": "Perch\u00e9 il conteggio dei caratteri differisce da Microsoft Word?", "acceptedAnswer": {"@type": "Answer", "text": "Word conteggia le unit\u00e0 di codice UTF-16 in alcuni contesti, il che gonfia il conteggio per emoji, scritture indiane e altri caratteri al di fuori dell'intervallo latino base. Questo strumento conteggia i cluster di grafemi \u2014 caratteri come un lettore li percepisce. Per testo inglese puro, i due coincidono."}}, {"@type": "Question", "name": "Come viene calcolato il tempo di lettura?", "acceptedAnswer": {"@type": "Answer", "text": "Parole divise per 238 parole al minuto, il tasso medio di lettura silenziosa per la prosa inglese della meta-analisi di Brysbaert del 2019. Il tempo di parola usa deliberatamente 130 parole al minuto."}}, {"@type": "Question", "name": "Conta correttamente le parole in telugu o hindi?", "acceptedAnswer": {"@type": "Answer", "text": "S\u00ec. Lo strumento rileva la scrittura e applica le regole dei confini delle parole Unicode invece di separare sugli spazi, quindi i segni di combinazione e i congiunti sono gestiti correttamente. I documenti con scritture miste sono conteggiati con le regole della scrittura non latina dominante."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Contaparole", "item": "https://wordroomonline.com/it/word-counter"}]}]}</script>
+</head><body data-tool="word-counter" lang="it">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Apri menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/it/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacy</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>Italiano</option>
+    <option value="/word-counter.html">English</option><option value="/es/word-counter.html">Español</option><option value="/ja/word-counter.html">日本語</option><option value="/fr/word-counter.html">Français</option><option value="/de/word-counter.html">Deutsch</option><option value="/pt/word-counter.html">Português</option><option value="/ko/word-counter.html">한국어</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Cerca"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Cerca</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Cambia tema"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Chiudi menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Conta</p>
+    <a class="rail__link" href="word-counter.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Contaparole</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Converti</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertitore di maiuscole</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analizza</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Controllore di leggibilità</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Pulisci</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Rimuovi interruzioni di riga</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordina righe</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Rimuovi righe duplicate</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Conta</p>
+  <h1>Contaparole</h1>
+  <p>Conteggi in tempo reale mentre digitate, con esclusioni accademiche e segmentazione corretta per scritture indiane e CJK.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Incollate o scrivete il vostro testo qui. I contatori si aggiornano mentre digitate, e nulla viene inviato da nessuna parte."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>Come funziona realmente il conteggio delle parole</h2><p>Un contaparole deve decidere dove una parola finisce e la successiva inizia. Per l'inglese sembra banale — separare sugli spazi — ed è per questo che quasi tutti i contatori online fanno esattamente questo, ed è per questo che quasi tutti sono sbagliati per una gran parte del mondo.</p>
+<p>Sugli spazi fallisce immediatamente al di fuori della scrittura latina. Cinese e giapponese non mettono spazi tra le parole. Il tailandese nemmeno. Telugu, hindi e tamil usano gli spazi, ma usano anche segni di combinazione che i contatori naivi contano male come caratteri separati. Questo strumento usa la segmentazione Unicode integrata nel browser, che applica le regole dei confini delle parole appropriate per la scrittura rilevata.</p>
+<p>Il conteggio dei caratteri ha la stessa trappola. L'espressione JavaScript <code>"నమస్తే".length</code> restituisce 6, perché conta le unità di codice UTF-16 piuttosto che i caratteri che un lettore riconoscerebbe. Un singolo emoji può restituire 2, e un emoji bandiera 4. Questo strumento conta i cluster di grafemi, quindi il numero corrisponde a ciò che otterreste contando sullo schermo.</p></section><section><h2>Limiti di parole e cosa conta il vostro relatore</h2><p>I limiti accademici di parole sono la ragione più comune per cui le persone usano un contatore, e il numero che il vostro word processor riporta spesso non è il numero che sarà valutato. Le istituzioni differiscono, ma il modello abituale è che il corpo del testo conta e la struttura no.</p>
+<table><thead><tr><th>Elemento</th><th>Comunemente contato</th></tr></thead><tbody>
+<tr><td>Paragrafi del corpo</td><td>Sì</td></tr>
+<tr><td>Citazioni nel testo, es. (Smith, 2020)</td><td>Spesso escluse</td></tr>
+<tr><td>Elenco di riferimenti o bibliografia</td><td>Quasi sempre esclusa</td></tr>
+<tr><td>Note a piè di pagina e note finali</td><td>Varia — consultate la vostra guida</td></tr>
+<tr><td>Titoli e sottotitoli</td><td>Varia</td></tr>
+<tr><td>Citazioni in blocco</td><td>Generalmente contate</td></tr>
+<tr><td>Tabelle, figure e didascalie</td><td>Generalmente escluse</td></tr>
+<tr><td>Riassunto, pagina del titolo, allegati</td><td>Generalmente esclusi</td></tr>
+</tbody></table>
+<p>La modalità accademica vi permette di disattivare ciascuno di questi e mostra sia il totale grezzo che il totale conteggiabile, così potete adattarvi a ciò che la vostra guida specifica invece di indovinare. Quando una regola è ambigua, la guida vince — questo strumento modella le convenzioni comuni, non la politica specifica della vostra istituzione.</p></section><section><h2>Tempo di lettura e di parola</h2><p>Il tempo di lettura qui usa 238 parole al minuto, la velocità media di lettura silenziosa per la prosa inglese della meta-analisi di Brysbaert del 2019 di 190 studi. Molti siti usano 200 o 250 senza dire da dove viene la cifra; la differenza su un pezzo di 3.000 parole è di oltre due minuti.</p>
+<p>Il tempo di parola usa deliberatamente 130 parole al minuto, che è più lento della velocità conversazionale. I presentatori leggono il testo preparato più velocemente di quanto dovrebbero quando sono nervosi, e i tempi di prova che presumono 150 parole al minuto tendono a far sì che le persone superino il tempo. Se state cronometrando un discorso, trattate la cifra come un minimo e provate ad alta voce.</p>
+<p>Entrambe le cifre sono medie tra lettori e tipi di testo. La prosa tecnica densa si legge più lentamente; la narrazione familiare si legge più velocemente.</p></section><section><h2>Domande frequenti</h2><details class="faq"><summary>Il conteggio delle parole include citazioni e riferimenti?</summary><div><p>Dipende dalla vostra istituzione, e lo strumento vi permette di adattarvi a entrambe le convenzioni. Gli elenchi di riferimento sono quasi sempre esclusi da un limite di parole; le citazioni nel testo sono escluse da molte, ma non tutte, le università. Attivate le esclusioni rilevanti in modalità Accademica e confrontate i totali grezzi e conteggiabili. Il vostro manuale del corso è l&#x27;autorità.</p></div></details><details class="faq"><summary>Il mio testo viene caricato da qualche parte?</summary><div><p>No. Ogni calcolo viene eseguito nel vostro browser usando JavaScript. Non c&#x27;è nessun server che riceva il vostro testo, nessun account e nessuna analisi di ciò che digitate. Potete confermarlo aprendo la scheda di rete del vostro browser: nulla viene inviato dopo il caricamento della pagina.</p></div></details><details class="faq"><summary>Perché il conteggio dei caratteri differisce da Microsoft Word?</summary><div><p>Word conteggia le unità di codice UTF-16 in alcuni contesti, il che gonfia il conteggio per emoji, scritture indiane e altri caratteri al di fuori dell&#x27;intervallo latino base. Questo strumento conteggia i cluster di grafemi — caratteri come un lettore li percepisce. Per testo inglese puro, i due coincidono.</p></div></details><details class="faq"><summary>Come viene calcolato il tempo di lettura?</summary><div><p>Parole divise per 238 parole al minuto, il tasso medio di lettura silenziosa per la prosa inglese della meta-analisi di Brysbaert del 2019. Il tempo di parola usa deliberatamente 130 parole al minuto.</p></div></details><details class="faq"><summary>Conta correttamente le parole in telugu o hindi?</summary><div><p>Sì. Lo strumento rileva la scrittura e applica le regole dei confini delle parole Unicode invece di separare sugli spazi, quindi i segni di combinazione e i congiunti sono gestiti correttamente. I documenti con scritture miste sono conteggiati con le regole della scrittura non latina dominante.</p></div></details></section><section><h2>Strumenti correlati</h2><div class="rel"><a class="relcard" href="case-converter.html"><strong>Convertitore di maiuscole</strong><span>Tredici conversioni, con maiuscole di titolo che seguono le vere…</span></a><a class="relcard" href="readability-checker.html"><strong>Controllore di leggibilità</strong><span>Sei formule, più le frasi specifiche che frenano il vostro punte…</span></a><a class="relcard" href="remove-line-breaks.html"><strong>Rimuovi interruzioni di riga</strong><span>Unite le righe spezzate da una colonna di PDF o un client di pos…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Cerca strumenti…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Strumenti</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

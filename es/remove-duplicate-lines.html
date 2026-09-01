@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminar Líneas Duplicadas — Encontrar y Borrar Repeticiones | WordRoom</title>
+<meta name="description" content="Encuentra y elimina líneas duplicadas de cualquier lista. Elige si importan mayúsculas y espacios, e inspecciona qué valores se repiten antes de borrar algo.">
+<link rel="canonical" href="https://wordroomonline.com/es/remove-duplicate-lines">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<meta property="og:title" content="Eliminar Líneas Duplicadas — Encontrar y Borrar Repeticiones">
+<meta property="og:description" content="Encuentra y elimina líneas duplicadas de cualquier lista. Elige si importan mayúsculas y espacios, e inspecciona qué valores se repiten antes de borrar algo.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Eliminar l\u00edneas duplicadas", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Encuentra y elimina l\u00edneas duplicadas de cualquier lista. Elige si importan may\u00fasculas y espacios, e inspecciona qu\u00e9 valores se repiten antes de borrar algo.", "url": "https://wordroomonline.com/es/remove-duplicate-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u00bfMantiene la primera o la \u00faltima copia?", "acceptedAnswer": {"@type": "Answer", "text": "La primera, y el orden de las l\u00edneas restantes se preserva. Tu lista no se reordena silenciosamente. Si tambi\u00e9n quieres que se ordene, eso es una acci\u00f3n separada."}}, {"@type": "Question", "name": "\u00bfLas l\u00edneas que difieren solo en may\u00fasculas son duplicadas?", "acceptedAnswer": {"@type": "Answer", "text": "Por defecto s\u00ed, lo cual es generalmente correcto para direcciones de correo y palabras clave. Activa sensible a may\u00fasculas cuando las may\u00fasculas importan, como en contrase\u00f1as, IDs y c\u00f3digo."}}, {"@type": "Question", "name": "\u00bfPuedo ver los duplicados antes de eliminarlos?", "acceptedAnswer": {"@type": "Answer", "text": "S\u00ed. El panel lista cu\u00e1ntas l\u00edneas se repiten y qu\u00e9 valores se repiten m\u00e1s mientras escribes, y \"Mantener solo los duplicados\" invierte la operaci\u00f3n para que puedas inspeccionar exactamente qu\u00e9 se est\u00e1 repitiendo."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Eliminar l\u00edneas duplicadas", "item": "https://wordroomonline.com/es/remove-duplicate-lines"}]}]}</script>
+</head><body data-tool="remove-duplicate-lines" lang="es">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Abrir menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/es/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacidad</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>Español</option>
+    <option value="/remove-duplicate-lines.html">English</option><option value="/ja/remove-duplicate-lines.html">日本語</option><option value="/fr/remove-duplicate-lines.html">Français</option><option value="/de/remove-duplicate-lines.html">Deutsch</option><option value="/pt/remove-duplicate-lines.html">Português</option><option value="/ko/remove-duplicate-lines.html">한국어</option><option value="/it/remove-duplicate-lines.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Buscar</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Cambiar tema"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Cerrar menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Contar</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Contador de palabras</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Convertir</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertidor de mayúsculas</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analizar</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Verificador de legibilidad</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Limpiar</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Eliminar saltos de línea</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordenar líneas</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Eliminar líneas duplicadas</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Limpiar</p>
+  <h1>Eliminar líneas duplicadas</h1>
+  <p>Encuentra repeticiones antes de borrarlas, con control sobre si mayúsculas y espacios cuentan como diferencia.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Pega una lista con duplicados — direcciones de correo, palabras clave, IDs."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>Qué cuenta como duplicado</h2><p>La eliminación de duplicados solo está bien definida una vez que decides qué significa "lo mismo", y los valores por defecto importan más que el algoritmo. Tres preguntas deciden la respuesta.</p>
+<p><strong>¿Importan las mayúsculas?</strong> Para direcciones de correo, no — la parte local técnicamente distingue mayúsculas pero efectivamente nunca se trata así, así que <code>Hello@example.com</code> y <code>hello@example.com</code> son la misma dirección. Para contraseñas o IDs, las mayúsculas absolutamente importan. El valor por defecto aquí es insensible a mayúsculas.</p>
+<p><strong>¿Importan los espacios circundantes?</strong> Casi nunca. Una línea con un espacio final es el mismo valor que una sin él, y las listas copiadas de hojas de cálculo están llenas de ellos. El valor por defecto es recortar antes de comparar.</p>
+<p><strong>¿Qué copia sobrevive?</strong> Esta herramienta mantiene la primera ocurrencia y preserva el orden original de lo que queda, por lo que tu lista no se reordena silenciosamente. Si también quieres que se ordene, eso es una acción separada.</p></section><section><h2>Inspecciona antes de borrar</h2><p>El comportamiento predeterminado de la mayoría de las herramientas de eliminación de duplicados es devolver una lista más corta y no decirte nada sobre lo que se perdió. Eso está bien cuando confías en la entrada y es arriesgado cuando no lo haces — un espacio extraño al principio o una diferencia inesperada de mayúsculas puede significar que la herramienta eliminó algo que necesitabas, o mantuvo algo que pensabas que era un duplicado.</p>
+<p>El panel muestra cuántas líneas se eliminaron, cuántos valores distintos se repitieron y qué valores se repitieron más, antes de que apliques anything. "Mantener solo los duplicados" invierte la operación para que puedas ver exactamente qué se está repitiendo — útil para auditar una lista de correo o encontrar copiado accidental en un conjunto de palabras clave.</p></section><section><h2>Preguntas frecuentes</h2><details class="faq"><summary>¿Mantiene la primera o la última copia?</summary><div><p>La primera, y el orden de las líneas restantes se preserva. Tu lista no se reordena silenciosamente. Si también quieres que se ordene, eso es una acción separada.</p></div></details><details class="faq"><summary>¿Las líneas que difieren solo en mayúsculas son duplicadas?</summary><div><p>Por defecto sí, lo cual es generalmente correcto para direcciones de correo y palabras clave. Activa sensible a mayúsculas cuando las mayúsculas importan, como en contraseñas, IDs y código.</p></div></details><details class="faq"><summary>¿Puedo ver los duplicados antes de eliminarlos?</summary><div><p>Sí. El panel lista cuántas líneas se repiten y qué valores se repiten más mientras escribes, y &quot;Mantener solo los duplicados&quot; invierte la operación para que puedas inspeccionar exactamente qué se está repitiendo.</p></div></details></section><section><h2>Herramientas relacionadas</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Contador de palabras</strong><span>Recuentos en tiempo real mientras escribes, con exclusiones acad…</span></a><a class="relcard" href="case-converter.html"><strong>Convertidor de mayúsculas</strong><span>Trece conversiones, con mayúsculas de título que siguen las regl…</span></a><a class="relcard" href="readability-checker.html"><strong>Verificador de legibilidad</strong><span>Seis fórmulas, además de las oraciones específicas que frenan tu…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Buscar herramientas…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Herramientas</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

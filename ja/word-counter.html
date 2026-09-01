@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ワードカウンター — 単語・文字・文のリアルタイムカウント | WordRoom</title>
+<meta name="description" content="入力的同时に単語、文字、文、段落をカウント。テルグ語、ヒンディー語、CJKを正しく処理し、学術的な単語制限のために引用や参考文献リストを除外できます。">
+<link rel="canonical" href="https://wordroomonline.com/ja/word-counter">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/word-counter.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/word-counter.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/word-counter.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/word-counter.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/word-counter.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/word-counter.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/word-counter.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/word-counter.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/word-counter.html">
+<meta property="og:title" content="ワードカウンター — 単語・文字・文のリアルタイムカウント">
+<meta property="og:description" content="入力的同时に単語、文字、文、段落をカウント。テルグ語、ヒンディー語、CJKを正しく処理し、学術的な単語制限のために引用や参考文献リストを除外できます。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "\u30ef\u30fc\u30c9\u30ab\u30a6\u30f3\u30bf\u30fc", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "\u5165\u529b\u7684\u540c\u65f6\u306b\u5358\u8a9e\u3001\u6587\u5b57\u3001\u6587\u3001\u6bb5\u843d\u3092\u30ab\u30a6\u30f3\u30c8\u3002\u30c6\u30eb\u30b0\u8a9e\u3001\u30d2\u30f3\u30c7\u30a3\u30fc\u8a9e\u3001CJK\u3092\u6b63\u3057\u304f\u51e6\u7406\u3057\u3001\u5b66\u8853\u7684\u306a\u5358\u8a9e\u5236\u9650\u306e\u305f\u3081\u306b\u5f15\u7528\u3084\u53c2\u8003\u6587\u732e\u30ea\u30b9\u30c8\u3092\u9664\u5916\u3067\u304d\u307e\u3059\u3002", "url": "https://wordroomonline.com/ja/word-counter", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u30ef\u30fc\u30c9\u30ab\u30a6\u30f3\u30c8\u306b\u306f\u5f15\u7528\u3068\u53c2\u8003\u6587\u732e\u304c\u542b\u307e\u308c\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u6240\u5c5e\u6a5f\u95a2\u306b\u3088\u308a\u307e\u3059\u304c\u3001\u3053\u306e\u30c4\u30fc\u30eb\u3067\u306f\u3069\u3061\u3089\u306e\u6163\u7fd2\u306b\u3082\u5408\u308f\u305b\u3089\u308c\u307e\u3059\u3002\u53c2\u8003\u6587\u732e\u30ea\u30b9\u30c8\u306f\u5358\u8a9e\u5236\u9650\u304b\u3089\u307b\u307c\u5e38\u306b\u9664\u5916\u3055\u308c\u307e\u3059\u3002\u6587\u4e2d\u5f15\u7528\u306f\u591a\u304f\u306e\u5927\u5b66\u3067\u9664\u5916\u3055\u308c\u307e\u3059\u304c\u3001\u3059\u3079\u3066\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002\u5b66\u8853\u30e2\u30fc\u30c9\u3067\u95a2\u9023\u3059\u308b\u9664\u5916\u3092\u6709\u52b9\u306b\u3057\u3001\u751f\u306e\u5408\u8a08\u3068\u30ab\u30a6\u30f3\u30c8\u53ef\u80fd\u306a\u5408\u8a08\u3092\u6bd4\u8f03\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u3042\u306a\u305f\u306e\u8ab2\u7a0b\u624b\u5f15\u304c\u6700\u7d42\u6c7a\u5b9a\u6a29\u3092\u6301\u3061\u307e\u3059\u3002"}}, {"@type": "Question", "name": "\u30c6\u30ad\u30b9\u30c8\u306f\u3069\u3053\u304b\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u3044\u3044\u3048\u3002\u3059\u3079\u3066\u306e\u8a08\u7b97\u306fJavaScript\u3092\u4f7f\u7528\u3057\u3066\u30d6\u30e9\u30a6\u30b6\u5185\u3067\u5b9f\u884c\u3055\u308c\u307e\u3059\u3002\u30c6\u30ad\u30b9\u30c8\u3092\u53d7\u3051\u53d6\u308b\u30b5\u30fc\u30d0\u30fc\u3082\u3001\u30a2\u30ab\u30a6\u30f3\u30c8\u3082\u3001\u5165\u529b\u5185\u5bb9\u306e\u5206\u6790\u3082\u3042\u308a\u307e\u305b\u3093\u3002\u30d6\u30e9\u30a6\u30b6\u306e\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u30bf\u30d6\u3092\u958b\u3044\u3066\u78ba\u8a8d\u3067\u304d\u307e\u3059\u3002\u30da\u30fc\u30b8\u81ea\u4f53\u306e\u8aad\u307f\u8fbc\u307f\u5f8c\u306b\u9001\u4fe1\u3055\u308c\u308b\u3082\u306e\u306f\u4f55\u3082\u3042\u308a\u307e\u305b\u3093\u3002"}}, {"@type": "Question", "name": "\u6587\u5b57\u6570\u304cMicrosoft Word\u3068\u7570\u306a\u308b\u306e\u306f\u306a\u305c\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "Word\u306f\u4e00\u90e8\u306e\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u3067UTF-16\u30b3\u30fc\u30c9\u5358\u4f4d\u3092\u30ab\u30a6\u30f3\u30c8\u3059\u308b\u305f\u3081\u3001\u7d75\u6587\u5b57\u3001\u30a4\u30f3\u30c9\u7cfb\u30b9\u30af\u30ea\u30d7\u30c8\u3001\u57fa\u672c\u30e9\u30c6\u30f3\u7bc4\u56f2\u5916\u306e\u6587\u5b57\u306e\u30ab\u30a6\u30f3\u30c8\u304c\u81a8\u3089\u307f\u307e\u3059\u3002\u3053\u306e\u30c4\u30fc\u30eb\u306f\u66f8\u8a18\u7d20\u30af\u30e9\u30b9\u30bf\u30fc\u3092\u30ab\u30a6\u30f3\u30c8\u3057\u307e\u3059\u3002\u3064\u307e\u308a\u3001\u8aad\u8005\u304c\u8a8d\u8b58\u3059\u308b\u6587\u5b57\u5358\u4f4d\u3067\u3059\u3002\u82f1\u8a9e\u306e\u30d7\u30ec\u30fc\u30f3\u30c6\u30ad\u30b9\u30c8\u3067\u306f\u4e21\u8005\u306f\u4e00\u81f4\u3057\u307e\u3059\u3002"}}, {"@type": "Question", "name": "\u8aad\u66f8\u6642\u9593\u306f\u3069\u306e\u3088\u3046\u306b\u8a08\u7b97\u3055\u308c\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "Brysbaert\u306e2019\u5e74\u306e\u30e1\u30bf\u5206\u6790\u306b\u3088\u308b\u82f1\u8a9e\u30d7\u30ed\u30fc\u30ba\u306e\u5e73\u5747\u7121\u58f0\u8aad\u66f8\u901f\u5ea6238\u8a9e/\u5206\u3067\u5272\u308a\u307e\u3059\u3002\u767a\u8a71\u6642\u9593\u306f\u610f\u56f3\u7684\u306b\u4fdd\u5b88\u7684\u306a130\u8a9e/\u5206\u3092\u4f7f\u7528\u3057\u3066\u3044\u307e\u3059\u3002"}}, {"@type": "Question", "name": "\u30c6\u30eb\u30b0\u8a9e\u3084\u30d2\u30f3\u30c7\u30a3\u30fc\u8a9e\u306e\u5358\u8a9e\u3092\u6b63\u3057\u304f\u30ab\u30a6\u30f3\u30c8\u3057\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u306f\u3044\u3002\u30c4\u30fc\u30eb\u306f\u30b9\u30af\u30ea\u30d7\u30c8\u3092\u691c\u51fa\u3057\u3001\u30b9\u30da\u30fc\u30b9\u3067\u5206\u5272\u3059\u308b\u306e\u3067\u306f\u306a\u304f\u3001\u305d\u306e\u30b9\u30af\u30ea\u30d7\u30c8\u306bUnicode\u306e\u8a9e\u5883\u754c\u30eb\u30fc\u30eb\u3092\u9069\u7528\u3057\u307e\u3059\u3002\u7d50\u5408\u8a18\u53f7\u3084\u5408\u5b57\u304c\u9069\u5207\u306b\u51e6\u7406\u3055\u308c\u307e\u3059\u3002\u6df7\u5408\u30b9\u30af\u30ea\u30d7\u30c8\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u306f\u3001\u4e3b\u8981\u306a\u975e\u30e9\u30c6\u30f3\u30b9\u30af\u30ea\u30d7\u30c8\u306e\u30eb\u30fc\u30eb\u3067\u30ab\u30a6\u30f3\u30c8\u3055\u308c\u307e\u3059\u3002"}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "\u30ef\u30fc\u30c9\u30ab\u30a6\u30f3\u30bf\u30fc", "item": "https://wordroomonline.com/ja/word-counter"}]}]}</script>
+</head><body data-tool="word-counter" lang="ja">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ja/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>日本語</option>
+    <option value="/word-counter.html">English</option><option value="/es/word-counter.html">Español</option><option value="/fr/word-counter.html">Français</option><option value="/de/word-counter.html">Deutsch</option><option value="/pt/word-counter.html">Português</option><option value="/ko/word-counter.html">한국어</option><option value="/it/word-counter.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="検索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>検索</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="テーマ切替"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="メニューを閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">カウント</p>
+    <a class="rail__link" href="word-counter.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>ワードカウンター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">変換</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">分析</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">整理</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>改行を除去</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">カウント</p>
+  <h1>ワードカウンター</h1>
+  <p>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="ここにテキストを貼り付けるか入力してください。カウントは入力的同时に更新され、データは一切送信されません。"></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>ワードカウントが実際にどう機能するか</h2><p>ワードカウンターは、1つの単語がどこで終わり次の単語が始まるかを決定する必要があります。英語ではこれは些細なことのように見えます — スペースで分割する — だからほとんどのオンラインカウンターがまさにそれをやり、だから世界の大部分に対して間違っているのです。</p>
+<p>空白で分割することはラテンスクリプトの外では即座に失敗します。中国語と日本語は単語間にスペースを置きません。タイ語も同様です。テルグ語、ヒンディー語、タミル語はスペースを使いますが、単純なカウンターが個々の文字として誤ってカウントする結合記号も使います。このツールは代わりにブラウザ組み込みのUnicodeセグメンテーションを使用し、検出されたスクリプトに適切な語境界ルールを適用します。</p>
+<p>文字カウントには同じ罠があります。JavaScript式<code>"నమస్తే".length</code>は6を返します。これは読者が認識する文字ではなくUTF-16コード単位をカウントするからです。単一の絵文字は2を返し、旗の絵文字は4を返すことがあります。このツールは書記素クラスターをカウントするため、画面でカウントした結果と一致します。</p></section><section><h2>単語制限と評点者が何をカウントするか</h2><p>学術的な単語制限は人々がカウンターを使う最も一般的な理由であり、ワードプロセッサーが報告する数は頻繁に評価される数ではありません。機関によって異なりますが、一般的なパターンは本文はカウントされ、骨格はカウントされないということです。</p>
+<table><thead><tr><th>要素</th><th>一般的にカウントされる</th></tr></thead><tbody>
+<tr><td>本文段落</td><td>はい</td></tr>
+<tr><td>文中引用、例 (Smith, 2020)</td><td>頻繁に除外される</td></tr>
+<tr><td>参考文献リストまたは参考文献</td><td>ほぼ常に除外される</td></tr>
+<tr><td>脚注と末尾注</td><td> varying — 手引きを確認</td></tr>
+<tr><td>見出しと小見出し</td><td>varying</td></tr>
+<tr><td>ブロック引用</td><td>通常カウントされる</td></tr>
+<tr><td>表、図、キャプション</td><td>通常除外される</td></tr>
+<tr><td>要約、表紙、付録</td><td>通常除外される</td></tr>
+</tbody></table>
+<p>学術モードでは各要素をオフにでき、生の合計とカウント可能な合計の両方を表示するため、推測するのではなく手引きで指定されているものに合わせられます。ルールが曖昧な場合、手引きが優先します。このツールは一般的な慣習をモデル化し、あなたの特定の機関の政策ではありません。</p></section><section><h2>読書時間と発話時間</h2><p>ここで使用される読書時間は分238語で、Brysbaertの2019年の190の研究のメタ分析で見つかった英語プローズの平均無声読書速度です。多くのサイトは数字の出所を言わずに200または250を使っています。3,000語の文章での差は2分以上です。</p>
+<p>発話時間は意図的に保守的な分130語を使用しています。これは会話速度よりゆっくりです。プレゼンターは緊張時に準備されたテキスを読むのが速すぎる傾向があり、分150語と仮定するリハーサルタイミングは時間を超える傾向があります。スピーチの時間を計る場合は、この数字を最低限として扱い、声を出してリハーサルしてください。</p>
+<p>両方の数字は読者とテキストタイプの平均です。密度の高い技術プローズはゆっくり読みます。馴染みのあるナラティブは速く読みます。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>ワードカウントには引用と参考文献が含まれますか？</summary><div><p>所属機関によりますが、このツールではどちらの慣習にも合わせられます。参考文献リストは単語制限からほぼ常に除外されます。文中引用は多くの大学で除外されますが、すべてではありません。学術モードで関連する除外を有効にし、生の合計とカウント可能な合計を比較してください。あなたの課程手引が最終決定権を持ちます。</p></div></details><details class="faq"><summary>テキストはどこかにアップロードされますか？</summary><div><p>いいえ。すべての計算はJavaScriptを使用してブラウザ内で実行されます。テキストを受け取るサーバーも、アカウントも、入力内容の分析もありません。ブラウザのネットワークタブを開いて確認できます。ページ自体の読み込み後に送信されるものは何もありません。</p></div></details><details class="faq"><summary>文字数がMicrosoft Wordと異なるのはなぜですか？</summary><div><p>Wordは一部のコンテキストでUTF-16コード単位をカウントするため、絵文字、インド系スクリプト、基本ラテン範囲外の文字のカウントが膨らみます。このツールは書記素クラスターをカウントします。つまり、読者が認識する文字単位です。英語のプレーンテキストでは両者は一致します。</p></div></details><details class="faq"><summary>読書時間はどのように計算されますか？</summary><div><p>Brysbaertの2019年のメタ分析による英語プローズの平均無声読書速度238語/分で割ります。発話時間は意図的に保守的な130語/分を使用しています。</p></div></details><details class="faq"><summary>テルグ語やヒンディー語の単語を正しくカウントしますか？</summary><div><p>はい。ツールはスクリプトを検出し、スペースで分割するのではなく、そのスクリプトにUnicodeの語境界ルールを適用します。結合記号や合字が適切に処理されます。混合スクリプトのドキュメントは、主要な非ラテンスクリプトのルールでカウントされます。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="case-converter.html"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="readability-checker.html"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。…</span></a><a class="relcard" href="remove-line-breaks.html"><strong>改行を除去</strong><span>PDFのカラムやメールクライアントで壊れた行を結合しつつ、本物の段落区切りを保持。…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="ツールを検索…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

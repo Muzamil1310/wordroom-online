@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ordenar Líneas Alfabéticamente — Ordenador de Líneas Online | WordRoom</title>
+<meta name="description" content="Ordena cualquier lista de líneas alfabéticamente, por longitud, en reverso o aleatoriamente. Soporta ordenación numérica natural y ordenación alfabética adaptada al idioma para listas en otros idiomas.">
+<link rel="canonical" href="https://wordroomonline.com/es/sort-lines">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines.html">
+<meta property="og:title" content="Ordenar Líneas Alfabéticamente — Ordenador de Líneas Online">
+<meta property="og:description" content="Ordena cualquier lista de líneas alfabéticamente, por longitud, en reverso o aleatoriamente. Soporta ordenación numérica natural y ordenación alfabética adaptada al idioma para listas en otros idiomas.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Ordenar l\u00edneas", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Ordena cualquier lista de l\u00edneas alfab\u00e9ticamente, por longitud, en reverso o aleatoriamente. Soporta ordenaci\u00f3n num\u00e9rica natural y ordenaci\u00f3n alfab\u00e9tica adaptada al idioma para listas en otros idiomas.", "url": "https://wordroomonline.com/es/sort-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u00bfPor qu\u00e9 mi lista se orden\u00f3 con may\u00fasculas primero?", "acceptedAnswer": {"@type": "Answer", "text": "Eso ocurre con herramientas que comparan c\u00f3digos de caracteres brutos, donde cada letra may\u00fascula precede a cada min\u00fascula. Esta herramienta usa comparaci\u00f3n adaptada al idioma e ignora may\u00fasculas por defecto, por lo que obtienes el orden que una persona esperar\u00eda. Activa sensible a may\u00fasculas si necesitas la versi\u00f3n estricta."}}, {"@type": "Question", "name": "\u00bfPor qu\u00e9 el elemento 10 viene antes del 2?", "acceptedAnswer": {"@type": "Answer", "text": "Comparados como texto, \"1\" es menor que \"2\", por lo que \"elemento 10\" se ordena primero. Activa el orden num\u00e9rico natural para comparar los segmentos num\u00e9ricos como n\u00fameros, lo que da elemento 1, elemento 2, elemento 10. Est\u00e1 activado por defecto."}}, {"@type": "Question", "name": "\u00bfEl aleatorio es realmente aleatorio?", "acceptedAnswer": {"@type": "Answer", "text": "Usa un aleatorio Fisher-Yates, donde cada ordenaci\u00f3n posible es igualmente probable. Aleatorizar pasando un comparador aleatorio a una funci\u00f3n de orden es un atajo com\u00fan y produce resultados sesgados mediblemente."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Ordenar l\u00edneas", "item": "https://wordroomonline.com/es/sort-lines"}]}]}</script>
+</head><body data-tool="sort-lines" lang="es">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Abrir menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/es/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacidad</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>Español</option>
+    <option value="/sort-lines.html">English</option><option value="/ja/sort-lines.html">日本語</option><option value="/fr/sort-lines.html">Français</option><option value="/de/sort-lines.html">Deutsch</option><option value="/pt/sort-lines.html">Português</option><option value="/ko/sort-lines.html">한국어</option><option value="/it/sort-lines.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Buscar</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Cambiar tema"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Cerrar menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Contar</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Contador de palabras</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Convertir</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertidor de mayúsculas</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analizar</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Verificador de legibilidad</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Limpiar</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Eliminar saltos de línea</span></a>
+    <a class="rail__link" href="sort-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordenar líneas</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Eliminar líneas duplicadas</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Limpiar</p>
+  <h1>Ordenar líneas</h1>
+  <p>Ordena alfabéticamente, por longitud, invierte o aleatoriza — con ordenación numérica natural y comparación según el idioma.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Un elemento por línea.
+Pega tu lista aquí.
+Se ordena mientras escribes."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>El orden alfabético no es una sola cosa</h2><p>El ordenamiento parece un problema resuelto hasta que ordenas datos reales. Un ordenamiento simple compara puntos de código, que pone cada letra mayúscula antes de cada minúscula — así que "Zebra" se ordena antes que "apple", y una lista de nombres sale en un orden que ningún humano llamaría alfabético.</p>
+<p>Esta herramienta usa comparación adaptada al idioma en su lugar, que es la misma maquinaria que tu sistema operativo usa para ordenar una lista de archivos. Los caracteres acentuados se ordenan junto a sus letras base en lugar de al final, y las mayúsculas se ignoran por defecto porque eso es lo que la gente entiende por alfabético.</p>
+<p>El orden numérico natural es la otra sorpresa común. Comparado como texto, "elemento 10" se ordena antes que "elemento 2", porque "1" es menor que "2". El orden natural compara las porciones numéricas como números, dando elemento 1, elemento 2, elemento 10. Déjalo activado para cualquier cosa con números.</p></section><section><h2>Modos de ordenamiento</h2><ul>
+<li><strong>Alfabético</strong> — adaptado al idioma, insensible a mayúsculas por defecto. Activa Descendente para Z a A.</li>
+<li><strong>Por longitud de línea</strong> — más corto primero, empates resueltos alfabéticamente. Útil para detectar valores atípicos en una lista de palabras clave o titulares.</li>
+<li><strong>Invertir orden actual</strong> — voltea la lista sin ordenarla, que es lo que generalmente quieres para un registro cronológico.</li>
+<li><strong>Aleatorio</strong> — un aleatorio Fisher–Yates, donde cada ordenación posible es igualmente probable. Los aleatorios simples que usan un comparador aleatorio están sesgados.</li>
+</ul>
+<p>Las líneas vacías se eliminan por defecto, ya que una lista ordenada con un bloque de espacios en un extremo raramente es lo que cualquiera quiere. Desactívalo si las líneas vacías tienen significado.</p></section><section><h2>Preguntas frecuentes</h2><details class="faq"><summary>¿Por qué mi lista se ordenó con mayúsculas primero?</summary><div><p>Eso ocurre con herramientas que comparan códigos de caracteres brutos, donde cada letra mayúscula precede a cada minúscula. Esta herramienta usa comparación adaptada al idioma e ignora mayúsculas por defecto, por lo que obtienes el orden que una persona esperaría. Activa sensible a mayúsculas si necesitas la versión estricta.</p></div></details><details class="faq"><summary>¿Por qué el elemento 10 viene antes del 2?</summary><div><p>Comparados como texto, &quot;1&quot; es menor que &quot;2&quot;, por lo que &quot;elemento 10&quot; se ordena primero. Activa el orden numérico natural para comparar los segmentos numéricos como números, lo que da elemento 1, elemento 2, elemento 10. Está activado por defecto.</p></div></details><details class="faq"><summary>¿El aleatorio es realmente aleatorio?</summary><div><p>Usa un aleatorio Fisher-Yates, donde cada ordenación posible es igualmente probable. Aleatorizar pasando un comparador aleatorio a una función de orden es un atajo común y produce resultados sesgados mediblemente.</p></div></details></section><section><h2>Herramientas relacionadas</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Contador de palabras</strong><span>Recuentos en tiempo real mientras escribes, con exclusiones acad…</span></a><a class="relcard" href="case-converter.html"><strong>Convertidor de mayúsculas</strong><span>Trece conversiones, con mayúsculas de título que siguen las regl…</span></a><a class="relcard" href="readability-checker.html"><strong>Verificador de legibilidad</strong><span>Seis fórmulas, además de las oraciones específicas que frenan tu…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Buscar herramientas…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Herramientas</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeilenumbrüche Entfernen — Aus PDFs kopierten Text reparieren | WordRoom</title>
+<meta name="description" content="Entfernen Sie unerwünschte Zeilenumbrüche aus Texten, die aus PDFs und E-Mails kopiert wurden, und behalten Sie echte Absatzumbrüche bei. Trimmt auch Zeilen und kollabiert doppelte Leerzeichen.">
+<link rel="canonical" href="https://wordroomonline.com/de/remove-line-breaks">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-line-breaks.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-line-breaks.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-line-breaks.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-line-breaks.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-line-breaks.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-line-breaks.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-line-breaks.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-line-breaks.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-line-breaks.html">
+<meta property="og:title" content="Zeilenumbrüche Entfernen — Aus PDFs kopierten Text reparieren">
+<meta property="og:description" content="Entfernen Sie unerwünschte Zeilenumbrüche aus Texten, die aus PDFs und E-Mails kopiert wurden, und behalten Sie echte Absatzumbrüche bei. Trimmt auch Zeilen und kollabiert doppelte Leerzeichen.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Zeilenumbr\u00fcche entfernen", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Entfernen Sie unerw\u00fcnschte Zeilenumbr\u00fcche aus Texten, die aus PDFs und E-Mails kopiert wurden, und behalten Sie echte Absatzumbr\u00fcche bei. Trimmt auch Zeilen und kollabiert doppelte Leerzeichen.", "url": "https://wordroomonline.com/de/remove-line-breaks", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Warum hat aus einem PDF kopierter Text \u00fcberall Umbr\u00fcche?", "acceptedAnswer": {"@type": "Answer", "text": "Ein PDF speichert Glyphenpositionen, nicht Abs\u00e4tze. Wenn Sie kopieren, f\u00fcgt der Viewer einen Zeilenumbruch ein, wo die visuelle Zeile endete \u2014 am Rand der Spalte, nicht am Satzende. Die Struktur war von Anfang an nicht in der Datei."}}, {"@type": "Question", "name": "Wird es meine Absatzumbr\u00fcche zerst\u00f6ren?", "acceptedAnswer": {"@type": "Answer", "text": "Nicht mit \"Absatzumbr\u00fcche beibehalten\", was die Standardeinstellung ist. Einzelne Zeilenumbr\u00fcche innerhalb eines Absatzes werden zu Leerzeichen; Leerzeilen zwischen Abs\u00e4tzen \u00fcberleben. Schalten Sie es nur aus, wenn Sie bewusst alles in einer Zeile haben m\u00f6chten."}}, {"@type": "Question", "name": "F\u00fcgt es W\u00f6rter zusammen, die \u00fcber Zeilen mit Bindestrichen geteilt sind?", "acceptedAnswer": {"@type": "Answer", "text": "Nein, absichtlich. Das Zusammenf\u00fcgen von \"compre-\" und \"hension\" w\u00fcrde auch echte Bindestriche in W\u00f6rtern wie \"state-of-the-art\" zerst\u00f6ren, und es gibt keine zuverl\u00e4ssige M\u00f6glichkeit, die beiden ohne W\u00f6rterbuch zu unterscheiden. Suchen Sie nach verbleibenden Bindestrichen nach der Bereinigung."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Zeilenumbr\u00fcche entfernen", "item": "https://wordroomonline.com/de/remove-line-breaks"}]}]}</script>
+</head><body data-tool="remove-line-breaks" lang="de">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Menü öffnen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/de/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Datenschutz</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>Deutsch</option>
+    <option value="/remove-line-breaks.html">English</option><option value="/es/remove-line-breaks.html">Español</option><option value="/ja/remove-line-breaks.html">日本語</option><option value="/fr/remove-line-breaks.html">Français</option><option value="/pt/remove-line-breaks.html">Português</option><option value="/ko/remove-line-breaks.html">한국어</option><option value="/it/remove-line-breaks.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Suchen"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Suchen</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Design wechseln"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Menü schließen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Zählen</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Wortzähler</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Konvertieren</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Fallkonverter</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analysieren</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Lesbarkeitsprüfer</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Aufräumen</p>
+    <a class="rail__link" href="remove-line-breaks.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Zeilenumbrüche entfernen</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Zeilen sortieren</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Doppelte Zeilen entfernen</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Aufräumen</p>
+  <h1>Zeilenumbrüche entfernen</h1>
+  <p>Verbinden Sie Zeilen, die durch eine PDF-Spalte oder einen E-Mail-Client gebrochen wurden, unter Beibehaltung echter Absatzumbrüche.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Fügen Sie Text ein, bei dem jede Zeile vorzeitig endet — typischerweise aus einem PDF oder einer E-Mail kopiert."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>Warum PDF-Text gebrochen pastet</h2><p>Ein PDF speichert keine Absätze. Es speichert Glyphen an Koordinaten. Wenn Sie Text in einem PDF-Viewer auswählen und kopieren, rekonstruiert der Viewer eine Lesereihenfolge und fügt einen Zeilenumbruch ein, wo die visuelle Zeile endete — am Rand der Spalte, nicht am Satzende. Fügen Sie das in ein Dokument ein und jede Zeile hört vorzeitig auf.</p>
+<p>E-Mail-Clients verursachen dasselbe Problem anders. E-Mail-Plaintext wickelt traditionell bei etwa 72 Zeichen um, daher kommt weitergeleiteter Text gebrochen an. Code-Editors mit einem festen Lineal tun es auch.</p>
+<p>Die Lösung besteht darin, zwei Arten von Umbrüchen zu unterscheiden. Ein einzelner Zeilenumbruch innerhalb eines Absatzes ist ein Artefakt und sollte ein Leerzeichen werden. Eine Leerzeile zwischen Absätzen ist bedeutsam und sollte überleben. „Absatzumbrüche beibehalten" tut genau das; schalten Sie es nur aus, wenn Sie bewusst alles in einer Zeile haben möchten.</p></section><section><h2>Die Bereinigungsreihenfolge, die funktioniert</h2><p>Wenn Text schlecht formatiert ankommt, ist die Reihenfolge der Operationen wichtig. Diese in der falschen Reihenfolge auszuführen lässt Nähte zurück.</p>
+<ol>
+<li><strong>Unsichtbare Zeichen zuerst entfernen</strong>. Leerzeichen mit Breite null und Byte-Reihenmarken überleben die meisten anderen Operationen und brechen die Suche später.</li>
+<li><strong>Jede Zeile trimmen</strong>, damit abschließende Leerzeichen nicht zu doppelten Leerzeichen werden, wenn Zeilen zusammengeführt werden.</li>
+<li><strong>Zeilenumbrüche entfernen</strong>, unter Beibehaltung von Absatzumbrüchen.</li>
+<li><strong>Zusätzliche Leerzeichen komprimieren</strong>, um die Verbindungen aufzuräumen.</li>
+<li><strong>Leerzeilen zuletzt entfernen</strong>, sobald Sie die tatsächliche Struktur sehen können.</li>
+</ol>
+<p>Trennung ist der Fall, den dieses Tool absichtlich nicht errät. PDFs brechen oft Wörter über Zeilen mit einem Bindestrich. „compre-" und „hension" automatisch wieder zusammenzufügen würde auch echte Bindestriche in „state-of-the-art" zerstören, daher ist das sichere Verhalten, sie zu lassen und Sie die verbleibenden Bindestriche selbst suchen zu lassen.</p></section><section><h2>Häufige Fragen</h2><details class="faq"><summary>Warum hat aus einem PDF kopierter Text überall Umbrüche?</summary><div><p>Ein PDF speichert Glyphenpositionen, nicht Absätze. Wenn Sie kopieren, fügt der Viewer einen Zeilenumbruch ein, wo die visuelle Zeile endete — am Rand der Spalte, nicht am Satzende. Die Struktur war von Anfang an nicht in der Datei.</p></div></details><details class="faq"><summary>Wird es meine Absatzumbrüche zerstören?</summary><div><p>Nicht mit &quot;Absatzumbrüche beibehalten&quot;, was die Standardeinstellung ist. Einzelne Zeilenumbrüche innerhalb eines Absatzes werden zu Leerzeichen; Leerzeilen zwischen Absätzen überleben. Schalten Sie es nur aus, wenn Sie bewusst alles in einer Zeile haben möchten.</p></div></details><details class="faq"><summary>Fügt es Wörter zusammen, die über Zeilen mit Bindestrichen geteilt sind?</summary><div><p>Nein, absichtlich. Das Zusammenfügen von &quot;compre-&quot; und &quot;hension&quot; würde auch echte Bindestriche in Wörtern wie &quot;state-of-the-art&quot; zerstören, und es gibt keine zuverlässige Möglichkeit, die beiden ohne Wörterbuch zu unterscheiden. Suchen Sie nach verbleibenden Bindestrichen nach der Bereinigung.</p></div></details></section><section><h2>Verwandte Tools</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Wortzähler</strong><span>Echtzeit-Zählungen beim Tippen, mit akademischen Ausschlüssen un…</span></a><a class="relcard" href="case-converter.html"><strong>Fallkonverter</strong><span>Dreizehn Konvertierungen, mit Überschriftengroßschreibung, die d…</span></a><a class="relcard" href="readability-checker.html"><strong>Lesbarkeitsprüfer</strong><span>Sechs Formeln, plus die spezifischen Sätze, die Ihren Wert drück…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Tools suchen…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Tools</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

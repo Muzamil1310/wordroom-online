@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verificador de Legibilidad — Flesch Reading Ease y Nivel de Grado | WordRoom</title>
+<meta name="description" content="Evalúa tu escritura con Flesch Reading Ease, Flesch-Kincaid, Gunning Fog, SMOG, Coleman-Liau y ARI. Muestra qué oraciones están bajando la puntuación.">
+<link rel="canonical" href="https://wordroomonline.com/es/readability-checker">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/readability-checker.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/readability-checker.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/readability-checker.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/readability-checker.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/readability-checker.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/readability-checker.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/readability-checker.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/readability-checker.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/readability-checker.html">
+<meta property="og:title" content="Verificador de Legibilidad — Flesch Reading Ease y Nivel de Grado">
+<meta property="og:description" content="Evalúa tu escritura con Flesch Reading Ease, Flesch-Kincaid, Gunning Fog, SMOG, Coleman-Liau y ARI. Muestra qué oraciones están bajando la puntuación.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Verificador de legibilidad", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Eval\u00faa tu escritura con Flesch Reading Ease, Flesch-Kincaid, Gunning Fog, SMOG, Coleman-Liau y ARI. Muestra qu\u00e9 oraciones est\u00e1n bajando la puntuaci\u00f3n.", "url": "https://wordroomonline.com/es/readability-checker", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u00bfCu\u00e1l es una buena puntuaci\u00f3n de Flesch Reading Ease?", "acceptedAnswer": {"@type": "Answer", "text": "Para escritura web general, 60 o superior. Los est\u00e1ndares de lenguaje claro en gobierno y salud suelen apuntar a 60 a 70. La documentaci\u00f3n t\u00e9cnica para especialistas suele estar en los 40, lo cual es apropiado para esa audiencia. Por debajo de 30 es pesado para casi todos."}}, {"@type": "Question", "name": "\u00bfPor qu\u00e9 las f\u00f3rmulas dan niveles de grado diferentes?", "acceptedAnswer": {"@type": "Answer", "text": "Fueron construidas para diferentes prop\u00f3sitos y ponderan sus entradas de manera diferente: Gunning Fog castiga fuertemente las palabras polis\u00edlabas, Coleman-Liau usa recuentos de letras en lugar de s\u00edlabas, SMOG fue dise\u00f1ado para pasajes de salud cortos. Una gran diferencia entre ellos generalmente significa que el texto es desigual en lugar de que una f\u00f3rmula est\u00e9 mal."}}, {"@type": "Question", "name": "\u00bfQu\u00e9 tan preciso es el recuento de s\u00edlabas?", "acceptedAnswer": {"@type": "Answer", "text": "Es una heur\u00edstica, como en cada implementaci\u00f3n de estas f\u00f3rmulas. La ortograf\u00eda inglesa no se mapea limpiamente a s\u00edlabas, por lo que algunas palabras se cuentan mal. Esto afecta por igual a todas las herramientas de legibilidad. Coleman-Liau evita el problema contando letras, por lo que vale la pena leer junto con las puntuaciones basadas en s\u00edlabas."}}, {"@type": "Question", "name": "\u00bfC\u00f3mo mejoro mi puntuaci\u00f3n m\u00e1s r\u00e1pido?", "acceptedAnswer": {"@type": "Answer", "text": "Divide tus oraciones m\u00e1s largas. La longitud de la oraci\u00f3n es una de las dos entradas de Flesch Reading Ease, por lo que dividir una oraci\u00f3n de 45 palabras en tres mueve la puntuaci\u00f3n m\u00e1s que cualquier cambio de vocabulario. El panel lista tus oraciones m\u00e1s dif\u00edciles por esta raz\u00f3n exacta."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Verificador de legibilidad", "item": "https://wordroomonline.com/es/readability-checker"}]}]}</script>
+</head><body data-tool="readability-checker" lang="es">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Abrir menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/es/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Privacidad</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>Español</option>
+    <option value="/readability-checker.html">English</option><option value="/ja/readability-checker.html">日本語</option><option value="/fr/readability-checker.html">Français</option><option value="/de/readability-checker.html">Deutsch</option><option value="/pt/readability-checker.html">Português</option><option value="/ko/readability-checker.html">한국어</option><option value="/it/readability-checker.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Buscar</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Cambiar tema"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Cerrar menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Contar</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Contador de palabras</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Convertir</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertidor de mayúsculas</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Analizar</p>
+    <a class="rail__link" href="readability-checker.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Verificador de legibilidad</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Limpiar</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Eliminar saltos de línea</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordenar líneas</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Eliminar líneas duplicadas</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Analizar</p>
+  <h1>Verificador de legibilidad</h1>
+  <p>Seis fórmulas, además de las oraciones específicas que frenan tu puntuación — no solo un número.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Pega un párrafo o un borrador completo. Necesitas al menos una oración completa para puntuar."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>Qué significa la puntuación</h2><p>Flesch Reading Ease mapea el texto a una escala de 0 a 100, donde más alto es más fácil. Se construye solo con dos entradas: longitud promedio de la oración y sílabas promedio por palabra. Esa simplicidad es tanto su fortaleza como su techo — es estable y reproducible, pero no puede decir si tu argumento tiene sentido.</p>
+<table><thead><tr><th>Puntuación</th><th>Se lee como</th><th>Audiencia</th></tr></thead><tbody>
+<tr><td>90–100</td><td>Muy fácil</td><td>5to grado</td></tr>
+<tr><td>80–89</td><td>Fácil</td><td>6to grado</td></tr>
+<tr><td>70–79</td><td>Bastante fácil</td><td>7mo grado</td></tr>
+<tr><td>60–69</td><td>Inglés simple</td><td>8vo–9no grado</td></tr>
+<tr><td>50–59</td><td>Bastante difícil</td><td>10mo–12mo grado</td></tr>
+<tr><td>30–49</td><td>Difícil</td><td>Universidad</td></tr>
+<tr><td>Menos de 30</td><td>Muy difícil</td><td>Graduado universitario</td></tr>
+</tbody></table>
+<p>Para escritura web general, apunta a 60 o superior. Las guías de lenguaje claro en gobierno y salud suelen apuntar a 60–70. La documentación técnica para una audiencia especializada que está en 40 no es un fracaso; la audiencia tiene el vocabulario.</p></section><section><h2>Las seis fórmulas, y dónde no coinciden</h2><p>Todas las seis fórmulas aquí son aritmética pura sobre longitud de oración, longitud de palabra y conteo de sílabas. Fueron desarrolladas para diferentes propósitos y no coincidirán entre sí, lo cual es una característica en lugar de un error — una gran diferencia te dice que el texto es desigual.</p>
+<ul>
+<li><strong>Grado Flesch–Kincaid</strong> — las mismas entradas que Reading Ease, expresadas como grado escolar estadounidense.</li>
+<li><strong>Gunning Fog</strong> — pesa fuertemente las palabras polisílabas. Castiga el jerga.</li>
+<li><strong>SMOG</strong> — diseñada para materiales de salud; considerada confiable en pasajes cortos.</li>
+<li><strong>Coleman–Liau</strong> — usa conteos de letras en lugar de sílabas, por lo que evita el error de estimación de sílabas.</li>
+<li><strong>Índice de Legibilidad Automatizado</strong> — caracteres por palabra más longitud de oración.</li>
+</ul>
+<p>El conteo de sílabas es el eslabón débil. La ortografía inglesa no se mapea limpiamente a sílabas, por lo que cada implementación usa heurísticas y cada implementación está mal en algunas palabras. Coleman–Liau evita el problema contando letras, por lo que vale la pena leer junto con las otras en lugar de aislar.</p></section><section><h2>Corregir oraciones, no palabras</h2><p>Porque la longitud de la oración es una de las dos únicas entradas, dividir oraciones largas mueve la puntuación más que cualquier cantidad de sustitución de sinónimos. Una oración de 45 palabras dividida en tres no te cuesta nada en significado y puede cambiar la puntuación de Reading Ease en diez puntos o más.</p>
+<p>Por eso el panel lista tus oraciones individuales más difíciles en lugar de solo mostrar un total. Una sola oración de 60 palabras en una página clara arrastrará el promedio hacia abajo y es invisible en una puntuación a nivel de documento. Corrige los valores atípicos primero, luego mira el vocabulario.</p>
+<p>La detección de voz pasiva aquí es una heurística regex — una forma de "ser" seguida de algo que parece un participio pasado. Señala demasiado. Trata el conteo como un indicador para releer, no como un veredicto.</p></section><section><h2>Preguntas frecuentes</h2><details class="faq"><summary>¿Cuál es una buena puntuación de Flesch Reading Ease?</summary><div><p>Para escritura web general, 60 o superior. Los estándares de lenguaje claro en gobierno y salud suelen apuntar a 60 a 70. La documentación técnica para especialistas suele estar en los 40, lo cual es apropiado para esa audiencia. Por debajo de 30 es pesado para casi todos.</p></div></details><details class="faq"><summary>¿Por qué las fórmulas dan niveles de grado diferentes?</summary><div><p>Fueron construidas para diferentes propósitos y ponderan sus entradas de manera diferente: Gunning Fog castiga fuertemente las palabras polisílabas, Coleman-Liau usa recuentos de letras en lugar de sílabas, SMOG fue diseñado para pasajes de salud cortos. Una gran diferencia entre ellos generalmente significa que el texto es desigual en lugar de que una fórmula esté mal.</p></div></details><details class="faq"><summary>¿Qué tan preciso es el recuento de sílabas?</summary><div><p>Es una heurística, como en cada implementación de estas fórmulas. La ortografía inglesa no se mapea limpiamente a sílabas, por lo que algunas palabras se cuentan mal. Esto afecta por igual a todas las herramientas de legibilidad. Coleman-Liau evita el problema contando letras, por lo que vale la pena leer junto con las puntuaciones basadas en sílabas.</p></div></details><details class="faq"><summary>¿Cómo mejoro mi puntuación más rápido?</summary><div><p>Divide tus oraciones más largas. La longitud de la oración es una de las dos entradas de Flesch Reading Ease, por lo que dividir una oración de 45 palabras en tres mueve la puntuación más que cualquier cambio de vocabulario. El panel lista tus oraciones más difíciles por esta razón exacta.</p></div></details></section><section><h2>Herramientas relacionadas</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Contador de palabras</strong><span>Recuentos en tiempo real mientras escribes, con exclusiones acad…</span></a><a class="relcard" href="case-converter.html"><strong>Convertidor de mayúsculas</strong><span>Trece conversiones, con mayúsculas de título que siguen las regl…</span></a><a class="relcard" href="remove-line-breaks.html"><strong>Eliminar saltos de línea</strong><span>Une líneas rotas por una columna de PDF o un cliente de correo, …</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Buscar herramientas…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Herramientas</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

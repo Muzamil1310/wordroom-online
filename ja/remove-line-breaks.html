@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>改行を除去 — PDFから貼り付けたテキストを修正 | WordRoom</title>
+<meta name="description" content="PDFやメールからコピーしたテキストの不要な改行を除去しつつ、正しい段落区切りを保持。行のトリムと二重スペースの統合も行います。">
+<link rel="canonical" href="https://wordroomonline.com/ja/remove-line-breaks">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-line-breaks.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-line-breaks.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-line-breaks.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-line-breaks.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-line-breaks.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-line-breaks.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-line-breaks.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-line-breaks.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-line-breaks.html">
+<meta property="og:title" content="改行を除去 — PDFから貼り付けたテキストを修正">
+<meta property="og:description" content="PDFやメールからコピーしたテキストの不要な改行を除去しつつ、正しい段落区切りを保持。行のトリムと二重スペースの統合も行います。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "\u6539\u884c\u3092\u9664\u53bb", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "PDF\u3084\u30e1\u30fc\u30eb\u304b\u3089\u30b3\u30d4\u30fc\u3057\u305f\u30c6\u30ad\u30b9\u30c8\u306e\u4e0d\u8981\u306a\u6539\u884c\u3092\u9664\u53bb\u3057\u3064\u3064\u3001\u6b63\u3057\u3044\u6bb5\u843d\u533a\u5207\u308a\u3092\u4fdd\u6301\u3002\u884c\u306e\u30c8\u30ea\u30e0\u3068\u4e8c\u91cd\u30b9\u30da\u30fc\u30b9\u306e\u7d71\u5408\u3082\u884c\u3044\u307e\u3059\u3002", "url": "https://wordroomonline.com/ja/remove-line-breaks", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "PDF\u304b\u3089\u30b3\u30d4\u30fc\u3057\u305f\u30c6\u30ad\u30b9\u30c8\u306b\u3042\u3061\u3053\u3061\u6539\u884c\u304c\u3042\u308b\u306e\u306f\u306a\u305c\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "PDF\u306f\u30b0\u30ea\u30d5\u306e\u4f4d\u7f6e\u3092\u4fdd\u5b58\u3057\u3001\u6bb5\u843d\u306f\u4fdd\u5b58\u3057\u307e\u305b\u3093\u3002\u30b3\u30d4\u30fc\u3059\u308b\u3068\u3001\u30d3\u30e5\u30fc\u30a2\u306f\u8996\u899a\u7684\u306a\u884c\u304c\u7d42\u308f\u3063\u305f\u5834\u6240\u3001\u3064\u307e\u308a\u6587\u672b\u3067\u306f\u306a\u304f\u30ab\u30e9\u30e0\u306e\u7aef\u306b\u6539\u884c\u3092\u633f\u5165\u3057\u307e\u3059\u3002\u69cb\u9020\u306f\u305d\u3082\u305d\u3082\u30d5\u30a1\u30a4\u30eb\u306b\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002"}}, {"@type": "Question", "name": "\u6bb5\u843d\u533a\u5207\u308a\u304c\u58ca\u308c\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u300c\u6bb5\u843d\u533a\u5207\u308a\u3092\u4fdd\u6301\u300d\u304c\u30aa\u30f3\u306e\u5834\u5408\u306f\u58ca\u308c\u307e\u305b\u3093\u3002\u3053\u308c\u304c\u30c7\u30d5\u30a9\u30eb\u30c8\u3067\u3059\u3002\u6bb5\u843d\u5185\u306e\u5358\u4e00\u306e\u6539\u884c\u306f\u30b9\u30da\u30fc\u30b9\u306b\u306a\u308a\u3001\u6bb5\u843d\u9593\u306e\u7a7a\u884c\u306f\u4fdd\u6301\u3055\u308c\u307e\u3059\u3002\u610f\u56f3\u7684\u306b\u3059\u3079\u3066\u30921\u884c\u306b\u3057\u305f\u3044\u5834\u5408\u306e\u307f\u30aa\u30d5\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002"}}, {"@type": "Question", "name": "\u884c\u9593\u306b\u30cf\u30a4\u30d5\u30f3\u3067\u5206\u5272\u3055\u308c\u305f\u5358\u8a9e\u3092\u518d\u7d50\u5408\u3057\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u610f\u56f3\u7684\u306b\u3044\u3044\u3048\u3002\"compre-\"\u3068\"hension\"\u3092\u518d\u7d50\u5408\u3059\u308b\u3068\"state-of-the-art\"\u306a\u3069\u306e\u672c\u7269\u306e\u30cf\u30a4\u30d5\u30f3\u3082\u7834\u58ca\u3055\u308c\u307e\u3059\u3002\u8f9e\u66f8\u306a\u3057\u306b\u533a\u5225\u3059\u308b\u78ba\u5b9f\u306a\u65b9\u6cd5\u306f\u3042\u308a\u307e\u305b\u3093\u3002\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u5f8c\u306b\u6b8b\u3063\u305f\u30cf\u30a4\u30d5\u30f3\u3092\u81ea\u5206\u3067\u691c\u7d22\u3057\u3066\u304f\u3060\u3055\u3044\u3002"}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "\u6539\u884c\u3092\u9664\u53bb", "item": "https://wordroomonline.com/ja/remove-line-breaks"}]}]}</script>
+</head><body data-tool="remove-line-breaks" lang="ja">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ja/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>日本語</option>
+    <option value="/remove-line-breaks.html">English</option><option value="/es/remove-line-breaks.html">Español</option><option value="/fr/remove-line-breaks.html">Français</option><option value="/de/remove-line-breaks.html">Deutsch</option><option value="/pt/remove-line-breaks.html">Português</option><option value="/ko/remove-line-breaks.html">한국어</option><option value="/it/remove-line-breaks.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="検索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>検索</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="テーマ切替"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="メニューを閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">カウント</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>ワードカウンター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">変換</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">分析</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">整理</p>
+    <a class="rail__link" href="remove-line-breaks.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>改行を除去</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">整理</p>
+  <h1>改行を除去</h1>
+  <p>PDFのカラムやメールクライアントで壊れた行を結合しつつ、本物の段落区切りを保持。</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="行が途中で切れているテキストを貼り付けてください。主にPDFやメールからコピーしたテキスト向けです。"></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>PDFテキストが壊れて貼り付く理由</h2><p>PDFは段落を保存しません。座標にグリフを保存します。PDFビューアでテキストを選択してコピーすると、ビューアは読む順序を再構築し、視覚的な行が終わった場所 — 文末ではなくカラムの端 — に改行を挿入します。それをドキュメントに貼り付けると、すべての行が途中で止まります。</p>
+<p>メールクライアントは別の方法で同じ問題を引き起こします。プレーンテキストメールは従来約72文字でハードラップするため、転送されたテキストは事前に壊れて届きます。固定ルールを持つコードエディタも同様です。</p>
+<p>修正は2種類の区切りを区別することです。段落内の単一の改行はアーティファクトであり、スペースになるべきです。段落間の空行は意味があり、生存すべきです。「段落区切りを保持」はまさにそれを行います。意図的にすべてを1行にしたい場合のみオフにしてください。</p></section><section><h2>機能するクリーンアップ順序</h2><p>テキストがformatted で届いた場合、操作の順序が重要です。間違った順序で実行すると継ぎ目が残ります。</p>
+<ol>
+<li><strong>不可視文字を最初に除去</strong>。幅ゼロスペースとバイト順マークはほとんどの他の操作を生き残り、後で検索を壊します。</li>
+<li><strong>各行をトリム</strong>し、行が結合される際にトレーリングスペースがダブルスペースにならないようにします。</li>
+<li><strong>段落区切りを保持しながら改行を除去</strong>。</li>
+<li><strong>余分なスペースを統合</strong>して結合を整えます。</li>
+<li><strong>空行を最後に除去</strong>し、実際の構造が見えるようにします。</li>
+</ol>
+<p>区切りはこのツールが意図的に推測しないケースです。PDFはしばしばハイフンで単語を行間で区切ります。「compre-」と「hension」を自動的に再結合すると「state-of-the-art」などの本物のハイフンも破壊されるため、安全な振る舞いはそれらを残し、残ったハイフンを自分で検索することです。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>PDFからコピーしたテキストにあちこち改行があるのはなぜですか？</summary><div><p>PDFはグリフの位置を保存し、段落は保存しません。コピーすると、ビューアは視覚的な行が終わった場所、つまり文末ではなくカラムの端に改行を挿入します。構造はそもそもファイルにありませんでした。</p></div></details><details class="faq"><summary>段落区切りが壊れますか？</summary><div><p>「段落区切りを保持」がオンの場合は壊れません。これがデフォルトです。段落内の単一の改行はスペースになり、段落間の空行は保持されます。意図的にすべてを1行にしたい場合のみオフにしてください。</p></div></details><details class="faq"><summary>行間にハイフンで分割された単語を再結合しますか？</summary><div><p>意図的にいいえ。&quot;compre-&quot;と&quot;hension&quot;を再結合すると&quot;state-of-the-art&quot;などの本物のハイフンも破壊されます。辞書なしに区別する確実な方法はありません。クリーニング後に残ったハイフンを自分で検索してください。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。…</span></a><a class="relcard" href="case-converter.html"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="readability-checker.html"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。…</span></a></div></section></div>
+</div></main>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="ツールを検索…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
