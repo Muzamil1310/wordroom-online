@@ -29,8 +29,8 @@ ICONS = {
 TOOLS = [
     dict(slug="word-counter", nav="Word counter", icon="count", group="Count",
          h1="Word counter", eyebrow="Count",
-         title="Word Counter — Live Word, Character & Sentence Count",
-         desc="Count words, characters, sentences and paragraphs as you type. Handles Telugu, Hindi and CJK correctly, and can exclude citations and reference lists for academic word limits.",
+         title="Free Online Word Counter — Count Words, Characters & Sentences Instantly",
+         desc="Free online word counter and character counter. Count words, characters, sentences and paragraphs as you type. Perfect for essays, articles and student assignments. Handles Telugu, Hindi and CJK correctly, and can exclude citations and reference lists for academic word limits.",
          lede="Live counts as you type, with academic exclusions and correct segmentation for Indic and CJK scripts.",
          ph="Paste or write your text here. Counts update as you type, and nothing is sent anywhere."),
     dict(slug="case-converter", nav="Case converter", icon="case", group="Convert",
@@ -93,6 +93,14 @@ REFS = {
 <p>Reading time here uses 238 words per minute, the mean silent reading rate for English prose found in Brysbaert's 2019 meta-analysis of 190 studies. Many sites use 200 or 250 without saying where the figure came from; the difference on a 3,000-word piece is over two minutes.</p>
 <p>Speaking time uses 130 words per minute, which is deliberately slower than conversational speech. Presenters read prepared text faster than they should when nervous, and rehearsal timings that assume 150 words per minute tend to leave people over-running. If you are timing a speech, treat the figure as a floor and rehearse aloud.</p>
 <p>Both figures are averages across readers and text types. Dense technical prose reads slower; familiar narrative reads faster.</p>
+"""),
+ ("Use this word counter for essays, articles and assignments", """
+<p>Whether you are writing a university essay, a blog article or a professional report, this free word counting tool gives you an accurate count in real time. Students use it to stay within assignment word limits; journalists use it to hit article targets; academics use it to check thesis chapters against departmental requirements.</p>
+<p>Paste your text and the counter updates instantly — no button to press, no page to reload. The character counter runs alongside the word counter, so you always see both totals. For essays with strict word limits, switch on Academic mode to exclude citations, reference lists and footnotes from the countable total.</p>
+"""),
+ ("Word and character counter with live results", """
+<p>This word and character counter gives you both totals simultaneously as you type. The word count uses Unicode word-boundary rules, so it works correctly for English, Chinese, Japanese, Hindi, Telugu and every other script. The character count uses grapheme clusters, so a flag emoji counts as one character, not four.</p>
+<p>For articles and blog posts, the reading time estimate tells you how long your piece will take to read. For speeches, the speaking time estimate gives you a rehearsal baseline at 130 words per minute.</p>
 """),
 ],
 "case-converter": [
@@ -212,7 +220,15 @@ FAQS = {
  ("How is reading time calculated?",
   "Words divided by 238 words per minute, the mean silent reading rate for English prose from Brysbaert's 2019 meta-analysis. Speaking time uses a deliberately conservative 130 words per minute."),
  ("Does it count words in Telugu or Hindi correctly?",
-  "Yes. The tool detects the script and applies Unicode word-boundary rules for it rather than splitting on spaces, so combining marks and conjuncts are handled properly. Mixed-script documents are counted with the rules for the dominant non-Latin script."),
+   "Yes. The tool detects the script and applies Unicode word-boundary rules for it rather than splitting on spaces, so combining marks and conjuncts are handled properly. Mixed-script documents are counted with the rules for the dominant non-Latin script."),
+ ("How do I count words in text online?",
+   "Paste your text into the editor above. The word count, character count, sentence count and paragraph count all update live as you type. Nothing is sent to a server — every calculation happens in your browser."),
+ ("Is this a free word counting tool?",
+   "Yes. The tool is completely free with no sign-up, no file upload limit, and no ads. All processing happens locally in your browser."),
+ ("Can I use this as an essay word count checker?",
+   "Yes. Paste your essay into the editor and the word count updates in real time. Switch on Academic mode to exclude citations and reference lists from the countable total, matching your institution's conventions."),
+ ("How does the online text analyzer work?",
+   "The tool uses Unicode segmentation rules to count words correctly across all scripts — English, Chinese, Japanese, Hindi, Telugu and more. It counts grapheme clusters for character counting, so emoji and combining marks are handled properly."),
 ],
 "case-converter": [
  ("What is the difference between title case and capitalise each word?",
@@ -270,7 +286,7 @@ def rail(active, locale="en"):
         for t in links:
             cur = ' aria-current="page"' if t["slug"] == active else ''
             nav_label = TOOLS_T.get(locale, TOOLS_T["en"]).get(t["slug"], {}).get("nav", t["nav"])
-            out.append(f'    <a class="rail__link" href="{t["slug"]}.html"{cur}>{ICONS[t["icon"]]}<span>{nav_label}</span></a>')
+            out.append(f'    <a class="rail__link" href="{t["slug"]}"{cur}>{ICONS[t["icon"]]}<span>{nav_label}</span></a>')
         out.append('  </div>')
     return "\n".join(out)
 
@@ -278,15 +294,15 @@ def head(title, desc, canonical, schema, locale="en", slug=None):
     hreflang_links = []
     for lc, ln in LANGUAGES.items():
         if slug:
-            page_part = f"/{slug}.html"
+            page_part = f"/{slug}"
         else:
-            page_part = "/index.html"
+            page_part = "/"
         if lc == "en":
             hreflang_links.append(f'<link rel="alternate" hreflang="{lc}" href="{BASE}{page_part}">')
         else:
             hreflang_links.append(f'<link rel="alternate" hreflang="{lc}" href="{BASE}/{lc}{page_part}">')
     # x-default points to English
-    default_part = f"/{slug}.html" if slug else "/index.html"
+    default_part = f"/{slug}" if slug else "/"
     hreflang_links.append(f'<link rel="alternate" hreflang="x-default" href="{BASE}{default_part}">')
     hreflang_str = "\n".join(hreflang_links)
     return f"""<!DOCTYPE html>
@@ -300,9 +316,14 @@ def head(title, desc, canonical, schema, locale="en", slug=None):
 {hreflang_str}
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
+<meta property="og:url" content="{canonical}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="{locale.replace('-', '_')}">
 <meta property="og:site_name" content="{SITE}">
+<meta property="og:image" content="{BASE}/assets/og-image.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{html.escape(title)}">
+<meta name="twitter:description" content="{html.escape(desc)}">
 <link rel="icon" type="image/png" href="{'../assets' if locale != 'en' else 'assets'}/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="{'../assets' if locale != 'en' else 'assets'}/favicon.svg" />
 <link rel="shortcut icon" href="{'../assets' if locale != 'en' else 'assets'}/favicon.ico" />
@@ -326,9 +347,9 @@ def lang_switcher(locale, slug=None):
         if lc == locale:
             continue
         if lc == "en":
-            href = f'/{slug}.html' if slug else '/index.html'
+            href = f'/{slug}' if slug else '/'
         else:
-            href = f'/{lc}/{slug}.html' if slug else f'/{lc}/index.html'
+            href = f'/{lc}/{slug}' if slug else f'/{lc}/'
         options.append(f'<option value="{href}">{ln}</option>')
     current_name = LANGUAGES.get(locale, "English")
     return f'''<div class="lang-switcher">
@@ -341,7 +362,7 @@ def lang_switcher(locale, slug=None):
 def shell(active, body, locale="en", slug=None):
     ui = UI.get(locale, UI["en"])
     prefix = f"/{locale}" if locale != "en" else ""
-    home_href = f"{prefix}/index.html" if locale != "en" else "/index.html"
+    home_href = f"{prefix}/" if locale != "en" else "/"
     # JS/CSS paths: English root = assets/, localized = ../assets/
     a = "../assets" if locale != "en" else "assets"
     # Footer links
@@ -351,9 +372,9 @@ def shell(active, body, locale="en", slug=None):
         pt = PAGES_T.get(locale, PAGES_T.get("en", {})).get(p, PAGES_T.get("en", {}).get(p, {}))
         page_title = pt.get("title", p.replace("-", " ").title())
         if locale != "en":
-            href = f"/{locale}/{p}.html"
+            href = f"/{locale}/{p}"
         else:
-            href = f"/{p}.html"
+            href = f"/{p}"
         footer_links.append(f'<a href="{href}">{page_title}</a>')
     footer_html = f"""<footer class="ftr">
   <div class="wrap">
@@ -443,7 +464,7 @@ def refs_html(slug, locale="en"):
     rel = [t for t in TOOLS if t["slug"] != slug][:3]
     loc_tools = TOOLS_T.get(locale, TOOLS_T.get("en", {}))
     parts.append(f"<section><h2>{_REL_H.get(locale, 'Related tools')}</h2><div class=\"rel\">" + "".join(
-        f'<a class="relcard" href="{t["slug"]}.html"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])[:64]}…</span></a>' for t in rel
+        f'<a class="relcard" href="{t["slug"]}"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])[:64]}…</span></a>' for t in rel
     ) + "</div></section>")
     return '<div class="refs">' + "".join(parts) + '</div>'
 
@@ -498,14 +519,14 @@ def index_page(locale="en"):
               "url": canonical,
               "description": h.get("schema_desc", HOME["en"]["schema_desc"])}
     cards = "".join(
-        f'<a class="relcard" href="{t["slug"]}.html"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])}</span></a>' for t in TOOLS)
+        f'<a class="relcard" href="{t["slug"]}"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])}</span></a>' for t in TOOLS)
     # Use translated home page content
     body = f"""<div class="hero">
   <p class="eyebrow">{h.get("eyebrow", HOME["en"]["eyebrow"])}</p>
   <h1>{h.get("h1", HOME["en"]["h1"])}</h1>
   <p>{h.get("desc", HOME["en"]["desc"])}</p>
   <div class="herobtns">
-    <a class="btn" href="word-counter.html">{h.get("cta", HOME["en"]["cta"])}</a>
+    <a class="btn" href="word-counter">{h.get("cta", HOME["en"]["cta"])}</a>
     <button class="btn btn--ghost" data-pal-open type="button">{h.get("cta2", HOME["en"]["cta2"])} <kbd>⌘K</kbd></button>
   </div>
 </div>
@@ -588,7 +609,7 @@ for locale in LANGUAGES:
 # sitemap.xml with hreflang entries
 sitemap_urls = []
 # English URLs
-sitemap_urls.append(f"  <url><loc>{BASE}/</loc>")
+sitemap_urls.append(f"  <url><loc>{BASE}/</loc><lastmod>2026-09-01</lastmod>")
 for lc in LANGUAGES:
     if lc == "en":
         sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/"/>')
@@ -600,7 +621,7 @@ sitemap_urls.append("  </url>")
 for t in TOOLS:
     s = t["slug"]
     # English tool URL
-    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc>")
+    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-01</lastmod>")
     for lc in LANGUAGES:
         if lc == "en":
             sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{s}"/>')
@@ -610,7 +631,7 @@ for t in TOOLS:
     sitemap_urls.append("  </url>")
 
 for s in STATIC_PAGES:
-    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc>")
+    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-01</lastmod>")
     for lc in LANGUAGES:
         if lc == "en":
             sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{s}"/>')

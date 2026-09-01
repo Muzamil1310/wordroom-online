@@ -6,21 +6,26 @@
 <title>行をアルファベット順にソート — オンライン行ソーター | WordRoom</title>
 <meta name="description" content="行のリストをアルファベット順、長さ順、逆順、シャッフルでソート。自然数の順序付けと、非英語リストのロケール対応アルファベット順をサポート。">
 <link rel="canonical" href="https://wordroomonline.com/ja/sort-lines">
-<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines.html">
-<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines.html">
-<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines.html">
-<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines.html">
-<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines.html">
-<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines.html">
-<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines.html">
-<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines.html">
-<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines.html">
-<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines.html">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/sort-lines">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/sort-lines">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/sort-lines">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/sort-lines">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines">
+<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines">
 <meta property="og:title" content="行をアルファベット順にソート — オンライン行ソーター">
 <meta property="og:description" content="行のリストをアルファベット順、長さ順、逆順、シャッフルでソート。自然数の順序付けと、非英語リストのロケール対応アルファベット順をサポート。">
+<meta property="og:url" content="https://wordroomonline.com/ja/sort-lines">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja">
 <meta property="og:site_name" content="WordRoom">
+<meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="行をアルファベット順にソート — オンライン行ソーター">
+<meta name="twitter:description" content="行のリストをアルファベット順、長さ順、逆順、シャッフルでソート。自然数の順序付けと、非英語リストのロケール対応アルファベット順をサポート。">
 <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
@@ -39,13 +44,13 @@
 <div class="app">
 <header class="hdr">
   <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  <a class="hdr__brand" href="/ja/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <a class="hdr__brand" href="/ja/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
   <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
   <div class="lang-switcher">
   <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
     <option value="" selected>日本語</option>
-    <option value="/sort-lines.html">English</option><option value="/es/sort-lines.html">Español</option><option value="/fr/sort-lines.html">Français</option><option value="/de/sort-lines.html">Deutsch</option><option value="/pt/sort-lines.html">Português</option><option value="/ko/sort-lines.html">한국어</option><option value="/it/sort-lines.html">Italiano</option><option value="/ru/sort-lines.html">Русский</option>
+    <option value="/sort-lines">English</option><option value="/es/sort-lines">Español</option><option value="/fr/sort-lines">Français</option><option value="/de/sort-lines">Deutsch</option><option value="/pt/sort-lines">Português</option><option value="/ko/sort-lines">한국어</option><option value="/it/sort-lines">Italiano</option><option value="/ru/sort-lines">Русский</option>
   </select>
 </div>
   <button class="kbtrigger" data-pal-open type="button" aria-label="検索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>検索</span><kbd>⌘K</kbd></button>
@@ -56,18 +61,18 @@
 <nav class="rail" aria-label="Tools">
   <button class="iconbtn rail__close" aria-label="メニューを閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <div class="rail__group"><p class="rail__label">カウント</p>
-    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>ワードカウンター</span></a>
+    <a class="rail__link" href="word-counter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>ワードカウンター</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">変換</p>
-    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
+    <a class="rail__link" href="case-converter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">分析</p>
-    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
+    <a class="rail__link" href="readability-checker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">整理</p>
-    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>改行を除去</span></a>
-    <a class="rail__link" href="sort-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
-    <a class="rail__link" href="remove-duplicate-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
+    <a class="rail__link" href="remove-line-breaks"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>改行を除去</span></a>
+    <a class="rail__link" href="sort-lines" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
+    <a class="rail__link" href="remove-duplicate-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
   </div>
 </nav>
 
@@ -113,13 +118,13 @@
 <li><strong>現在の順序を反転</strong> — ソートせずにリストを反転。時系列ログに通常必要なもの。</li>
 <li><strong>シャッフル</strong> — Fisher–Yatesシャッフルで、すべての順序が等しい確率。ランダムな比較関数を使用する単純なシャッフルは偏っています。</li>
 </ul>
-<p>空行はデフォルトで削除されます。片端に空白のブロックがあるソートされたリストは誰も望まないものだからです。空行に意味がある場合はオフにしてください。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>なぜ私のリストが大文字が先に並びましたか？</summary><div><p>これは文字コードをそのまま比較するツールで発生します。すべての大文字が小文字の前に来ます。このツールはロケール対応の照合を使用し、デフォルトでは大文字小文字を無視するため、人が期待する順序になります。厳密なバージョンが必要な場合は「大文字小文字を区別」をオンにしてください。</p></div></details><details class="faq"><summary>なぜアイテム10がアイテム2の前に来るのですか？</summary><div><p>テキストとして比較すると&quot;1&quot;は&quot;2&quot;より小さいため、&quot;アイテム10&quot;が先に並びます。「自然数順序」をオンにすると数値部分が数値として比較され、アイテム1、アイテム2、アイテム10の順になります。デフォルトでオンです。</p></div></details><details class="faq"><summary>シャッフルは本当にランダムですか？</summary><div><p>Fisher-Yatesシャッフルを使用しており、すべての可能な順序が等しい確率で発生します。ランダムな比較関数をソート関数に渡すシャッフルは一般的な捷径で、偏りのある結果を生み出します。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。…</span></a><a class="relcard" href="case-converter.html"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="readability-checker.html"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。…</span></a></div></section></div>
+<p>空行はデフォルトで削除されます。片端に空白のブロックがあるソートされたリストは誰も望まないものだからです。空行に意味がある場合はオフにしてください。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>なぜ私のリストが大文字が先に並びましたか？</summary><div><p>これは文字コードをそのまま比較するツールで発生します。すべての大文字が小文字の前に来ます。このツールはロケール対応の照合を使用し、デフォルトでは大文字小文字を無視するため、人が期待する順序になります。厳密なバージョンが必要な場合は「大文字小文字を区別」をオンにしてください。</p></div></details><details class="faq"><summary>なぜアイテム10がアイテム2の前に来るのですか？</summary><div><p>テキストとして比較すると&quot;1&quot;は&quot;2&quot;より小さいため、&quot;アイテム10&quot;が先に並びます。「自然数順序」をオンにすると数値部分が数値として比較され、アイテム1、アイテム2、アイテム10の順になります。デフォルトでオンです。</p></div></details><details class="faq"><summary>シャッフルは本当にランダムですか？</summary><div><p>Fisher-Yatesシャッフルを使用しており、すべての可能な順序が等しい確率で発生します。ランダムな比較関数をソート関数に渡すシャッフルは一般的な捷径で、偏りのある結果を生み出します。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。…</span></a><a class="relcard" href="case-converter"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="readability-checker"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。…</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__inner">
       <span class="ftr__copy">&copy; 2026 WordRoom</span>
-      <nav class="ftr__links" aria-label="Legal"><a href="/ja/privacy.html">プライバシーポリシー</a> <a href="/ja/about.html">会社概要</a> <a href="/ja/terms.html">利用規約</a> <a href="/ja/contact.html">お問い合わせ</a></nav>
+      <nav class="ftr__links" aria-label="Legal"><a href="/ja/privacy">プライバシーポリシー</a> <a href="/ja/about">会社概要</a> <a href="/ja/terms">利用規約</a> <a href="/ja/contact">お問い合わせ</a></nav>
     </div>
   </div>
 </footer>

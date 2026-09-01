@@ -2,7 +2,7 @@
 
 Private, client-side text and writing utilities. No upload, no account.
 
-- [Word counter](https://wordroomonline.com/word-counter): Count words, characters, sentences and paragraphs as you type. Handles Telugu, Hindi and CJK correctly, and can exclude citations and reference lists for academic word limits.
+- [Word counter](https://wordroomonline.com/word-counter): Free online word counter and character counter. Count words, characters, sentences and paragraphs as you type. Perfect for essays, articles and student assignments. Handles Telugu, Hindi and CJK correctly, and can exclude citations and reference lists for academic word limits.
 - [Case converter](https://wordroomonline.com/case-converter): Convert text between title case, sentence case, UPPERCASE, camelCase, snake_case and more. Title case follows real AP, Chicago and MLA rules instead of capitalising every word.
 - [Readability checker](https://wordroomonline.com/readability-checker): Score your writing with Flesch Reading Ease, Flesch-Kincaid, Gunning Fog, SMOG, Coleman-Liau and ARI. Shows which sentences are dragging the score down.
 - [Remove line breaks](https://wordroomonline.com/remove-line-breaks): Strip unwanted line breaks from text copied out of PDFs and emails while keeping real paragraph breaks intact. Also trims lines and collapses double spaces.

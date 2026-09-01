@@ -6,21 +6,26 @@
 <title>Supprimer les Lignes en Double — Trouver et Supprimer les Répétitions | WordRoom</title>
 <meta name="description" content="Trouvez et supprimez les lignes en double de toute liste. Choisissez si la casse et les espaces comptent, et inspectez quelles valeurs se répètent avant de supprimer.">
 <link rel="canonical" href="https://wordroomonline.com/fr/remove-duplicate-lines">
-<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-duplicate-lines.html">
-<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-duplicate-lines">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-duplicate-lines">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-duplicate-lines">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-duplicate-lines">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-duplicate-lines">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-duplicate-lines">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-duplicate-lines">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines">
+<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-duplicate-lines">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines">
 <meta property="og:title" content="Supprimer les Lignes en Double — Trouver et Supprimer les Répétitions">
 <meta property="og:description" content="Trouvez et supprimez les lignes en double de toute liste. Choisissez si la casse et les espaces comptent, et inspectez quelles valeurs se répètent avant de supprimer.">
+<meta property="og:url" content="https://wordroomonline.com/fr/remove-duplicate-lines">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="WordRoom">
+<meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Supprimer les Lignes en Double — Trouver et Supprimer les Répétitions">
+<meta name="twitter:description" content="Trouvez et supprimez les lignes en double de toute liste. Choisissez si la casse et les espaces comptent, et inspectez quelles valeurs se répètent avant de supprimer.">
 <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
@@ -39,13 +44,13 @@
 <div class="app">
 <header class="hdr">
   <button class="iconbtn" id="railToggle" aria-label="Ouvrir le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  <a class="hdr__brand" href="/fr/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <a class="hdr__brand" href="/fr/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
   <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Confidentialité</span></span>
   <div class="lang-switcher">
   <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
     <option value="" selected>Français</option>
-    <option value="/remove-duplicate-lines.html">English</option><option value="/es/remove-duplicate-lines.html">Español</option><option value="/ja/remove-duplicate-lines.html">日本語</option><option value="/de/remove-duplicate-lines.html">Deutsch</option><option value="/pt/remove-duplicate-lines.html">Português</option><option value="/ko/remove-duplicate-lines.html">한국어</option><option value="/it/remove-duplicate-lines.html">Italiano</option><option value="/ru/remove-duplicate-lines.html">Русский</option>
+    <option value="/remove-duplicate-lines">English</option><option value="/es/remove-duplicate-lines">Español</option><option value="/ja/remove-duplicate-lines">日本語</option><option value="/de/remove-duplicate-lines">Deutsch</option><option value="/pt/remove-duplicate-lines">Português</option><option value="/ko/remove-duplicate-lines">한국어</option><option value="/it/remove-duplicate-lines">Italiano</option><option value="/ru/remove-duplicate-lines">Русский</option>
   </select>
 </div>
   <button class="kbtrigger" data-pal-open type="button" aria-label="Rechercher"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Rechercher</span><kbd>⌘K</kbd></button>
@@ -56,18 +61,18 @@
 <nav class="rail" aria-label="Tools">
   <button class="iconbtn rail__close" aria-label="Fermer le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <div class="rail__group"><p class="rail__label">Compter</p>
-    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Compteur de mots</span></a>
+    <a class="rail__link" href="word-counter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Compteur de mots</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Convertir</p>
-    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertisseur de casse</span></a>
+    <a class="rail__link" href="case-converter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertisseur de casse</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Analyser</p>
-    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Vérificateur de lisibilité</span></a>
+    <a class="rail__link" href="readability-checker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Vérificateur de lisibilité</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Nettoyer</p>
-    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Supprimer les sauts de ligne</span></a>
-    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Trier les lignes</span></a>
-    <a class="rail__link" href="remove-duplicate-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Supprimer les lignes en double</span></a>
+    <a class="rail__link" href="remove-line-breaks"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Supprimer les sauts de ligne</span></a>
+    <a class="rail__link" href="sort-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Trier les lignes</span></a>
+    <a class="rail__link" href="remove-duplicate-lines" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Supprimer les lignes en double</span></a>
   </div>
 </nav>
 
@@ -107,13 +112,13 @@
 <p><strong>La casse compte-t-elle ?</strong> Pour les adresses e-mail, non — la partie locale est techniquement sensible à la casse mais effectivement jamais traitée de cette façon, donc <code>Hello@example.com</code> et <code>hello@example.com</code> sont la même adresse. Pour les mots de passe ou les identifiants, la casse compte absolument. La valeur par défaut ici est insensible à la casse.</p>
 <p><strong>L'espace environnant compte-t-il ?</strong> Presque jamais. Une ligne avec un espace final est la même valeur qu'une sans, et les listes copiées depuis des tableurs sont pleines de ces espaces. La valeur par défaut est de rogner avant de comparer.</p>
 <p><strong>Quelle copie survit ?</strong> Cet outil garde la première occurrence et préserve l'ordre original de ce qui reste, donc votre liste n'est pas silencieusement retriée. Si vous voulez aussi qu'elle soit triée, c'est une action séparée.</p></section><section><h2>Inspectez avant de supprimer</h2><p>Le comportement par défaut de la plupart des outils de déduplication est de rendre une liste plus courte sans rien vous dire sur ce qui a disparu. C'est bien quand vous faites confiance à l'entrée et risqué quand vous ne le faites pas — un espace de tête inattendu ou une différence de casse inattendue peut signifier que l'outil a supprimé quelque chose dont vous aviez besoin, ou gardé quelque chose que vous pensiez être un doublon.</p>
-<p>Le panel montre combien de lignes ont été supprimées, combien de valeurs distinctes se sont répétées, et quelles valeurs se sont le plus répétées, avant que vous n'appliquiez quoi que ce soit. « Garder uniquement les doublons » inverse l'opération pour que vous puissiez voir exactement ce qui se répète — utile pour auditer une liste de diffusion ou trouver des collages accidentels dans un ensemble de mots-clés.</p></section><section><h2>Questions fréquentes</h2><details class="faq"><summary>Conserve-t-il la première ou la dernière copie ?</summary><div><p>La première, et l&#x27;ordre des lignes restantes est préservé. Votre liste n&#x27;est pas silencieusement retriée. Si vous voulez aussi qu&#x27;elle soit triée, c&#x27;est une action séparée.</p></div></details><details class="faq"><summary>Les lignes qui diffèrent uniquement par la casse sont-elles des doublons ?</summary><div><p>Par défaut oui, ce qui est généralement correct pour les adresses e-mail et les mots-clés. Activez la sensibilité à la casse quand la casse est significative, comme pour les mots de passe, les identifiants et le code.</p></div></details><details class="faq"><summary>Puis-je voir les doublons avant de les supprimer ?</summary><div><p>Oui. Le panel liste combien de lignes se répètent et quelles valeurs se répètent le plus en tapant, et &quot;Conserver uniquement les doublons&quot; inverse l&#x27;opération pour que vous puissiez inspecter exactement ce qui se répète.</p></div></details></section><section><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions acad…</span></a><a class="relcard" href="case-converter.html"><strong>Convertisseur de casse</strong><span>Treize conversions, avec des majuscules de titre qui suivent les…</span></a><a class="relcard" href="readability-checker.html"><strong>Vérificateur de lisibilité</strong><span>Six formules, plus les phrases spécifiques qui freinent votre sc…</span></a></div></section></div>
+<p>Le panel montre combien de lignes ont été supprimées, combien de valeurs distinctes se sont répétées, et quelles valeurs se sont le plus répétées, avant que vous n'appliquiez quoi que ce soit. « Garder uniquement les doublons » inverse l'opération pour que vous puissiez voir exactement ce qui se répète — utile pour auditer une liste de diffusion ou trouver des collages accidentels dans un ensemble de mots-clés.</p></section><section><h2>Questions fréquentes</h2><details class="faq"><summary>Conserve-t-il la première ou la dernière copie ?</summary><div><p>La première, et l&#x27;ordre des lignes restantes est préservé. Votre liste n&#x27;est pas silencieusement retriée. Si vous voulez aussi qu&#x27;elle soit triée, c&#x27;est une action séparée.</p></div></details><details class="faq"><summary>Les lignes qui diffèrent uniquement par la casse sont-elles des doublons ?</summary><div><p>Par défaut oui, ce qui est généralement correct pour les adresses e-mail et les mots-clés. Activez la sensibilité à la casse quand la casse est significative, comme pour les mots de passe, les identifiants et le code.</p></div></details><details class="faq"><summary>Puis-je voir les doublons avant de les supprimer ?</summary><div><p>Oui. Le panel liste combien de lignes se répètent et quelles valeurs se répètent le plus en tapant, et &quot;Conserver uniquement les doublons&quot; inverse l&#x27;opération pour que vous puissiez inspecter exactement ce qui se répète.</p></div></details></section><section><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions acad…</span></a><a class="relcard" href="case-converter"><strong>Convertisseur de casse</strong><span>Treize conversions, avec des majuscules de titre qui suivent les…</span></a><a class="relcard" href="readability-checker"><strong>Vérificateur de lisibilité</strong><span>Six formules, plus les phrases spécifiques qui freinent votre sc…</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__inner">
       <span class="ftr__copy">&copy; 2026 WordRoom</span>
-      <nav class="ftr__links" aria-label="Legal"><a href="/fr/privacy.html">Politique de Confidentialité</a> <a href="/fr/about.html">À Propos</a> <a href="/fr/terms.html">Conditions Générales</a> <a href="/fr/contact.html">Contactez-Nous</a></nav>
+      <nav class="ftr__links" aria-label="Legal"><a href="/fr/privacy">Politique de Confidentialité</a> <a href="/fr/about">À Propos</a> <a href="/fr/terms">Conditions Générales</a> <a href="/fr/contact">Contactez-Nous</a></nav>
     </div>
   </div>
 </footer>
