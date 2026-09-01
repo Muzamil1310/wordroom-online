@@ -2053,8 +2053,828 @@ REFS_T = {
 <p><strong>La maiuscola/minuscola conta?</strong> Per gli indirizzi email, no — la parte locale è tecnicamente sensibile a maiuscole/minuscole ma effettivamente non è mai trattata in quel modo, quindi <code>Hello@example.com</code> e <code>hello@example.com</code> sono lo stesso indirizzo. Per password o identificatori, la maiuscola/minuscola conta assolutamente. Il valore predefinito qui è insensibile a maiuscole/minuscole.</p>
 <p><strong>Lo spazio circostante conta?</strong> Quasi mai. Una riga con uno spazio finale è lo stesso valore di una senza, e gli elenchi copiati da fogli di calcolo ne sono pieni. Il valore predefinito è tagliare prima di confrontare.</p>
 <p><strong>Quale copia sopravvive?</strong> Questo strumento mantiene la prima occorrenza e preserva l'ordine originale di ciò che rimane, quindi il vostro elenco non viene silenziosamente riordinato. Se volete anche che sia ordinato, è un'azione separata.</p>"""),
-            ("Ispezionate prima di eliminare", """<p>Il comportamento predefinito della maggior parte degli strumenti di deduplicazione è restituire un elenco più corto e non dirvi nulla di ciò che è mancato. Va bene quando fidate dell'input e rischioso quando non lo fate — uno spazio iniziale imprevisto o una differenza inaspettata di maiuscole/minuscole può significare che lo strumento ha rimosso qualcosa di cui avevate bisogno, o ha mantenuto qualcosa che pensavate fosse un duplicato.</p>
+        ("Ispezionate prima di eliminare", """<p>Il comportamento predefinito della maggior parte degli strumenti di deduplicazione è restituire un elenco più corto e non dirvi nulla di ciò che è mancato. Va bene quando fidate dell'input e rischioso quando non lo fate — uno spazio iniziale imprevisto o una differenza inaspettata di maiuscole/minuscole può significare che lo strumento ha rimosso qualcosa di cui avevate bisogno, o ha mantenuto qualcosa che pensavate fosse un duplicato.</p>
 <p>Il pannello mostra quante righe sono state rimosse, quanti valori distinti si sono ripetuti e quali valori si sono ripetuti di più, prima che applichiate anything. \"Mantieni solo i duplicati\" inverte l'operazione in modo che possiate vedere esattamente cosa si sta ripetendo — utile per auditare un elenco di distribuzione o trovare copia incolla accidentale in un insieme di parole chiave.</p>"""),
         ],
+    },
+}
+
+# ------------------------------------------------------------------ static pages
+PAGES_T = {
+    "en": {
+        "privacy": {
+            "title": "Privacy Policy",
+            "h1": "Privacy Policy",
+            "last_updated": "Last updated: January 2025",
+            "sections": [
+                ("Introduction", """<p>WordRoom ("we", "our", or "us") operates the wordroomonline.com website. This Privacy Policy explains how we collect, use, and protect information when you use our website and tools.</p>
+<p>We believe in privacy by design. All of our tools run entirely in your browser — your text never leaves your device.</p>"""),
+                ("Information We Do Not Collect", """<p><strong>We do not collect any personal information.</strong> Specifically:</p>
+<ul>
+<li>We do not store or transmit any text you enter into our tools.</li>
+<li>We do not use cookies for tracking or advertising.</li>
+<li>We do not require account creation or login.</li>
+<li>We do not collect email addresses or contact information.</li>
+</ul>
+<p>All text processing happens locally in your browser using JavaScript. No data is sent to any server after the page loads.</p>"""),
+                ("Information We Automatically Receive", """<p>Like most websites, our hosting provider may automatically collect basic server log information when you visit, such as:</p>
+<ul>
+<li>Your IP address (anonymized by our hosting provider)</li>
+<li>Browser type and version</li>
+<li>Pages visited and time spent</li>
+<li>Referring website</li>
+</ul>
+<p>This information is used solely for maintaining and improving the website and is not linked to any personal identity.</p>"""),
+                ("Third-Party Services", """<p>We use the following third-party services:</p>
+<ul>
+<li><strong>Google Analytics</strong> — to understand how visitors use our site. Google Analytics uses cookies to collect anonymous usage data. You can opt out by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</li>
+<li><strong>Fontshare and Google Fonts</strong> — to load web fonts. These services may receive your IP address when fonts are loaded.</li>
+</ul>"""),
+                ("Children's Privacy", """<p>Our website is not directed to children under 13. We do not knowingly collect information from children. If you believe a child has provided us with personal information, please contact us and we will promptly delete it.</p>"""),
+                ("Changes to This Policy", """<p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Continued use of the website after changes constitutes acceptance of the updated policy.</p>"""),
+                ("Contact", """<p>If you have questions about this Privacy Policy, please contact us at <a href="contact.html">our contact page</a>.</p>"""),
+            ],
+        },
+        "about": {
+            "title": "About Us",
+            "h1": "About WordRoom",
+            "sections": [
+                ("What We Built", """<p>WordRoom is a collection of free, privacy-first text tools that run entirely in your browser. We started with a simple observation: most online text tools upload your content to a server, even though they don't need to.</p>
+<p>Every tool on WordRoom processes your text locally using JavaScript. Nothing you type or paste is ever sent anywhere. Your work stays on your device.</p>"""),
+                ("Why Privacy Matters", """<p>When you paste a draft essay, a business proposal, or personal notes into an online tool, you are trusting that service with sensitive content. Many popular tools send your text to their servers for processing — sometimes for analytics, sometimes for AI training, sometimes for reasons that are not clearly disclosed.</p>
+<p>We think that is wrong. Text processing is something a browser can do perfectly well on its own, so there is no reason to send your words to someone else's computer.</p>"""),
+                ("Our Tools", """<p>WordRoom currently offers six tools:</p>
+<ul>
+<li><strong>Word Counter</strong> — live word, character, and sentence counting with correct handling of Indic and CJK scripts.</li>
+<li><strong>Case Converter</strong> — thirteen case conversions including AP and Chicago title case rules.</li>
+<li><strong>Readability Checker</strong> — six readability formulas with sentence-level feedback.</li>
+<li><strong>Remove Line Breaks</strong> — fix text pasted from PDFs and emails.</li>
+<li><strong>Sort Lines</strong> — alphabetical, length-based, reverse, or shuffled sorting.</li>
+<li><strong>Remove Duplicate Lines</strong> — find and remove repeats with full control over comparison rules.</li>
+</ul>
+<p>All tools are free, require no sign-up, and work on any modern browser.</p>"""),
+                ("Who We Are", """<p>WordRoom is built and maintained by a small team of developers who care about web privacy and useful tools. We believe the web should work for people, not the other way around.</p>
+<p>If you have feedback, feature requests, or just want to say hello, visit our <a href="contact.html">contact page</a>.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "Terms & Conditions",
+            "h1": "Terms & Conditions",
+            "last_updated": "Last updated: January 2025",
+            "sections": [
+                ("Acceptance of Terms", """<p>By accessing or using WordRoom (wordroomonline.com), you agree to be bound by these Terms & Conditions. If you do not agree to these terms, please do not use our website.</p>"""),
+                ("Use of the Website", """<p>WordRoom provides free, browser-based text processing tools. You may use these tools for any lawful purpose. You agree not to:</p>
+<ul>
+<li>Use the website in any way that violates applicable laws or regulations.</li>
+<li>Attempt to disrupt, overload, or attack the website or its infrastructure.</li>
+<li>Use automated systems (bots, scrapers) to access or interact with the website.</li>
+<li>Attempt to reverse-engineer or extract source code from the website.</li>
+</ul>"""),
+                ("Intellectual Property", """<p>The website's design, code, content, and branding are owned by WordRoom and protected by copyright and other intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without written permission.</p>
+<p>The tools themselves process your data entirely in your browser. We claim no ownership over any text or content you process using our tools.</p>"""),
+                ("Disclaimer of Warranties", """<p>WordRoom is provided "as is" and "as available" without warranties of any kind. We do not guarantee that:</p>
+<ul>
+<li>The website will be available at all times or without interruption.</li>
+<li>The tools will produce accurate or error-free results.</li>
+<li>The website is free from viruses or harmful components.</li>
+</ul>
+<p>You are responsible for verifying any output from our tools before relying on it for important work.</p>"""),
+                ("Limitation of Liability", """<p>To the fullest extent permitted by law, WordRoom shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the website. Our total liability shall not exceed the amount you paid us (which is nothing, since the tools are free).</p>"""),
+                ("User Content", """<p>Since all text processing happens in your browser, we never receive, store, or access your content. You retain full ownership and responsibility for any text you process using our tools.</p>"""),
+                ("Changes to Terms", """<p>We reserve the right to modify these terms at any time. Changes will be posted on this page. Continued use of the website after changes constitutes acceptance of the updated terms.</p>"""),
+                ("Contact", """<p>For questions about these terms, visit our <a href="contact.html">contact page</a>.</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "Contact Us",
+            "h1": "Contact Us",
+            "sections": [
+                ("Get in Touch", """<p>We would love to hear from you. Whether you have a question, feedback, a feature request, or found a bug, we are here to help.</p>"""),
+                ("Email", """<p>The best way to reach us is by email:</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>We typically respond within 1–2 business days.</p>"""),
+                ("What to Include", """<p>To help us respond quickly, please include:</p>
+<ul>
+<li><strong>Bug reports</strong> — which tool, what browser, and steps to reproduce the issue.</li>
+<li><strong>Feature requests</strong> — describe what you need and why it would be useful.</li>
+<li><strong>General feedback</strong> — tell us what you like, what you don't, and what we could do better.</li>
+</ul>"""),
+                ("Privacy", """<p>Remember, all WordRoom tools process your text entirely in your browser. We never see or store any content you enter into our tools. For more details, see our <a href="privacy.html">Privacy Policy</a>.</p>"""),
+            ],
+        },
+    },
+    "es": {
+        "privacy": {
+            "title": "Política de Privacidad",
+            "h1": "Política de Privacidad",
+            "last_updated": "Última actualización: enero de 2025",
+            "sections": [
+                ("Introducción", """<p>WordRoom ("nosotros", "nuestro" o "nuestros") opera el sitio web wordroomonline.com. Esta Política de Privacidad explica cómo recopilamos, usamos y protegimos la información cuando utiliza nuestro sitio web y herramientas.</p>
+<p>Creemos en la privacidad por diseño. Todas nuestras herramientas se ejecutan completamente en su navegador: su texto nunca sale de su dispositivo.</p>"""),
+                ("Información que No Recopilamos", """<p><strong>No recopilamos ninguna información personal.</strong> Específicamente:</p>
+<ul>
+<li>No almacenamos ni transmitimos ningún texto que ingrese en nuestras herramientas.</li>
+<li>No utilizamos cookies para rastreo o publicidad.</li>
+<li>No requerimos creación de cuenta o inicio de sesión.</li>
+<li>No recopilamos direcciones de correo electrónico ni información de contacto.</li>
+</ul>
+<p>Todo el procesamiento de texto ocurre localmente en su navegador usando JavaScript. No se envía ningún dato a ningún servidor después de que la página se carga.</p>"""),
+                ("Información que Recibimos Automáticamente", """<p>Como la mayoría de los sitios web, nuestro proveedor de alojamiento puede recopilar automáticamente información básica de registros del servidor cuando visita, como:</p>
+<ul>
+<li>Su dirección IP (anonymizada por nuestro proveedor de alojamiento)</li>
+<li>Tipo y versión del navegador</li>
+<li>Páginas visitadas y tiempo dedicado</li>
+<li>Sitio web de referencia</li>
+</ul>
+<p>Esta información se utiliza únicamente para mantener y mejorar el sitio web y no se vincula con ninguna identidad personal.</p>"""),
+                ("Servicios de Terceros", """<p>Utilizamos los siguientes servicios de terceros:</p>
+<ul>
+<li><strong>Google Analytics</strong> — para entender cómo los visitantes usan nuestro sitio. Google Analytics utiliza cookies para recopilar datos de uso anónimos. Puede optar por no participar instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">complemento de exclusión de Google Analytics</a>.</li>
+<li><strong>Fontshare y Google Fonts</strong> — para cargar fuentes web. Estos servicios pueden recibir su dirección IP cuando se cargan las fuentes.</li>
+</ul>"""),
+                ("Privacidad de los Niños", """<p>Nuestro sitio web no está dirigido a niños menores de 13 años. No recopilamos intencionalmente información de niños. Si cree que un niño nos ha proporcionado información personal, contáctenos y la eliminaremos de inmediato.</p>"""),
+                ("Cambios en esta Política", """<p>Podemos actualizar esta Política de Privacidad de vez en cuando. Cualquier cambio se publicará en esta página con una fecha de revisión actualizada. El uso continuado del sitio web después de los cambios constituye la aceptación de la política actualizada.</p>"""),
+                ("Contacto", """<p>Si tiene preguntas sobre esta Política de Privacidad, por favor contáctenos en <a href="contact.html">nuestra página de contacto</a>.</p>"""),
+            ],
+        },
+        "about": {
+            "title": "Sobre Nosotros",
+            "h1": "Sobre WordRoom",
+            "sections": [
+                ("Qué Construimos", """<p>WordRoom es una colección de herramientas de texto gratuitas y con privacidad primero que se ejecutan completamente en su navegador. Comenzamos con una observación simple: la mayoría de las herramientas de texto en línea cargan su contenido en un servidor, aunque no necesitan hacerlo.</p>
+<p>Cada herramienta en WordRoom procesa su texto localmente usando JavaScript. Nada que escriba o pegue se envía nunca a ningún lugar. Su trabajo permanece en su dispositivo.</p>"""),
+                ("Por Qué la Privacidad Importa", """<p>Cuando pega un borrador, una propuesta comercial o notas personales en una herramienta en línea, está confiando ese servicio con contenido sensible. Muchas herramientas populares envían su texto a sus servidores para su procesamiento — a veces para análisis, a veces para entrenamiento de IA, a veces por razones que no se divulgan claramente.</p>
+<p>Creemos que eso está mal. El procesamiento de texto es algo que un navegador puede hacer perfectamente bien por sí mismo, por lo que no hay razón para enviar sus palabras a la computadora de otra persona.</p>"""),
+                ("Nuestras Herramientas", """<p>WordRoom actualmente ofrece seis herramientas:</p>
+<ul>
+<li><strong>Contador de Palabras</strong> — conteo en vivo de palabras, caracteres y oraciones con manejo correcto de scripts Indic y CJK.</li>
+<li><strong>Convertidor de Mayúsculas/Minúsculas</strong> — trece conversiones de mayúsculas/minúsculas incluyendo reglas de estilo AP y Chicago.</li>
+<li><strong>Verificador de Legibilidad</strong> — seis fórmulas de legibilidad con retroalimentación a nivel de oración.</li>
+<li><strong>Eliminar Saltos de Línea</strong> — corregir texto pegado de PDFs y correos electrónicos.</li>
+<li><strong>Ordenar Líneas</strong> — ordenamiento alfabético, por longitud, inverso o aleatorio.</li>
+<li><strong>Eliminar Líneas Duplicadas</strong> — encontrar y eliminar repeticiones con control total sobre las reglas de comparación.</li>
+</ul>
+<p>Todas las herramientas son gratuitas, no requieren registro y funcionan en cualquier navegador moderno.</p>"""),
+                ("Quiénes Somos", """<p>WordRoom es construido y mantenido por un pequeño equipo de desarrolladores que se preocupan por la privacidad web y las herramientas útiles. Creemos que la web debe funcionar para las personas, no al revés.</p>
+<p>Si tiene comentarios, solicitudes de funciones o solo quiere saludar, visite nuestra <a href="contact.html">página de contacto</a>.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "Términos y Condiciones",
+            "h1": "Términos y Condiciones",
+            "last_updated": "Última actualización: enero de 2025",
+            "sections": [
+                ("Aceptación de los Términos", """<p>Al acceder o usar WordRoom (wordroomonline.com), usted acepta estar sujeto a estos Términos y Condiciones. Si no está de acuerdo con estos términos, por favor no use nuestro sitio web.</p>"""),
+                ("Uso del Sitio Web", """<p>WordRoom proporciona herramientas de procesamiento de texto gratuitas basadas en navegador. Puede usar estas herramientas para cualquier propósito lícito. Usted acepta no:</p>
+<ul>
+<li>Usar el sitio web de cualquier manera que viole leyes o regulaciones aplicables.</li>
+<li>Intentar interrumpir, sobrecargar o atacar el sitio web o su infraestructura.</li>
+<li>Usar sistemas automatizados (bots, scrapers) para acceder o interactuar con el sitio web.</li>
+<li>Intentar hacer ingeniería inversa o extraer código fuente del sitio web.</li>
+</ul>"""),
+                ("Propiedad Intelectual", """<p>El diseño, código, contenido y marca del sitio web son propiedad de WordRoom y están protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual. No puede reproducir, distribuir o crear obras derivadas de nuestro contenido sin permiso escrito.</p>
+<p>Las herramientas mismas procesan sus datos completamente en su navegador. No reclamamos propiedad sobre ningún texto o contenido que procese usando nuestras herramientas.</p>"""),
+                ("Descargo de Garantías", """<p>WordRoom se proporciona "tal cual" y "según disponibilidad" sin garantías de ningún tipo. No garantizamos que:</p>
+<ul>
+<li>El sitio web estará disponible en todo momento o sin interrupciones.</li>
+<li>Las herramientas producirán resultados precisos o sin errores.</li>
+<li>El sitio web está libre de virus o componentes dañinos.</li>
+</ul>
+<p>Usted es responsable de verificar cualquier resultado de nuestras herramientas antes de confiar en él para trabajo importante.</p>"""),
+                ("Limitación de Responsabilidad", """<p>En la máxima medida permitida por la ley, WordRoom no será responsable por daños indirectos, incidentales, especiales, consecuentes o punitivos que surjan del uso del sitio web. Nuestra responsabilidad total no excederá la cantidad que nos pagó (que es nada, ya que las herramientas son gratuitas).</p>"""),
+                ("Contenido del Usuario", """<p>Dado que todo el procesamiento de texto ocurre en su navegador, nunca recibimos, almacenamos ni accedemos a su contenido. Usted conserva la propiedad y responsabilidad completa de cualquier texto que procese usando nuestras herramientas.</p>"""),
+                ("Cambios en los Términos", """<p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios se publicarán en esta página. El uso continuado del sitio web después de los cambios constituye la aceptación de los términos actualizados.</p>"""),
+                ("Contacto", """<p>Para preguntas sobre estos términos, visite nuestra <a href="contact.html">página de contacto</a>.</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "Contáctenos",
+            "h1": "Contáctenos",
+            "sections": [
+                ("Ponte en Contacto", """<p>Nos encantaría saber de usted. Ya sea que tenga una pregunta, comentarios, una solicitud de función o haya encontrado un error, estamos aquí para ayudar.</p>"""),
+                ("Correo Electrónico", """<p>La mejor manera de contactarnos es por correo electrónico:</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>Típicamente respondemos dentro de 1 a 2 días hábiles.</p>"""),
+                ("Qué Incluir", """<p>Para ayudarnos a responder rápidamente, por favor incluya:</p>
+<ul>
+<li><strong>Reportes de errores</strong> — qué herramienta, qué navegador y pasos para reproducir el problema.</li>
+<li><strong>Solicitudes de funciones</strong> — describa lo que necesita y por qué sería útil.</li>
+<li><strong>Comentarios generales</strong> — cuéntenos qué le gusta, qué no, y qué podríamos hacer mejor.</li>
+</ul>"""),
+                ("Privacidad", """<p>Recuerde, todas las herramientas de WordRoom procesan su texto completamente en su navegador. Nunca vemos ni almacenamos ningún contenido que ingrese en nuestras herramientas. Para más detalles, vea nuestra <a href="privacy.html">Política de Privacidad</a>.</p>"""),
+            ],
+        },
+    },
+    "ja": {
+        "privacy": {
+            "title": "プライバシーポリシー",
+            "h1": "プライバシーポリシー",
+            "last_updated": "最終更新：2025年1月",
+            "sections": [
+                ("はじめに", """<p>WordRoom（「当社」「当社の」または「当社のもの」）はwordroomonline.comウェブサイトを運営しています。このプライバシーポリシーは、当ウェブサイトおよびツールを使用する際の情報の収集、使用、保護について説明します。</p>
+<p>私たちはプライバシーバイデザインを信条としています。すべてのツールはブラウザ内で完全に実行され、テキストがデバイスから出ることはありません。</p>"""),
+                ("収集しない情報", """<p><strong>個人情報は一切収集しません。</strong>具体的には：</p>
+<ul>
+<li>ツールに入力したテキストを保存または送信しません。</li>
+<li>トラッキングや広告用のCookieを使用しません。</li>
+<li>アカウント作成やログインを要求しません。</li>
+<li>メールアドレスや連絡先情報を収集しません。</li>
+</ul>
+<p>すべてのテキスト処理はJavaScriptを使用してブラウザ内でローカルに行われます。ページの読み込み後にサーバーにデータが送信されることはありません。</p>"""),
+                ("自動的に受信する情報", """<p>ほとんどのウェブサイトと同様、ホスティングプロバイダーはアクセス時に基本的なサーバーログ情報を自動的に収集する場合があります：</p>
+<ul>
+<li>IPアドレス（ホスティングプロバイダーによって匿名化）</li>
+<li>ブラウザの種類とバージョン</li>
+<li>訪れたページと滞在時間</li>
+<li>参照ウェブサイト</li>
+</ul>
+<p>この情報はウェブサイトの保守と改善のみに使用され、個人の同一性にはリンクされません。</p>"""),
+                ("サードパーティサービス", """<p>以下のサードパーティサービスを使用しています：</p>
+<ul>
+<li><strong>Google Analytics</strong> — 訪問者が当サイトの使用方法を理解するため。Google Analyticsは匿名の使用データを収集するためにCookieを使用します。<a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analyticsオプトアウトブラウザアドオン</a>をインストールしてオプトアウトできます。</li>
+<li><strong>FontshareとGoogle Fonts</strong> — ウェブフォントの読み込み用。フォントの読み込み時にIPアドレスが送信される場合があります。</li>
+</ul>"""),
+                ("子供のプライバシー", """<p>当ウェブサイトは13歳未満の子供を対象としていません。子供から意図的に情報を収集しません。子供が個人情報を提供したと考えられる場合は、連絡していただければすぐに削除します。</p>"""),
+                ("ポリシーの変更", """<p>このプライバシーポリシーを随時更新する場合があります。変更は更新された revision 日付とともにこのページに掲載されます。変更後のウェブサイトの継続的な使用は、更新されたポリシーの受諾を構成します。</p>"""),
+                ("お問い合わせ", """<p>このプライバシーポリシーについてご質問がある場合は、<a href="contact.html">お問い合わせページ</a>までご連絡ください。</p>"""),
+            ],
+        },
+        "about": {
+            "title": "会社概要",
+            "h1": "WordRoomについて",
+            "sections": [
+                ("私たちが構築したもの", """<p>WordRoomは、ブラウザ内で完全に実行される無料のプライバシー重視のテキストツールのコレクションです。ほとんどのオンラインテキストツールは、必要ないのにコンテンツをサーバーにアップロードするという観察から始めました。</p>
+<p>WordRoomのすべてのツールはJavaScriptを使用してテキストをローカルで処理します。入力や貼り付けたテキストがどこかに送信されることはありません。あなたの作業はデバイスに留まります。</p>"""),
+                ("プライバシーが重要な理由", """<p>オンラインツールにドラフト、ビジネスプロポーザル、個人ノートを貼り付ける際、そのサービスに機密性の高いコンテンツを信頼しています。多くの人気ツールは、処理のためにテキストをサーバーに送信します — 有时是用于分析，有时是用于AI训练，有时是出于未明确说明的原因。</p>
+<p>我们认为这是错误的。文本处理是浏览器自身可以完美完成的事情，因此没有理由将你的文字发送到别人的计算机上。</p>"""),
+                ("我们的工具", """<p>WordRoom目前提供六种工具：</p>
+<ul>
+<li><strong>字数统计</strong> — 实时统计单词、字符和句子数，正确处理印度文字和中日韩文字。</li>
+<li><strong>大小写转换</strong> — 十三种大小写转换，包括AP和芝加哥标题大小写规则。</li>
+<li><strong>可读性检查</strong> — 六种可读性公式，提供句子级反馈。</li>
+<li><strong>删除换行符</strong> — 修复从PDF和电子邮件粘贴的文本。</li>
+<li><strong>行排序</strong> — 按字母顺序、长度、反向或随机排序。</li>
+<li><strong>删除重复行</strong> — 查找并删除重复项，完全控制比较规则。</li>
+</ul>
+<p>所有工具均免费，无需注册，可在任何现代浏览器上使用。</p>"""),
+                ("关于我们", """<p>WordRoom由一个关心网络隐私和实用工具的小型开发团队构建和维护。我们相信网络应该为人服务，而不是相反。</p>
+<p>如果您有任何反馈、功能请求或只是想打个招呼，请访问我们的<a href="contact.html">联系页面</a>.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "利用規約",
+            "h1": "利用規約",
+            "last_updated": "最終更新：2025年1月",
+            "sections": [
+                ("規約の受諾", """<p>WordRoom（wordroomonline.com）にアクセスまたは使用することで、これらの利用規約に拘束されることに同意するものとします。これらの規約に同意しない場合は、当ウェブサイトを使用しないでください。</p>"""),
+                ("ウェブサイトの使用", """<p>WordRoomは無料のブラウザベースのテキスト処理ツールを提供しています。これらのツールは適法な目的で使用できます。以下を行わないことに同意します：</p>
+<ul>
+<li>適用される法令に違反する方法でウェブサイトを使用する。</li>
+<li>ウェブサイトまたはそのインフラストラクチャを妨害、過負荷、または攻撃しようとする。</li>
+<li>自動化システム（ボット、スクレイパー）を使用してウェブサイトにアクセスまたは対話する。</li>
+<li>ウェブサイトからソースコードをリバースエンジニアリングまたは抽出しようとする。</li>
+</ul>"""),
+                ("知的財産", """<p>ウェブサイトのデザイン、コード、コンテンツ、ブランドはWordRoomの所有であり、著作権法およびその他の知的財産法によって保護されています。書面による許可なしに、当社のコンテンツを複製、配布、または派生作品を作成することはできません。</p>
+<p>ツール自体はブラウザ内でデータを完全に処理します。当社のツールを使用して処理するテキストまたはコンテンツについて、所有権を主張しません。</p>"""),
+                ("免責事項", """<p>WordRoomは「現状のまま」および「利用可能な状態」で、いかなる種類の保証なしに提供されます。以下を保証しません：</p>
+<ul>
+<li>ウェブサイトが常に利用可能または中断なしに利用可能であること。</li>
+<li>ツールが正確またはエラーのない結果を生成すること。</li>
+<li>ウェブサイトがウイルスまたは有害なコンポーネントを含まないこと。</li>
+</ul>
+<p>重要な作業に依存する前に、ツールの出力を確認することはユーザーの責任です。</p>"""),
+                ("責任の制限", """<p>法律で許可される最大限の範囲で、WordRoomはウェブサイトの使用から生じる間接的、付随的、特別、結果的、または懲罰的損害について責任を負いません。当社の総責任額は、あなたが当社に支払った金額（ツールが無料であるため、ゼロ）を超えないものとします。</p>"""),
+                ("ユーザーコンテンツ", """<p>すべてのテキスト処理がブラウザ内で行われるため、当社はユーザーのコンテンツを受信、保存、アクセスすることはありません。当社のツールを使用して処理するテキストの所有権と責任はすべてユーザーに帰属します。</p>"""),
+                ("規約の変更", """<p>これらの規約をいつでも変更する権利を保有します。変更はこのページに掲載されます。変更後のウェブサイトの継続的な使用は、更新された規約の受諾を構成します。</p>"""),
+                ("お問い合わせ", """<p>これらの規約についてご質問がある場合は、<a href="contact.html">お問い合わせページ</a>をご覧ください。</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "お問い合わせ",
+            "h1": "お問い合わせ",
+            "sections": [
+                ("ご連絡ください", """<p>皆様からのご連絡をお待ちしております。ご質問、フィードバック、機能リクエスト、バグの報告など、いつでもお気軽にご連絡ください。</p>"""),
+                ("メール", """<p>最良のご連絡方法はメールです：</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>通常、1〜2営業日以内にご返信いたします。</p>"""),
+                ("ご記入内容", """<p>迅速にお答えするため、以下をご記入ください：</p>
+<ul>
+<li><strong>バグ報告</strong> — どのツール、どのブラウザ、問題を再現する手順。</li>
+<li><strong>機能リクエスト</strong> — 必要なものとそれが有用である理由を記述してください。</li>
+<li><strong>一般的なフィードバック</strong> — 気に入っている点、気に入っていない点、改善できる点をお聞かせください。</li>
+</ul>"""),
+                ("プライバシー", """<p>WordRoomのすべてのツールはテキストをブラウザ内で完全に処理します。ツールに入力したコンテンツを確認したり保存したりすることはありません。詳細については、<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>"""),
+            ],
+        },
+    },
+    "fr": {
+        "privacy": {
+            "title": "Politique de Confidentialité",
+            "h1": "Politique de Confidentialité",
+            "last_updated": "Dernière mise à jour : janvier 2025",
+            "sections": [
+                ("Introduction", """<p>WordRoom ("nous", "notre" ou "nos") exploite le site web wordroomonline.com. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons les informations lorsque vous utilisez notre site web et nos outils.</p>
+<p>Nous croyons à la confidentialité par conception. Tous nos outils s'exécutent entièrement dans votre navigateur — votre texte ne quitte jamais votre appareil.</p>"""),
+                ("Informations que Nous Ne Collectons Pas", """<p><strong>Nous ne collectons aucune information personnelle.</strong> Plus précisément :</p>
+<ul>
+<li>Nous ne stockons ni ne transmettons le texte que vous saisissez dans nos outils.</li>
+<li>Nous n'utilisons pas de cookies pour le suivi ou la publicité.</li>
+<li>Nous ne requérons pas de création de compte ou de connexion.</li>
+<li>Nous ne collectons pas d'adresses e-mail ni d'informations de contact.</li>
+</ul>
+<p>Tout le traitement du texte se produit localement dans votre navigateur en utilisant JavaScript. Aucune donnée n'est envoyée à un serveur après le chargement de la page.</p>"""),
+                ("Informations Reçues Automatiquement", """<p>Comme la plupart des sites web, notre hébergeur peut automatiquement collecter des informations de base des journaux du serveur lorsque vous visitez, telles que :</p>
+<ul>
+<li>Votre adresse IP (anonymisée par notre hébergeur)</li>
+<li>Type et version du navigateur</li>
+<li>Pages visitées et temps passé</li>
+<li>Site web de référence</li>
+</ul>
+<p>Ces informations sont utilisées uniquement pour maintenir et améliorer le site web et ne sont pas liées à une identité personnelle.</p>"""),
+                ("Services Tiers", """<p>Nous utilisons les services tiers suivants :</p>
+<ul>
+<li><strong>Google Analytics</strong> — pour comprendre comment les visiteurs utilisent notre site. Google Analytics utilise des cookies pour collecter des données d'utilisation anonymes. Vous pouvez vous désinscrire en installant le <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">module complémentaire de désactivation de Google Analytics</a>.</li>
+<li><strong>Fontshare et Google Fonts</strong> — pour charger les polices web. Ces services peuvent recevoir votre adresse IP lors du chargement des polices.</li>
+</ul>"""),
+                ("Confidentialité des Enfants", """<p>Notre site web n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations auprès des enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter et nous les supprimerons immédiatement.</p>"""),
+                ("Modifications de cette Politique", """<p>Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Tout changement sera publié sur cette page avec une date de révision mise à jour. L'utilisation continue du site web après les modifications constitue l'acceptation de la politique mise à jour.</p>"""),
+                ("Contact", """<p>Si vous avez des questions sur cette Politique de Confidentialité, veuillez nous contacter via <a href="contact.html">notre page de contact</a>.</p>"""),
+            ],
+        },
+        "about": {
+            "title": "À Propos",
+            "h1": "À Propos de WordRoom",
+            "sections": [
+                ("Ce que Nous Avons Construit", """<p>WordRoom est une collection d'outils de texte gratuits et respectueux de la vie privée qui s'exécutent entièrement dans votre navigateur. Nous avons commencé avec une observation simple : la plupart des outils de texte en ligne envoient votre contenu sur un serveur, même quand ils n'ont pas besoin de le faire.</p>
+<p>Chaque outil sur WordRoom traite votre texte localement en utilisant JavaScript. Rien de ce que vous tapez ou collez n'est jamais envoyé n'importe où. Votre travail reste sur votre appareil.</p>"""),
+                ("Pourquoi la Confidentialité Est Importante", """<p>Quand vous collez une ébauche, une proposition commerciale ou des notes personnelles dans un outil en ligne, vous faites confiance à ce service avec du contenu sensible. Beaucoup d'outils populaires envoient votre texte à leurs serveurs pour traitement — parfois pour l'analyse, parfois pour l'entraînement d'IA, parfois pour des raisons clairement pas divulguées.</p>
+<p>Nous pensons que c'est mal. Le traitement de texte est quelque chose qu'un navigateur peut très bien faire par lui-même, donc il n'y a aucune raison d'envoyer vos mots à l'ordinateur de quelqu'un d'autre.</p>"""),
+                ("Nos Outils", """<p>WordRoom offre actuellement six outils :</p>
+<ul>
+<li><strong>Compteur de Mots</strong> — comptage en direct des mots, caractères et phrases avec gestion correcte des scripts Indic et CJC.</li>
+<li><strong>Convertisseur de Casses</strong> — treize conversions de casses incluant les règles de casses AP et Chicago.</li>
+<li><strong>Vérificateur de Lisibilité</strong> — six formules de lisibilité avec retour au niveau de la phrase.</li>
+<li><strong>Supprimer les Sauts de Ligne</strong> — corriger le texte collé depuis des PDF et des e-mails.</li>
+<li><strong>Trier les Lignes</strong> — tri alphabétique, par longueur, inverse ou aléatoire.</li>
+<li><strong>Supprimer les Lignes en Double</strong> — trouver et supprimer les doublons avec contrôle total des règles de comparaison.</li>
+</ul>
+<p>Tous les outils sont gratuits, ne nécessitent pas d'inscription et fonctionnent sur tout navigateur moderne.</p>"""),
+                ("Qui Nous Sommes", """<p>WordRoom est construit et maintenu par une petite équipe de développeurs qui se soucient de la confidentialité en ligne et des outils utiles. Nous croyons que le web devrait fonctionner pour les gens, et non l'inverse.</p>
+<p>Si vous avez des commentaires, des demandes de fonctionnalités ou juste envie de dire bonjour, visitez notre <a href="contact.html">page de contact</a>.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "Conditions Générales",
+            "h1": "Conditions Générales",
+            "last_updated": "Dernière mise à jour : janvier 2025",
+            "sections": [
+                ("Acceptation des Conditions", """<p>En accédant ou en utilisant WordRoom (wordroomonline.com), vous acceptez d'être lié par ces Conditions Générales. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site web.</p>"""),
+                ("Utilisation du Site Web", """<p>WordRoom fournit des outils de traitement de texte gratuits basés sur un navigateur. Vous pouvez utiliser ces outils pour toute finalité légitime. Vous acceptez de ne pas :</p>
+<ul>
+<li>Utiliser le site web de quelque manière que ce soit enfreignant les lois ou réglementations applicables.</li>
+<li>Tenter de perturber, surcharger ou attaquer le site web ou son infrastructure.</li>
+<li>Utiliser des systèmes automatisés (bots, scrapers) pour accéder ou interagir avec le site web.</li>
+<li>Tenter de faire de l'ingénierie inverse ou d'extraire le code source du site web.</li>
+</ul>"""),
+                ("Propriété Intellectuelle", """<p>Le design, le code, le contenu et la marque du site web sont la propriété de WordRoom et protégés par le droit d'auteur et d'autres lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou créer des œuvres dérivées de notre contenu sans permission écrite.</p>
+<p>Les outils eux-mêmes traitent vos données entièrement dans votre navigateur. Nous ne revendiquons la propriété d'aucun texte ou contenu que vous traitez en utilisant nos outils.</p>"""),
+                ("Exclusion de Garanties", """<p>WordRoom est fourni "en l'état" et "selon disponibilité" sans garantie d'aucune sorte. Nous ne garantissons pas que :</p>
+<ul>
+<li>Le site web sera disponible en tout temps ou sans interruption.</li>
+<li>Les outils produiront des résultats exacts ou sans erreur.</li>
+<li>Le site web est exempt de virus ou de composants nocifs.</li>
+</ul>
+<p>Vous êtes responsable de vérifier tout résultat de nos outils avant de vous y fier pour un travail important.</p>"""),
+                ("Limitation de Responsabilité", """<p>Dans la mesure maximale autorisée par la loi, WordRoom ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs découlant de votre utilisation du site web. Notre responsabilité totale ne dépassera pas le montant que vous nous avez payé (ce qui est rien, puisque les outils sont gratuits).</p>"""),
+                ("Contenu Utilisateur", """<p>Étant donné que tout le traitement du texte se produit dans votre navigateur, nous ne recevons, stockons ni n'accédons à votre contenu. Vous conservez la propriété et la responsabilité complète de tout texte que vous traitez en utilisant nos outils.</p>"""),
+                ("Modifications des Conditions", """<p>Nous nous réservons le droit de modifier ces conditions à tout moment. Les changements seront publiés sur cette page. L'utilisation continue du site web après les modifications constitue l'acceptation des conditions mises à jour.</p>"""),
+                ("Contact", """<p>Pour des questions sur ces conditions, visitez notre <a href="contact.html">page de contact</a>.</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "Contactez-Nous",
+            "h1": "Contactez-Nous",
+            "sections": [
+                ("Entrer en Contact", """<p>Nous serions ravis d'avoir de vos nouvelles. Que vous ayez une question, un commentaire, une demande de fonctionnalité ou que vous ayez trouvé un bug, nous sommes là pour aider.</p>"""),
+                ("E-mail", """<p>Le meilleur moyen de nous contacter est par e-mail :</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>Nous répondons généralement dans les 1 à 2 jours ouvrables.</p>"""),
+                ("Que Inclure", """<p>Pour nous aider à répondre rapidement, veuillez inclure :</p>
+<ul>
+<li><strong>Rapports de bugs</strong> — quel outil, quel navigateur et étapes pour reproduire le problème.</li>
+<li><strong>Demandes de fonctionnalités</strong> — décrivez ce dont vous avez besoin et pourquoi ce serait utile.</li>
+<li><strong>Commentaires généraux</strong> — dites-nous ce que vous aimez, ce que vous n'aimez pas et ce que nous pourrions faire mieux.</li>
+</ul>"""),
+                ("Confidentialité", """<p>Rappelez-vous, tous les outils de WordRoom traitent votre texte entièrement dans votre navigateur. Nous ne voyons, stockons ou n'accédons jamais à aucun contenu que vous saisissez dans nos outils. Pour plus de détails, consultez notre <a href="privacy.html">Politique de Confidentialité</a>.</p>"""),
+            ],
+        },
+    },
+    "de": {
+        "privacy": {
+            "title": "Datenschutzrichtlinie",
+            "h1": "Datenschutzrichtlinie",
+            "last_updated": "Zuletzt aktualisiert: Januar 2025",
+            "sections": [
+                ("Einleitung", """<p>WordRoom ("wir", "unser" oder "uns") betreibt die Website wordroomonline.com. Diese Datenschutzrichtlinie erklärt, wie wir Informationen sammeln, verwenden und schützen, wenn Sie unsere Website und Tools verwenden.</p>
+<p>Wir glauben an Privacy by Design. Alle unsere Tools laufen vollständig in Ihrem Browser — Ihr Text verlässt nie Ihr Gerät.</p>"""),
+                ("Informationen, die wir nicht sammeln", """<p><strong>Wir sammeln keine persönlichen Informationen.</strong> Insbesondere:</p>
+<ul>
+<li>Wir speichern oder übertragen keinen Text, den Sie in unsere Tools eingeben.</li>
+<li>Wir verwenden keine Cookies für Tracking oder Werbung.</li>
+<li>Wir erfordern keine Kontoerstellung oder Anmeldung.</li>
+<li>Wir sammeln keine E-Mail-Adressen oder Kontaktinformationen.</li>
+</ul>
+<p>Die gesamte Textverarbeitung erfolgt lokal in Ihrem Browser mit JavaScript. Nach dem Laden der Seite werden keine Daten an einen Server gesendet.</p>"""),
+                ("Automatisch empfangene Informationen", """<p>Wie die meisten Websites kann unser Hosting-Anbieter automatisch grundlegende Serverlog-Informationen beim Besuch sammeln, wie z.B.:</p>
+<ul>
+<li>Ihre IP-Adresse (von unserem Hosting-Anbieter anonymisiert)</li>
+<li>Browsertyp und -version</li>
+<li>Besuchte Seiten und Aufenthaltszeit</li>
+<li>Verweisende Website</li>
+</ul>
+<p>Diese Informationen werden ausschließlich zur Wartung und Verbesserung der Website verwendet und nicht mit einer persönlichen Identität verknüpft.</p>"""),
+                ("Drittanbieter-Dienste", """<p>Wir verwenden folgende Drittanbieter-Dienste:</p>
+<ul>
+<li><strong>Google Analytics</strong> — um zu verstehen, wie Besucher unsere Website nutzen. Google Analytics verwendet Cookies, um anonyme Nutzungsdaten zu sammeln. Sie können sich abmelden durch Installation des <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-ons</a>.</li>
+<li><strong>Fontshare und Google Fonts</strong> — zum Laden von Webfonts. Diese Dienste können Ihre IP-Adresse empfangen, wenn Schriftarten geladen werden.</li>
+</ul>"""),
+                ("Kinderdatenschutz", """<p>Unsere Website richtet sich nicht an Kinder unter 13 Jahren. Wir sammeln wissentlich keine Informationen von Kindern. Wenn Sie glauben, dass ein Kind uns persönliche Informationen gegeben hat, kontaktieren Sie uns bitte und wir werden sie sofort löschen.</p>"""),
+                ("Änderungen dieser Richtlinie", """<p>Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Revisionsdatum veröffentlicht. Die fortgesetzte Nutzung der Website nach Änderungen stellt die Akzeptanz der aktualisierten Richtlinie dar.</p>"""),
+                ("Kontakt", """<p>Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte über unsere <a href="contact.html">Kontaktseite</a>.</p>"""),
+            ],
+        },
+        "about": {
+            "title": "Über Uns",
+            "h1": "Über WordRoom",
+            "sections": [
+                ("Was wir gebaut haben", """<p>WordRoom ist eine Sammlung kostenloser, datenschutzorientierter Texttools, die vollständig in Ihrem Browser laufen. Wir begannen mit einer einfachen Beobachtung: Die meisten Online-Texttools laden Ihre Inhalte auf einen Server hoch, obwohl sie das nicht müssen.</p>
+<p>Jedes Tool auf WordRoom verarbeitet Ihren Text lokal mit JavaScript. Nichts, was Sie tippen oder einfügen, wird jemals irgendwohin gesendet. Ihre Arbeit bleibt auf Ihrem Gerät.</p>"""),
+                ("Warum Datenschutz wichtig ist", """<p>Wenn Sie einen Entwurf, einen Geschäftsbericht oder persönliche Notizen in ein Online-Tool einfügen, vertrauen Sie diesem Dienst sensible Inhalte an. Viele beliebte Tools senden Ihren Text zur Verarbeitung an ihre Server — manchmal für Analysen, manchmal für KI-Training, manchmal aus Gründen, die nicht klar offengelegt werden.</p>
+<p>Wir denken, das ist falsch. Textverarbeitung ist etwas, das ein Browser perfekt allein tun kann, daher gibt es keinen Grund, Ihre Wörter an den Computer einer anderen Person zu senden.</p>"""),
+                ("Unsere Tools", """<p>WordRoom bietet derzeit sechs Tools:</p>
+<ul>
+<li><strong>Wortanzähler</strong> — Live-Wort-, Zeichen- und Satzzählung mit korrekter Handhabung von Indischen und CJK-Skripten.</li>
+<li><strong>Fall-Konverter</strong> — dreizehn Fall-Konvertierungen einschließlich AP- und Chicago-Titelfallregeln.</li>
+<li><strong>Lesbarkeitsprüfer</strong> — sechs Lesbarkeitsformeln mit Satz-Feedback.</li>
+<li><strong>Zeilenumbrüche Entfernen</strong> — Text aus PDFs und E-Mails korrigieren.</li>
+<li><strong>Zeilen Sortieren</strong> — alphabetisch, nach Länge, umgekehrt oder gemischt sortieren.</li>
+<li><strong>Doppelte Zeilen Entfernen</strong> — Wiederholungen finden und entfernen mit voller Kontrolle über Vergleichsregeln.</li>
+</ul>
+<p>Alle Tools sind kostenlos, erfordern keine Anmeldung und funktionieren in jedem modernen Browser.</p>"""),
+                ("Wer wir sind", """<p>WordRoom wird von einem kleinen Entwicklerteam erstellt und gepflegt, das sich für Web-Datenschutz und nützliche Tools einsetzt. Wir glauben, dass das Web für Menschen funktionieren sollte, nicht umgekehrt.</p>
+<p>Wenn Sie Feedback, Funktionsanfragen haben oder einfach nur Hallo sagen wollen, besuchen Sie unsere <a href="contact.html">Kontaktseite</a>.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "Nutzungsbedingungen",
+            "h1": "Nutzungsbedingungen",
+            "last_updated": "Zuletzt aktualisiert: Januar 2025",
+            "sections": [
+                ("Akzeptanz der Bedingungen", """<p>Durch den Zugriff auf oder die Nutzung von WordRoom (wordroomonline.com) stimmen Sie zu, an diese Nutzungsbedingungen gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie bitte nicht unsere Website.</p>"""),
+                ("Nutzung der Website", """<p>WordRoom bietet kostenlose browserbasierte Textverarbeitungstools. Sie dürfen diese Tools für jeden rechtmäßigen Zweck verwenden. Sie stimmen zu, nicht:</p>
+<ul>
+<li>Die Website auf eine Weise zu nutzen, die geltende Gesetze oder Vorschriften verletzt.</li>
+<li>Zu versuchen, die Website oder ihre Infrastruktur zu stören, zu überlasten oder anzugreifen.</li>
+<li>Automatisierte Systeme (Bots, Scraper) zu verwenden, um auf die Website zuzugreifen oder mit ihr zu interagieren.</li>
+<li>Zu versuchen, den Quellcode der Website zu analysieren oder zu extrahieren.</li>
+</ul>"""),
+                ("Geistiges Eigentum", """<p>Design, Code, Inhalt und Branding der Website sind Eigentum von WordRoom und durch Urheberrecht und andere Gesetze zum geistigen Eigentum geschützt. Sie dürfen unsere Inhalte nicht ohne schriftliche Genehmigung vervielfältigen, verteilen oder abgeleitete Werke erstellen.</p>
+<p>Die Tools selbst verarbeiten Ihre Daten vollständig in Ihrem Browser. Wir erheben keinen Anspruch auf Eigentum an Text oder Inhalten, die Sie mit unseren Tools verarbeiten.</p>"""),
+                ("Haftungsausschluss", """<p>WordRoom wird "wie sie ist" und "wie verfügbar" ohne jegliche Garantien bereitgestellt. Wir garantieren nicht, dass:</p>
+<ul>
+<li>Die Website zu jeder Zeit oder ohne Unterbrechung verfügbar ist.</li>
+<li>Die Tools genaue oder fehlerfreie Ergebnisse liefern.</li>
+<li>Die Website frei von Viren oder schädlichen Komponenten ist.</li>
+</ul>
+<p>Sie sind dafür verantwortlich, die Ergebnisse unserer Tools zu überprüfen, bevor Sie sich darauf für wichtige Arbeiten verlassen.</p>"""),
+                ("Haftungsbeschränkung", """<p>Im maximal gesetzlich zulässigen Umfang haftet WordRoom nicht für indirekte, beiläufige, besondere, Folge- oder Strafschäden, die sich aus der Nutzung der Website ergeben. Unsere Gesamthaftung übersteigt nicht den Betrag, den Sie uns gezahlt haben (was nichts ist, da die Tools kostenlos sind).</p>"""),
+                ("Benutzerinhalte", """<p>Da die gesamte Textverarbeitung in Ihrem Browser stattfindet, erhalten, speichern oder greifen wir niemals auf Ihre Inhalte zu. Sie behalten das vollständige Eigentum und die Verantwortung für jeden Text, den Sie mit unseren Tools verarbeiten.</p>"""),
+                ("Änderungen der Bedingungen", """<p>Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite veröffentlicht. Die fortgesetzte Nutzung der Website nach Änderungen stellt die Akzeptanz der aktualisierten Bedingungen dar.</p>"""),
+                ("Kontakt", """<p>Für Fragen zu diesen Bedingungen besuchen Sie bitte unsere <a href="contact.html">Kontaktseite</a>.</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "Kontaktieren Sie Uns",
+            "h1": "Kontaktieren Sie Uns",
+            "sections": [
+                ("Kontakt aufnehmen", """<p>Wir freuen uns, von Ihnen zu hören. Ob Sie eine Frage, Feedback, eine Funktionsanfrage haben oder einen Bug gefunden haben — wir sind hier, um zu helfen.</p>"""),
+                ("E-Mail", """<p>Der beste Weg, uns zu erreichen, ist per E-Mail:</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>Wir antworten in der Regel innerhalb von 1–2 Werktagen.</p>"""),
+                ("Was Sie angeben sollten", """<p>Um Ihnen schnell zu helfen, geben Sie bitte Folgendes an:</p>
+<ul>
+<li><strong>Bug-Reports</strong> — welches Tool, welcher Browser und Schritte zur Reproduktion des Problems.</li>
+<li><strong>Funktionsanfragen</strong> — beschreiben Sie, was Sie brauchen und warum es nützlich wäre.</li>
+<li><strong>Allgemeines Feedback</strong> — erzählen Sie uns, was Ihnen gefällt, was nicht und was wir besser machen könnten.</li>
+</ul>"""),
+                ("Datenschutz", """<p>Denken Sie daran, dass alle WordRoom-Tools Ihren Text vollständig in Ihrem Browser verarbeiten. Wir sehen, speichern oder greifen nie auf Inhalte zu, die Sie in unsere Tools eingeben. Weitere Details finden Sie in unserer <a href="privacy.html">Datenschutzrichtlinie</a>.</p>"""),
+            ],
+        },
+    },
+    "pt": {
+        "privacy": {
+            "title": "Política de Privacidade",
+            "h1": "Política de Privacidade",
+            "last_updated": "Última atualização: janeiro de 2025",
+            "sections": [
+                ("Introdução", """<p>WordRoom ("nós", "nosso" ou "nossos") opera o site wordroomonline.com. Esta Política de Privacidade explica como coletamos, usamos e protegemos informações quando você usa nosso site e ferramentas.</p>
+<p>Acreditamos em privacidade por design. Todas as nossas ferramentas funcionam inteiramente no seu navegador — seu texto nunca sai do seu dispositivo.</p>"""),
+                ("Informações que Não Coletamos", """<p><strong>Não coletamos nenhuma informação pessoal.</strong> Especificamente:</p>
+<ul>
+<li>Não armazenamos nem transmitimos nenhum texto que você insira em nossas ferramentas.</li>
+<li>Não usamos cookies para rastreamento ou publicidade.</li>
+<li>Não exigimos criação de conta ou login.</li>
+<li>Não coletamos endereços de e-mail ou informações de contato.</li>
+</ul>
+<p>Todo o processamento de texto acontece localmente no seu navegador usando JavaScript. Nenhum dado é enviado para qualquer servidor após o carregamento da página.</p>"""),
+                ("Informações Recebidas Automaticamente", """<p>Como a maioria dos sites, nosso provedor de hospedagem pode coletar automaticamente informações básicas de log do servidor quando você visita, como:</p>
+<ul>
+<li>Seu endereço IP (anonymizado pelo nosso provedor de hospedagem)</li>
+<li>Tipo e versão do navegador</li>
+<li>Páginas visitadas e tempo gasto</li>
+<li>Site de referência</li>
+</ul>
+<p>Essas informações são usadas apenas para manter e melhorar o site e não são vinculadas a nenhuma identidade pessoal.</p>"""),
+                ("Serviços de Terceiros", """<p>Usamos os seguintes serviços de terceiros:</p>
+<ul>
+<li><strong>Google Analytics</strong> — para entender como os visitantes usam nosso site. O Google Analytics usa cookies para coletar dados de uso anônimos. Você pode optar por não participar instalando o <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">complemento de exclusão do Google Analytics</a>.</li>
+<li><strong>Fontshare e Google Fonts</strong> — para carregar fontes web. Esses serviços podem receber seu endereço IP quando as fontes são carregadas.</li>
+</ul>"""),
+                ("Privacidade de Crianças", """<p>Nosso site não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente informações de crianças. Se você acredita que uma criança nos forneceu informações pessoais, entre em contato conosco e as deletaremos imediatamente.</p>"""),
+                ("Mudanças nesta Política", """<p>Podemos atualizar esta Política de Privacidade de vez em quando. Quaisquer alterações serão publicadas nesta página com uma data de revisão atualizada. O uso continuado do site após as alterações constitui aceitação da política atualizada.</p>"""),
+                ("Contato", """<p>Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco em <a href="contact.html">nossa página de contato</a>.</p>"""),
+            ],
+        },
+        "about": {
+            "title": "Sobre Nós",
+            "h1": "Sobre o WordRoom",
+            "sections": [
+                ("O que Construímos", """<p>WordRoom é uma coleção de ferramentas de texto gratuitas e com foco em privacidade que funcionam inteiramente no seu navegador. Começamos com uma observação simples: a maioria das ferramentas de texto online envia seu conteúdo para um servidor, mesmo que não precise.</p>
+<p>Cada ferramenta no WordRoom processa seu texto localmente usando JavaScript. Nada que você digita ou cola é enviado para lugar algum. Seu trabalho permanece no seu dispositivo.</p>"""),
+                ("Por que a Privacidade Importa", """<p>Quando você cola um rascunho, uma proposta comercial ou notas pessoais em uma ferramenta online, está confiando conteúdo sensível a esse serviço. Muitas ferramentas populares enviam seu texto para seus servidores para processamento — às vezes para análise, às vezes para treinamento de IA, às vezes por razões que não são claramente divulgadas.</p>
+<p>Acreditamos que isso está errado. O processamento de texto é algo que um navegador pode perfeitamente fazer por conta própria, então não há razão para enviar suas palavras para o computador de outra pessoa.</p>"""),
+                ("Nossas Ferramentas", """<p>WordRoom oferece atualmente seis ferramentas:</p>
+<ul>
+<li><strong>Contador de Palavras</strong> — contagem ao vivo de palavras, caracteres e frases com tratamento correto de scripts Indic e CJC.</li>
+<li><strong>Conversor de Caixa</strong> — treze conversões de caixa incluindo regras de caixa alta AP e Chicago.</li>
+<li><strong>Verificador de Legibilidade</strong> — seis fórmulas de legibilidade com retorno ao nível de frase.</li>
+<li><strong>Remover Quebras de Linha</strong> — corrigir texto colado de PDFs e e-mails.</li>
+<li><strong>Ordenar Linhas</strong> — ordenação alfabética, por comprimento, reversa ou aleatória.</li>
+<li><strong>Remover Linhas Duplicadas</strong> — encontrar e remover repetições com controle total sobre regras de comparação.</li>
+</ul>
+<p>Todas as ferramentas são gratuitas, não exigem cadastro e funcionam em qualquer navegador moderno.</p>"""),
+                ("Quem Somos", """<p>WordRoom é construído e mantido por uma pequena equipe de desenvolvedores que se importam com privacidade na web e ferramentas úteis. Acreditamos que a web deve funcionar para as pessoas, e não ao contrário.</p>
+<p>Se você tem feedback, solicitações de funcionalidades ou só quer dizer olá, visite nossa <a href="contact.html">página de contato</a>.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "Termos e Condições",
+            "h1": "Termos e Condições",
+            "last_updated": "Última atualização: janeiro de 2025",
+            "sections": [
+                ("Aceitação dos Termos", """<p>Ao acessar ou usar o WordRoom (wordroomonline.com), você concorda em estar vinculado a estes Termos e Condições. Se você não concorda com estes termos, por favor não use nosso site.</p>"""),
+                ("Uso do Site", """<p>O WordRoom fornece ferramentas de processamento de texto gratuitas baseadas em navegador. Você pode usar essas ferramentas para qualquer finalidade lícita. Você concorda em não:</p>
+<ul>
+<li>Usar o site de qualquer forma que viole leis ou regulamentos aplicáveis.</li>
+<li>Tentar interromper, sobrecarregar ou atacar o site ou sua infraestrutura.</li>
+<li>Usar sistemas automatizados (bots, scrapers) para acessar ou interagir com o site.</li>
+<li>Tentar fazer engenharia reversa ou extrair código-fonte do site.</li>
+</ul>"""),
+                ("Propriedade Intelectual", """<p>O design, código, conteúdo e marca do site são de propriedade do WordRoom e protegidos por direitos autorais e outras leis de propriedade intelectual. Você não pode reproduzir, distribuir ou criar obras derivadas do nosso conteúdo sem permissão por escrito.</p>
+<p>As ferramentas em si processam seus dados inteiramente no seu navegador. Não reivindicamos propriedade sobre nenhum texto ou conteúdo que você processe usando nossas ferramentas.</p>"""),
+                ("Isenção de Garantias", """<p>O WordRoom é fornecido "como está" e "conforme disponível" sem garantias de qualquer tipo. Não garantimos que:</p>
+<ul>
+<li>O site estará disponível o tempo todo ou sem interrupções.</li>
+<li>As ferramentas produzirão resultados precisos ou sem erros.</li>
+<li>O site está livre de vírus ou componentes prejudiciais.</li>
+</ul>
+<p>Você é responsável por verificar qualquer resultado das nossas ferramentas antes de confiar nele para trabalho importante.</p>"""),
+                ("Limitação de Responsabilidade", """<p>Na máxima extensão permitida por lei, o WordRoom não será responsável por danos indiretos, incidentais, especiais, consequenciais ou punitivos decorrentes do uso do site. Nossa responsabilidade total não excederá o valor que você nos pagou (que é nada, já que as ferramentas são gratuitas).</p>"""),
+                ("Conteúdo do Usuário", """<p>Como todo o processamento de texto acontece no seu navegador, nunca recebemos, armazenamos ou acessamos seu conteúdo. Você retém a propriedade e responsabilidade total por qualquer texto que processe usando nossas ferramentas.</p>"""),
+                ("Mudanças nos Termos", """<p>Reservamo-nos o direito de modificar estes termos a qualquer momento. As alterações serão publicadas nesta página. O uso continuado do site após as alterações constitui aceitação dos termos atualizados.</p>"""),
+                ("Contato", """<p>Para perguntas sobre estes termos, visite nossa <a href="contact.html">página de contato</a>.</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "Entre em Contato",
+            "h1": "Entre em Contato",
+            "sections": [
+                ("Fale Conosco", """<p>Adoraríamos ouvir de você. Seja uma pergunta, feedback, uma solicitação de funcionalidade ou um bug, estamos aqui para ajudar.</p>"""),
+                ("E-mail", """<p>A melhor forma de nos contatar é por e-mail:</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>Normalmente respondemos dentro de 1 a 2 dias úteis.</p>"""),
+                ("O que Incluir", """<p>Para nos ajudar a responder rapidamente, por favor inclua:</p>
+<ul>
+<li><strong>Relatórios de bugs</strong> — qual ferramenta, qual navegador e passos para reproduzir o problema.</li>
+<li><strong>Solicitações de funcionalidades</strong> — descreva o que você precisa e por que seria útil.</li>
+<li><strong>Feedback geral</strong> — conte-nos o que você gosta, o que não gosta e o que poderíamos fazer melhor.</li>
+</ul>"""),
+                ("Privacidade", """<p>Lembre-se, todas as ferramentas do WordRoom processam seu texto inteiramente no seu navegador. Nunca vemos, armazenamos ou acessamos nenhum conteúdo que você insira em nossas ferramentas. Para mais detalhes, veja nossa <a href="privacy.html">Política de Privacidade</a>.</p>"""),
+            ],
+        },
+    },
+    "ko": {
+        "privacy": {
+            "title": "개인정보 처리방침",
+            "h1": "개인정보 처리방침",
+            "last_updated": "최종 업데이트: 2025년 1월",
+            "sections": [
+                ("소개", """<p>WordRoom("당사", "당사의" 또는 "당사의 것")은 wordroomonline.com 웹사이트를 운영합니다. 이 개인정보 처리방침은 귀하가 당사 웹사이트 및 도구를 사용할 때 정보를 수집, 사용 및 보호하는 방법을 설명합니다.</p>
+<p>당사는 설계에 의한 개인정보 보호를 믿습니다. 모든 도구는 귀하의 브라우저에서 완전히 실행됩니다 — 귀하의 텍스트는 기기를 떠나지 않습니다.</p>"""),
+                ("수집하지 않는 정보", """<p><strong>개인 정보를 수집하지 않습니다.</strong> 구체적으로:</p>
+<ul>
+<li>도구에 입력한 텍스트를 저장하거나 전송하지 않습니다.</li>
+<li>추적이나 광고를 위한 쿠키를 사용하지 않습니다.</li>
+<li>계정 생성이나 로그인을 요구하지 않습니다.</li>
+<li>이메일 주소나 연락처 정보를 수집하지 않습니다.</li>
+</ul>
+<p>모든 텍스트 처리는 JavaScript를 사용하여 브라우저에서 로컬로 발생합니다. 페이지 로드 후 서버로 데이터가 전송되지 않습니다.</p>"""),
+                ("자동으로 수신하는 정보", """<p>대부분의 웹사이트와 마찬가지로, 호스팅 제공업체는 방문 시 기본적인 서버 로그 정보를 자동으로 수집할 수 있습니다:</p>
+<ul>
+<li>귀하의 IP 주소(호스팅 제공업체에 의해 익명화됨)</li>
+<li>브라우저 유형 및 버전</li>
+<li>방문한 페이지 및 체류 시간</li>
+<li>참조 웹사이트</li>
+</ul>
+<p>이 정보는 웹사이트 유지 관리 및 개선에만 사용되며 개인 신원과 연결되지 않습니다.</p>"""),
+                ("타사 서비스", """<p>다음 타사 서비스를 사용합니다:</p>
+<ul>
+<li><strong>Google Analytics</strong> — 방문자가 당사 사이트를 사용하는 방법을 이해하기 위해. Google Analytics는 익명 사용 데이터를 수집하기 위해 쿠키를 사용합니다. <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics 옵트아웃 브라우저 애드온</a>을 설치하여 옵트아웃할 수 있습니다.</li>
+<li><strong>Fontshare 및 Google Fonts</strong> — 웹 글꼴을 로드하기 위해. 이러한 서비스는 글꼴이 로드될 때 귀하의 IP 주소를 받을 수 있습니다.</li>
+</ul>"""),
+                ("어린이 개인정보 보호", """<p>당사 웹사이트는 13세 미만 어린이를 대상으로 하지 않습니다. 당사는 어린이의 정보를 의도적으로 수집하지 않습니다. 어린이가 당사에 개인 정보를 제공했다고 생각되면 저희에게 연락해 주시면 즉시 삭제하겠습니다.</p>"""),
+                ("이 방침의 변경", """<p>이 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항은 업데이트된 수정 날짜와 함께 이 페이지에 게시됩니다. 변경 후 웹사이트를 계속 사용하면 업데이트된 방침을 수락하는 것으로 간주됩니다.</p>"""),
+                ("문의", """<p>이 개인정보 처리방침에 대한 질문이 있으시면 <a href="contact.html">문의 페이지</a>로 연락해 주세요.</p>"""),
+            ],
+        },
+        "about": {
+            "title": "소개",
+            "h1": "WordRoom 소개",
+            "sections": [
+                ("우리가 구축한 것", """<p>WordRoom는 브라우저에서 완전히 실행되는 무료, 개인정보 보호 우선 텍스트 도구 모음입니다. 대부분의 온라인 텍스트 도구는 필요 없는데도 서버에 콘텐츠를 업로드한다는 관찰에서 시작했습니다.</p>
+<p>WordRoom의 모든 도구는 JavaScript를 사용하여 로컬에서 텍스트를 처리합니다. 입력하거나 붙여넣은 내용은 어디로도 전송되지 않습니다. 작업은 기기에 남아 있습니다.</p>"""),
+                ("개인정보 보호가 중요한 이유", """<p>온라인 도구에 초안, 사업 제안서 또는 개인 메모를 붙여넣을 때, 해당 서비스에 민감한 콘텐츠를 신뢰하고 있는 것입니다. 많은 인기 도구는 처리를 위해 텍스트를 서버로 전송합니다 — 때로는 분석을 위해, 때로는 AI 훈련을 위해, 때로는 명확하게 공개되지 않는 이유를 위해.</p>
+<p>우리는 그것이 잘못되었다고 생각합니다. 텍스트 처리는 브라우저가 혼자서 완벽하게 할 수 있는 것이므로, 당신의 단어를 다른 사람의 컴퓨터로 보낼 이유가 없습니다.</p>"""),
+                ("우리의 도구", """<p>WordRoom는 현재 여섯 가지 도구를 제공합니다:</p>
+<ul>
+<li><strong>단어 카운터</strong> — 인도 문자 및 CJK를 올바르게 처리하는 실시간 단어, 문자 및 문장 수 세기.</li>
+<li><strong>대소문자 변환기</strong> — AP 및 시카고 제목 대소문자 규칙을 포함한 13가지 대소문자 변환.</li>
+<li><strong>가독성 검사기</strong> — 문장 수준 피드백이 있는 6가지 가독성 공식.</li>
+<li><strong>줄 바꿈 제거</strong> — PDF 및 이메일에서 붙여넣은 텍스트 수정.</li>
+<li><strong>줄 정렬</strong> — 알파벳순, 길이순, 역순 또는 무작위 정렬.</li>
+<li><strong>중복 줄 제거</strong> — 비교 규칙에 대한 완전한 제어로 반복을 찾아 제거.</li>
+</ul>
+<p>모든 도구는 무료이며, 가입이 필요하지 않고, 모든 최신 브라우저에서 작동합니다.</p>"""),
+                ("우리는 누구인가", """<p>WordRoom는 웹 개인정보 보호와 유용한 도구에 관심을 가진 소규모 개발 팀에 의해 구축되고 유지 관리됩니다. 우리는 웹이 사람을 위해 작동해야지, 그 반대가 아니라고 믿습니다.</p>
+<p>피드백, 기능 요청 또는 단순히 인사하고 싶으시다면 <a href="contact.html">문의 페이지</a>를 방문해 주세요.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "이용약관",
+            "h1": "이용약관",
+            "last_updated": "최종 업데이트: 2025년 1월",
+            "sections": [
+                ("약관 동의", """<p>WordRoom(wordroomonline.com)에 접속하거나 사용함으로써 귀하는 본 이용약관에 구속됨에 동의합니다. 본 약관에 동의하지 않는 경우 당사 웹사이트를 사용하지 마세요.</p>"""),
+                ("웹사이트 사용", """<p>WordRoom는 무료 브라우저 기반 텍스트 처리 도구를 제공합니다. 이러한 도구는 합법적인 목적으로 사용할 수 있습니다. 귀하는 다음을 하지 않기에 동의합니다:</p>
+<ul>
+<li>적용 가능한 법률이나 규정을 위반하는 방식으로 웹사이트를 사용하는 행위.</li>
+<li>웹사이트 또는 그 인프라를 방해, 과부하 또는 공격하려는 시도.</li>
+<li>웹사이트에 접근하거나 상호작용하기 위한 자동화 시스템(봇, 스크래퍼) 사용.</li>
+<li>웹사이트에서 소스 코드를 리버스 엔지니어링하거나 추출하려는 시도.</li>
+</ul>"""),
+                ("지적 재산권", """<p>웹사이트의 디자인, 코드, 콘텐츠 및 브랜딩은 WordRoom의 소유이며 저작권 및 기타 지적 재산권법의 보호를 받습니다. 서면 허가 없이 당사 콘텐츠를 복제, 배포하거나 파생 작품을 만들 수 없습니다.</p>
+<p>도구 자체는 브라우저에서 데이터를 완전히 처리합니다. 당사 도구를 사용하여 처리하는 텍스트 또는 콘텐츠에 대해 소유권을 주장하지 않습니다.</p>"""),
+                ("면책 조항", """<p>WordRoom는 "있는 그대로" 및 "가능한 대로" 어떤 종류의 보증 없이 제공됩니다. 우리는 다음을 보증하지 않습니다:</p>
+<ul>
+<li>웹사이트가 항상 사용 가능하거나 중단 없이 사용 가능할 것.</li>
+<li>도구가 정확하거나 오류 없는 결과를 생성할 것.</li>
+<li>웹사이트가 바이러스나 유해한 구성 요소가 없을 것.</li>
+</ul>
+<p>중요한 작업에 의존하기 전에 도구의 결과를 확인하는 것은 귀하의 책임입니다.</p>"""),
+                ("책임 제한", """<p>법률이 허용하는 최대 범위 내에서, WordRoom는 웹사이트 사용으로 인해 발생하는 간접적, 부수적, 특별, 결과적 또는 징벌적 손해에 대해 책임을 지지 않습니다. 당사의 총 책임은 귀하가 당사에 지불한 금액(도구가 무료이므로 제로)을 초과하지 않습니다.</p>"""),
+                ("사용자 콘텐츠", """<p>모든 텍스트 처리가 브라우저에서 이루어지므로, 당사는 귀하의 콘텐츠를 수신, 저장하거나 접근하지 않습니다. 귀하는 당사 도구를 사용하여 처리하는 모든 텍스트에 대한 소유권과 책임을 완전히 보유합니다.</p>"""),
+                ("약관 변경", """<p>본 약관을 언제든지 변경할 권리를 보유합니다. 변경 사항은 이 페이지에 게시됩니다. 변경 후 웹사이트를 계속 사용하면 업데이트된 약관을 수락하는 것으로 간주됩니다.</p>"""),
+                ("문의", """<p>본 약관에 대한 질문이 있으시면 <a href="contact.html">문의 페이지</a>를 방문해 주세요.</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "문의하기",
+            "h1": "문의하기",
+            "sections": [
+                ("연락주세요", """<p>귀하의 연락을 기다리고 있습니다. 질문, 피드백, 기능 요청 또는 버그를 발견하셨다면, 도움을 드리겠습니다.</p>"""),
+                ("이메일", """<p>저희에게 연락하는 가장 좋은 방법은 이메일입니다:</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>일반적으로 1-2 영업일 이내에 회신합니다.</p>"""),
+                ("포함할 내용", """<p>빠르게 답변을 드리기 위해 다음을 포함해 주세요:</p>
+<ul>
+<li><strong>버그 리포트</strong> — 어떤 도구, 어떤 브라우저, 문제를 재현하는 단계.</li>
+<li><strong>기능 요청</strong> — 필요한 것과 유용한 이유를 설명해 주세요.</li>
+<li><strong>일반 피드백</strong> — 좋아하는 점, 싫어하는 점, 개선할 수 있는 점을 알려주세요.</li>
+</ul>"""),
+                ("개인정보 보호", """<p>기억해 주세요, WordRoom의 모든 도구는 귀하의 텍스트를 브라우저에서 완전히 처리합니다. 귀하가 도구에 입력한 콘텐츠를 보거나 저장하거나 접근하지 않습니다. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 참조해 주세요.</p>"""),
+            ],
+        },
+    },
+    "it": {
+        "privacy": {
+            "title": "Informativa sulla Privacy",
+            "h1": "Informativa sulla Privacy",
+            "last_updated": "Ultimo aggiornamento: gennaio 2025",
+            "sections": [
+                ("Introduzione", """<p>WordRoom ("noi", "nostro" o "nostri") gestisce il sito web wordroomonline.com. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo le informazioni quando utilizzi il nostro sito web e i nostri strumenti.</p>
+<p>Crediamo nella privacy by design. Tutti i nostri strumenti funzionano completamente nel tuo browser — il tuo testo non lascia mai il tuo dispositivo.</p>"""),
+                ("Informazioni che Non Raccogliamo", """<p><strong>Non raccogliamo alcuna informazione personale.</strong> In particolare:</p>
+<ul>
+<li>Non memorizziamo né trasmettiamo alcun testo che inserisci nei nostri strumenti.</li>
+<li>Non utilizziamo cookie per il tracciamento o la pubblicità.</li>
+<li>Non richiediamo creazione di account o accesso.</li>
+<li>Non raccogliamo indirizzi email o informazioni di contatto.</li>
+</ul>
+<p>Tutto l'elaborazione del testo avviene localmente nel tuo browser utilizzando JavaScript. Nessun dato viene inviato a nessun server dopo il caricamento della pagina.</p>"""),
+                ("Informazioni Ricevute Automaticamente", """<p>Come la maggior parte dei siti web, il nostro provider di hosting può automaticamente raccogliere informazioni di base dei log del server quando visiti, come:</p>
+<ul>
+<li>Il tuo indirizzo IP (anonimizzato dal nostro provider di hosting)</li>
+<li>Tipo e versione del browser</li>
+<li>Pagine visitate e tempo trascorso</li>
+<li>Sito web di riferimento</li>
+</ul>
+<p>Queste informazioni vengono utilizzate esclusivamente per mantenere e migliorare il sito web e non sono collegate a alcuna identità personale.</p>"""),
+                ("Servizi di Terze Parti", """<p>Utilizziamo i seguenti servizi di terze parti:</p>
+<ul>
+<li><strong>Google Analytics</strong> — per capire come i visitatori utilizzano il nostro sito. Google Analytics utilizza cookie per raccogliere dati di utilizzo anonimi. Puoi disinstallare installando il <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">componente aggiuntivo di disattivazione di Google Analytics</a>.</li>
+<li><strong>Fontshare e Google Fonts</strong> — per caricare i font web. Questi servizi possono ricevere il tuo indirizzo IP quando i vengono caricati i font.</li>
+</ul>"""),
+                ("Privacy dei Bambini", """<p>Il nostro sito web non è rivolto ai bambini sotto i 13 anni. Non raccogliamo intenzionalmente informazioni dai bambini. Se ritieni che un bambino ci abbia fornito informazioni personali, contattaci e le cancelleremo immediatamente.</p>"""),
+                ("Modifiche a Questa Politica", """<p>Potiamo aggiornare questa Informativa sulla Privacy di tanto in tanto. Qualsiasi modifica sarà pubblicata su questa pagina con una data di revisione aggiornata. L'uso continuato del sito web dopo le modifiche costituisce l'accettazione della politica aggiornata.</p>"""),
+                ("Contatto", """<p>Se hai domande su questa Informativa sulla Privacy, contattaci tramite la nostra <a href="contact.html">pagina di contatto</a>.</p>"""),
+            ],
+        },
+        "about": {
+            "title": "Chi Siamo",
+            "h1": "Su WordRoom",
+            "sections": [
+                ("Cosa Abbiamo Costruito", """<p>WordRoom è una collezione di strumenti di testo gratuiti e rispettosi della privacy che funzionano completamente nel tuo browser. Siamo partiti con un'osservazione semplice: la maggior parte degli strumenti di testo online carica i tuoi contenuti su un server, anche quando non è necessario.</p>
+<p>Ogni strumento su WordRoom elabora il tuo testo localmente utilizzando JavaScript. Nulla di ciò che digiti o incolli viene mai inviato da nessuna parte. Il tuo lavoro rimane sul tuo dispositivo.</p>"""),
+                ("Perché la Privacy È Importante", """<p>Quando incolli una bozza, una proposta commerciale o appunti personali in uno strumento online, stai affidando contenuti sensibili a quel servizio. Molti strumenti popolari inviano il tuo testo ai loro server per l'elaborazione — a volte per analisi, a volte per l'addestramento dell'IA, a volte per motivi non chiaramente divulgati.</p>
+<p>Crediamo che sia sbagliato. L'elaborazione del testo è qualcosa che un browser può fare perfettamente da solo, quindi non c'è motivo di inviare le tue parole al computer di qualcun altro.</p>"""),
+                ("I Nostri Strumenti", """<p>WordRoom attualmente offre sei strumenti:</p>
+<ul>
+<li><strong>Contatore di Parole</strong> — conteggio in tempo reale di parole, caratteri e frasi con gestione corretta di script Indic e CJC.</li>
+<li><strong>Convertitore di Casse</strong> — tredici conversioni di casse incluse le regole di cassa alta AP e Chicago.</li>
+<li><strong>Verificatore di Leggibilità</strong> — sei formule di leggibilità con feedback a livello di frase.</li>
+<li><strong>Rimuovi Interruzioni di Riga</strong> — correggi il testo incollato da PDF ed email.</li>
+<li><strong>Ordina Righe</strong> — ordinamento alfabetico, per lunghezza, inverso o casuale.</li>
+<li><strong>Rimuovi Righe Dupliche</strong> — trova e rimuovi le ripetizioni con controllo completo sulle regole di confronto.</li>
+</ul>
+<p>Tutti gli strumenti sono gratuiti, non richiedono iscrizione e funzionano su qualsiasi browser moderno.</p>"""),
+                ("Chi Siamo", """<p>WordRoom è costruito e mantenuto da un piccolo team di sviluppatori che si preoccupano della privacy web e degli strumenti utili. Crediamo che il web dovrebbe funzionare per le persone, e non il contrario.</p>
+<p>Se hai feedback, richieste di funzionalità o vuoi solo dire ciao, visita la nostra <a href="contact.html">pagina di contatto</a>.</p>"""),
+            ],
+        },
+        "terms": {
+            "title": "Termini e Condizioni",
+            "h1": "Termini e Condizioni",
+            "last_updated": "Ultimo aggiornamento: gennaio 2025",
+            "sections": [
+                ("Accettazione dei Termini", """<p>Accedendo o utilizzando WordRoom (wordroomonline.com), accetti di essere vincolato da questi Termini e Condizioni. Se non accetti questi termini, per favore non utilizzare il nostro sito web.</p>"""),
+                ("Utilizzo del Sito Web", """<p>WordRoom fornisce strumenti di elaborazione del testo gratuiti basati su browser. Puoi utilizzare questi strumenti per qualsiasi scopo lecito. Accetti di non:</p>
+<ul>
+<li>Utilizzare il sito web in modo che violi leggi o regolamenti applicabili.</li>
+<li>Tentare di disturbare, sovraccaricare o attaccare il sito web o la sua infrastruttura.</li>
+<li>Utilizzare sistemi automatizzati (bot, scraper) per accedere o interagire con il sito web.</li>
+<li>Tentare di fare reverse engineering o estrarre il codice sorgente dal sito web.</li>
+</ul>"""),
+                ("Proprietà Intellettuale", """<p>Il design, il codice, i contenuti e il branding del sito web sono di proprietà di WordRoom e protetti da diritti d'autore e altre leggi sulla proprietà intellettuale. Non puoi riprodurre, distribuire o creare opere derivate dai nostri contenuti senza permesso scritto.</p>
+<p>Gli strumenti stessi elaborano i tuoi dati completamente nel tuo browser. Non rivendichiamo la proprietà di alcun testo o contenuto che elabori utilizzando i nostri strumenti.</p>"""),
+                ("Esclusione di Garanzie", """<p>WordRoom è fornito "così com'è" e "secondo disponibilità" senza garanzie di alcun tipo. Non garantiamo che:</p>
+<ul>
+<li>Il sito web sarà disponibile tutto il tempo o senza interruzioni.</li>
+<li>Gli strumenti produrranno risultati precisi o senza errori.</li>
+<li>Il sito web è privo di virus o componenti dannosi.</li>
+</ul>
+<p>Sei responsabile di verificare qualsiasi risultato dei nostri strumenti prima di affidarti ad essi per lavoro importante.</p>"""),
+                ("Limitazione di Responsabilità", """<p>Nella misura massima consentita dalla legge, WordRoom non sarà responsabile per danni indiretti, accidentali, speciali, consequenziali o punitivi derivanti dall'utilizzo del sito web. La nostra responsabilità totale non supererà l'importo che ci hai pagato (che è nulla, dato che gli strumenti sono gratuiti).</p>"""),
+                ("Contenuti Utente", """<p>Dato che tutta l'elaborazione del testo avviene nel tuo browser, non riceviamo, memorizziamo o accediamo mai ai tuoi contenuti. Conservi la proprietà e la responsabilità completa di qualsiasi testo che elabori utilizzando i nostri strumenti.</p>"""),
+                ("Modifiche ai Termini", """<p>Ci riserviamo il diritto di modificare questi termini in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina. L'uso continuato del sito web dopo le modifiche costituisce l'accettazione dei termini aggiornati.</p>"""),
+                ("Contatto", """<p>Per domande su questi termini, visita la nostra <a href="contact.html">pagina di contatto</a>.</p>"""),
+            ],
+        },
+        "contact": {
+            "title": "Contattaci",
+            "h1": "Contattaci",
+            "sections": [
+                ("Mettiti in Contatto", """<p>Ci farebbe piacere sentirti. Che tu abbia una domanda, un feedback, una richiesta di funzionalità o abbia trovato un bug, siamo qui per aiutare.</p>"""),
+                ("Email", """<p>Il miglior modo per contattarci è via email:</p>
+<p><a href="mailto:hello@wordroomonline.com">hello@wordroomonline.com</a></p>
+<p>Di solito rispondiamo entro 1-2 giorni lavorativi.</p>"""),
+                ("Cosa Includere", """<p>Per aiutarci a rispondere rapidamente, per favore includi:</p>
+<ul>
+<li><strong>Segnalazioni di bug</strong> — quale strumento, quale browser e passi per riprodurre il problema.</li>
+<li><strong>Richieste di funzionalità</strong> — descrivi di cosa hai bisogno e perché sarebbe utile.</li>
+<li><strong>Feedback generale</strong> — raccontaci cosa ti piace, cosa non ti piace e cosa potremmo fare meglio.</li>
+</ul>"""),
+                ("Privacy", """<p>Ricorda, tutti gli strumenti di WordRoom elaborano il tuo testo completamente nel tuo browser. Non vediamo, memorizziamo o accediamo mai a alcun contenuto che inserisci nei nostri strumenti. Per maggiori dettagli, consulta la nostra <a href="privacy.html">Informativa sulla Privacy</a>.</p>"""),
+            ],
+        },
     },
 }

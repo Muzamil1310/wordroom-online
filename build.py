@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generates the WordRoom static pages. Mirrors what Astro will do in the real build."""
 import json, pathlib, html
-from translations import LANGUAGES, UI, GROUPS as _GROUPS_T, HOME, TOOLS_T, FAQS_T, REFS_T
+from translations import LANGUAGES, UI, GROUPS as _GROUPS_T, HOME, TOOLS_T, FAQS_T, REFS_T, PAGES_T
 
 OUT = pathlib.Path(__file__).parent
 SITE = "WordRoom"
@@ -344,6 +344,25 @@ def shell(active, body, locale="en", slug=None):
     home_href = f"{prefix}/index.html" if locale != "en" else "/index.html"
     # JS/CSS paths: English root = assets/, localized = ../assets/
     a = "../assets" if locale != "en" else "assets"
+    # Footer links
+    footer_pages = ["privacy", "about", "terms", "contact"]
+    footer_links = []
+    for p in footer_pages:
+        pt = PAGES_T.get(locale, PAGES_T.get("en", {})).get(p, PAGES_T.get("en", {}).get(p, {}))
+        page_title = pt.get("title", p.replace("-", " ").title())
+        if locale != "en":
+            href = f"/{locale}/{p}.html"
+        else:
+            href = f"/{p}.html"
+        footer_links.append(f'<a href="{href}">{page_title}</a>')
+    footer_html = f"""<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__inner">
+      <span class="ftr__copy">&copy; 2026 {SITE}</span>
+      <nav class="ftr__links" aria-label="Legal">{" ".join(footer_links)}</nav>
+    </div>
+  </div>
+</footer>"""
     return f"""<body data-tool="{active}" lang="{locale}">
 <div class="app">
 <header class="hdr">
@@ -365,6 +384,7 @@ def shell(active, body, locale="en", slug=None):
 <main class="main"><div class="wrap">
 {body}
 </div></main>
+{footer_html}
 </div>
 
 <div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
@@ -508,6 +528,32 @@ def index_page(locale="en"):
                 h.get("meta_desc", HOME["en"]["meta_desc"]),
                 canonical, schema, locale) + shell("home", body, locale)
 
+STATIC_PAGES = ["privacy", "about", "terms", "contact"]
+
+def static_page(slug, locale="en"):
+    pages = PAGES_T.get(locale, PAGES_T.get("en", {}))
+    page = pages.get(slug, pages.get(slug, PAGES_T.get("en", {}).get(slug, {})))
+    title = page.get("title", slug.replace("-", " ").title())
+    h1 = page.get("h1", title)
+    last_updated = page.get("last_updated", "")
+    sections = page.get("sections", [])
+    prefix = f"/{locale}" if locale != "en" else ""
+    canonical = f"{BASE}{prefix}/{slug}"
+    schema = {"@context": "https://schema.org", "@type": "WebPage",
+              "name": h1, "url": canonical, "description": title}
+    sections_html = ""
+    for heading, content in sections:
+        sections_html += f"<section><h2>{heading}</h2>{content}</section>"
+    updated_html = f'<p class="eyebrow">{last_updated}</p>' if last_updated else ""
+    body = f"""<div class="pagehead">
+  <h1>{h1}</h1>
+  {updated_html}
+</div>
+<div class="refs">
+{sections_html}
+</div>"""
+    return head(title, title, canonical, schema, locale, slug) + shell(slug, body, locale, slug)
+
 # ------------------------------------------------------------------ build
 page_count = 0
 
@@ -516,6 +562,9 @@ page_count = 0
 page_count += 1
 for t in TOOLS:
     (OUT / f"{t['slug']}.html").write_text(tool_page(t, "en"), encoding="utf-8")
+    page_count += 1
+for slug in STATIC_PAGES:
+    (OUT / f"{slug}.html").write_text(static_page(slug, "en"), encoding="utf-8")
     page_count += 1
 
 # Localized pages (subdirectories)
@@ -528,6 +577,9 @@ for locale in LANGUAGES:
     page_count += 1
     for t in TOOLS:
         (loc_dir / f"{t['slug']}.html").write_text(tool_page(t, locale), encoding="utf-8")
+        page_count += 1
+    for slug in STATIC_PAGES:
+        (loc_dir / f"{slug}.html").write_text(static_page(slug, locale), encoding="utf-8")
         page_count += 1
 
 # robots.txt
@@ -548,6 +600,16 @@ sitemap_urls.append("  </url>")
 for t in TOOLS:
     s = t["slug"]
     # English tool URL
+    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc>")
+    for lc in LANGUAGES:
+        if lc == "en":
+            sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{s}"/>')
+        else:
+            sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{lc}/{s}"/>')
+    sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}/{s}"/>')
+    sitemap_urls.append("  </url>")
+
+for s in STATIC_PAGES:
     sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc>")
     for lc in LANGUAGES:
         if lc == "en":

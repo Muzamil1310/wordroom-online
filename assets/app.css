@@ -551,3 +551,28 @@ details.faq > div { padding-bottom: var(--space-4); }
 .btn:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); transform: translateY(-1px); box-shadow: var(--shadow-md); }
 .btn--ghost { background: var(--surface); color: var(--text); border-color: var(--border); }
 .btn--ghost:hover { background: var(--surface-2); color: var(--text); border-color: var(--border-strong); }
+
+/* ---------------- Footer ---------------- */
+.ftr {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--divider);
+  padding: var(--space-6) 0;
+  margin-top: auto;
+}
+.ftr__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: var(--space-4);
+}
+.ftr__copy {
+  font-size: var(--text-sm); color: var(--text-muted);
+}
+.ftr__links {
+  display: flex; flex-wrap: wrap; gap: var(--space-4);
+}
+.ftr__links a {
+  font-size: var(--text-sm); color: var(--text-muted); text-decoration: none;
+}
+.ftr__links a:hover { color: var(--text); text-decoration: underline; }
+@media (max-width: 560px) {
+  .ftr__inner { flex-direction: column; align-items: flex-start; }
+}
