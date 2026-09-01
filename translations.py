@@ -182,7 +182,7 @@ HOME = {
     "en": {
         "eyebrow": "One workspace, not sixty landing pages",
         "h1": "Text tools that keep your <em>text</em> to themselves.",
-        "desc": "One shared editor. Every tool runs on it. Nothing you type ever leaves your browser — no upload, no account, no ads.",
+        "desc": "One shared editor. Every tool runs on it. Nothing you type ever leaves your browser — no upload, no account.",
         "cta": "Open the workspace",
         "cta2": "Search tools",
         "tools_h": "Every tool",
@@ -884,7 +884,7 @@ FAQS_T = {
             ("How do I count words in text online?",
              "Paste your text into the editor above. The word count, character count, sentence count and paragraph count all update live as you type. Nothing is sent to a server — every calculation happens in your browser."),
             ("Is this a free word counting tool?",
-             "Yes. The tool is completely free with no sign-up, no file upload limit, and no ads. All processing happens locally in your browser."),
+             "Yes. The tool is completely free with no sign-up and no file upload limit. All processing happens locally in your browser."),
             ("Can I use this as an essay word count checker?",
              "Yes. Paste your essay into the editor and the word count updates in real time. Switch on Academic mode to exclude citations and reference lists from the countable total, matching your institution's conventions."),
             ("How does the online text analyzer work?",

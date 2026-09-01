@@ -537,7 +537,7 @@ details.faq > div { padding-bottom: var(--space-4); }
 }
 .relcard:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow-md); color: var(--text); }
 .relcard strong { display: block; font-size: var(--text-sm); font-weight: 600; }
-.relcard span { display: block; font-size: var(--text-xs); color: var(--text-faint); margin-top: 3px; }
+.relcard span { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-size: var(--text-xs); color: var(--text-faint); margin-top: 3px; }
 
 /* ---------------- Home hero ---------------- */
 .hero { max-width: 60ch; margin-bottom: var(--space-8); padding-top: var(--space-6); }
