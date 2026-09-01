@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Удаление дубликатов строк — Поиск и удаление повторов | WordRoom</title>
+<meta name="description" content="Найдите и удалите дубликаты строк из любого списка. Выберите, учитывать ли регистр и пробелы, и просмотрите повторяющиеся значения перед удалением.">
+<link rel="canonical" href="https://wordroomonline.com/ru/remove-duplicate-lines">
+<link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-duplicate-lines.html">
+<link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines.html">
+<meta property="og:title" content="Удаление дубликатов строк — Поиск и удаление повторов">
+<meta property="og:description" content="Найдите и удалите дубликаты строк из любого списка. Выберите, учитывать ли регистр и пробелы, и просмотрите повторяющиеся значения перед удалением.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru">
+<meta property="og:site_name" content="WordRoom">
+<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Word Room" />
+<link rel="manifest" href="../assets/site.webmanifest" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "\u0423\u0434\u0430\u043b\u0435\u043d\u0438\u0435 \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u043e\u0432 \u0441\u0442\u0440\u043e\u043a", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "\u041d\u0430\u0439\u0434\u0438\u0442\u0435 \u0438 \u0443\u0434\u0430\u043b\u0438\u0442\u0435 \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u044b \u0441\u0442\u0440\u043e\u043a \u0438\u0437 \u043b\u044e\u0431\u043e\u0433\u043e \u0441\u043f\u0438\u0441\u043a\u0430. \u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435, \u0443\u0447\u0438\u0442\u044b\u0432\u0430\u0442\u044c \u043b\u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440 \u0438 \u043f\u0440\u043e\u0431\u0435\u043b\u044b, \u0438 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u044e\u0449\u0438\u0435\u0441\u044f \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f \u043f\u0435\u0440\u0435\u0434 \u0443\u0434\u0430\u043b\u0435\u043d\u0438\u0435\u043c.", "url": "https://wordroomonline.com/ru/remove-duplicate-lines", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442 \u043b\u0438 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442 \u043f\u0435\u0440\u0432\u0443\u044e \u0438\u043b\u0438 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044e\u044e \u043a\u043e\u043f\u0438\u044e?", "acceptedAnswer": {"@type": "Answer", "text": "\u041f\u0435\u0440\u0432\u0443\u044e, \u0438 \u043f\u043e\u0440\u044f\u0434\u043e\u043a \u043e\u0441\u0442\u0430\u0432\u0448\u0438\u0445\u0441\u044f \u0441\u0442\u0440\u043e\u043a \u0441\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442\u0441\u044f. \u0412\u0430\u0448 \u0441\u043f\u0438\u0441\u043e\u043a \u043d\u0435 \u043c\u043e\u043b\u0447\u0430 \u043f\u0435\u0440\u0435\u0441\u043e\u0440\u0442\u0438\u0440\u0443\u0435\u0442\u0441\u044f. \u0415\u0441\u043b\u0438 \u0432\u044b \u0442\u0430\u043a\u0436\u0435 \u0445\u043e\u0442\u0438\u0442\u0435 \u0441\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u043a\u0443 \u2014 \u044d\u0442\u043e \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u043e\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435."}}, {"@type": "Question", "name": "\u042f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043b\u0438 \u0441\u0442\u0440\u043e\u043a\u0438, \u0440\u0430\u0437\u043b\u0438\u0447\u0430\u044e\u0449\u0438\u0435\u0441\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u043e\u043c, \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u0430\u043c\u0438?", "acceptedAnswer": {"@type": "Answer", "text": "\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e \u0434\u0430, \u0447\u0442\u043e \u043e\u0431\u044b\u0447\u043d\u043e \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e \u0434\u043b\u044f \u0430\u0434\u0440\u0435\u0441\u043e\u0432 email \u0438 \u043a\u043b\u044e\u0447\u0435\u0432\u044b\u0445 \u0441\u043b\u043e\u0432. \u0412\u043a\u043b\u044e\u0447\u0438\u0442\u0435 \u00ab\u0423\u0447\u0438\u0442\u044b\u0432\u0430\u0442\u044c \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u00bb, \u043a\u043e\u0433\u0434\u0430 \u0440\u0435\u0433\u0438\u0441\u0442\u0440 \u0438\u043c\u0435\u0435\u0442 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u2014 \u0434\u043b\u044f \u043f\u0430\u0440\u043e\u043b\u0435\u0439, ID \u0438 \u043a\u043e\u0434\u0430."}}, {"@type": "Question", "name": "\u041c\u043e\u0433\u0443 \u043b\u0438 \u044f \u0443\u0432\u0438\u0434\u0435\u0442\u044c \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u044b \u043f\u0435\u0440\u0435\u0434 \u0443\u0434\u0430\u043b\u0435\u043d\u0438\u0435\u043c?", "acceptedAnswer": {"@type": "Answer", "text": "\u0414\u0430. \u041f\u0430\u043d\u0435\u043b\u044c \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442, \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0440\u043e\u043a \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u0442\u0441\u044f \u0438 \u043a\u0430\u043a\u0438\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u044e\u0442\u0441\u044f \u0447\u0430\u0449\u0435 \u0432\u0441\u0435\u0433\u043e, \u0430 \u00ab\u041e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u044b\u00bb \u0438\u043d\u0432\u0435\u0440\u0442\u0438\u0440\u0443\u0435\u0442 \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u044e, \u0447\u0442\u043e\u0431\u044b \u0432\u044b \u043c\u043e\u0433\u043b\u0438 \u0442\u043e\u0447\u043d\u043e \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c, \u0447\u0442\u043e \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u0442\u0441\u044f."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "\u0423\u0434\u0430\u043b\u0435\u043d\u0438\u0435 \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u043e\u0432 \u0441\u0442\u0440\u043e\u043a", "item": "https://wordroomonline.com/ru/remove-duplicate-lines"}]}]}</script>
+</head><body data-tool="remove-duplicate-lines" lang="ru">
+<div class="app">
+<header class="hdr">
+  <button class="iconbtn" id="railToggle" aria-label="Открыть меню"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="hdr__brand" href="/ru/index.html"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
+  <span class="hdr__spacer"></span>
+  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Конфиденциальность</span></span>
+  <div class="lang-switcher">
+  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
+    <option value="" selected>Русский</option>
+    <option value="/remove-duplicate-lines.html">English</option><option value="/es/remove-duplicate-lines.html">Español</option><option value="/ja/remove-duplicate-lines.html">日本語</option><option value="/fr/remove-duplicate-lines.html">Français</option><option value="/de/remove-duplicate-lines.html">Deutsch</option><option value="/pt/remove-duplicate-lines.html">Português</option><option value="/ko/remove-duplicate-lines.html">한국어</option><option value="/it/remove-duplicate-lines.html">Italiano</option>
+  </select>
+</div>
+  <button class="kbtrigger" data-pal-open type="button" aria-label="Поиск"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Поиск</span><kbd>⌘K</kbd></button>
+  <button class="iconbtn" data-theme-toggle aria-label="Сменить тему"></button>
+</header>
+
+<div class="rail__scrim" aria-hidden="true"></div>
+<nav class="rail" aria-label="Tools">
+  <button class="iconbtn rail__close" aria-label="Закрыть меню"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="rail__group"><p class="rail__label">Подсчёт</p>
+    <a class="rail__link" href="word-counter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/></svg><span>Счётчик слов</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Преобразование</p>
+    <a class="rail__link" href="case-converter.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Преобразователь регистра</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Анализ</p>
+    <a class="rail__link" href="readability-checker.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Проверка читаемости</span></a>
+  </div>
+  <div class="rail__group"><p class="rail__label">Очистка</p>
+    <a class="rail__link" href="remove-line-breaks.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg><span>Удаление переносов строк</span></a>
+    <a class="rail__link" href="sort-lines.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Сортировка строк</span></a>
+    <a class="rail__link" href="remove-duplicate-lines.html" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Удаление дубликатов строк</span></a>
+  </div>
+</nav>
+
+<main class="main"><div class="wrap">
+<div class="pagehead">
+  <p class="eyebrow">Очистка</p>
+  <h1>Удаление дубликатов строк</h1>
+  <p>Найдите повторы перед удалением, с полным контролем над тем, как регистр и пробелы влияют на сравнение.</p>
+</div>
+<div class="work">
+  <div>
+    <div class="sheet">
+      <div class="sheet__bar">
+  <div class="seg" role="group" aria-label="Editor typeface">
+    <button type="button" data-face-set="sans" aria-pressed="true">Sans</button>
+    <button type="button" data-face-set="serif" aria-pressed="false">Serif</button>
+    <button type="button" data-face-set="mono" aria-pressed="false">Mono</button>
+  </div>
+  <span class="grow"></span>
+  <div class="tacts">
+    <button class="tbtn" id="sampleBtn" type="button">Sample</button>
+    <button class="tbtn" id="undoBtn" type="button" disabled>Undo</button>
+    <button class="tbtn" id="focusBtn" type="button" aria-pressed="false">Focus</button>
+    <button class="tbtn" id="copyBtn" type="button">Copy</button>
+    <button class="tbtn" id="dlBtn" type="button">Download</button>
+    <button class="tbtn tbtn--danger" id="clearBtn" type="button">Clear</button>
+  </div>
+</div>
+      <label class="sr-only" for="editor">Your text</label>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Вставьте список с дубликатами — адреса email, ключевые слова, ID."></textarea>
+      <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
+</div>
+<div class="refs"><section><h2>Что считается дубликатом</h2><p>Удаление дубликатов хорошо определено только после того, как вы решите, что значит «одинаковые», и настройки по умолчанию важнее алгоритма. Три вопроса определяют ответ.</p>
+<p><strong>Важен ли регистр?</strong> Для адресов email — нет: локальная часть технически чувствительна к регистру, но практически никогда не обрабатывается так, поэтому <code>Hello@example.com</code> и <code>hello@example.com</code> — одинаковый адрес. Для паролей или ID регистр абсолютно важен. По умолчанию здесь без учёта регистра.</p>
+<p><strong>Важны ли окружающие пробелы?</strong> Почти никогда. Строка с завершающим пробелом — то же значение, что и без него, а списки, скопированные из таблиц, полны ими. По умолчанию — обрезать перед сравнением.</p>
+<p><strong>Какая копия выживает?</strong> Этот инструмент сохраняет первое вхождение и сохраняет исходный порядок оставшихся, поэтому ваш список не молча пересортируется. Если вы также хотите сортировку — это отдельное действие.</p></section><section><h2>Просмотрите перед удалением</h2><p>Поведение по умолчанию большинства инструментов удаления дубликатов — вернуть более короткий список и ничего не сказать о пропавшем. Это нормально, когда вы доверяете входным данным, и рискованно, когда нет: случайный начальный пробел или неожиданная разница в регистре может означать, что инструмент удалил то, что было нужно, или сохранил то, что вы считали дубликатом.</p>
+<p>Панель показывает, сколько строк удалено, сколько различных значений повторялось и какие значения повторялись чаще всего, прежде чем вы примените что-либо. «Оставить только дубликаты» инвертирует операцию, чтобы вы могли точно посмотреть, что повторяется — полезно для аудита рассылки или поиска случайных копирований в наборе ключевых слов.</p></section><section><h2>Common questions</h2><details class="faq"><summary>Сохраняет ли инструмент первую или последнюю копию?</summary><div><p>Первую, и порядок оставшихся строк сохраняется. Ваш список не молча пересортируется. Если вы также хотите сортировку — это отдельное действие.</p></div></details><details class="faq"><summary>Являются ли строки, различающиеся только регистром, дубликатами?</summary><div><p>По умолчанию да, что обычно правильно для адресов email и ключевых слов. Включите «Учитывать регистр», когда регистр имеет значение — для паролей, ID и кода.</p></div></details><details class="faq"><summary>Могу ли я увидеть дубликаты перед удалением?</summary><div><p>Да. Панель показывает, сколько строк повторяется и какие значения повторяются чаще всего, а «Оставить только дубликаты» инвертирует операцию, чтобы вы могли точно проверить, что повторяется.</p></div></details></section><section><h2>Related tools</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>Счётчик слов</strong><span>Подсчёт в реальном времени, академические исключения и корректна…</span></a><a class="relcard" href="case-converter.html"><strong>Преобразователь регистра</strong><span>Тринадцать преобразований с заглавным регистром, следующим реаль…</span></a><a class="relcard" href="readability-checker.html"><strong>Проверка читаемости</strong><span>Шесть формул и конкретные предложения, снижающие оценку — не про…</span></a></div></section></div>
+</div></main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__inner">
+      <span class="ftr__copy">&copy; 2026 WordRoom</span>
+      <nav class="ftr__links" aria-label="Legal"><a href="/ru/privacy.html">Политика конфиденциальности</a> <a href="/ru/about.html">О нас</a> <a href="/ru/terms.html">Условия использования</a> <a href="/ru/contact.html">Свяжитесь с нами</a></nav>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal__box">
+    <div class="pal__in">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palInput" type="text" placeholder="Поиск инструментов…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="pal__list" id="palList"></div>
+    <div class="pal__ft">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Инструменты</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+<script src="../assets/lib.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
