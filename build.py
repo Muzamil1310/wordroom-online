@@ -338,6 +338,14 @@ def head(title, desc, canonical, schema, locale="en", slug=None):
 <link rel="stylesheet" href="{'../assets' if locale != 'en' else 'assets'}/base.css">
 <link rel="stylesheet" href="{'../assets' if locale != 'en' else 'assets'}/app.css">
 <script type="application/ld+json">{json.dumps(schema)}</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H94B49VY8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', 'G-H94B49VY8R');
+</script>
 </head>"""
 
 def lang_switcher(locale, slug=None):
