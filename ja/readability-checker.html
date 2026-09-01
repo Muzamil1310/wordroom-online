@@ -124,6 +124,14 @@
 <p>これがパネルが合計を表示するだけでなく、最も難しい個別文をリストする理由です。それ以外は明確なページに1つの60語の文があると平均を下げ、ドキュメントレベルのスコアでは見えなくなります。外れ値を最初に修正し、次に語彙を見てください。</p>
 <p>受動態の検出はここでは正規表現ヒューリスティックです — 「be」の形に過去分詞のように見えるものが続きます。過剰にフラグを立てます。カウントを再読の提示として扱い、判決としては扱わないでください。</p></section><section><h2>よくある質問</h2><details class="faq"><summary>良いFlesch Reading Easeスコアとは何ですか？</summary><div><p>一般的なWeb文章の場合は60以上。政府や医療分野のplain-language基準は通常60から70を目標とします。専門家向けの技術文書は40台に留まることが多く、その audience には適切です。30以下はほぼ誰にとっても読みづらいです。</p></div></details><details class="faq"><summary>なぜ各式が異なる学年レベルを出すのですか？</summary><div><p>異なる目的で構築され、入力の重み付けが異なります。Gunning Fogは多音節語を強く罰し、Coleman-Liauは音節ではなく文字数を使用し、SMOGは短い健康文章向けに設計されました。式間の大きな差は、通常テキストが不均一であることを意味し、特定の式が間違っているわけではありません。</p></div></details><details class="faq"><summary>音節カウントの精度はどの程度ですか？</summary><div><p>これはヒューリスティックです。これらのすべての式の実装において同様です。英語の綴りは音節にきれいにマッピングされないため、一部の単語は誤ってカウントされます。これはすべての可読性ツールに同様に影響します。Coleman-Liauは文字をカウントすることでこの問題を回避しており、音節ベースのスコアと一緒に読む価値があります。</p></div></details><details class="faq"><summary>スコアを最も速く改善するにはどうすればいいですか？</summary><div><p>最も長い文を分割してください。文の長さはFlesch Reading Easeの2つの入力の1つであるため、45語の文を3つに分割することは、あらゆる語彙の変更よりもスコアを大きく動かします。パネルがあなたの最も難しい文をリストするのはまさにこの理由のためです。</p></div></details></section><section><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter.html"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。…</span></a><a class="relcard" href="case-converter.html"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。…</span></a><a class="relcard" href="remove-line-breaks.html"><strong>改行を除去</strong><span>PDFのカラムやメールクライアントで壊れた行を結合しつつ、本物の段落区切りを保持。…</span></a></div></section></div>
 </div></main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__inner">
+      <span class="ftr__copy">&copy; 2026 WordRoom</span>
+      <nav class="ftr__links" aria-label="Legal"><a href="/ja/privacy.html">プライバシーポリシー</a> <a href="/ja/about.html">会社概要</a> <a href="/ja/terms.html">利用規約</a> <a href="/ja/contact.html">お問い合わせ</a></nav>
+    </div>
+  </div>
+</footer>
 </div>
 
 <div class="pal" role="dialog" aria-modal="true" aria-label="Command palette">

@@ -78,4 +78,48 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines"/>
   </url>
+  <url><loc>https://wordroomonline.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/privacy"/>
+  </url>
+  <url><loc>https://wordroomonline.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/about"/>
+  </url>
+  <url><loc>https://wordroomonline.com/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/terms"/>
+  </url>
+  <url><loc>https://wordroomonline.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/contact"/>
+  </url>
 </urlset>
