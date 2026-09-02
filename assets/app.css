@@ -19,7 +19,6 @@
   background: color-mix(in srgb, var(--bg) 86%, transparent);
   backdrop-filter: blur(12px) saturate(1.4);
   border-bottom: 1px solid var(--divider);
-  overflow: hidden;
   min-width: 0;
 }
 .hdr__brand {
@@ -103,6 +102,9 @@ kbd {
 @media (max-width: 560px) {
   .kbtrigger span, .kbtrigger kbd { display: none; }
   .kbtrigger { padding-inline: 0; width: 34px; justify-content: center; }
+}
+@media (max-width: 480px) {
+  .lang-switcher { display: none; }
 }
 
 /* ---------------- Rail ---------------- */
@@ -564,7 +566,7 @@ details.faq > div { padding-bottom: var(--space-4); }
 .ftr {
   grid-column: 1 / -1;
   border-top: 1px solid var(--divider);
-  padding: var(--space-6) 0;
+  padding: var(--space-6) var(--space-4);
   margin-top: auto;
 }
 .ftr__inner {
