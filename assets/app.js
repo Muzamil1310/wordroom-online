@@ -722,6 +722,18 @@
     btn && btn.addEventListener('click', () => { mode = mode === 'dark' ? 'light' : 'dark'; store.set('tk-theme', mode); paint(); });
   })();
 
+  /* ---------------- Language switcher ---------------- */
+  (() => {
+    const el = $('#langSwitcher'); if (!el) return;
+    const btn = el.querySelector('.lang-switcher__btn');
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = el.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', () => { el.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); });
+  })();
+
   /* ---------------- Rail drawer ---------------- */
   (() => {
     const open = (v) => document.body.dataset.rail = v ? 'open' : '';

@@ -348,9 +348,16 @@ def head(title, desc, canonical, schema, locale="en", slug=None):
 </script>
 </head>"""
 
+LANG_FLAGS = {
+    "en": "gb", "es": "es", "ja": "jp", "fr": "fr", "de": "de",
+    "pt": "pt", "ko": "kr", "it": "it", "ru": "ru",
+}
+
 def lang_switcher(locale, slug=None):
     """Build the language switcher dropdown."""
-    options = []
+    cur_flag = LANG_FLAGS.get(locale, "gb")
+    cur_name = LANGUAGES.get(locale, "English")
+    opts = []
     for lc, ln in LANGUAGES.items():
         if lc == locale:
             continue
@@ -358,13 +365,17 @@ def lang_switcher(locale, slug=None):
             href = f'/{slug}' if slug else '/'
         else:
             href = f'/{lc}/{slug}' if slug else f'/{lc}/'
-        options.append(f'<option value="{href}">{ln}</option>')
-    current_name = LANGUAGES.get(locale, "English")
-    return f'''<div class="lang-switcher">
-  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
-    <option value="" selected>{current_name}</option>
-    {"".join(options)}
-  </select>
+        fc = LANG_FLAGS.get(lc, lc)
+        opts.append(f'    <a class="lang-switcher__opt" role="option" href="{href}"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/{fc}.png" alt="" width="16" height="12">{ln}</a>')
+    return f'''<div class="lang-switcher" id="langSwitcher">
+  <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+    <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/{cur_flag}.png" alt="" width="16" height="12">
+    <span class="lang-switcher__name">{cur_name}</span>
+    <svg class="lang-switcher__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <nav class="lang-switcher__menu" role="listbox" aria-label="Switch language">
+{chr(10).join(opts)}
+  </nav>
 </div>'''
 
 def shell(active, body, locale="en", slug=None):
