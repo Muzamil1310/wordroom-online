@@ -55,11 +55,22 @@
   <a class="hdr__brand" href="/ja/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
   <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
-  <div class="lang-switcher">
-  <select id="langSwitch" aria-label="Switch language" onchange="if(this.value)location.href=this.value">
-    <option value="" selected>日本語</option>
-    <option value="/">English</option><option value="/es/">Español</option><option value="/fr/">Français</option><option value="/de/">Deutsch</option><option value="/pt/">Português</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/ru/">Русский</option>
-  </select>
+  <div class="lang-switcher" id="langSwitcher">
+  <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+    <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/jp.png" alt="" width="16" height="12">
+    <span class="lang-switcher__name">日本語</span>
+    <svg class="lang-switcher__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <nav class="lang-switcher__menu" role="listbox" aria-label="Switch language">
+    <a class="lang-switcher__opt" role="option" href="/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/gb.png" alt="" width="16" height="12">English</a>
+    <a class="lang-switcher__opt" role="option" href="/es/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/es.png" alt="" width="16" height="12">Español</a>
+    <a class="lang-switcher__opt" role="option" href="/fr/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/fr.png" alt="" width="16" height="12">Français</a>
+    <a class="lang-switcher__opt" role="option" href="/de/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/de.png" alt="" width="16" height="12">Deutsch</a>
+    <a class="lang-switcher__opt" role="option" href="/pt/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/pt.png" alt="" width="16" height="12">Português</a>
+    <a class="lang-switcher__opt" role="option" href="/ko/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/kr.png" alt="" width="16" height="12">한국어</a>
+    <a class="lang-switcher__opt" role="option" href="/it/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/it.png" alt="" width="16" height="12">Italiano</a>
+    <a class="lang-switcher__opt" role="option" href="/ru/"><img class="lang-switcher__flag" src="https://flagcdn.com/16x12/ru.png" alt="" width="16" height="12">Русский</a>
+  </nav>
 </div>
   <button class="kbtrigger" data-pal-open type="button" aria-label="検索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>検索</span><kbd>⌘K</kbd></button>
   <button class="iconbtn" data-theme-toggle aria-label="テーマ切替"></button>
