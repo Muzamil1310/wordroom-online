@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JWT Decoder — Decode JSON Web Tokens Online | WordRoom</title>
-<meta name="description" content="Decode the header and payload of a JSON Web Token locally in your browser. The tool does not verify signatures and does not send your token to a server.">
+<title>JWTデコーダー — JSON Web Tokensをオンラインでデコード | WordRoom</title>
+<meta name="description" content="ブラウザ内でローカルにJSON Web Tokenのヘッダーとペイロードをデコード。署名は検証せず、トークンをサーバーに送信しません。">
 <link rel="canonical" href="https://wordroomonline.com/ja/jwt-decoder">
 <link rel="alternate" hreflang="en" href="https://wordroomonline.com/jwt-decoder">
 <link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/jwt-decoder">
@@ -16,16 +16,16 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/jwt-decoder">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/jwt-decoder">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/jwt-decoder">
-<meta property="og:title" content="JWT Decoder — Decode JSON Web Tokens Online">
-<meta property="og:description" content="Decode the header and payload of a JSON Web Token locally in your browser. The tool does not verify signatures and does not send your token to a server.">
+<meta property="og:title" content="JWTデコーダー — JSON Web Tokensをオンラインでデコード">
+<meta property="og:description" content="ブラウザ内でローカルにJSON Web Tokenのヘッダーとペイロードをデコード。署名は検証せず、トークンをサーバーに送信しません。">
 <meta property="og:url" content="https://wordroomonline.com/ja/jwt-decoder">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JWT Decoder — Decode JSON Web Tokens Online">
-<meta name="twitter:description" content="Decode the header and payload of a JSON Web Token locally in your browser. The tool does not verify signatures and does not send your token to a server.">
+<meta name="twitter:title" content="JWTデコーダー — JSON Web Tokensをオンラインでデコード">
+<meta name="twitter:description" content="ブラウザ内でローカルにJSON Web Tokenのヘッダーとペイロードをデコード。署名は検証せず、トークンをサーバーに送信しません。">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
 <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../assets/base.css">
 <link rel="stylesheet" href="../assets/app.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "JWT decoder", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Decode the header and payload of a JSON Web Token locally in your browser. The tool does not verify signatures and does not send your token to a server.", "url": "https://wordroomonline.com/ja/jwt-decoder", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does decoding a JWT verify it?", "acceptedAnswer": {"@type": "Answer", "text": "No. Decoding only reads the token's encoded header and payload. A decoded JWT is not proof that its signature is valid or that its claims should be trusted."}}, {"@type": "Question", "name": "What parts of a JWT can this tool decode?", "acceptedAnswer": {"@type": "Answer", "text": "The tool decodes the header and payload segments. It does not attempt to reverse the signature or verify the token against a signing key."}}, {"@type": "Question", "name": "Is my JWT uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. The token is decoded in your browser. For security, only paste tokens into tools you trust and avoid exposing live credentials unnecessarily."}}, {"@type": "Question", "name": "Can I use a decoded JWT as proof of authentication?", "acceptedAnswer": {"@type": "Answer", "text": "No. Decoding reveals claims but does not establish that the token was signed by the expected issuer or that the claims are trustworthy. Verification requires the appropriate key and validation rules."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "JWT decoder", "item": "https://wordroomonline.com/ja/jwt-decoder"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "JWT\u30c7\u30b3\u30fc\u30c0\u30fc", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "\u30d6\u30e9\u30a6\u30b6\u5185\u3067\u30ed\u30fc\u30ab\u30eb\u306bJSON Web Token\u306e\u30d8\u30c3\u30c0\u30fc\u3068\u30da\u30a4\u30ed\u30fc\u30c9\u3092\u30c7\u30b3\u30fc\u30c9\u3002\u7f72\u540d\u306f\u691c\u8a3c\u305b\u305a\u3001\u30c8\u30fc\u30af\u30f3\u3092\u30b5\u30fc\u30d0\u30fc\u306b\u9001\u4fe1\u3057\u307e\u305b\u3093\u3002", "url": "https://wordroomonline.com/ja/jwt-decoder", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "JWT\u3068\u306f\u4f55\u3067\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "JSON Web Token\uff08JWT\uff09\u306f\u3001\u8a8d\u8a3c\u3068\u30c7\u30fc\u30bf\u4ea4\u63db\u306b\u4f7f\u7528\u3055\u308c\u308b\u30b3\u30f3\u30d1\u30af\u30c8\u3067URL\u30bb\u30fc\u30d5\u306a\u30c8\u30fc\u30af\u30f3\u5f62\u5f0f\u3067\u3059\u3002\u30c9\u30c3\u30c8\u3067\u533a\u5207\u3089\u308c\u305f3\u3064\u306eBase64URL\u30a8\u30f3\u30b3\u30fc\u30c9\u3055\u308c\u305f\u30d1\u30fc\u30c8\u3067\u69cb\u6210\u3055\u308c\u307e\u3059\uff1a\u30d8\u30c3\u30c0\u30fc\u3001\u30da\u30a4\u30ed\u30fc\u30c9\u3001\u7f72\u540d\u3067\u3059\u3002\u3053\u306e\u30c4\u30fc\u30eb\u306f\u691c\u8a3c\u306e\u305f\u3081\u306b\u30d8\u30c3\u30c0\u30fc\u3068\u30da\u30a4\u30ed\u30fc\u30c9\u3092\u30c7\u30b3\u30fc\u30c9\u3057\u307e\u3059\u3002"}}, {"@type": "Question", "name": "\u3053\u306e\u30c4\u30fc\u30eb\u306fJWT\u7f72\u540d\u3092\u691c\u8a3c\u3057\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u3044\u3044\u3048\u3001\u610f\u56f3\u7684\u306b\u3002\u7f72\u540d\u306e\u691c\u8a3c\u306b\u306f\u7f72\u540d\u30ad\u30fc\u304c\u5fc5\u8981\u3067\u3001\u3053\u306e\u30c4\u30fc\u30eb\u306f\u305d\u308c\u3092\u6301\u6709\u3057\u3066\u3044\u307e\u305b\u3093\u3002\u76ee\u7684\u306f\u3001\u53d7\u3051\u53d6\u3063\u305f\u30c8\u30fc\u30af\u30f3\u306e\u5185\u5bb9\u3092\u691c\u67fb\u3059\u308b\u3053\u3068\u3067\u3042\u308a\u3001\u8a8d\u8a3c\u3059\u308b\u3053\u3068\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002\u8a8d\u8a3c\u306b\u306f\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306eJWT\u30e9\u30a4\u30d6\u30e9\u30ea\u3092\u4f7f\u7528\u3057\u3066\u304f\u3060\u3055\u3044\u3002"}}, {"@type": "Question", "name": "\u30d8\u30c3\u30c0\u30fc\u3068\u30da\u30a4\u30ed\u30fc\u30c9\u306b\u306f\u3069\u306e\u3088\u3046\u306a\u60c5\u5831\u304c\u542b\u307e\u308c\u3066\u3044\u307e\u3059\u304b\uff1f", "acceptedAnswer": {"@type": "Answer", "text": "\u30d8\u30c3\u30c0\u30fc\u306b\u306f\u901a\u5e38\u3001\u30a2\u30eb\u30b4\u30ea\u30ba\u30e0\uff08alg\uff09\u3068\u30c8\u30fc\u30af\u30f3\u30bf\u30a4\u30d7\uff08typ\uff09\u304c\u542b\u307e\u308c\u307e\u3059\u3002\u30da\u30a4\u30ed\u30fc\u30c9\u306b\u306f\u30af\u30ec\u30fc\u30e0\u304c\u542b\u307e\u308c\u307e\u3059\uff1a\u767a\u884c\u8005\uff08iss\uff09\u3001\u4ef6\u540d\uff08sub\uff09\u3001\u6709\u52b9\u671f\u9650\uff08exp\uff09\u3001\u767a\u884c\u6642\u523b\uff08iat\uff09\u3001\u304a\u3088\u3073\u30ab\u30b9\u30bf\u30e0\u30af\u30ec\u30fc\u30e0\u3067\u3059\u3002\u30c4\u30fc\u30eb\u306f\u4e21\u65b9\u3092\u8aad\u307f\u3084\u3059\u3044JSON\u3068\u3057\u3066\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\u3057\u307e\u3059\u3002"}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "JWT\u30c7\u30b3\u30fc\u30c0\u30fc", "item": "https://wordroomonline.com/ja/jwt-decoder"}]}]}</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H94B49VY8R"></script>
 <script>
@@ -85,7 +85,7 @@
   </div>
   <div class="rail__group"><p class="rail__label">変換</p>
     <a class="rail__link" href="case-converter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>ケースコンバーター</span></a>
-    <a class="rail__link" href="slug-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>Slug generator</span></a>
+    <a class="rail__link" href="slug-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>スラグジェネレーター</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">分析</p>
     <a class="rail__link" href="readability-checker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>可読性チェッカー</span></a>
@@ -95,29 +95,29 @@
     <a class="rail__link" href="sort-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>行を並べ替え</span></a>
     <a class="rail__link" href="remove-duplicate-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>重複行を除去</span></a>
   </div>
-  <div class="rail__group"><p class="rail__label">Encode</p>
-    <a class="rail__link" href="base64-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Base64 encoder / decoder</span></a>
-    <a class="rail__link" href="url-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>URL encoder / decoder</span></a>
+  <div class="rail__group"><p class="rail__label">エンコード</p>
+    <a class="rail__link" href="base64-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Base64エンコーダー/デコーダー</span></a>
+    <a class="rail__link" href="url-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>URLエンコーダー/デコーダー</span></a>
   </div>
-  <div class="rail__group"><p class="rail__label">Developer</p>
-    <a class="rail__link" href="regex-tester"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Regex tester</span></a>
-    <a class="rail__link" href="json-formatter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>JSON formatter</span></a>
-    <a class="rail__link" href="json-validator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>JSON validator</span></a>
-    <a class="rail__link" href="json-minifier"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>JSON minifier</span></a>
-    <a class="rail__link" href="jwt-decoder" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>JWT decoder</span></a>
-    <a class="rail__link" href="hash-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>Hash generator</span></a>
+  <div class="rail__group"><p class="rail__label">開発者</p>
+    <a class="rail__link" href="regex-tester"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>正規表現テスター</span></a>
+    <a class="rail__link" href="json-formatter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>JSONフォーマッター</span></a>
+    <a class="rail__link" href="json-validator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>JSONバリデーター</span></a>
+    <a class="rail__link" href="json-minifier"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>JSONミニファイア</span></a>
+    <a class="rail__link" href="jwt-decoder" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>JWTデコーダー</span></a>
+    <a class="rail__link" href="hash-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>ハッシュジェネレーター</span></a>
   </div>
-  <div class="rail__group"><p class="rail__label">Generate</p>
-    <a class="rail__link" href="password-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Password generator</span></a>
-    <a class="rail__link" href="uuid-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>UUID generator</span></a>
+  <div class="rail__group"><p class="rail__label">生成</p>
+    <a class="rail__link" href="password-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>パスワードジェネレーター</span></a>
+    <a class="rail__link" href="uuid-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>UUIDジェネレーター</span></a>
   </div>
 </nav>
 
 <main class="main"><div class="wrap">
 <div class="pagehead">
-  <p class="eyebrow">Developer</p>
-  <h1>JWT decoder</h1>
-  <p>Inspect a JWT's header and payload locally. Signature verification is intentionally not performed.</p>
+  <p class="eyebrow">開発者</p>
+  <h1>JWTデコーダー</h1>
+  <p>JWTのヘッダーとペイロードをローカルで検査。署名検証は意図的に行いません。</p>
 </div>
 <div class="work">
   <div>
@@ -139,13 +139,13 @@
   </div>
 </div>
       <label class="sr-only" for="editor">Your text</label>
-      <textarea class="editor" id="editor" spellcheck="false" placeholder="Paste a JWT such as eyJhbGciOi... here."></textarea>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="eyJhbGciOi... のようなJWTをここに貼り付けてください。"></textarea>
       <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
     </div>
   </div>
   <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
 </div>
-<div class="refs"><section class="refs-faq"><h2>よくある質問</h2><details class="faq"><summary>Does decoding a JWT verify it?</summary><div><p>No. Decoding only reads the token&#x27;s encoded header and payload. A decoded JWT is not proof that its signature is valid or that its claims should be trusted.</p></div></details><details class="faq"><summary>What parts of a JWT can this tool decode?</summary><div><p>The tool decodes the header and payload segments. It does not attempt to reverse the signature or verify the token against a signing key.</p></div></details><details class="faq"><summary>Is my JWT uploaded?</summary><div><p>No. The token is decoded in your browser. For security, only paste tokens into tools you trust and avoid exposing live credentials unnecessarily.</p></div></details><details class="faq"><summary>Can I use a decoded JWT as proof of authentication?</summary><div><p>No. Decoding reveals claims but does not establish that the token was signed by the expected issuer or that the claims are trustworthy. Verification requires the appropriate key and validation rules.</p></div></details></section><section class="refs-related"><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。</span></a><a class="relcard" href="case-converter"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。</span></a><a class="relcard" href="readability-checker"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。</span></a></div></section></div>
+<div class="refs"><section class="refs-faq"><h2>よくある質問</h2><details class="faq"><summary>JWTとは何ですか？</summary><div><p>JSON Web Token（JWT）は、認証とデータ交換に使用されるコンパクトでURLセーフなトークン形式です。ドットで区切られた3つのBase64URLエンコードされたパートで構成されます：ヘッダー、ペイロード、署名です。このツールは検証のためにヘッダーとペイロードをデコードします。</p></div></details><details class="faq"><summary>このツールはJWT署名を検証しますか？</summary><div><p>いいえ、意図的に。署名の検証には署名キーが必要で、このツールはそれを持有していません。目的は、受け取ったトークンの内容を検査することであり、認証することではありません。認証にはアプリケーションのJWTライブラリを使用してください。</p></div></details><details class="faq"><summary>ヘッダーとペイロードにはどのような情報が含まれていますか？</summary><div><p>ヘッダーには通常、アルゴリズム（alg）とトークンタイプ（typ）が含まれます。ペイロードにはクレームが含まれます：発行者（iss）、件名（sub）、有効期限（exp）、発行時刻（iat）、およびカスタムクレームです。ツールは両方を読みやすいJSONとしてフォーマットします。</p></div></details></section><section class="refs-related"><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。</span></a><a class="relcard" href="case-converter"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。</span></a><a class="relcard" href="readability-checker"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">

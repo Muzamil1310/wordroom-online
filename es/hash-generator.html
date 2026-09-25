@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hash Generator — SHA-1, SHA-256, SHA-384 &amp; SHA-512 | WordRoom</title>
-<meta name="description" content="Generate SHA-1, SHA-256, SHA-384 or SHA-512 hashes from text using the browser Web Crypto API. Your input never leaves the browser.">
+<title>Generador de Hashes — SHA-1, SHA-256, SHA-384 y SHA-512 | WordRoom</title>
+<meta name="description" content="Genera hashes SHA-1, SHA-256, SHA-384 o SHA-512 a partir de texto usando la API Web Crypto del navegador. Tu entrada nunca sale del navegador.">
 <link rel="canonical" href="https://wordroomonline.com/es/hash-generator">
 <link rel="alternate" hreflang="en" href="https://wordroomonline.com/hash-generator">
 <link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/hash-generator">
@@ -16,16 +16,16 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/hash-generator">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/hash-generator">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/hash-generator">
-<meta property="og:title" content="Hash Generator — SHA-1, SHA-256, SHA-384 &amp; SHA-512">
-<meta property="og:description" content="Generate SHA-1, SHA-256, SHA-384 or SHA-512 hashes from text using the browser Web Crypto API. Your input never leaves the browser.">
+<meta property="og:title" content="Generador de Hashes — SHA-1, SHA-256, SHA-384 y SHA-512">
+<meta property="og:description" content="Genera hashes SHA-1, SHA-256, SHA-384 o SHA-512 a partir de texto usando la API Web Crypto del navegador. Tu entrada nunca sale del navegador.">
 <meta property="og:url" content="https://wordroomonline.com/es/hash-generator">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hash Generator — SHA-1, SHA-256, SHA-384 &amp; SHA-512">
-<meta name="twitter:description" content="Generate SHA-1, SHA-256, SHA-384 or SHA-512 hashes from text using the browser Web Crypto API. Your input never leaves the browser.">
+<meta name="twitter:title" content="Generador de Hashes — SHA-1, SHA-256, SHA-384 y SHA-512">
+<meta name="twitter:description" content="Genera hashes SHA-1, SHA-256, SHA-384 o SHA-512 a partir de texto usando la API Web Crypto del navegador. Tu entrada nunca sale del navegador.">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
 <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../assets/base.css">
 <link rel="stylesheet" href="../assets/app.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Hash generator", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Generate SHA-1, SHA-256, SHA-384 or SHA-512 hashes from text using the browser Web Crypto API. Your input never leaves the browser.", "url": "https://wordroomonline.com/es/hash-generator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which hash algorithms are available?", "acceptedAnswer": {"@type": "Answer", "text": "You can generate SHA-1, SHA-256, SHA-384 and SHA-512 hashes using the browser's Web Crypto API."}}, {"@type": "Question", "name": "Can a hash be decoded?", "acceptedAnswer": {"@type": "Answer", "text": "A cryptographic hash is designed to be one-way. You can compare a newly generated hash with a known value, but there is no general decode operation that recovers the original input."}}, {"@type": "Question", "name": "What is a hash used for?", "acceptedAnswer": {"@type": "Answer", "text": "Hashes are commonly used for integrity checks, fingerprints and other applications where you need a deterministic digest of data. The appropriate algorithm depends on the use case."}}, {"@type": "Question", "name": "Should I use SHA-1 for passwords?", "acceptedAnswer": {"@type": "Answer", "text": "No. SHA-1 is not an appropriate password-storage algorithm. Password storage should use a dedicated password-hashing scheme such as Argon2, scrypt or bcrypt with appropriate parameters."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Hash generator", "item": "https://wordroomonline.com/es/hash-generator"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Generador de hashes", "applicationCategory": "UtilityApplication", "operatingSystem": "Any browser", "description": "Genera hashes SHA-1, SHA-256, SHA-384 o SHA-512 a partir de texto usando la API Web Crypto del navegador. Tu entrada nunca sale del navegador.", "url": "https://wordroomonline.com/es/hash-generator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Runs entirely in the browser", "No sign-up", "No file upload"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u00bfCu\u00e1l es la diferencia entre SHA-1, SHA-256, SHA-384 y SHA-512?", "acceptedAnswer": {"@type": "Answer", "text": "Producen hashes de diferentes longitudes: SHA-1 es 160 bits (40 caracteres hex), SHA-256 es 256 bits (64 caracteres hex), SHA-384 es 384 bits (96 caracteres hex), y SHA-512 es 512 bits (128 caracteres hex). Hashes m\u00e1s largos ofrecen mayor resistencia a colisiones. SHA-1 est\u00e1 deprecado para uso de seguridad."}}, {"@type": "Question", "name": "\u00bfEs lo mismo que hashing de contrase\u00f1as?", "acceptedAnswer": {"@type": "Answer", "text": "No. Estas son funciones hash r\u00e1pidas dise\u00f1adas para integridad de datos, no para almacenamiento de contrase\u00f1as. Para contrase\u00f1as, necesitas funciones hash lentas y con salt como bcrypt, scrypt o Argon2. Usar SHA-256 directamente para contrase\u00f1as es inseguro."}}, {"@type": "Question", "name": "\u00bfPuedo hashear archivos?", "acceptedAnswer": {"@type": "Answer", "text": "Esta herramienta solo hashea texto. Para hashing de archivos, necesitar\u00edas una herramienta que lea bytes de archivos directamente. Los algoritmos SHA funcionan con cualquier dato binario, pero esta herramienta de texto primero convierte la entrada a UTF-8."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordRoom", "item": "https://wordroomonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Generador de hashes", "item": "https://wordroomonline.com/es/hash-generator"}]}]}</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H94B49VY8R"></script>
 <script>
@@ -85,7 +85,7 @@
   </div>
   <div class="rail__group"><p class="rail__label">Convertir</p>
     <a class="rail__link" href="case-converter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9 6l5 12M5.8 14h6.4M17 10v8M21 12.5a2.5 2.5 0 1 0-4 2"/></svg><span>Convertidor de mayúsculas</span></a>
-    <a class="rail__link" href="slug-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>Slug generator</span></a>
+    <a class="rail__link" href="slug-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>Generador de slugs</span></a>
   </div>
   <div class="rail__group"><p class="rail__label">Analizar</p>
     <a class="rail__link" href="readability-checker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4-5"/></svg><span>Verificador de legibilidad</span></a>
@@ -95,29 +95,29 @@
     <a class="rail__link" href="sort-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg><span>Ordenar líneas</span></a>
     <a class="rail__link" href="remove-duplicate-lines"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg><span>Eliminar líneas duplicadas</span></a>
   </div>
-  <div class="rail__group"><p class="rail__label">Encode</p>
-    <a class="rail__link" href="base64-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Base64 encoder / decoder</span></a>
-    <a class="rail__link" href="url-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>URL encoder / decoder</span></a>
+  <div class="rail__group"><p class="rail__label">Codificar</p>
+    <a class="rail__link" href="base64-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Codificador / decodificador Base64</span></a>
+    <a class="rail__link" href="url-encoder-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg><span>Codificador / decodificador URL</span></a>
   </div>
-  <div class="rail__group"><p class="rail__label">Developer</p>
-    <a class="rail__link" href="regex-tester"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Regex tester</span></a>
-    <a class="rail__link" href="json-formatter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>JSON formatter</span></a>
-    <a class="rail__link" href="json-validator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>JSON validator</span></a>
-    <a class="rail__link" href="json-minifier"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>JSON minifier</span></a>
-    <a class="rail__link" href="jwt-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>JWT decoder</span></a>
-    <a class="rail__link" href="hash-generator" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>Hash generator</span></a>
+  <div class="rail__group"><p class="rail__label">Desarrollador</p>
+    <a class="rail__link" href="regex-tester"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Probador de regex</span></a>
+    <a class="rail__link" href="json-formatter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Formateador JSON</span></a>
+    <a class="rail__link" href="json-validator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>Validador JSON</span></a>
+    <a class="rail__link" href="json-minifier"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><span>Minificador JSON</span></a>
+    <a class="rail__link" href="jwt-decoder"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>Decodificador JWT</span></a>
+    <a class="rail__link" href="hash-generator" aria-current="page"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>Generador de hashes</span></a>
   </div>
-  <div class="rail__group"><p class="rail__label">Generate</p>
-    <a class="rail__link" href="password-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Password generator</span></a>
-    <a class="rail__link" href="uuid-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>UUID generator</span></a>
+  <div class="rail__group"><p class="rail__label">Generar</p>
+    <a class="rail__link" href="password-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Generador de contraseñas</span></a>
+    <a class="rail__link" href="uuid-generator"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg><span>Generador de UUID</span></a>
   </div>
 </nav>
 
 <main class="main"><div class="wrap">
 <div class="pagehead">
-  <p class="eyebrow">Developer</p>
-  <h1>Hash generator</h1>
-  <p>Generate standard SHA hashes from text locally using your browser's built-in cryptography API.</p>
+  <p class="eyebrow">Desarrollador</p>
+  <h1>Generador de hashes</h1>
+  <p>Genera hashes SHA estándar a partir de texto localmente usando la API de criptografía integrada de tu navegador.</p>
 </div>
 <div class="work">
   <div>
@@ -139,13 +139,13 @@
   </div>
 </div>
       <label class="sr-only" for="editor">Your text</label>
-      <textarea class="editor" id="editor" spellcheck="false" placeholder="Enter the text you want to hash."></textarea>
+      <textarea class="editor" id="editor" spellcheck="false" placeholder="Ingresa el texto que deseas hashear."></textarea>
       <div class="strip" id="strip" role="status" aria-live="polite" aria-atomic="true"></div>
     </div>
   </div>
   <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
 </div>
-<div class="refs"><section class="refs-faq"><h2>Preguntas frecuentes</h2><details class="faq"><summary>Which hash algorithms are available?</summary><div><p>You can generate SHA-1, SHA-256, SHA-384 and SHA-512 hashes using the browser&#x27;s Web Crypto API.</p></div></details><details class="faq"><summary>Can a hash be decoded?</summary><div><p>A cryptographic hash is designed to be one-way. You can compare a newly generated hash with a known value, but there is no general decode operation that recovers the original input.</p></div></details><details class="faq"><summary>What is a hash used for?</summary><div><p>Hashes are commonly used for integrity checks, fingerprints and other applications where you need a deterministic digest of data. The appropriate algorithm depends on the use case.</p></div></details><details class="faq"><summary>Should I use SHA-1 for passwords?</summary><div><p>No. SHA-1 is not an appropriate password-storage algorithm. Password storage should use a dedicated password-hashing scheme such as Argon2, scrypt or bcrypt with appropriate parameters.</p></div></details></section><section class="refs-related"><h2>Herramientas relacionadas</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Contador de palabras</strong><span>Recuentos en tiempo real mientras escribes, con exclusiones académicas y segmentación correcta para scripts indios y CJK.</span></a><a class="relcard" href="case-converter"><strong>Convertidor de mayúsculas</strong><span>Trece conversiones, con mayúsculas de título que siguen las reglas reales de estilo en lugar de capitalizar todo.</span></a><a class="relcard" href="readability-checker"><strong>Verificador de legibilidad</strong><span>Seis fórmulas, además de las oraciones específicas que frenan tu puntuación — no solo un número.</span></a></div></section></div>
+<div class="refs"><section class="refs-faq"><h2>Preguntas frecuentes</h2><details class="faq"><summary>¿Cuál es la diferencia entre SHA-1, SHA-256, SHA-384 y SHA-512?</summary><div><p>Producen hashes de diferentes longitudes: SHA-1 es 160 bits (40 caracteres hex), SHA-256 es 256 bits (64 caracteres hex), SHA-384 es 384 bits (96 caracteres hex), y SHA-512 es 512 bits (128 caracteres hex). Hashes más largos ofrecen mayor resistencia a colisiones. SHA-1 está deprecado para uso de seguridad.</p></div></details><details class="faq"><summary>¿Es lo mismo que hashing de contraseñas?</summary><div><p>No. Estas son funciones hash rápidas diseñadas para integridad de datos, no para almacenamiento de contraseñas. Para contraseñas, necesitas funciones hash lentas y con salt como bcrypt, scrypt o Argon2. Usar SHA-256 directamente para contraseñas es inseguro.</p></div></details><details class="faq"><summary>¿Puedo hashear archivos?</summary><div><p>Esta herramienta solo hashea texto. Para hashing de archivos, necesitarías una herramienta que lea bytes de archivos directamente. Los algoritmos SHA funcionan con cualquier dato binario, pero esta herramienta de texto primero convierte la entrada a UTF-8.</p></div></details></section><section class="refs-related"><h2>Herramientas relacionadas</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Contador de palabras</strong><span>Recuentos en tiempo real mientras escribes, con exclusiones académicas y segmentación correcta para scripts indios y CJK.</span></a><a class="relcard" href="case-converter"><strong>Convertidor de mayúsculas</strong><span>Trece conversiones, con mayúsculas de título que siguen las reglas reales de estilo en lugar de capitalizar todo.</span></a><a class="relcard" href="readability-checker"><strong>Verificador de legibilidad</strong><span>Seis fórmulas, además de las oraciones específicas que frenan tu puntuación — no solo un número.</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
