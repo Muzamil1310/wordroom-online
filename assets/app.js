@@ -54,7 +54,12 @@
           noSample: 'A live before-and-after preview appears here.',
           tool_wordCounter: 'Word counter', tool_caseConverter: 'Case converter', tool_readabilityChecker: 'Readability checker',
           tool_removeLineBreaks: 'Remove line breaks', tool_sortLines: 'Sort lines', tool_removeDuplicateLines: 'Remove duplicate lines',
+          tool_base64: 'Base64 encoder / decoder', tool_urlEncoder: 'URL encoder / decoder', tool_regexTester: 'Regex tester',
+          tool_passwordGenerator: 'Password generator', tool_jsonFormatter: 'JSON formatter', tool_jsonValidator: 'JSON validator',
+          tool_jsonMinifier: 'JSON minifier', tool_jwtDecoder: 'JWT decoder', tool_uuidGenerator: 'UUID generator',
+          tool_hashGenerator: 'Hash generator', tool_slugGenerator: 'Slug generator',
           group_count: 'Count', group_convert: 'Convert', group_analyse: 'Analyse', group_cleanUp: 'Clean up',
+          group_encode: 'Encode', group_developer: 'Developer', group_generate: 'Generate',
           pal_tools: 'Tools',
           toast_uppercase: 'Converted to uppercase', toast_lowercase: 'Converted to lowercase',
           toast_titleCase: 'Converted to title case', toast_sentenceCase: 'Converted to sentence case',
@@ -751,6 +756,17 @@
     ['tool_removeLineBreaks', 'remove-line-breaks.html', 'group_cleanUp'],
     ['tool_sortLines', 'sort-lines.html', 'group_cleanUp'],
     ['tool_removeDuplicateLines', 'remove-duplicate-lines.html', 'group_cleanUp'],
+    ['tool_base64', 'base64-encoder-decoder.html', 'group_encode'],
+    ['tool_urlEncoder', 'url-encoder-decoder.html', 'group_encode'],
+    ['tool_regexTester', 'regex-tester.html', 'group_developer'],
+    ['tool_passwordGenerator', 'password-generator.html', 'group_generate'],
+    ['tool_jsonFormatter', 'json-formatter.html', 'group_developer'],
+    ['tool_jsonValidator', 'json-validator.html', 'group_developer'],
+    ['tool_jsonMinifier', 'json-minifier.html', 'group_developer'],
+    ['tool_jwtDecoder', 'jwt-decoder.html', 'group_developer'],
+    ['tool_uuidGenerator', 'uuid-generator.html', 'group_generate'],
+    ['tool_hashGenerator', 'hash-generator.html', 'group_developer'],
+    ['tool_slugGenerator', 'slug-generator.html', 'group_convert'],
   ];
 
   const editor = $('#editor');
@@ -870,10 +886,18 @@
     sort: { mode: 'alpha', desc: false, caseSensitive: false, natural: true, ignoreEmpty: true },
     dedupe: { caseSensitive: false, ignoreWhitespace: true, onlyDuplicates: false },
     breaks: { keepParagraphs: true, collapseSpaces: true },
+    base64: { mode: 'encode', urlSafe: false },
+    url: { mode: 'encode', kind: 'component' },
+    regex: { pattern: '', flags: 'g' },
+    password: { length: 16, upper: true, lower: true, numbers: true, symbols: true, excludeAmbiguous: false },
+    uuid: { count: 1 },
+    hash: { algorithm: 'SHA-256' },
+    slug: { preserveUnicode: false },
   };
 
   /* ---- restore draft ---- */
-  const draft = store.get('tk-draft', '');
+  const draftKey = `tk-draft:${tool}`;
+  const draft = store.get(draftKey, '');
   if (draft) editor.value = draft;
 
   /* ---- editor toolbar ---- */
@@ -940,6 +964,19 @@ rather than where the sentence does.
 This second paragraph has the
 same problem, and you want to keep
 the paragraph split while joining these lines.`;
+  SAMPLE['base64-encoder-decoder'] = 'Hello, WordRoom — encode this text safely.';
+  SAMPLE['url-encoder-decoder'] = 'https://wordroomonline.com/search?q=hello world&lang=en';
+  SAMPLE['regex-tester'] = `Email: hello@example.com\nSupport: support@example.com\nPhone: +91 98765 43210`;
+  SAMPLE['json-formatter'] = '{"name":"WordRoom","tools":11,"private":true,"tags":["text","developer"]}';
+  SAMPLE['json-validator'] = '{"name":"WordRoom","valid":true}';
+  SAMPLE['json-minifier'] = `{
+  "name": "WordRoom",
+  "tools": 11,
+  "private": true
+}`;
+  SAMPLE['jwt-decoder'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjMiLCJuYW1lIjoiV29yZFJvb20iLCJpYXQiOjE3MDAwMDAwMDB9.signature';
+  SAMPLE['hash-generator'] = 'Hello, WordRoom';
+  SAMPLE['slug-generator'] = '10 Best Websites to Learn Web Development in 2026';
 
   /* ---- stat strip ---- */
   const STRIPS = {
@@ -949,6 +986,17 @@ the paragraph split while joining these lines.`;
     'remove-line-breaks': ['lines', 'words', 'characters', 'paragraphs'],
     'sort-lines': ['lines', 'words', 'characters'],
     'remove-duplicate-lines': ['lines', 'unique', 'words', 'characters'],
+    'base64-encoder-decoder': ['characters', 'lines'],
+    'url-encoder-decoder': ['characters'],
+    'regex-tester': ['characters', 'lines'],
+    'password-generator': [],
+    'json-formatter': ['characters', 'lines'],
+    'json-validator': ['characters', 'lines'],
+    'json-minifier': ['characters', 'lines'],
+    'jwt-decoder': ['characters'],
+    'uuid-generator': [],
+    'hash-generator': ['characters'],
+    'slug-generator': ['words', 'characters'],
   };
   const LABELS = {
     words: _t('lbl_words'), characters: _t('lbl_characters'), charactersNoSpaces: _t('lbl_charactersNoSpaces'),
@@ -958,7 +1006,9 @@ the paragraph split while joining these lines.`;
 
   const strip = $('#strip');
   if (strip) {
-    strip.innerHTML = (STRIPS[tool] || STRIPS['word-counter']).map((k) =>
+    const stripKeys = Object.prototype.hasOwnProperty.call(STRIPS, tool) ? STRIPS[tool] : STRIPS['word-counter'];
+    if (!stripKeys.length) { strip.style.display = 'none'; }
+    else strip.innerHTML = stripKeys.map((k) =>
       `<div class="strip__cell"><span class="strip__n" data-stat="${k}">0</span><span class="strip__k">${LABELS[k]}</span></div>`
     ).join('');
   }
@@ -970,6 +1020,166 @@ the paragraph split while joining these lines.`;
   const rowSwitch = (id, t, d) =>
     `<label class="row"><span class="row__txt"><span class="row__t">${t}</span><span class="row__d">${d}</span></span>
      <span class="switch"><input type="checkbox" id="${id}"><span></span></span></label>`;
+
+  const toolCard = (title, body, extra = '') => card(title, body, extra);
+  const toolCopyButton = (id) => `<button class="tbtn" type="button" data-copy-output="${id}">Copy</button>`;
+  const toolOutput = (id, placeholder = 'Output appears here.') => `<textarea class="tool-output" id="${id}" readonly placeholder="${placeholder}"></textarea>`;
+  const toolInput = (id, value = '', placeholder = '') => `<input class="tool-input" id="${id}" value="${esc(value)}" placeholder="${esc(placeholder)}" autocomplete="off" spellcheck="false">`;
+
+  function copyOutput(id) {
+    const el = $(`#${id}`); if (!el) return;
+    const value = el.value ?? el.textContent ?? '';
+    if (!value) return toast('Nothing to copy');
+    const copied = navigator.clipboard?.writeText(value);
+    if (copied) copied.then(() => toast(_t('copied'))).catch(() => { if (el.select) { el.select(); document.execCommand?.('copy'); toast(_t('copied')); } });
+    else if (el.select) { el.select(); document.execCommand?.('copy'); toast(_t('copied')); }
+  }
+
+  function bytesToBase64(bytes, urlSafe = false) {
+    let bin = '';
+    const chunk = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunk) bin += String.fromCharCode(...bytes.subarray(i, i + chunk));
+    let out = btoa(bin);
+    if (urlSafe) out = out.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+    return out;
+  }
+  function base64ToBytes(value, urlSafe = false) {
+    let s = value.trim();
+    if (urlSafe) s = s.replace(/-/g, '+').replace(/_/g, '/');
+    s = s.replace(/\s+/g, '');
+    if (!/^[A-Za-z0-9+/]*={0,2}$/.test(s) || s.length % 4 === 1) throw new Error('Invalid Base64 string.');
+    s += '='.repeat((4 - (s.length % 4)) % 4);
+    const bin = atob(s);
+    return Uint8Array.from(bin, c => c.charCodeAt(0));
+  }
+  function base64Encode(text, urlSafe) { return bytesToBase64(new TextEncoder().encode(text), urlSafe); }
+  function base64Decode(value, urlSafe) {
+    const bytes = base64ToBytes(value, urlSafe);
+    return new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+  }
+  function urlTransform(text, mode, kind) {
+    return kind === 'uri'
+      ? (mode === 'encode' ? encodeURI(text) : decodeURI(text))
+      : (mode === 'encode' ? encodeURIComponent(text) : decodeURIComponent(text));
+  }
+  function parseJSON(text) {
+    if (!text.trim()) throw new Error('Add some JSON to validate.');
+    return JSON.parse(text);
+  }
+  function randomInt(max) {
+    if (max <= 0) return 0;
+    const limit = 256 - (256 % max);
+    const bytes = new Uint8Array(1);
+    do { crypto.getRandomValues(bytes); } while (bytes[0] >= limit);
+    return bytes[0] % max;
+  }
+  function generatePassword(opts) {
+    let sets = '';
+    if (opts.upper) sets += 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+    if (opts.lower) sets += 'abcdefghijkmnopqrstuvwxyz';
+    if (opts.numbers) sets += '23456789';
+    if (opts.symbols) sets += '!@#$%^&*()-_=+[]{}:,.?';
+    if (!sets) throw new Error('Choose at least one character set.');
+    if (opts.excludeAmbiguous) sets = sets.replace(/[O0Il1|]/g, '');
+    const chars = [];
+    const groups = [
+      opts.upper ? 'ABCDEFGHJKLMNPQRSTUVWXYZ' : '',
+      opts.lower ? 'abcdefghijkmnopqrstuvwxyz' : '',
+      opts.numbers ? '23456789' : '',
+      opts.symbols ? '!@#$%^&*()-_=+[]{}:,.?' : '',
+    ].filter(Boolean).map(x => opts.excludeAmbiguous ? x.replace(/[O0Il1|]/g, '') : x);
+    groups.forEach(g => chars.push(g[randomInt(g.length)]));
+    while (chars.length < opts.length) chars.push(sets[randomInt(sets.length)]);
+    for (let i = chars.length - 1; i > 0; i--) { const j = randomInt(i + 1); [chars[i], chars[j]] = [chars[j], chars[i]]; }
+    return chars.join('');
+  }
+  function uuidV4() {
+    if (crypto.randomUUID) return crypto.randomUUID();
+    const b = new Uint8Array(16); crypto.getRandomValues(b);
+    b[6] = (b[6] & 0x0f) | 0x40; b[8] = (b[8] & 0x3f) | 0x80;
+    const h = [...b].map(x => x.toString(16).padStart(2, '0')).join('');
+    return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;
+  }
+  function slugify(text, preserveUnicode = false) {
+    let s = text.normalize('NFKD').trim().toLowerCase();
+    if (!preserveUnicode) s = s.replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s-]/g, '');
+    else s = s.replace(/[^\p{L}\p{N}\s-]/gu, '');
+    return s.replace(/[-\s]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+  function decodeJwtPart(part) {
+    let s = part.replace(/-/g, '+').replace(/_/g, '/');
+    s += '='.repeat((4 - (s.length % 4)) % 4);
+    const bytes = base64ToBytes(s, false);
+    return JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
+  }
+  function jsonErrorMessage(err) {
+    return err?.message || 'Invalid JSON.';
+  }
+  function renderCustomTool(text) {
+    if (tool === 'base64-encoder-decoder' && $('#b64Out')) {
+      try { $('#b64Out').value = state.base64.mode === 'encode' ? base64Encode(text, state.base64.urlSafe) : base64Decode(text, state.base64.urlSafe); $('#b64Status').textContent = text ? (state.base64.mode === 'encode' ? 'Encoded successfully.' : 'Decoded successfully.') : 'Add text to begin.'; }
+      catch (e) { $('#b64Out').value = ''; $('#b64Status').textContent = e.message; }
+    }
+    if (tool === 'url-encoder-decoder' && $('#urlOut')) {
+      try { $('#urlOut').value = urlTransform(text, state.url.mode, state.url.kind); $('#urlStatus').textContent = text ? 'Converted successfully.' : 'Add text to begin.'; }
+      catch (e) { $('#urlOut').value = ''; $('#urlStatus').textContent = e.message; }
+    }
+    if ((tool === 'json-formatter' || tool === 'json-validator' || tool === 'json-minifier') && $('#jsonStatus')) {
+      if (!text.trim()) {
+        if ($('#jsonOut')) $('#jsonOut').value = '';
+        $('#jsonStatus').textContent = 'Add JSON to begin.';
+        delete $('#jsonStatus').dataset.state;
+      } else {
+        try {
+          const obj = parseJSON(text);
+          if (tool === 'json-formatter' && $('#jsonOut')) { const indent = $('#jsonIndent')?.value === 'tab' ? '\t' : Number($('#jsonIndent')?.value || 2); $('#jsonOut').value = JSON.stringify(obj, null, indent); }
+          else if (tool === 'json-minifier' && $('#jsonOut')) $('#jsonOut').value = JSON.stringify(obj);
+          $('#jsonStatus').textContent = 'Valid JSON.';
+          $('#jsonStatus').dataset.state = 'ok';
+        } catch (e) {
+          if ($('#jsonOut')) $('#jsonOut').value = '';
+          $('#jsonStatus').textContent = jsonErrorMessage(e);
+          $('#jsonStatus').dataset.state = 'bad';
+        }
+      }
+    }
+    if (tool === 'regex-tester' && $('#regexMatches')) {
+      const pattern = $('#regexPattern')?.value || '';
+      const flags = $('#regexFlags')?.value || '';
+      if (!pattern) { $('#regexMatches').innerHTML = emptyState('Enter a pattern to see matches.'); $('#regexStatus').textContent = 'No pattern yet.'; return; }
+      try {
+        const re = new RegExp(pattern, flags);
+        const matches = [];
+        if (re.global || re.sticky) {
+          let m, guard = 0; while ((m = re.exec(text)) && guard++ < 1000) { matches.push(m); if (m[0] === '') re.lastIndex++; }
+        } else { const m = re.exec(text); if (m) matches.push(m); }
+        $('#regexStatus').textContent = `${matches.length} match${matches.length === 1 ? '' : 'es'}.`;
+        $('#regexMatches').innerHTML = matches.length
+          ? `<div class="finds">${matches.slice(0, 100).map((m, i) => `<div class="find"><span class="find__meta">Match ${i + 1} · index ${m.index}</span><q>${esc(m[0] || '(empty match)')}</q>${m.length > 1 ? `<div class="hint" style="margin-top:6px">${m.slice(1).map((g, j) => `Group ${j + 1}: ${esc(g ?? 'undefined')}`).join(' · ')}</div>` : ''}</div>`).join('')}</div>${matches.length > 100 ? '<p class="hint">Showing the first 100 matches.</p>' : ''}`
+          : emptyState('No matches found.');
+      } catch (e) { $('#regexStatus').textContent = e.message; $('#regexMatches').innerHTML = emptyState('Fix the regular expression to see matches.'); }
+    }
+    if (tool === 'jwt-decoder' && $('#jwtHeader')) {
+      const parts = text.trim().split('.');
+      if (parts.length < 2) { $('#jwtHeader').value = ''; $('#jwtPayload').value = ''; $('#jwtStatus').textContent = 'Paste a JWT with header and payload segments.'; return; }
+      try {
+        $('#jwtHeader').value = JSON.stringify(decodeJwtPart(parts[0]), null, 2);
+        $('#jwtPayload').value = JSON.stringify(decodeJwtPart(parts[1]), null, 2);
+        $('#jwtStatus').textContent = parts.length === 3 ? 'Decoded locally. Signature not verified.' : 'Decoded header and payload. Signature segment missing.';
+      } catch (e) { $('#jwtHeader').value = ''; $('#jwtPayload').value = ''; $('#jwtStatus').textContent = `Could not decode JWT: ${e.message}`; }
+    }
+    if (tool === 'hash-generator' && $('#hashOut')) {
+      if (!text) { $('#hashOut').value = ''; $('#hashStatus').textContent = 'Add text to hash.'; }
+      else crypto.subtle.digest(state.hash.algorithm, new TextEncoder().encode(text)).then(buf => {
+        const hex = [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+        if ($('#hashOut')) { $('#hashOut').value = hex; $('#hashStatus').textContent = `${state.hash.algorithm} generated locally.`; }
+      }).catch(e => { if ($('#hashStatus')) $('#hashStatus').textContent = e.message; });
+    }
+    if (tool === 'slug-generator' && $('#slugOut')) {
+      $('#slugOut').value = slugify(text, state.slug.preserveUnicode);
+      $('#slugStatus').textContent = text ? 'Slug generated.' : 'Add a title or phrase to begin.';
+    }
+  }
 
   function buildPanel() {
     if (!panel) return;
@@ -1040,7 +1250,68 @@ the paragraph split while joining these lines.`;
            ${rowSwitch('dd-onlyDuplicates', _t('dedupeOnly'), _t('dedupeOnlyD'))}`) +
         card(_t('sortApply'), `<div class="acts" id="ddActs"></div>`) +
         card(_t('dedupeFound'), `<div id="ddOut"></div>`);
+    } else if (tool === 'base64-encoder-decoder') {
+      panel.innerHTML =
+        card('Base64 options', `<select class="sel" id="b64Mode"><option value="encode">Encode to Base64</option><option value="decode">Decode Base64</option></select>${rowSwitch('b64-urlSafe', 'URL-safe Base64', 'Use - and _ and omit padding')}`) +
+        card('Output', `${toolOutput('b64Out')}<div class="tool-actions">${toolCopyButton('b64Out')}</div><p class="hint" id="b64Status">Add text to begin.</p>`);
+    } else if (tool === 'url-encoder-decoder') {
+      panel.innerHTML =
+        card('URL options', `<select class="sel" id="urlMode"><option value="encode">Encode</option><option value="decode">Decode</option></select><select class="sel" id="urlKind"><option value="component">URL component</option><option value="uri">Complete URI</option></select>` ) +
+        card('Output', `${toolOutput('urlOut')}<div class="tool-actions">${toolCopyButton('urlOut')}</div><p class="hint" id="urlStatus">Add text to begin.</p>`);
+    } else if (tool === 'regex-tester') {
+      panel.innerHTML =
+        card('Regular expression', `${toolInput('regexPattern', '', 'e.g. [A-Z][a-z]+')}<div class="tool-grid-2"><div><label class="field-label" for="regexFlags">Flags</label>${toolInput('regexFlags', 'g', 'gim...')}</div><div><span class="field-label">Status</span><p class="hint" id="regexStatus">No pattern yet.</p></div></div>` ) +
+        card('Matches', `<div id="regexMatches"></div>`);
+    } else if (tool === 'password-generator') {
+      panel.innerHTML = `
+        <section class="pw-tool" aria-label="Password generator">
+          <div class="pw-tool__output">
+            <input class="pw-tool__password" id="pwOut" type="text" readonly aria-label="Generated password">
+            <button class="pw-tool__copy" id="pwCopy" type="button">Copy</button>
+          </div>
+          <div class="pw-tool__controls">
+            <div class="pw-tool__length">
+              <div class="pw-tool__label"><span>Password length</span><strong id="pwLengthVal">16</strong></div>
+              <input class="range" id="pwLength" type="range" min="8" max="64" value="16" aria-label="Password length">
+              <div class="pw-tool__range-labels"><span>8</span><span>64</span></div>
+            </div>
+            <div class="pw-tool__sets" role="group" aria-label="Character sets">
+              ${rowSwitch('pw-upper', 'Uppercase', 'A–Z')}
+              ${rowSwitch('pw-lower', 'Lowercase', 'a–z')}
+              ${rowSwitch('pw-numbers', 'Numbers', '0–9')}
+              ${rowSwitch('pw-symbols', 'Symbols', 'Special characters')}
+            </div>
+            <label class="pw-tool__advanced"><input type="checkbox" id="pw-ambiguous"><span>Exclude ambiguous characters</span><small>O, 0, I and 1</small></label>
+            <button class="btn pw-tool__generate" id="generatePassword" type="button">Generate password</button>
+          </div>
+        </section>`;
+    } else if (tool === 'json-formatter') {
+      panel.innerHTML =
+        card('Formatting', `<label class="field-label" for="jsonIndent">Indentation</label><select class="sel" id="jsonIndent"><option value="2">2 spaces</option><option value="4">4 spaces</option><option value="1">1 space</option><option value="tab">Tab</option></select>`) +
+        card('Formatted JSON', `${toolOutput('jsonOut')}<div class="tool-actions">${toolCopyButton('jsonOut')}</div><p class="hint" id="jsonStatus">Add JSON to begin.</p>`);
+    } else if (tool === 'json-validator') {
+      panel.innerHTML = card('Validation result', `<div id="jsonStatus" class="status-badge">Add JSON to begin.</div><p class="hint">Validation happens locally with the browser's JSON parser.</p>`);
+    } else if (tool === 'json-minifier') {
+      panel.innerHTML = card('Minified JSON', `${toolOutput('jsonOut')}<div class="tool-actions">${toolCopyButton('jsonOut')}</div><p class="hint" id="jsonStatus">Add JSON to begin.</p>`);
+    } else if (tool === 'jwt-decoder') {
+      panel.innerHTML =
+        card('Decoded header', `${toolOutput('jwtHeader')}<div class="tool-actions">${toolCopyButton('jwtHeader')}</div>`) +
+        card('Decoded payload', `${toolOutput('jwtPayload')}<div class="tool-actions">${toolCopyButton('jwtPayload')}</div>`) +
+        card('Status', `<p class="hint" id="jwtStatus">Paste a JWT with header and payload segments.</p>`);
+    } else if (tool === 'uuid-generator') {
+      panel.innerHTML =
+        card('UUID settings', `<label class="field-label" for="uuidCount">How many?</label><select class="sel" id="uuidCount"><option value="1">1</option><option value="5">5</option><option value="10">10</option><option value="20">20</option></select>`) +
+        card('Generate', `<button class="btn" id="generateUuid" type="button">Generate UUID v4</button><p class="hint">Uses the browser's cryptographic random source.</p>`);
+    } else if (tool === 'hash-generator') {
+      panel.innerHTML =
+        card('Hash algorithm', `<select class="sel" id="hashAlgorithm"><option>SHA-256</option><option>SHA-512</option><option>SHA-384</option><option>SHA-1</option></select>`) +
+        card('Hash', `${toolOutput('hashOut')}<div class="tool-actions">${toolCopyButton('hashOut')}</div><p class="hint" id="hashStatus">Add text to hash.</p>`);
+    } else if (tool === 'slug-generator') {
+      panel.innerHTML =
+        card('Slug options', `${rowSwitch('slug-unicode', 'Preserve Unicode', 'Keep non-Latin letters instead of transliterating/removing them')}`) +
+        card('Generated slug', `${toolOutput('slugOut')}<div class="tool-actions">${toolCopyButton('slugOut')}</div><p class="hint" id="slugStatus">Add a title or phrase to begin.</p>`);
     }
+    enhanceSelects();
     wirePanel();
   }
 
@@ -1051,6 +1322,173 @@ the paragraph split while joining these lines.`;
     el.innerHTML = list.map((a, i) => `<button class="act" type="button" data-i="${i}"><span class="act__lb">${esc(a.label)}</span>${a.ex ? `<span class="act__ex">${esc(a.ex)}</span>` : ''}</button>`).join('');
     el.onclick = (e) => { const b = e.target.closest('.act'); if (b) list[+b.dataset.i].fn(); };
   }
+
+  /* ---------------- Theme-matched selects ---------------- */
+  function enhanceSelects() {
+    if (!panel) return;
+    $$('#panel select.sel').forEach((select) => {
+      if (select.dataset.customized === '1') return;
+      select.dataset.customized = '1';
+      select.classList.add('select-native-hidden');
+
+      const wrap = document.createElement('div');
+      wrap.className = 'custom-select';
+      wrap.dataset.for = select.id || '';
+
+      const trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'custom-select__trigger';
+      trigger.setAttribute('aria-haspopup', 'listbox');
+      trigger.setAttribute('aria-expanded', 'false');
+      trigger.setAttribute('aria-controls', `${select.id || 'select'}-menu`);
+
+      const label = document.createElement('span');
+      label.className = 'custom-select__label';
+      const chevron = document.createElement('span');
+      chevron.className = 'custom-select__chevron';
+      chevron.setAttribute('aria-hidden', 'true');
+      trigger.append(label, chevron);
+
+      // The menu is rendered in <body> while open so it cannot be clipped by
+      // cards/panels that use overflow:hidden for their rounded corners.
+      const menu = document.createElement('div');
+      menu.className = 'custom-select__menu';
+      menu.id = `${select.id || 'select'}-menu`;
+      menu.setAttribute('role', 'listbox');
+
+      const sync = () => {
+        const current = select.options[select.selectedIndex];
+        label.textContent = current ? current.textContent : '';
+        menu.querySelectorAll('.custom-select__option').forEach((opt) => {
+          const selected = opt.dataset.value === select.value;
+          opt.setAttribute('aria-selected', String(selected));
+        });
+      };
+
+      Array.from(select.options).forEach((option, index) => {
+        const item = document.createElement('button');
+        item.type = 'button';
+        item.className = 'custom-select__option';
+        item.textContent = option.textContent;
+        item.dataset.value = option.value;
+        item.dataset.index = String(index);
+        item.setAttribute('role', 'option');
+        item.setAttribute('aria-selected', 'false');
+        item.addEventListener('click', (event) => {
+          event.stopPropagation();
+          select.selectedIndex = index;
+          select.dispatchEvent(new Event('change', { bubbles: true }));
+          close();
+        });
+        menu.appendChild(item);
+      });
+
+      const positionMenu = () => {
+        if (!wrap.classList.contains('open')) return;
+        const rect = trigger.getBoundingClientRect();
+        const gap = 5;
+        const viewportPad = 8;
+        const maxMenuHeight = Math.min(260, Math.max(120, window.innerHeight - viewportPad * 2));
+        menu.style.maxHeight = `${maxMenuHeight}px`;
+        menu.style.width = `${rect.width}px`;
+        menu.style.left = `${Math.max(viewportPad, Math.min(rect.left, window.innerWidth - rect.width - viewportPad))}px`;
+
+        // Prefer below; flip above when there is not enough room.
+        const menuHeight = Math.min(menu.scrollHeight || 0, maxMenuHeight);
+        const spaceBelow = window.innerHeight - rect.bottom - viewportPad;
+        const spaceAbove = rect.top - viewportPad;
+        const openAbove = spaceBelow < Math.min(180, menuHeight) && spaceAbove > spaceBelow;
+        const top = openAbove
+          ? Math.max(viewportPad, rect.top - menuHeight - gap)
+          : Math.min(window.innerHeight - menuHeight - viewportPad, rect.bottom + gap);
+        menu.style.top = `${Math.max(viewportPad, top)}px`;
+      };
+
+      const close = () => {
+        wrap.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+        if (menu.parentNode === document.body) document.body.removeChild(menu);
+      };
+
+      const open = () => {
+        // Close any other themed dropdown first.
+        $$('.custom-select.open').forEach((el) => {
+          if (el !== wrap) {
+            el.classList.remove('open');
+            el.querySelector('.custom-select__trigger')?.setAttribute('aria-expanded', 'false');
+            const oldMenu = document.getElementById(el.dataset.menuId || '');
+            oldMenu?.classList.remove('is-open');
+            if (oldMenu?.parentNode === document.body) document.body.removeChild(oldMenu);
+          }
+        });
+
+        wrap.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+        wrap.dataset.menuId = menu.id;
+        document.body.appendChild(menu);
+        menu.classList.add('is-open');
+        positionMenu();
+      };
+
+      trigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        wrap.classList.contains('open') ? close() : open();
+      });
+      trigger.addEventListener('keydown', (event) => {
+        const options = Array.from(menu.querySelectorAll('.custom-select__option'));
+        const currentIndex = Math.max(0, options.findIndex((o) => o.dataset.value === select.value));
+        let nextIndex = currentIndex;
+        if (event.key === 'ArrowDown') nextIndex = Math.min(currentIndex + 1, options.length - 1);
+        else if (event.key === 'ArrowUp') nextIndex = Math.max(currentIndex - 1, 0);
+        else if (event.key === 'Home') nextIndex = 0;
+        else if (event.key === 'End') nextIndex = options.length - 1;
+        else if (event.key === 'Escape') { close(); return; }
+        else if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          if (wrap.classList.contains('open')) {
+            options[currentIndex]?.focus();
+          } else {
+            open();
+          }
+          return;
+        } else return;
+        event.preventDefault();
+        select.selectedIndex = nextIndex;
+        select.dispatchEvent(new Event('change', { bubbles: true }));
+        sync();
+      });
+
+      select.addEventListener('change', sync);
+
+      // Move the wrapper into the select's original position before moving
+      // the select into it. Doing this in the opposite order would attempt
+      // to insert the wrapper into itself and abort all panel initialization.
+      const selectParent = select.parentNode;
+      if (selectParent) selectParent.insertBefore(wrap, select);
+      wrap.append(trigger, select);
+      sync();
+
+      // Reposition an open menu while the page/viewport moves.
+      wrap._positionCustomMenu = positionMenu;
+    });
+  }
+
+  document.addEventListener('click', () => {
+    $$('.custom-select.open').forEach((el) => {
+      el.classList.remove('open');
+      el.querySelector('.custom-select__trigger')?.setAttribute('aria-expanded', 'false');
+      const menu = document.getElementById(el.dataset.menuId || '');
+      menu?.classList.remove('is-open');
+      if (menu?.parentNode === document.body) document.body.removeChild(menu);
+    });
+  });
+
+  const repositionOpenSelects = () => {
+    $$('.custom-select.open').forEach((el) => el._positionCustomMenu?.());
+  };
+  window.addEventListener('resize', repositionOpenSelects);
+  window.addEventListener('scroll', repositionOpenSelects, true);
 
   function wirePanel() {
     // Academic switches
@@ -1145,6 +1583,40 @@ the paragraph split while joining these lines.`;
       act(_t('panel_keepDuplicates'), '', () => { const r = TK.LINES.dedupe(editor.value, { ...state.dedupe, onlyDuplicates: true }); setText(r.text, _t('toast_duplicatesOnly')); }),
       act(_t('panel_sortResult'), '', () => { const r = TK.LINES.dedupe(editor.value, state.dedupe); setText(TK.LINES.sort(r.text, state.sort), _t('toast_dedupedSorted')); }),
     ]);
+
+    // Developer / generator expansion
+    $('#b64Mode')?.addEventListener('change', e => { state.base64.mode = e.target.value; render(); });
+    $('#b64-urlSafe')?.addEventListener('change', e => { state.base64.urlSafe = e.target.checked; render(); });
+    $('#urlMode')?.addEventListener('change', e => { state.url.mode = e.target.value; render(); });
+    $('#urlKind')?.addEventListener('change', e => { state.url.kind = e.target.value; render(); });
+    $('#regexPattern')?.addEventListener('input', e => { state.regex.pattern = e.target.value; render(); });
+    $('#regexFlags')?.addEventListener('input', e => { state.regex.flags = e.target.value; render(); });
+    $('#jsonIndent')?.addEventListener('change', render);
+    $('#hashAlgorithm')?.addEventListener('change', e => { state.hash.algorithm = e.target.value; render(); });
+    $('#slug-unicode')?.addEventListener('change', e => { state.slug.preserveUnicode = e.target.checked; render(); });
+    $('#pwLength')?.addEventListener('input', e => { state.password.length = +e.target.value; $('#pwLengthVal').textContent = e.target.value; });
+    ['upper','lower','numbers','symbols','ambiguous'].forEach(k => {
+      const el = $(`#pw-${k}`); if (!el) return;
+      el.checked = k === 'ambiguous' ? state.password.excludeAmbiguous : state.password[k];
+      el.addEventListener('change', () => { if (k === 'ambiguous') state.password.excludeAmbiguous = el.checked; else state.password[k] = el.checked; });
+    });
+    const generatePasswordIntoOutput = () => {
+      try {
+        const value = generatePassword(state.password);
+        const out = $('#pwOut');
+        if (out) out.value = value;
+        if (editor) editor.value = value;
+      } catch (e) { toast(e.message); }
+    };
+    $('#generatePassword')?.addEventListener('click', () => { generatePasswordIntoOutput(); toast('Strong password generated'); });
+    $('#pwCopy')?.addEventListener('click', () => copyOutput('pwOut'));
+    if (tool === 'password-generator') generatePasswordIntoOutput();
+    $('#uuidCount')?.addEventListener('change', e => { state.uuid.count = +e.target.value; });
+    $('#generateUuid')?.addEventListener('click', () => {
+      const count = Math.max(1, Math.min(20, state.uuid.count));
+      setText(Array.from({ length: count }, uuidV4).join('\n'), `${count} UUID${count === 1 ? '' : 's'} generated`);
+    });
+    $$('[data-copy-output]').forEach(b => b.addEventListener('click', () => copyOutput(b.dataset.copyOutput)));
   }
 
   const loc = () => (state.locale === 'auto' ? TK.bestLocale(editor.value) : state.locale);
@@ -1156,7 +1628,7 @@ the paragraph split while joining these lines.`;
     cancelAnimationFrame(raf);
     raf = requestAnimationFrame(() => {
       const text = editor.value;
-      store.set('tk-draft', text);
+      store.set(draftKey, text);
       const c = TK.count(text, loc());
 
       const put = (k, v) => { const el = $(`[data-stat="${k}"]`); if (el) el.textContent = v; };
@@ -1298,6 +1770,7 @@ the paragraph split while joining these lines.`;
             : `<p class="hint" style="margin-top:var(--space-3)">${_t('everyUnique')}</p>`)
         : emptyState(_t('pasteDedupe'));
     }
+    renderCustomTool(text);
   }
 
   buildPanel();
