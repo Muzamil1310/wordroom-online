@@ -1,6 +1,6 @@
 {
   "name": "Word Room",
-  "short_name": "Room",
+  "short_name": "WordRoom",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
