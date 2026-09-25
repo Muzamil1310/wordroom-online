@@ -24,6 +24,11 @@ ICONS = {
     "wrap": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11a3 3 0 1 1 0 6h-2M4 18h4"/><path d="m14 15-2 3 2 3" transform="translate(0,-3)"/></svg>',
     "sort": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h6M4 18h3M17 4v16M17 20l3-3M17 20l-3-3"/></svg>',
     "dedupe": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="12" height="12" rx="2.5"/><path d="M9 21h9a2.5 2.5 0 0 0 2.5-2.5V9"/></svg>',
+    "code": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>',
+    "lock": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>',
+    "hash": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 8 21M16 3l-2 18M4 9h17M3 15h17"/></svg>',
+    "link": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg>',
+    "shield": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>',
 }
 
 TOOLS = [
@@ -63,9 +68,75 @@ TOOLS = [
          desc="Find and remove duplicate lines from any list. Choose whether case and surrounding whitespace count, and inspect which values repeat before you delete anything.",
          lede="Find repeats before you delete them, with control over whether case and whitespace count as a difference.",
          ph="Paste a list with duplicates in it — email addresses, keywords, IDs."),
+    dict(slug="base64-encoder-decoder", nav="Base64 encoder / decoder", icon="code", group="Encode",
+         h1="Base64 encoder / decoder", eyebrow="Encode",
+         title="Base64 Encoder & Decoder — Encode or Decode Text Online",
+         desc="Encode text to Base64 or decode Base64 back to text directly in your browser. Unicode-safe, private and free with no upload or account.",
+         lede="Encode ordinary text to Base64 or decode Base64 back to readable text — entirely in your browser.",
+         ph="Enter the text or Base64 string you want to convert."),
+    dict(slug="url-encoder-decoder", nav="URL encoder / decoder", icon="link", group="Encode",
+         h1="URL encoder / decoder", eyebrow="Encode",
+         title="URL Encoder & Decoder — Encode URLs and Query Strings Online",
+         desc="Encode or decode URL text and query-string components online. Choose URI or component mode and process everything locally in your browser.",
+         lede="Safely encode URL components or decode percent-encoded text without sending it anywhere.",
+         ph="Paste a URL, query string, or percent-encoded text here."),
+    dict(slug="regex-tester", nav="Regex tester", icon="code", group="Developer",
+         h1="Regex tester", eyebrow="Developer",
+         title="Regex Tester — Test Regular Expressions Online",
+         desc="Test JavaScript regular expressions against your text in real time. See matches, capture groups, match counts and regex errors directly in your browser.",
+         lede="Write a JavaScript regex, test it against your text, and inspect every match and capture group instantly.",
+         ph="Paste the text you want your regular expression to test."),
+    dict(slug="password-generator", nav="Password generator", icon="lock", group="Generate",
+         h1="Password generator", eyebrow="Generate",
+         title="Password Generator — Create Strong Random Passwords",
+         desc="Generate strong random passwords using your browser's cryptographic random generator. Choose length and character sets. Nothing is uploaded.",
+         lede="Generate strong random passwords locally with cryptographic randomness and controls for length and character sets.",
+         ph="Generated passwords will appear here. You can also type your own text."),
+    dict(slug="json-formatter", nav="JSON formatter", icon="code", group="Developer",
+         h1="JSON formatter", eyebrow="Developer",
+         title="JSON Formatter — Pretty Print JSON Online",
+         desc="Format and pretty-print JSON with adjustable indentation. Invalid JSON is explained with an error instead of silently changing your data.",
+         lede="Turn compact or messy JSON into clean, readable formatted JSON with one click.",
+         ph='Paste JSON here, for example: {"name":"WordRoom","free":true}'),
+    dict(slug="json-validator", nav="JSON validator", icon="shield", group="Developer",
+         h1="JSON validator", eyebrow="Developer",
+         title="JSON Validator — Check JSON Syntax Online",
+         desc="Validate JSON syntax instantly in your browser and get a useful error message when the input is invalid. No upload or account required.",
+         lede="Check whether JSON is valid and get a clear syntax error when it is not.",
+         ph='Paste JSON here, for example: {"name":"WordRoom"}'),
+    dict(slug="json-minifier", nav="JSON minifier", icon="code", group="Developer",
+         h1="JSON minifier", eyebrow="Developer",
+         title="JSON Minifier — Compress JSON Online",
+         desc="Minify valid JSON by removing unnecessary whitespace while preserving its data. Runs entirely in your browser.",
+         lede="Remove unnecessary JSON whitespace to produce a compact payload ready for APIs and configuration files.",
+         ph='Paste formatted JSON here, for example: {"name": "WordRoom"}'),
+    dict(slug="jwt-decoder", nav="JWT decoder", icon="shield", group="Developer",
+         h1="JWT decoder", eyebrow="Developer",
+         title="JWT Decoder — Decode JSON Web Tokens Online",
+         desc="Decode the header and payload of a JSON Web Token locally in your browser. The tool does not verify signatures and does not send your token to a server.",
+         lede="Inspect a JWT's header and payload locally. Signature verification is intentionally not performed.",
+         ph="Paste a JWT such as eyJhbGciOi... here."),
+    dict(slug="uuid-generator", nav="UUID generator", icon="hash", group="Generate",
+         h1="UUID generator", eyebrow="Generate",
+         title="UUID Generator — Generate Random UUID v4 Values",
+         desc="Generate random UUID version 4 identifiers using your browser's cryptographic random source. Create one or multiple UUIDs instantly.",
+         lede="Generate random UUID v4 identifiers locally with a cryptographically secure random source.",
+         ph="Generated UUIDs will appear here."),
+    dict(slug="hash-generator", nav="Hash generator", icon="hash", group="Developer",
+         h1="Hash generator", eyebrow="Developer",
+         title="Hash Generator — SHA-1, SHA-256, SHA-384 & SHA-512",
+         desc="Generate SHA-1, SHA-256, SHA-384 or SHA-512 hashes from text using the browser Web Crypto API. Your input never leaves the browser.",
+         lede="Generate standard SHA hashes from text locally using your browser's built-in cryptography API.",
+         ph="Enter the text you want to hash."),
+    dict(slug="slug-generator", nav="Slug generator", icon="link", group="Convert",
+         h1="Slug generator", eyebrow="Convert",
+         title="Slug Generator — Create SEO-Friendly URL Slugs",
+         desc="Convert titles and text into clean, URL-friendly slugs. Lowercase text, remove unnecessary punctuation and replace spaces with hyphens.",
+         lede="Turn titles and phrases into clean, lowercase, URL-friendly slugs in one click.",
+         ph="Example: 10 Best Websites to Learn Web Development in 2026"),
 ]
 
-EN_GROUPS = ["Count", "Convert", "Analyse", "Clean up"]
+EN_GROUPS = ["Count", "Convert", "Analyse", "Clean up", "Encode", "Developer", "Generate"]
 
 # ------------------------------------------------------------------ content
 REFS = {
@@ -274,7 +345,119 @@ FAQS = {
  ("Can I see the duplicates before removing them?",
   "Yes. The panel lists how many lines repeat and which values repeat most as you type, and \"Keep only the duplicates\" inverts the operation so you can inspect exactly what is repeating."),
 ],
+"base64-encoder-decoder": [
+ ("Is Base64 encryption?", "No. Base64 is reversible encoding, not encryption. Anyone who has the encoded value can decode it."),
+ ("What is Base64 used for?", "Base64 is commonly used to represent binary data as text in places such as JSON, email content and data URLs. It increases the size of the encoded data, so it is not compression."),
+ ("Is Base64 safe for passwords or secrets?", "No. Base64 does not protect secrets. Do not treat a Base64-encoded password, API key or token as confidential merely because it is encoded."),
+ ("Does this tool support Unicode text?", "Yes. Text is encoded as UTF-8 before Base64 conversion, so characters such as emoji, Hindi, Chinese and other Unicode text can be encoded and decoded correctly."),
+],
+"url-encoder-decoder": [
+ ("What does URL encoding do?", "URL encoding percent-escapes characters that have special meaning or are not safe in a URL component. For example, a space can become <code>%20</code>."),
+ ("What is the difference between URI and component encoding?", "Component mode is suited to individual query parameters or fragments. URI mode is intended for a complete URI and preserves characters that are normally valid within it."),
+ ("Should I encode an entire URL or only a parameter?", "Usually encode individual parameter values rather than the entire URL. Encoding the full URL can also encode separators such as <code>?</code>, <code>&</code> and <code>=</code> that define its structure."),
+ ("Does URL encoding encrypt my data?", "No. Percent-encoding is reversible formatting, not encryption. Anyone can decode an encoded URL or parameter."),
+],
+"regex-tester": [
+ ("What regex syntax does this tester use?", "This tester uses the JavaScript regular-expression engine available in your browser, including common flags such as <code>g</code>, <code>i</code>, <code>m</code>, <code>s</code>, <code>u</code> and <code>y</code>."),
+ ("What does the global g flag do?", "The <code>g</code> flag tells JavaScript to find multiple matches instead of stopping after the first match. The tester lists each match and its character index."),
+ ("Can I see capture groups?", "Yes. When your pattern contains capturing parentheses, the tester shows the captured group values beneath the full match."),
+ ("Does the tester send my text anywhere?", "No. Matching happens locally in your browser. Your test text and regular expression are processed on the device running the page."),
+],
+"password-generator": [
+ ("How are passwords generated?", "The generator uses the browser's cryptographic random-number source rather than a predictable pseudo-random sequence. The selected character sets are sampled locally."),
+ ("How long should a generated password be?", "Longer passwords generally provide more possible combinations. A unique password of 16 or more characters is a practical starting point for many accounts, subject to the service's own limits."),
+ ("Should I reuse a generated password?", "No. Use a unique password for each important account and store it in a reputable password manager rather than reusing the same password."),
+ ("Are generated passwords sent to a server?", "No. Generation happens in your browser using the Web Crypto API. The password is not uploaded by the generator."),
+],
+"json-formatter": [
+ ("Does formatting change my JSON data?", "For valid JSON, formatting changes whitespace only. The tool parses the JSON and serializes it again with the indentation you choose."),
+ ("What indentation options are available?", "You can format JSON with 1, 2 or 4 spaces, or with tabs. Choose the style that best fits your project or coding convention."),
+ ("Why does the formatter reject my JSON?", "The input must follow JSON syntax. Common problems include single-quoted strings, missing commas, trailing commas and unquoted property names."),
+ ("Does JSON formatting upload my data?", "No. Parsing and formatting happen locally in your browser, so the JSON you paste is not sent to a server by the tool."),
+],
+"json-validator": [
+ ("What does valid JSON mean?", "Valid JSON follows the JSON syntax rules: strings use double quotes, objects and arrays are correctly structured, and values use valid JSON types such as strings, numbers, booleans and null."),
+ ("Can a JSON value be just a number or true?", "Yes. A JSON document can have a primitive root value such as <code>123</code>, <code>true</code>, <code>false</code> or <code>null</code>, as well as an object or array."),
+ ("Why is my JSON invalid?", "Common causes include single quotes, missing commas or brackets, trailing commas, unquoted keys and comments. JSON is stricter than JavaScript object-literal syntax."),
+ ("Is validation performed locally?", "Yes. The validator uses the browser's built-in JSON parser, so the JSON you enter is processed locally."),
+],
+"json-minifier": [
+ ("What does JSON minification remove?", "It removes unnecessary whitespace such as indentation, spaces and line breaks while keeping the JSON data intact."),
+ ("Does minifying JSON change the data?", "For valid JSON, minification changes formatting rather than the parsed data. The resulting JSON contains the same values and structure."),
+ ("Why does the minifier reject my JSON?", "The input must first be valid JSON. Missing commas, trailing commas, single quotes and unquoted keys are common causes of errors."),
+ ("When should I minify JSON?", "Minified JSON is useful when reducing payload size matters, such as API responses, configuration embedded in pages or data transferred over a network."),
+],
+"jwt-decoder": [
+ ("Does decoding a JWT verify it?", "No. Decoding only reads the token's encoded header and payload. A decoded JWT is not proof that its signature is valid or that its claims should be trusted."),
+ ("What parts of a JWT can this tool decode?", "The tool decodes the header and payload segments. It does not attempt to reverse the signature or verify the token against a signing key."),
+ ("Is my JWT uploaded?", "No. The token is decoded in your browser. For security, only paste tokens into tools you trust and avoid exposing live credentials unnecessarily."),
+ ("Can I use a decoded JWT as proof of authentication?", "No. Decoding reveals claims but does not establish that the token was signed by the expected issuer or that the claims are trustworthy. Verification requires the appropriate key and validation rules."),
+],
+"uuid-generator": [
+ ("What type of UUID is generated?", "The generator creates random version 4 UUIDs. The version and variant bits are set according to the UUID format."),
+ ("How many UUIDs can I generate?", "You can generate 1, 5, 10 or 20 UUID v4 values at a time, with each value generated independently in the browser."),
+ ("Are the UUIDs generated randomly?", "Yes. The generator uses the browser's cryptographic random source, including <code>crypto.randomUUID()</code> where available."),
+ ("Are generated UUIDs sent to a server?", "No. UUID generation happens locally in your browser and does not require an API, account or upload."),
+],
+"hash-generator": [
+ ("Which hash algorithms are available?", "You can generate SHA-1, SHA-256, SHA-384 and SHA-512 hashes using the browser's Web Crypto API."),
+ ("Can a hash be decoded?", "A cryptographic hash is designed to be one-way. You can compare a newly generated hash with a known value, but there is no general decode operation that recovers the original input."),
+ ("What is a hash used for?", "Hashes are commonly used for integrity checks, fingerprints and other applications where you need a deterministic digest of data. The appropriate algorithm depends on the use case."),
+ ("Should I use SHA-1 for passwords?", "No. SHA-1 is not an appropriate password-storage algorithm. Password storage should use a dedicated password-hashing scheme such as Argon2, scrypt or bcrypt with appropriate parameters."),
+],
+"slug-generator": [
+ ("What is a URL slug?", "A slug is the readable part of a URL that usually identifies a page, such as <code>best-writing-tools</code>. This generator lowercases text, removes unnecessary punctuation and joins words with hyphens."),
+ ("Can slugs contain spaces?", "They can be encoded, but clean web URLs normally use hyphens instead of spaces. The generator converts runs of whitespace into a single hyphen."),
+ ("Should a slug be lowercase?", "Lowercase slugs are common because they are easier to read, share and keep consistent. The generator uses lowercase output by default."),
+ ("Should I include keywords in a slug?", "Use a short, descriptive slug that accurately identifies the page. Avoid stuffing it with repeated keywords or making it unnecessarily long."),
+],
+
 }
+
+# Extra reference content for the developer/utility expansion.
+REFS.update({
+"base64-encoder-decoder": [
+ ("What is Base64?", "<p>Base64 represents binary bytes as printable text characters. It is useful when data needs to travel through text-oriented formats, but it is <strong>not encryption</strong> and should not be used to hide secrets.</p>"),
+ ("Is Base64 encoding safe for passwords?", "<p>No. Base64 is reversible encoding, not password protection. Never treat an encoded password, API key or token as secret merely because it is Base64 encoded.</p>"),
+],
+"url-encoder-decoder": [
+ ("What does URL encoding do?", "<p>URL encoding percent-escapes characters that have special meaning or are not safe in a URL component. For example, a space can become <code>%20</code>.</p>"),
+ ("URI or component mode?", "<p>Use component mode for individual query parameters or fragments. URI mode preserves characters that are normally valid within a complete URL.</p>"),
+],
+"regex-tester": [
+ ("What regex syntax does this tester use?", "<p>This tester uses the JavaScript regular-expression engine available in your browser, including flags such as <code>g</code>, <code>i</code>, <code>m</code>, <code>s</code>, <code>u</code> and <code>y</code>.</p>"),
+ ("Does the tester send my text anywhere?", "<p>No. Matching happens locally in your browser. The pattern and test text are not uploaded by the tool.</p>"),
+],
+"password-generator": [
+ ("How are passwords generated?", "<p>The generator uses the browser's cryptographic random-number source rather than a predictable pseudo-random sequence. You can choose length and character sets before generating.</p>"),
+ ("Should I reuse a generated password?", "<p>No. Use a unique password for each account and store it in a reputable password manager. A generated password is strongest when it is long, unique and not reused.</p>"),
+],
+"json-formatter": [
+ ("Does formatting change my JSON data?", "<p>For valid JSON, formatting changes whitespace only. The parsed data is serialized back as JSON with indentation.</p>"),
+],
+"json-validator": [
+ ("What does valid JSON mean?", "<p>Valid JSON follows the JSON syntax rules: strings use double quotes, objects and arrays are correctly structured, and values use valid JSON types such as strings, numbers, booleans and null.</p>"),
+],
+"json-minifier": [
+ ("What does JSON minification remove?", "<p>It removes unnecessary whitespace such as indentation and line breaks while keeping the JSON data intact.</p>"),
+],
+"jwt-decoder": [
+ ("Does decoding a JWT verify it?", "<p>No. Decoding only reads the token's encoded header and payload. A decoded JWT is not proof that its signature is valid or that its claims should be trusted.</p>"),
+ ("Is my JWT uploaded?", "<p>No. The token is decoded in your browser. Do not paste production secrets into tools you do not trust.</p>"),
+],
+"uuid-generator": [
+ ("What type of UUID is generated?", "<p>The generator creates random version 4 UUIDs. They contain randomly generated bits with the version and variant bits set according to the UUID format.</p>"),
+],
+"hash-generator": [
+ ("Which hash algorithms are available?", "<p>You can generate SHA-1, SHA-256, SHA-384 and SHA-512 hashes using the browser's Web Crypto API.</p>"),
+ ("Can a hash be decoded?", "<p>A cryptographic hash is designed to be one-way. You can compare a newly generated hash with a known value, but there is no general decode operation that recovers the original input.</p>"),
+],
+"slug-generator": [
+ ("What is a URL slug?", "<p>A slug is the readable part of a URL that usually identifies a page, such as <code>best-writing-tools</code>. This generator lowercases text, removes unnecessary punctuation and joins words with hyphens.</p>"),
+ ("Can slugs contain spaces?", "<p>They can technically be encoded, but clean web URLs normally use hyphens instead of spaces. The generator therefore converts runs of whitespace into a single hyphen.</p>"),
+],
+})
+
 
 def rail(active, locale="en"):
     loc_groups = _GROUPS_T.get(locale, _GROUPS_T["en"])
@@ -472,17 +655,26 @@ _REL_H = {"en": "Related tools", "es": "Herramientas relacionadas", "ja": "関�
 
 def refs_html(slug, locale="en"):
     parts = []
-    refs = REFS_T.get(locale, REFS_T.get("en", {})).get(slug, REFS.get(slug, []))
+    # The newer utility pages keep their educational content inside the
+    # Common questions accordion. Do not render the older standalone
+    # reference blocks above it, which makes the FAQ area look duplicated.
+    FAQ_ONLY_SLUGS = {
+        "base64-encoder-decoder", "url-encoder-decoder", "regex-tester",
+        "password-generator", "json-formatter", "json-validator",
+        "json-minifier", "jwt-decoder", "uuid-generator",
+        "hash-generator", "slug-generator",
+    }
+    refs = [] if slug in FAQ_ONLY_SLUGS else REFS_T.get(locale, REFS_T.get("en", {})).get(slug, REFS.get(slug, []))
     for h, body in refs:
         parts.append(f"<section><h2>{h}</h2>{body}</section>")
     faqs = FAQS_T.get(locale, FAQS_T.get("en", {})).get(slug, FAQS.get(slug, []))
     if faqs:
-        parts.append(f"<section><h2>{_FAQ_H.get(locale, 'Common questions')}</h2>" + "".join(
+        parts.append(f'<section class="refs-faq"><h2>{_FAQ_H.get(locale, "Common questions")}</h2>' + "".join(
             f'<details class="faq"><summary>{html.escape(q)}</summary><div><p>{html.escape(a)}</p></div></details>'
             for q, a in faqs) + "</section>")
     rel = [t for t in TOOLS if t["slug"] != slug][:3]
     loc_tools = TOOLS_T.get(locale, TOOLS_T.get("en", {}))
-    parts.append(f"<section><h2>{_REL_H.get(locale, 'Related tools')}</h2><div class=\"rel\">" + "".join(
+    parts.append(f'<section class="refs-related"><h2>{_REL_H.get(locale, "Related tools")}</h2><div class="rel">' + "".join(
         f'<a class="relcard" href="{t["slug"]}"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])}</span></a>' for t in rel
     ) + "</div></section>")
     return '<div class="refs">' + "".join(parts) + '</div>'
@@ -628,7 +820,7 @@ for locale in LANGUAGES:
 # sitemap.xml with hreflang entries
 sitemap_urls = []
 # English URLs
-sitemap_urls.append(f"  <url><loc>{BASE}/</loc><lastmod>2026-09-01</lastmod>")
+sitemap_urls.append(f"  <url><loc>{BASE}/</loc><lastmod>2026-09-25</lastmod>")
 for lc in LANGUAGES:
     if lc == "en":
         sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/"/>')
@@ -640,7 +832,7 @@ sitemap_urls.append("  </url>")
 for t in TOOLS:
     s = t["slug"]
     # English tool URL
-    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-01</lastmod>")
+    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-25</lastmod>")
     for lc in LANGUAGES:
         if lc == "en":
             sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{s}"/>')
@@ -650,7 +842,7 @@ for t in TOOLS:
     sitemap_urls.append("  </url>")
 
 for s in STATIC_PAGES:
-    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-01</lastmod>")
+    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-25</lastmod>")
     for lc in LANGUAGES:
         if lc == "en":
             sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{s}"/>')

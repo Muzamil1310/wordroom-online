@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://wordroomonline.com/</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/"/>
@@ -13,7 +13,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/"/>
   </url>
-  <url><loc>https://wordroomonline.com/word-counter</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/word-counter</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/word-counter"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/word-counter"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/word-counter"/>
@@ -25,7 +25,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/word-counter"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/word-counter"/>
   </url>
-  <url><loc>https://wordroomonline.com/case-converter</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/case-converter</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/case-converter"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/case-converter"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/case-converter"/>
@@ -37,7 +37,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/case-converter"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/case-converter"/>
   </url>
-  <url><loc>https://wordroomonline.com/readability-checker</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/readability-checker</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/readability-checker"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/readability-checker"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/readability-checker"/>
@@ -49,7 +49,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/readability-checker"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/readability-checker"/>
   </url>
-  <url><loc>https://wordroomonline.com/remove-line-breaks</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/remove-line-breaks</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-line-breaks"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-line-breaks"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-line-breaks"/>
@@ -61,7 +61,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-line-breaks"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-line-breaks"/>
   </url>
-  <url><loc>https://wordroomonline.com/sort-lines</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/sort-lines</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/sort-lines"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/sort-lines"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/sort-lines"/>
@@ -73,7 +73,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines"/>
   </url>
-  <url><loc>https://wordroomonline.com/remove-duplicate-lines</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/remove-duplicate-lines</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/remove-duplicate-lines"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/remove-duplicate-lines"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/remove-duplicate-lines"/>
@@ -85,7 +85,139 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-duplicate-lines"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines"/>
   </url>
-  <url><loc>https://wordroomonline.com/privacy</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/base64-encoder-decoder</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/base64-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/base64-encoder-decoder"/>
+  </url>
+  <url><loc>https://wordroomonline.com/url-encoder-decoder</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/url-encoder-decoder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/url-encoder-decoder"/>
+  </url>
+  <url><loc>https://wordroomonline.com/regex-tester</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/regex-tester"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/regex-tester"/>
+  </url>
+  <url><loc>https://wordroomonline.com/password-generator</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/password-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/password-generator"/>
+  </url>
+  <url><loc>https://wordroomonline.com/json-formatter</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/json-formatter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/json-formatter"/>
+  </url>
+  <url><loc>https://wordroomonline.com/json-validator</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/json-validator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/json-validator"/>
+  </url>
+  <url><loc>https://wordroomonline.com/json-minifier</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/json-minifier"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/json-minifier"/>
+  </url>
+  <url><loc>https://wordroomonline.com/jwt-decoder</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/jwt-decoder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/jwt-decoder"/>
+  </url>
+  <url><loc>https://wordroomonline.com/uuid-generator</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/uuid-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/uuid-generator"/>
+  </url>
+  <url><loc>https://wordroomonline.com/hash-generator</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/hash-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/hash-generator"/>
+  </url>
+  <url><loc>https://wordroomonline.com/slug-generator</loc><lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wordroomonline.com/fr/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wordroomonline.com/de/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordroomonline.com/pt/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wordroomonline.com/ko/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/slug-generator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/slug-generator"/>
+  </url>
+  <url><loc>https://wordroomonline.com/privacy</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/privacy"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/privacy"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/privacy"/>
@@ -97,7 +229,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/privacy"/>
   </url>
-  <url><loc>https://wordroomonline.com/about</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/about</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/about"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/about"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/about"/>
@@ -109,7 +241,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/about"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/about"/>
   </url>
-  <url><loc>https://wordroomonline.com/terms</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/terms</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/terms"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/terms"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/terms"/>
@@ -121,7 +253,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/terms"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/terms"/>
   </url>
-  <url><loc>https://wordroomonline.com/contact</loc><lastmod>2026-09-01</lastmod>
+  <url><loc>https://wordroomonline.com/contact</loc><lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://wordroomonline.com/contact"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://wordroomonline.com/es/contact"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://wordroomonline.com/ja/contact"/>
