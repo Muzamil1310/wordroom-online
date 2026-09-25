@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generates the WordRoom static pages. Mirrors what Astro will do in the real build."""
 import json, pathlib, html
+from datetime import datetime
 from translations import LANGUAGES, UI, GROUPS as _GROUPS_T, HOME, TOOLS_T, FAQS_T, REFS_T, PAGES_T
 
 OUT = pathlib.Path(__file__).parent
@@ -507,6 +508,7 @@ def head(title, desc, canonical, schema, locale="en", slug=None):
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{html.escape(title)}">
 <meta name="twitter:description" content="{html.escape(desc)}">
+<meta name="twitter:image" content="{BASE}/assets/og-image.png">
 <link rel="icon" type="image/png" href="{'../assets' if locale != 'en' else 'assets'}/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="{'../assets' if locale != 'en' else 'assets'}/favicon.svg" />
 <link rel="shortcut icon" href="{'../assets' if locale != 'en' else 'assets'}/favicon.ico" />
@@ -766,6 +768,7 @@ def static_page(slug, locale="en"):
     pages = PAGES_T.get(locale, PAGES_T.get("en", {}))
     page = pages.get(slug, pages.get(slug, PAGES_T.get("en", {}).get(slug, {})))
     title = page.get("title", slug.replace("-", " ").title())
+    desc = page.get("desc", title)
     h1 = page.get("h1", title)
     last_updated = page.get("last_updated", "")
     sections = page.get("sections", [])
@@ -784,7 +787,7 @@ def static_page(slug, locale="en"):
 <div class="refs">
 {sections_html}
 </div>"""
-    return head(title, title, canonical, schema, locale, slug) + shell(slug, body, locale, slug)
+    return head(title, desc, canonical, schema, locale, slug) + shell(slug, body, locale, slug)
 
 # ------------------------------------------------------------------ build
 page_count = 0
@@ -818,9 +821,10 @@ for locale in LANGUAGES:
 (OUT / "robots.txt").write_text("User-agent: *\nAllow: /\nSitemap: https://wordroomonline.com/sitemap.xml\n", encoding="utf-8")
 
 # sitemap.xml with hreflang entries
+TODAY = datetime.now().strftime("%Y-%m-%d")
 sitemap_urls = []
 # English URLs
-sitemap_urls.append(f"  <url><loc>{BASE}/</loc><lastmod>2026-09-25</lastmod>")
+sitemap_urls.append(f"  <url><loc>{BASE}/</loc><lastmod>{TODAY}</lastmod>")
 for lc in LANGUAGES:
     if lc == "en":
         sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/"/>')
@@ -832,7 +836,7 @@ sitemap_urls.append("  </url>")
 for t in TOOLS:
     s = t["slug"]
     # English tool URL
-    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-25</lastmod>")
+    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>{TODAY}</lastmod>")
     for lc in LANGUAGES:
         if lc == "en":
             sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{s}"/>')
@@ -842,7 +846,7 @@ for t in TOOLS:
     sitemap_urls.append("  </url>")
 
 for s in STATIC_PAGES:
-    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>2026-09-25</lastmod>")
+    sitemap_urls.append(f"  <url><loc>{BASE}/{s}</loc><lastmod>{TODAY}</lastmod>")
     for lc in LANGUAGES:
         if lc == "en":
             sitemap_urls.append(f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{BASE}/{s}"/>')

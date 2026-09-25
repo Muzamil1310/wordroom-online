@@ -2332,6 +2332,7 @@ PAGES_T = {
         "privacy": {
             "title": "Privacy Policy",
             "h1": "Privacy Policy",
+            "desc": "WordRoom's privacy policy. Learn how we protect your data — all text processing runs entirely in your browser with no server uploads.",
             "last_updated": "Last updated: January 2025",
             "sections": [
                 ("Introduction", """<p>WordRoom ("we", "our", or "us") operates the wordroomonline.com website. This Privacy Policy explains how we collect, use, and protect information when you use our website and tools.</p>
@@ -2365,12 +2366,13 @@ PAGES_T = {
         "about": {
             "title": "About Us",
             "h1": "About WordRoom",
+            "desc": "Learn about WordRoom — a collection of 17 free, privacy-first text tools that run entirely in your browser. No upload, no account required.",
             "sections": [
                 ("What We Built", """<p>WordRoom is a collection of free, privacy-first text tools that run entirely in your browser. We started with a simple observation: most online text tools upload your content to a server, even though they don't need to.</p>
 <p>Every tool on WordRoom processes your text locally using JavaScript. Nothing you type or paste is ever sent anywhere. Your work stays on your device.</p>"""),
                 ("Why Privacy Matters", """<p>When you paste a draft essay, a business proposal, or personal notes into an online tool, you are trusting that service with sensitive content. Many popular tools send your text to their servers for processing — sometimes for analytics, sometimes for AI training, sometimes for reasons that are not clearly disclosed.</p>
 <p>We think that is wrong. Text processing is something a browser can do perfectly well on its own, so there is no reason to send your words to someone else's computer.</p>"""),
-                ("Our Tools", """<p>WordRoom currently offers six tools:</p>
+                ("Our Tools", """<p>WordRoom currently offers seventeen tools:</p>
 <ul>
 <li><strong>Word Counter</strong> — live word, character, and sentence counting with correct handling of Indic and CJK scripts.</li>
 <li><strong>Case Converter</strong> — thirteen case conversions including AP and Chicago title case rules.</li>
@@ -2378,6 +2380,17 @@ PAGES_T = {
 <li><strong>Remove Line Breaks</strong> — fix text pasted from PDFs and emails.</li>
 <li><strong>Sort Lines</strong> — alphabetical, length-based, reverse, or shuffled sorting.</li>
 <li><strong>Remove Duplicate Lines</strong> — find and remove repeats with full control over comparison rules.</li>
+<li><strong>Base64 Encoder / Decoder</strong> — encode text to Base64 or decode Base64 back to text.</li>
+<li><strong>URL Encoder / Decoder</strong> — encode or decode URL text and query-string components.</li>
+<li><strong>Regex Tester</strong> — test JavaScript regular expressions against your text in real time.</li>
+<li><strong>Password Generator</strong> — generate strong random passwords using cryptographic randomness.</li>
+<li><strong>JSON Formatter</strong> — pretty-print JSON with adjustable indentation.</li>
+<li><strong>JSON Validator</strong> — validate JSON syntax instantly with clear error messages.</li>
+<li><strong>JSON Minifier</strong> — compress JSON by removing unnecessary whitespace.</li>
+<li><strong>JWT Decoder</strong> — decode the header and payload of JSON Web Tokens locally.</li>
+<li><strong>UUID Generator</strong> — generate random UUID v4 identifiers using cryptographic randomness.</li>
+<li><strong>Hash Generator</strong> — generate SHA-1, SHA-256, SHA-384 and SHA-512 hashes from text.</li>
+<li><strong>Slug Generator</strong> — convert titles into clean, URL-friendly slugs.</li>
 </ul>
 <p>All tools are free, require no sign-up, and work on any modern browser.</p>"""),
                 ("Who We Are", """<p>WordRoom is built and maintained by a small team of developers who care about web privacy and useful tools. We believe the web should work for people, not the other way around.</p>
@@ -2387,6 +2400,7 @@ PAGES_T = {
         "terms": {
             "title": "Terms & Conditions",
             "h1": "Terms & Conditions",
+            "desc": "WordRoom's terms and conditions. Read about acceptable use, intellectual property, disclaimers, and liability limitations for our free text tools.",
             "last_updated": "Last updated: January 2025",
             "sections": [
                 ("Acceptance of Terms", """<p>By accessing or using WordRoom (wordroomonline.com), you agree to be bound by these Terms & Conditions. If you do not agree to these terms, please do not use our website.</p>"""),
@@ -2415,6 +2429,7 @@ PAGES_T = {
         "contact": {
             "title": "Contact Us",
             "h1": "Contact Us",
+            "desc": "Get in touch with the WordRoom team. We welcome bug reports, feature requests, and general feedback about our free browser-based text tools.",
             "sections": [
                 ("Get in Touch", """<p>We would love to hear from you. Whether you have a question, feedback, a feature request, or found a bug, we are here to help.</p>"""),
                 ("Email", """<p>The best way to reach us is by email:</p>
@@ -2434,6 +2449,7 @@ PAGES_T = {
         "privacy": {
             "title": "Política de Privacidad",
             "h1": "Política de Privacidad",
+            "desc": "Política de privacidad de WordRoom. Aprenda cómo protegemos sus datos — todo el procesamiento de texto se ejecuta completamente en su navegador sin cargas al servidor.",
             "last_updated": "Última actualización: enero de 2025",
             "sections": [
                 ("Introducción", """<p>WordRoom ("nosotros", "nuestro" o "nuestros") opera el sitio web wordroomonline.com. Esta Política de Privacidad explica cómo recopilamos, usamos y protegimos la información cuando utiliza nuestro sitio web y herramientas.</p>
@@ -2467,12 +2483,13 @@ PAGES_T = {
         "about": {
             "title": "Sobre Nosotros",
             "h1": "Sobre WordRoom",
+            "desc": "Conozca WordRoom — una colección de 17 herramientas de texto gratuitas y con privacidad primero que se ejecutan completamente en su navegador. Sin carga, sin cuenta.",
             "sections": [
                 ("Qué Construimos", """<p>WordRoom es una colección de herramientas de texto gratuitas y con privacidad primero que se ejecutan completamente en su navegador. Comenzamos con una observación simple: la mayoría de las herramientas de texto en línea cargan su contenido en un servidor, aunque no necesitan hacerlo.</p>
 <p>Cada herramienta en WordRoom procesa su texto localmente usando JavaScript. Nada que escriba o pegue se envía nunca a ningún lugar. Su trabajo permanece en su dispositivo.</p>"""),
                 ("Por Qué la Privacidad Importa", """<p>Cuando pega un borrador, una propuesta comercial o notas personales en una herramienta en línea, está confiando ese servicio con contenido sensible. Muchas herramientas populares envían su texto a sus servidores para su procesamiento — a veces para análisis, a veces para entrenamiento de IA, a veces por razones que no se divulgan claramente.</p>
 <p>Creemos que eso está mal. El procesamiento de texto es algo que un navegador puede hacer perfectamente bien por sí mismo, por lo que no hay razón para enviar sus palabras a la computadora de otra persona.</p>"""),
-                ("Nuestras Herramientas", """<p>WordRoom actualmente ofrece seis herramientas:</p>
+                ("Nuestras Herramientas", """<p>WordRoom actualmente ofrece diecisiete herramientas:</p>
 <ul>
 <li><strong>Contador de Palabras</strong> — conteo en vivo de palabras, caracteres y oraciones con manejo correcto de scripts Indic y CJK.</li>
 <li><strong>Convertidor de Mayúsculas/Minúsculas</strong> — trece conversiones de mayúsculas/minúsculas incluyendo reglas de estilo AP y Chicago.</li>
@@ -2480,6 +2497,17 @@ PAGES_T = {
 <li><strong>Eliminar Saltos de Línea</strong> — corregir texto pegado de PDFs y correos electrónicos.</li>
 <li><strong>Ordenar Líneas</strong> — ordenamiento alfabético, por longitud, inverso o aleatorio.</li>
 <li><strong>Eliminar Líneas Duplicadas</strong> — encontrar y eliminar repeticiones con control total sobre las reglas de comparación.</li>
+<li><strong>Codificador / Decodificador Base64</strong> — codificar texto a Base64 o decodificar Base64 de vuelta a texto.</li>
+<li><strong>Codificador / Decodificador URL</strong> — codificar o decodificar texto URL y componentes de cadena de consulta.</li>
+<li><strong>Probador de Regex</strong> — probar expresiones regulares JavaScript contra su texto en tiempo real.</li>
+<li><strong>Generador de Contraseñas</strong> — generar contraseñas aleatorias fuertes usando aleatoriedad criptográfica.</li>
+<li><strong>Formateador JSON</strong> — formatear JSON con sangría ajustable.</li>
+<li><strong>Validador JSON</strong> — validar sintaxis JSON al instante con mensajes de error claros.</li>
+<li><strong>Minificador JSON</strong> — comprimir JSON eliminando espacios innecesarios.</li>
+<li><strong>Decodificador JWT</strong> — decodificar el encabezado y carga útil de JSON Web Tokens localmente.</li>
+<li><strong>Generador de UUID</strong> — generar identificadores UUID v4 aleatorios usando aleatoriedad criptográfica.</li>
+<li><strong>Generador de Hash</strong> — generar hashes SHA-1, SHA-256, SHA-384 y SHA-512 a partir de texto.</li>
+<li><strong>Generador de Slug</strong> — convertir títulos en slugs limpios y amigables para URL.</li>
 </ul>
 <p>Todas las herramientas son gratuitas, no requieren registro y funcionan en cualquier navegador moderno.</p>"""),
                 ("Quiénes Somos", """<p>WordRoom es construido y mantenido por un pequeño equipo de desarrolladores que se preocupan por la privacidad web y las herramientas útiles. Creemos que la web debe funcionar para las personas, no al revés.</p>
@@ -2489,6 +2517,7 @@ PAGES_T = {
         "terms": {
             "title": "Términos y Condiciones",
             "h1": "Términos y Condiciones",
+            "desc": "Términos y condiciones de WordRoom. Lea sobre uso aceptable, propiedad intelectual, descargos de responsabilidad y limitaciones de responsabilidad para nuestras herramientas de texto gratuitas.",
             "last_updated": "Última actualización: enero de 2025",
             "sections": [
                 ("Aceptación de los Términos", """<p>Al acceder o usar WordRoom (wordroomonline.com), usted acepta estar sujeto a estos Términos y Condiciones. Si no está de acuerdo con estos términos, por favor no use nuestro sitio web.</p>"""),
@@ -2517,6 +2546,7 @@ PAGES_T = {
         "contact": {
             "title": "Contáctenos",
             "h1": "Contáctenos",
+            "desc": "Ponte en contacto con el equipo de WordRoom. Recibimos reportes de errores, solicitudes de funciones y comentarios generales sobre nuestras herramientas de texto gratuitas basadas en navegador.",
             "sections": [
                 ("Ponte en Contacto", """<p>Nos encantaría saber de usted. Ya sea que tenga una pregunta, comentarios, una solicitud de función o haya encontrado un error, estamos aquí para ayudar.</p>"""),
                 ("Correo Electrónico", """<p>La mejor manera de contactarnos es por correo electrónico:</p>
@@ -2536,6 +2566,7 @@ PAGES_T = {
         "privacy": {
             "title": "プライバシーポリシー",
             "h1": "プライバシーポリシー",
+            "desc": "WordRoomのプライバシーポリシー。データの保護方法をご覧ください — すべてのテキスト処理はサーバーにアップロードすることなく、ブラウザ内で完全に実行されます。",
             "last_updated": "最終更新：2025年1月",
             "sections": [
                 ("はじめに", """<p>WordRoom（「当社」「当社の」または「当社のもの」）はwordroomonline.comウェブサイトを運営しています。このプライバシーポリシーは、当ウェブサイトおよびツールを使用する際の情報の収集、使用、保護について説明します。</p>
@@ -2569,21 +2600,33 @@ PAGES_T = {
         "about": {
             "title": "会社概要",
             "h1": "WordRoomについて",
+            "desc": "WordRoomについて — ブラウザ内で完全に実行される17の無料プライバシー重視テキストツールのコレクション。アップロード不要、アカウント不要。",
             "sections": [
                 ("私たちが構築したもの", """<p>WordRoomは、ブラウザ内で完全に実行される無料のプライバシー重視のテキストツールのコレクションです。ほとんどのオンラインテキストツールは、必要ないのにコンテンツをサーバーにアップロードするという観察から始めました。</p>
 <p>WordRoomのすべてのツールはJavaScriptを使用してテキストをローカルで処理します。入力や貼り付けたテキストがどこかに送信されることはありません。あなたの作業はデバイスに留まります。</p>"""),
                 ("プライバシーが重要な理由", """<p>オンラインツールにドラフト、ビジネスプロポーザル、個人ノートを貼り付ける際、そのサービスに機密性の高いコンテンツを信頼しています。多くの人気ツールは、処理のためにテキストをサーバーに送信します — 有时是用于分析，有时是用于AI训练，有时是出于未明确说明的原因。</p>
 <p>我们认为这是错误的。文本处理是浏览器自身可以完美完成的事情，因此没有理由将你的文字发送到别人的计算机上。</p>"""),
-                ("我们的工具", """<p>WordRoom目前提供六种工具：</p>
+                ("ツール", """<p>WordRoomは現在、17のツールを提供しています：</p>
 <ul>
-<li><strong>字数统计</strong> — 实时统计单词、字符和句子数，正确处理印度文字和中日韩文字。</li>
-<li><strong>大小写转换</strong> — 十三种大小写转换，包括AP和芝加哥标题大小写规则。</li>
-<li><strong>可读性检查</strong> — 六种可读性公式，提供句子级反馈。</li>
-<li><strong>删除换行符</strong> — 修复从PDF和电子邮件粘贴的文本。</li>
-<li><strong>行排序</strong> — 按字母顺序、长度、反向或随机排序。</li>
-<li><strong>删除重复行</strong> — 查找并删除重复项，完全控制比较规则。</li>
+<li><strong>ワードカウンター</strong> — インド系スクリプトとCJKの正確な処理による、リアルタイムの単語、文字、文のカウント。</li>
+<li><strong>ケースコンバーター</strong> — APとChicagoのタイトルケースルールを含む13種のケース変換。</li>
+<li><strong>可読性チェッカー</strong> — 文レベルのフィードバックを含む6つの可読性フォーミュラ。</li>
+<li><strong>改行を除去</strong> — PDFやメールから貼り付けたテキストを修正。</li>
+<li><strong>行を並べ替え</strong> — アルファベット順、長さ順、逆順、シャッフル。</li>
+<li><strong>重複行を除去</strong> — 比較ルールの完全な制御で重複を見つけて削除。</li>
+<li><strong>Base64エンコーダー/デコーダー</strong> — テキストをBase64にエンコード或はBase64をテキストにデコード。</li>
+<li><strong>URLエンコーダー/デコーダー</strong> — URLテキストとクエリ文字列コンポーネントをエンコード或はデコード。</li>
+<li><strong>Regexテスター</strong> — JavaScript正規表現をリアルタイムでテスト。</li>
+<li><strong>パスワードジェネレーター</strong> — 暗号学的なランダム性を使用して強力なランダムパスワードを生成。</li>
+<li><strong>JSONフォーマッター</strong> — 調整可能なインデントでJSONを整形。</li>
+<li><strong>JSONバリデーター</strong> — 明確なエラーメッセージでJSON構文を即座に検証。</li>
+<li><strong>JSONミニファイアー</strong> — 不要な空白を削除してJSONを圧縮。</li>
+<li><strong>JWTデコーダー</strong> — JSON Web Tokensのヘッダーとペイロードをローカルでデコード。</li>
+<li><strong>UUIDジェネレーター</strong> — 暗号学的なランダム性を使用してUUID v4識別子を生成。</li>
+<li><strong>ハッシュジェネレーター</strong> — テキストからSHA-1、SHA-256、SHA-384、SHA-512ハッシュを生成。</li>
+<li><strong>スラッグジェネレーター</strong> — タイトルをクリーンでURLフレンドリーなスラッグに変換。</li>
 </ul>
-<p>所有工具均免费，无需注册，可在任何现代浏览器上使用。</p>"""),
+<p>すべてのツールは無料で、アカウント登録は不要です。すべてのモダンブラウザで動作します。</p>"""),
                 ("关于我们", """<p>WordRoom由一个关心网络隐私和实用工具的小型开发团队构建和维护。我们相信网络应该为人服务，而不是相反。</p>
 <p>如果您有任何反馈、功能请求或只是想打个招呼，请访问我们的<a href="contact.html">联系页面</a>.</p>"""),
             ],
@@ -2591,6 +2634,7 @@ PAGES_T = {
         "terms": {
             "title": "利用規約",
             "h1": "利用規約",
+            "desc": "WordRoomの利用規約。受け入れ可能な使用、知的財産、免責事項、責任の制限についてご覧ください。",
             "last_updated": "最終更新：2025年1月",
             "sections": [
                 ("規約の受諾", """<p>WordRoom（wordroomonline.com）にアクセスまたは使用することで、これらの利用規約に拘束されることに同意するものとします。これらの規約に同意しない場合は、当ウェブサイトを使用しないでください。</p>"""),
@@ -2619,6 +2663,7 @@ PAGES_T = {
         "contact": {
             "title": "お問い合わせ",
             "h1": "お問い合わせ",
+            "desc": "WordRoomチームにお問い合わせください。バグ報告、機能リクエスト、無料ブラウザベーステキストツールに関する一般的なフィードバックをお待ちしています。",
             "sections": [
                 ("ご連絡ください", """<p>皆様からのご連絡をお待ちしております。ご質問、フィードバック、機能リクエスト、バグの報告など、いつでもお気軽にご連絡ください。</p>"""),
                 ("メール", """<p>最良のご連絡方法はメールです：</p>
@@ -2638,6 +2683,7 @@ PAGES_T = {
         "privacy": {
             "title": "Politique de Confidentialité",
             "h1": "Politique de Confidentialité",
+            "desc": "Politique de confidentialité de WordRoom. Découvrez comment nous protégeons vos données — tout le traitement du texte s'exécute entièrement dans votre navigateur sans téléchargement vers un serveur.",
             "last_updated": "Dernière mise à jour : janvier 2025",
             "sections": [
                 ("Introduction", """<p>WordRoom ("nous", "notre" ou "nos") exploite le site web wordroomonline.com. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons les informations lorsque vous utilisez notre site web et nos outils.</p>
@@ -2671,12 +2717,13 @@ PAGES_T = {
         "about": {
             "title": "À Propos",
             "h1": "À Propos de WordRoom",
+            "desc": "Découvrez WordRoom — une collection de 17 outils de texte gratuits et respectueux de la vie privée qui s'exécutent entièrement dans votre navigateur. Pas de téléchargement, pas de compte.",
             "sections": [
                 ("Ce que Nous Avons Construit", """<p>WordRoom est une collection d'outils de texte gratuits et respectueux de la vie privée qui s'exécutent entièrement dans votre navigateur. Nous avons commencé avec une observation simple : la plupart des outils de texte en ligne envoient votre contenu sur un serveur, même quand ils n'ont pas besoin de le faire.</p>
 <p>Chaque outil sur WordRoom traite votre texte localement en utilisant JavaScript. Rien de ce que vous tapez ou collez n'est jamais envoyé n'importe où. Votre travail reste sur votre appareil.</p>"""),
                 ("Pourquoi la Confidentialité Est Importante", """<p>Quand vous collez une ébauche, une proposition commerciale ou des notes personnelles dans un outil en ligne, vous faites confiance à ce service avec du contenu sensible. Beaucoup d'outils populaires envoient votre texte à leurs serveurs pour traitement — parfois pour l'analyse, parfois pour l'entraînement d'IA, parfois pour des raisons clairement pas divulguées.</p>
 <p>Nous pensons que c'est mal. Le traitement de texte est quelque chose qu'un navigateur peut très bien faire par lui-même, donc il n'y a aucune raison d'envoyer vos mots à l'ordinateur de quelqu'un d'autre.</p>"""),
-                ("Nos Outils", """<p>WordRoom offre actuellement six outils :</p>
+                ("Nos Outils", """<p>WordRoom offre actuellement dix-sept outils :</p>
 <ul>
 <li><strong>Compteur de Mots</strong> — comptage en direct des mots, caractères et phrases avec gestion correcte des scripts Indic et CJC.</li>
 <li><strong>Convertisseur de Casses</strong> — treize conversions de casses incluant les règles de casses AP et Chicago.</li>
@@ -2684,6 +2731,17 @@ PAGES_T = {
 <li><strong>Supprimer les Sauts de Ligne</strong> — corriger le texte collé depuis des PDF et des e-mails.</li>
 <li><strong>Trier les Lignes</strong> — tri alphabétique, par longueur, inverse ou aléatoire.</li>
 <li><strong>Supprimer les Lignes en Double</strong> — trouver et supprimer les doublons avec contrôle total des règles de comparaison.</li>
+<li><strong>Encodeur / Décodeur Base64</strong> — encoder du texte en Base64 ou décoder du Base64 en texte.</li>
+<li><strong>Encodeur / Décodeur URL</strong> — encoder ou décoder du texte URL et des composants de chaîne de requête.</li>
+<li><strong>Testeur Regex</strong> — tester des expressions régulières JavaScript contre votre texte en temps réel.</li>
+<li><strong>Générateur de Mots de Passe</strong> — générer des mots de passe aléatoires forts en utilisant l'aléatoire cryptographique.</li>
+<li><strong>Formateur JSON</strong> — formater et imprimer joliment le JSON avec une indentation ajustable.</li>
+<li><strong>Validateur JSON</strong> — valider la syntaxe JSON instantanément avec des messages d'erreur clairs.</li>
+<li><strong>Minificateur JSON</strong> — compresser le JSON en supprimant les espaces inutiles.</li>
+<li><strong>Décodeur JWT</strong> — décoder l'en-tête et le chargement des JSON Web Tokens localement.</li>
+<li><strong>Générateur UUID</strong> — générer des identifiants UUID v4 aléatoires en utilisant l'aléatoire cryptographique.</li>
+<li><strong>Générateur de Hash</strong> — générer des hash SHA-1, SHA-256, SHA-384 et SHA-512 à partir de texte.</li>
+<li><strong>Générateur de Slug</strong> — convertir les titres en slugs propres et conviviaux pour les URL.</li>
 </ul>
 <p>Tous les outils sont gratuits, ne nécessitent pas d'inscription et fonctionnent sur tout navigateur moderne.</p>"""),
                 ("Qui Nous Sommes", """<p>WordRoom est construit et maintenu par une petite équipe de développeurs qui se soucient de la confidentialité en ligne et des outils utiles. Nous croyons que le web devrait fonctionner pour les gens, et non l'inverse.</p>
@@ -2693,6 +2751,7 @@ PAGES_T = {
         "terms": {
             "title": "Conditions Générales",
             "h1": "Conditions Générales",
+            "desc": "Conditions générales de WordRoom. Lisez l'utilisation acceptable, la propriété intellectuelle, les exclusions de garanties et les limitations de responsabilité pour nos outils de texte gratuits.",
             "last_updated": "Dernière mise à jour : janvier 2025",
             "sections": [
                 ("Acceptation des Conditions", """<p>En accédant ou en utilisant WordRoom (wordroomonline.com), vous acceptez d'être lié par ces Conditions Générales. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site web.</p>"""),
@@ -2721,6 +2780,7 @@ PAGES_T = {
         "contact": {
             "title": "Contactez-Nous",
             "h1": "Contactez-Nous",
+            "desc": "Contactez l'équipe WordRoom. Nous accueillons les rapports de bugs, les demandes de fonctionnalités et les commentaires généraux sur nos outils de texte gratuits basés sur navigateur.",
             "sections": [
                 ("Entrer en Contact", """<p>Nous serions ravis d'avoir de vos nouvelles. Que vous ayez une question, un commentaire, une demande de fonctionnalité ou que vous ayez trouvé un bug, nous sommes là pour aider.</p>"""),
                 ("E-mail", """<p>Le meilleur moyen de nous contacter est par e-mail :</p>
@@ -2740,6 +2800,7 @@ PAGES_T = {
         "privacy": {
             "title": "Datenschutzrichtlinie",
             "h1": "Datenschutzrichtlinie",
+            "desc": "Datenschutzrichtlinie von WordRoom. Erfahren Sie, wie wir Ihre Daten schützen — die gesamte Textverarbeitung läuft vollständig in Ihrem Browser ohne Upload an Server.",
             "last_updated": "Zuletzt aktualisiert: Januar 2025",
             "sections": [
                 ("Einleitung", """<p>WordRoom ("wir", "unser" oder "uns") betreibt die Website wordroomonline.com. Diese Datenschutzrichtlinie erklärt, wie wir Informationen sammeln, verwenden und schützen, wenn Sie unsere Website und Tools verwenden.</p>
@@ -2773,12 +2834,13 @@ PAGES_T = {
         "about": {
             "title": "Über Uns",
             "h1": "Über WordRoom",
+            "desc": "Erfahren Sie mehr über WordRoom — eine Sammlung von 17 kostenfreien, datenschutzorientierten Texttools, die vollständig in Ihrem Browser laufen. Kein Upload, kein Konto.",
             "sections": [
                 ("Was wir gebaut haben", """<p>WordRoom ist eine Sammlung kostenloser, datenschutzorientierter Texttools, die vollständig in Ihrem Browser laufen. Wir begannen mit einer einfachen Beobachtung: Die meisten Online-Texttools laden Ihre Inhalte auf einen Server hoch, obwohl sie das nicht müssen.</p>
 <p>Jedes Tool auf WordRoom verarbeitet Ihren Text lokal mit JavaScript. Nichts, was Sie tippen oder einfügen, wird jemals irgendwohin gesendet. Ihre Arbeit bleibt auf Ihrem Gerät.</p>"""),
                 ("Warum Datenschutz wichtig ist", """<p>Wenn Sie einen Entwurf, einen Geschäftsbericht oder persönliche Notizen in ein Online-Tool einfügen, vertrauen Sie diesem Dienst sensible Inhalte an. Viele beliebte Tools senden Ihren Text zur Verarbeitung an ihre Server — manchmal für Analysen, manchmal für KI-Training, manchmal aus Gründen, die nicht klar offengelegt werden.</p>
 <p>Wir denken, das ist falsch. Textverarbeitung ist etwas, das ein Browser perfekt allein tun kann, daher gibt es keinen Grund, Ihre Wörter an den Computer einer anderen Person zu senden.</p>"""),
-                ("Unsere Tools", """<p>WordRoom bietet derzeit sechs Tools:</p>
+                ("Unsere Tools", """<p>WordRoom bietet derzeit siebzehn Tools:</p>
 <ul>
 <li><strong>Wortanzähler</strong> — Live-Wort-, Zeichen- und Satzzählung mit korrekter Handhabung von Indischen und CJK-Skripten.</li>
 <li><strong>Fall-Konverter</strong> — dreizehn Fall-Konvertierungen einschließlich AP- und Chicago-Titelfallregeln.</li>
@@ -2786,6 +2848,17 @@ PAGES_T = {
 <li><strong>Zeilenumbrüche Entfernen</strong> — Text aus PDFs und E-Mails korrigieren.</li>
 <li><strong>Zeilen Sortieren</strong> — alphabetisch, nach Länge, umgekehrt oder gemischt sortieren.</li>
 <li><strong>Doppelte Zeilen Entfernen</strong> — Wiederholungen finden und entfernen mit voller Kontrolle über Vergleichsregeln.</li>
+<li><strong>Base64-Kodierer / Dekodierer</strong> — Text in Base64 kodieren oder Base64 zurück in Text dekodieren.</li>
+<li><strong>URL-Kodierer / Dekodierer</strong> — URL-Text und Query-String-Komponenten kodieren oder dekodieren.</li>
+<li><strong>Regex-Tester</strong> — JavaScript-Regularausdrücke in Echtzeit gegen Ihren Text testen.</li>
+<li><strong>Passwort-Generator</strong> — starke zufällige Passwörter mit kryptographischer Zufälligkeit generieren.</li>
+<li><strong>JSON-Formatter</strong> — JSON mit anpassbarer Einrückung formatieren und schön drucken.</li>
+<li><strong>JSON-Validator</strong> — JSON-Syntax sofort mit klaren Fehlernachrichten validieren.</li>
+<li><strong>JSON-Minifier</strong> — JSON durch Entfernen unnötiger Leerzeichen komprimieren.</li>
+<li><strong>JWT-Dekodierer</strong> — Header und Payload von JSON Web Tokens lokal dekodieren.</li>
+<li><strong>UUID-Generator</strong> — zufällige UUID-v4-Kennungen mit kryptographischer Zufälligkeit generieren.</li>
+<li><strong>Hash-Generator</strong> — SHA-1-, SHA-256-, SHA-384- und SHA-512-Hashes aus Text generieren.</li>
+<li><strong>Slug-Generator</strong> — Titel in saubere, URL-freundliche Slugs umwandeln.</li>
 </ul>
 <p>Alle Tools sind kostenlos, erfordern keine Anmeldung und funktionieren in jedem modernen Browser.</p>"""),
                 ("Wer wir sind", """<p>WordRoom wird von einem kleinen Entwicklerteam erstellt und gepflegt, das sich für Web-Datenschutz und nützliche Tools einsetzt. Wir glauben, dass das Web für Menschen funktionieren sollte, nicht umgekehrt.</p>
@@ -2795,6 +2868,7 @@ PAGES_T = {
         "terms": {
             "title": "Nutzungsbedingungen",
             "h1": "Nutzungsbedingungen",
+            "desc": "Nutzungsbedingungen von WordRoom. Lesen Sie über akzeptable Nutzung, geistiges Eigentum, Haftungsausschlüsse und Haftungsbeschränkungen für unsere kostenlosen Texttools.",
             "last_updated": "Zuletzt aktualisiert: Januar 2025",
             "sections": [
                 ("Akzeptanz der Bedingungen", """<p>Durch den Zugriff auf oder die Nutzung von WordRoom (wordroomonline.com) stimmen Sie zu, an diese Nutzungsbedingungen gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie bitte nicht unsere Website.</p>"""),
@@ -2823,6 +2897,7 @@ PAGES_T = {
         "contact": {
             "title": "Kontaktieren Sie Uns",
             "h1": "Kontaktieren Sie Uns",
+            "desc": "Kontaktieren Sie das WordRoom-Team. Wir freuen uns über Fehlerberichte, Funktionsanfragen und allgemeines Feedback zu unseren kostenlosen browserbasierten Texttools.",
             "sections": [
                 ("Kontakt aufnehmen", """<p>Wir freuen uns, von Ihnen zu hören. Ob Sie eine Frage, Feedback, eine Funktionsanfrage haben oder einen Bug gefunden haben — wir sind hier, um zu helfen.</p>"""),
                 ("E-Mail", """<p>Der beste Weg, uns zu erreichen, ist per E-Mail:</p>
@@ -2842,6 +2917,7 @@ PAGES_T = {
         "privacy": {
             "title": "Política de Privacidade",
             "h1": "Política de Privacidade",
+            "desc": "Política de privacidade do WordRoom. Saiba como protegemos seus dados — todo o processamento de texto é executado inteiramente no seu navegador sem upload para o servidor.",
             "last_updated": "Última atualização: janeiro de 2025",
             "sections": [
                 ("Introdução", """<p>WordRoom ("nós", "nosso" ou "nossos") opera o site wordroomonline.com. Esta Política de Privacidade explica como coletamos, usamos e protegemos informações quando você usa nosso site e ferramentas.</p>
@@ -2875,12 +2951,13 @@ PAGES_T = {
         "about": {
             "title": "Sobre Nós",
             "h1": "Sobre o WordRoom",
+            "desc": "Conheça o WordRoom — uma coleção de 17 ferramentas de texto gratuitas e com foco em privacidade que funcionam inteiramente no seu navegador. Sem upload, sem conta.",
             "sections": [
                 ("O que Construímos", """<p>WordRoom é uma coleção de ferramentas de texto gratuitas e com foco em privacidade que funcionam inteiramente no seu navegador. Começamos com uma observação simples: a maioria das ferramentas de texto online envia seu conteúdo para um servidor, mesmo que não precise.</p>
 <p>Cada ferramenta no WordRoom processa seu texto localmente usando JavaScript. Nada que você digita ou cola é enviado para lugar algum. Seu trabalho permanece no seu dispositivo.</p>"""),
                 ("Por que a Privacidade Importa", """<p>Quando você cola um rascunho, uma proposta comercial ou notas pessoais em uma ferramenta online, está confiando conteúdo sensível a esse serviço. Muitas ferramentas populares enviam seu texto para seus servidores para processamento — às vezes para análise, às vezes para treinamento de IA, às vezes por razões que não são claramente divulgadas.</p>
 <p>Acreditamos que isso está errado. O processamento de texto é algo que um navegador pode perfeitamente fazer por conta própria, então não há razão para enviar suas palavras para o computador de outra pessoa.</p>"""),
-                ("Nossas Ferramentas", """<p>WordRoom oferece atualmente seis ferramentas:</p>
+                ("Nossas Ferramentas", """<p>WordRoom oferece atualmente dezessete ferramentas:</p>
 <ul>
 <li><strong>Contador de Palavras</strong> — contagem ao vivo de palavras, caracteres e frases com tratamento correto de scripts Indic e CJC.</li>
 <li><strong>Conversor de Caixa</strong> — treze conversões de caixa incluindo regras de caixa alta AP e Chicago.</li>
@@ -2888,6 +2965,17 @@ PAGES_T = {
 <li><strong>Remover Quebras de Linha</strong> — corrigir texto colado de PDFs e e-mails.</li>
 <li><strong>Ordenar Linhas</strong> — ordenação alfabética, por comprimento, reversa ou aleatória.</li>
 <li><strong>Remover Linhas Duplicadas</strong> — encontrar e remover repetições com controle total sobre regras de comparação.</li>
+<li><strong>Codificador / Decodificador Base64</strong> — codificar texto em Base64 ou decodificar Base64 de volta ao texto.</li>
+<li><strong>Codificador / Decodificador URL</strong> — codificar ou decodificar texto URL e componentes de query string.</li>
+<li><strong>Testador Regex</strong> — testar expressões regulares JavaScript contra seu texto em tempo real.</li>
+<li><strong>Gerador de Senhas</strong> — gerar senhas aleatórias fortes usando aleatoriedade criptográfica.</li>
+<li><strong>Formatador JSON</strong> — formatar e exibir JSON com recuo ajustável.</li>
+<li><strong>Validador JSON</strong> — validar sintaxe JSON instantaneamente com mensagens de erro claras.</li>
+<li><strong>Minificador JSON</strong> — comprimir JSON removendo espaços desnecessários.</li>
+<li><strong>Decodificador JWT</strong> — decodificar o cabeçalho e a carga útil de JSON Web Tokens localmente.</li>
+<li><strong>Gerador UUID</strong> — gerar identificadores UUID v4 aleatórios usando aleatoriedade criptográfica.</li>
+<li><strong>Gerador de Hash</strong> — gerar hashes SHA-1, SHA-256, SHA-384 e SHA-512 a partir de texto.</li>
+<li><strong>Gerador de Slug</strong> — converter títulos em slugs limpos e amigáveis para URLs.</li>
 </ul>
 <p>Todas as ferramentas são gratuitas, não exigem cadastro e funcionam em qualquer navegador moderno.</p>"""),
                 ("Quem Somos", """<p>WordRoom é construído e mantido por uma pequena equipe de desenvolvedores que se importam com privacidade na web e ferramentas úteis. Acreditamos que a web deve funcionar para as pessoas, e não ao contrário.</p>
@@ -2897,6 +2985,7 @@ PAGES_T = {
         "terms": {
             "title": "Termos e Condições",
             "h1": "Termos e Condições",
+            "desc": "Termos e condições do WordRoom. Leia sobre uso aceitável, propriedade intelectual, isenções de garantia e limitações de responsabilidade para nossas ferramentas de texto gratuitas.",
             "last_updated": "Última atualização: janeiro de 2025",
             "sections": [
                 ("Aceitação dos Termos", """<p>Ao acessar ou usar o WordRoom (wordroomonline.com), você concorda em estar vinculado a estes Termos e Condições. Se você não concorda com estes termos, por favor não use nosso site.</p>"""),
@@ -2925,6 +3014,7 @@ PAGES_T = {
         "contact": {
             "title": "Entre em Contato",
             "h1": "Entre em Contato",
+            "desc": "Entre em contato com a equipe do WordRoom. Aceitamos relatórios de bugs, solicitações de funcionalidades e feedback geral sobre nossas ferramentas de texto gratuitas baseadas em navegador.",
             "sections": [
                 ("Fale Conosco", """<p>Adoraríamos ouvir de você. Seja uma pergunta, feedback, uma solicitação de funcionalidade ou um bug, estamos aqui para ajudar.</p>"""),
                 ("E-mail", """<p>A melhor forma de nos contatar é por e-mail:</p>
@@ -2944,6 +3034,7 @@ PAGES_T = {
         "privacy": {
             "title": "개인정보 처리방침",
             "h1": "개인정보 처리방침",
+            "desc": "WordRoom의 개인정보 보호 정책. 데이터를 보호하는 방법을 알아보세요 — 모든 텍스트 처리는 서버 업로드 없이 브라우저에서 완전히 실행됩니다.",
             "last_updated": "최종 업데이트: 2025년 1월",
             "sections": [
                 ("소개", """<p>WordRoom("당사", "당사의" 또는 "당사의 것")은 wordroomonline.com 웹사이트를 운영합니다. 이 개인정보 처리방침은 귀하가 당사 웹사이트 및 도구를 사용할 때 정보를 수집, 사용 및 보호하는 방법을 설명합니다.</p>
@@ -2977,12 +3068,13 @@ PAGES_T = {
         "about": {
             "title": "소개",
             "h1": "WordRoom 소개",
+            "desc": "WordRoom 소개 — 브라우저에서 완전히 실행되는 17개의 무료 개인정보 보호 우선 텍스트 도구 모음. 업로드 불필요, 계정 불필요.",
             "sections": [
                 ("우리가 구축한 것", """<p>WordRoom는 브라우저에서 완전히 실행되는 무료, 개인정보 보호 우선 텍스트 도구 모음입니다. 대부분의 온라인 텍스트 도구는 필요 없는데도 서버에 콘텐츠를 업로드한다는 관찰에서 시작했습니다.</p>
 <p>WordRoom의 모든 도구는 JavaScript를 사용하여 로컬에서 텍스트를 처리합니다. 입력하거나 붙여넣은 내용은 어디로도 전송되지 않습니다. 작업은 기기에 남아 있습니다.</p>"""),
                 ("개인정보 보호가 중요한 이유", """<p>온라인 도구에 초안, 사업 제안서 또는 개인 메모를 붙여넣을 때, 해당 서비스에 민감한 콘텐츠를 신뢰하고 있는 것입니다. 많은 인기 도구는 처리를 위해 텍스트를 서버로 전송합니다 — 때로는 분석을 위해, 때로는 AI 훈련을 위해, 때로는 명확하게 공개되지 않는 이유를 위해.</p>
 <p>우리는 그것이 잘못되었다고 생각합니다. 텍스트 처리는 브라우저가 혼자서 완벽하게 할 수 있는 것이므로, 당신의 단어를 다른 사람의 컴퓨터로 보낼 이유가 없습니다.</p>"""),
-                ("우리의 도구", """<p>WordRoom는 현재 여섯 가지 도구를 제공합니다:</p>
+                ("우리의 도구", """<p>WordRoom는 현재 17개의 도구를 제공합니다:</p>
 <ul>
 <li><strong>단어 카운터</strong> — 인도 문자 및 CJK를 올바르게 처리하는 실시간 단어, 문자 및 문장 수 세기.</li>
 <li><strong>대소문자 변환기</strong> — AP 및 시카고 제목 대소문자 규칙을 포함한 13가지 대소문자 변환.</li>
@@ -2990,6 +3082,17 @@ PAGES_T = {
 <li><strong>줄 바꿈 제거</strong> — PDF 및 이메일에서 붙여넣은 텍스트 수정.</li>
 <li><strong>줄 정렬</strong> — 알파벳순, 길이순, 역순 또는 무작위 정렬.</li>
 <li><strong>중복 줄 제거</strong> — 비교 규칙에 대한 완전한 제어로 반복을 찾아 제거.</li>
+<li><strong>Base64 인코더/디코더</strong> — 텍스트를 Base64로 인코딩하거나 Base64를 텍스트로 디코딩.</li>
+<li><strong>URL 인코더/디코더</strong> — URL 텍스트와 쿼리 문자열 구성 요소를 인코딩하거나 디코딩.</li>
+<li><strong>Regex 테스터</strong> — JavaScript 정규 표현식을 실시간으로 테스트.</li>
+<li><strong>비밀번호 생성기</strong> — 암호학적 무작위성을 사용하여 강력한 무작위 비밀번호 생성.</li>
+<li><strong>JSON 포맷터</strong> — 조정 가능한 들여쓰기로 JSON을 정리하고 예쁘게 출력.</li>
+<li><strong>JSON 유효성 검사기</strong> — 명확한 오류 메시지로 JSON 구문을 즉시 확인.</li>
+<li><strong>JSON 미니파이어</strong> — 불필요한 공백을 제거하여 JSON을 압축.</li>
+<li><strong>JWT 디코더</strong> — JSON Web Tokens의 헤더와 페이로드를 로컬에서 디코딩.</li>
+<li><strong>UUID 생성기</strong> — 암호학적 무작위성을 사용하여 UUID v4 식별자 생성.</li>
+<li><strong>해시 생성기</strong> — 텍스트에서 SHA-1, SHA-256, SHA-384, SHA-512 해시 생성.</li>
+<li><strong>슬러그 생성기</strong> — 제목을 깔끔하고 URL 친화적인 슬러그로 변환.</li>
 </ul>
 <p>모든 도구는 무료이며, 가입이 필요하지 않고, 모든 최신 브라우저에서 작동합니다.</p>"""),
                 ("우리는 누구인가", """<p>WordRoom는 웹 개인정보 보호와 유용한 도구에 관심을 가진 소규모 개발 팀에 의해 구축되고 유지 관리됩니다. 우리는 웹이 사람을 위해 작동해야지, 그 반대가 아니라고 믿습니다.</p>
@@ -2999,6 +3102,7 @@ PAGES_T = {
         "terms": {
             "title": "이용약관",
             "h1": "이용약관",
+            "desc": "WordRoom 이용약관. 허용 가능한 사용, 지적 재산권, 면책 조항 및 책임 제한에 대해 읽어보세요.",
             "last_updated": "최종 업데이트: 2025년 1월",
             "sections": [
                 ("약관 동의", """<p>WordRoom(wordroomonline.com)에 접속하거나 사용함으로써 귀하는 본 이용약관에 구속됨에 동의합니다. 본 약관에 동의하지 않는 경우 당사 웹사이트를 사용하지 마세요.</p>"""),
@@ -3027,6 +3131,7 @@ PAGES_T = {
         "contact": {
             "title": "문의하기",
             "h1": "문의하기",
+            "desc": "WordRoom 팀에 문의하세요. 버그 보고, 기능 요청 및 무료 브라우저 기반 텍스트 도구에 대한 일반적인 피드백을 환영합니다.",
             "sections": [
                 ("연락주세요", """<p>귀하의 연락을 기다리고 있습니다. 질문, 피드백, 기능 요청 또는 버그를 발견하셨다면, 도움을 드리겠습니다.</p>"""),
                 ("이메일", """<p>저희에게 연락하는 가장 좋은 방법은 이메일입니다:</p>
@@ -3046,6 +3151,7 @@ PAGES_T = {
         "privacy": {
             "title": "Informativa sulla Privacy",
             "h1": "Informativa sulla Privacy",
+            "desc": "Informativa sulla privacy di WordRoom. Scopri come proteggiamo i tuoi dati — tutta l'elaborazione del testo viene eseguita completamente nel tuo browser senza caricamento sul server.",
             "last_updated": "Ultimo aggiornamento: gennaio 2025",
             "sections": [
                 ("Introduzione", """<p>WordRoom ("noi", "nostro" o "nostri") gestisce il sito web wordroomonline.com. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo le informazioni quando utilizzi il nostro sito web e i nostri strumenti.</p>
@@ -3079,12 +3185,13 @@ PAGES_T = {
         "about": {
             "title": "Chi Siamo",
             "h1": "Su WordRoom",
+            "desc": "Scopri WordRoom — una collezione di 17 strumenti di testo gratuiti e rispettosi della privacy che funzionano completamente nel tuo browser. Nessun caricamento, nessun account.",
             "sections": [
                 ("Cosa Abbiamo Costruito", """<p>WordRoom è una collezione di strumenti di testo gratuiti e rispettosi della privacy che funzionano completamente nel tuo browser. Siamo partiti con un'osservazione semplice: la maggior parte degli strumenti di testo online carica i tuoi contenuti su un server, anche quando non è necessario.</p>
 <p>Ogni strumento su WordRoom elabora il tuo testo localmente utilizzando JavaScript. Nulla di ciò che digiti o incolli viene mai inviato da nessuna parte. Il tuo lavoro rimane sul tuo dispositivo.</p>"""),
                 ("Perché la Privacy È Importante", """<p>Quando incolli una bozza, una proposta commerciale o appunti personali in uno strumento online, stai affidando contenuti sensibili a quel servizio. Molti strumenti popolari inviano il tuo testo ai loro server per l'elaborazione — a volte per analisi, a volte per l'addestramento dell'IA, a volte per motivi non chiaramente divulgati.</p>
 <p>Crediamo che sia sbagliato. L'elaborazione del testo è qualcosa che un browser può fare perfettamente da solo, quindi non c'è motivo di inviare le tue parole al computer di qualcun altro.</p>"""),
-                ("I Nostri Strumenti", """<p>WordRoom attualmente offre sei strumenti:</p>
+                ("I Nostri Strumenti", """<p>WordRoom attualmente offre diciassette strumenti:</p>
 <ul>
 <li><strong>Contatore di Parole</strong> — conteggio in tempo reale di parole, caratteri e frasi con gestione corretta di script Indic e CJC.</li>
 <li><strong>Convertitore di Casse</strong> — tredici conversioni di casse incluse le regole di cassa alta AP e Chicago.</li>
@@ -3092,6 +3199,17 @@ PAGES_T = {
 <li><strong>Rimuovi Interruzioni di Riga</strong> — correggi il testo incollato da PDF ed email.</li>
 <li><strong>Ordina Righe</strong> — ordinamento alfabetico, per lunghezza, inverso o casuale.</li>
 <li><strong>Rimuovi Righe Dupliche</strong> — trova e rimuovi le ripetizioni con controllo completo sulle regole di confronto.</li>
+<li><strong>Codificatore / Decodificatore Base64</strong> — codifica testo in Base64 o decodifica Base64 in testo leggibile.</li>
+<li><strong>Codificatore / Decodificatore URL</strong> — codifica o decodifica testo URL e componenti di stringa di query.</li>
+<li><strong>Test Regex</strong> — testa espressioni regolari JavaScript contro il tuo testo in tempo reale.</li>
+<li><strong>Generatore di Password</strong> — genera password casuali forti utilizzando la casualità crittografica.</li>
+<li><strong>Formattatore JSON</strong> — formatta e stampa JSON con rientro regolabile.</li>
+<li><strong>Validatore JSON</strong> — valida la sintassi JSON istantaneamente con messaggi di errore chiari.</li>
+<li><strong>Minificatore JSON</strong> — comprimi JSON rimuovendo spazi inutilizzati.</li>
+<li><strong>Decodificatore JWT</strong> — decodifica header e payload dei JSON Web Token localmente.</li>
+<li><strong>Generatore UUID</strong> — genera identificatori UUID v4 casuali utilizzando la casualità crittografica.</li>
+<li><strong>Generatore Hash</strong> — genera hash SHA-1, SHA-256, SHA-384 e SHA-512 da testo.</li>
+<li><strong>Generatore Slug</strong> — converti titoli in slug puliti e amichevoli per gli URL.</li>
 </ul>
 <p>Tutti gli strumenti sono gratuiti, non richiedono iscrizione e funzionano su qualsiasi browser moderno.</p>"""),
                 ("Chi Siamo", """<p>WordRoom è costruito e mantenuto da un piccolo team di sviluppatori che si preoccupano della privacy web e degli strumenti utili. Crediamo che il web dovrebbe funzionare per le persone, e non il contrario.</p>
@@ -3101,6 +3219,7 @@ PAGES_T = {
         "terms": {
             "title": "Termini e Condizioni",
             "h1": "Termini e Condizioni",
+            "desc": "Termini e condizioni di WordRoom. Leggi sull'uso accettabile, la proprietà intellettuale, le esclusioni di garanzia e le limitazioni di responsabilità per i nostri strumenti di testo gratuiti.",
             "last_updated": "Ultimo aggiornamento: gennaio 2025",
             "sections": [
                 ("Accettazione dei Termini", """<p>Accedendo o utilizzando WordRoom (wordroomonline.com), accetti di essere vincolato da questi Termini e Condizioni. Se non accetti questi termini, per favore non utilizzare il nostro sito web.</p>"""),
@@ -3129,6 +3248,7 @@ PAGES_T = {
         "contact": {
             "title": "Contattaci",
             "h1": "Contattaci",
+            "desc": "Contatta il team di WordRoom. Accogliamo segnalazioni di bug, richieste di funzionalità e feedback generale sui nostri strumenti di testo gratuiti basati su browser.",
             "sections": [
                 ("Mettiti in Contatto", """<p>Ci farebbe piacere sentirti. Che tu abbia una domanda, un feedback, una richiesta di funzionalità o abbia trovato un bug, siamo qui per aiutare.</p>"""),
                 ("Email", """<p>Il miglior modo per contattarci è via email:</p>
@@ -3148,6 +3268,7 @@ PAGES_T = {
         "privacy": {
             "title": "Политика конфиденциальности",
             "h1": "Политика конфиденциальности",
+            "desc": "Политика конфиденциальности WordRoom. Узнайте, как мы защищаем ваши данные — вся обработка текста выполняется полностью в вашем браузере без загрузки на сервер.",
             "last_updated": "Последнее обновление: январь 2025",
             "sections": [
                 ("Введение", """<p>WordRoom («мы», «наш» или «наши») управляет веб-сайтом wordroomonline.com. Эта Политика конфиденциальности объясняет, как мы собираем, используем и защищаем информацию при использовании нашего веб-сайта и инструментов.</p>
@@ -3181,19 +3302,31 @@ PAGES_T = {
         "about": {
             "title": "О нас",
             "h1": "О WordRoom",
+            "desc": "Узнайте о WordRoom — коллекции 17 бесплатных текстовых инструментов с приоритетом конфиденциальности, которые работают полностью в вашем браузере. Без загрузок, без аккаунта.",
             "sections": [
                 ("Что мы создали", """<p>WordRoom — это коллекция бесплатных текстовых инструментов с приоритетом конфиденциальности, которые работают полностью в вашем браузере. Мы начали с простого наблюдения: большинство онлайн-текстовых инструментов загружают ваш контент на сервер, хотя в этом нет необходимости.</p>
 <p>Каждый инструмент WordRoom обрабатывает ваш текст локально с помощью JavaScript. Ничего из того, что вы печатаете или вставляете, никогда не отправляется куда-либо. ваша работа остаётся на вашем устройстве.</p>"""),
                 ("Почему важна конфиденциальность", """<p>Когда вы вставляете черновик, коммерческое предложение или личные заметки в онлайн-инструмент, вы доверяете этому сервису конфиденциальный контент. Многие популярные инструменты отправляют ваш текст на свои серверы для обработки — иногда для аналитики, иногда для обучения ИИ, иногда по причинам, которые не раскрываются явно.</p>
 <p>Мы считаем, что это неправильно. Обработка текста — это то, что браузер может прекрасно делать сам, поэтому нет причин отправлять ваши слова на чужой компьютер.</p>"""),
-                ("Наши инструменты", """<p>WordRoom предлагает шесть инструментов:</p>
+                ("Наши инструменты", """<p>WordRoom предлагает семнадцать инструментов:</p>
 <ul>
 <li><strong>Счётчик слов</strong> — подсчёт слов, символов и предложений в реальном времени с корректной обработкой индийских и CJK-письменностей.</li>
 <li><strong>Преобразователь регистра</strong> — тринадцать преобразований регистра, включая правила заглавного регистра AP и Chicago.</li>
 <li><strong>Проверка читаемости</strong> — шесть формул читаемости с обратной связью на уровне предложений.</li>
-<li><strong>Удаление переносов строк</strong> — исправление текста, вставленного из PDF и электронной почты.</li>
-<li><strong>Сортировка строк</strong> — по алфавиту, по длине, в обратном порядке или в случайном порядке.</li>
+<li><strong>Удаление переносов строк</strong> — исправление текста, скопированного из PDF и писем.</li>
+<li><strong>Сортировка строк</strong> — по алфавиту, по длине, в обратном порядке или случайно.</li>
 <li><strong>Удаление дубликатов строк</strong> — поиск и удаление повторов с полным контролем над правилами сравнения.</li>
+<li><strong>Кодировщик / Декодировщик Base64</strong> — кодирование текста в Base64 или декодирование Base64 обратно в текст.</li>
+<li><strong>Кодировщик / Декодировщик URL</strong> — кодирование или декодирование URL-текста и компонентов строки запроса.</li>
+<li><strong>Тестер Regex</strong> — тестирование регулярных выражений JavaScript против вашего текста в реальном времени.</li>
+<li><strong>Генератор паролей</strong> — генерация надёжных случайных паролей с использованием криптографической случайности.</li>
+<li><strong>Форматтер JSON</strong> — форматирование и красивый вывод JSON с регулируемым отступом.</li>
+<li><strong>Валидатор JSON</strong> — мгновенная проверка синтаксиса JSON с понятными сообщениями об ошибках.</li>
+<li><strong>Минификатор JSON</strong> — сжатие JSON путём удаления ненужных пробелов.</li>
+<li><strong>Декодировщик JWT</strong> — декодирование заголовка и полезной нагрузки JSON Web Tokens локально.</li>
+<li><strong>Генератор UUID</strong> — генерация случайных идентификаторов UUID v4 с использованием криптографической случайности.</li>
+<li><strong>Генератор хэшей</strong> — генерация хэшей SHA-1, SHA-256, SHA-384 и SHA-512 из текста.</li>
+<li><strong>Генератор слагов</strong> — преобразование заголовков в чистые, удобные для URL слаги.</li>
 </ul>
 <p>Все инструменты бесплатны, не требуют регистрации и работают в любом современном браузере.</p>"""),
                 ("Кто мы", """<p>WordRoom создан и поддерживается небольшой командой разработчиков, которым небезразличны конфиденциальность в интернете и полезные инструменты. Мы верим, что интернет должен работать на людей, а не наоборот.</p>
@@ -3203,6 +3336,7 @@ PAGES_T = {
         "terms": {
             "title": "Условия использования",
             "h1": "Условия использования",
+            "desc": "Условия использования WordRoom. Прочитайте о допустимом использовании, интеллектуальной собственности, отказах от гарантий и ограничениях ответственности для наших бесплатных текстовых инструментов.",
             "last_updated": "Последнее обновление: январь 2025",
             "sections": [
                 ("Принятие условий", """<p>Получая доступ к WordRoom (wordroomonline.com) или используя его, вы соглашаетесь соблюдать эти Условия использования. Если вы не согласны с этими условиями, пожалуйста, не используйте наш веб-сайт.</p>"""),
@@ -3231,6 +3365,7 @@ PAGES_T = {
         "contact": {
             "title": "Свяжитесь с нами",
             "h1": "Свяжитесь с нами",
+            "desc": "Свяжитесь с командой WordRoom. Мы приветствуем отчёты об ошибках, запросы функций и общую обратную связь о наших бесплатных текстовых инструментах, работающих в браузере.",
             "sections": [
                 ("Свяжитесь с нами", """<p>Мы будем рады услышать от вас. У вас есть вопрос, отзыв, запрос функции или вы нашли ошибку — мы готовы помочь.</p>"""),
                 ("Электронная почта", """<p>Лучший способ связаться с нами — по электронной почте:</p>
