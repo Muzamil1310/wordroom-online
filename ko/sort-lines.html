@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines">
+
 <meta property="og:title" content="줄을 알파벳순으로 정렬 — 온라인 줄 정렬기">
 <meta property="og:description" content="줄 목록을 알파벳순, 길이순, 역순 또는 무작위로 정렬합니다. 자연수 정렬과 비영어 목록의 로케일 인식 알파벳 정렬을 지원합니다.">
 <meta property="og:url" content="https://wordroomonline.com/ko/sort-lines">
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="줄을 알파벳순으로 정렬 — 온라인 줄 정렬기">
 <meta name="twitter:description" content="줄 목록을 알파벳순, 길이순, 역순 또는 무작위로 정렬합니다. 자연수 정렬과 비영어 목록의 로케일 인식 알파벳 정렬을 지원합니다.">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
@@ -31,7 +32,7 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
 <link rel="manifest" href="../assets/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
@@ -55,7 +56,7 @@
   <button class="iconbtn" id="railToggle" aria-label="메뉴 열기"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <a class="hdr__brand" href="/ko/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
-  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>개인정보 보호</span></span>
+  <span class="privacy" title="모든 계산은 브라우저에서 실행됩니다. 입력한 텍스트는 업로드되지 않습니다."><span class="privacy__dot"></span><span>개인정보 보호</span></span>
   <div class="lang-switcher" id="langSwitcher">
   <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
     <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/kr.png" alt="" width="16" height="12">
@@ -155,7 +156,7 @@
 <li><strong>현재 순서 반전</strong> — 정렬하지 않고 목록을 뒤집기. 시간순 로그에 일반적으로 필요한 것.</li>
 <li><strong>셔플</strong> — Fisher–Yates 셔플로, 모든 순서가 동일한 확률. 무작위 비교기를 사용하는 단순 셔플은 편향됩니다.</li>
 </ul>
-<p>빈 줄은 기본적으로 삭제됩니다. 한쪽 끝에 공백 블록이 있는 정렬된 목록은 거의 아무도 원하지 않는 것이기 때문입니다. 빈 줄에 의미가 있다면 끄세요.</p></section><section class="refs-faq"><h2>자주 묻는 질문</h2><details class="faq"><summary>왜 제 목록이 대문자가 먼저 정렬되었나요?</summary><div><p>이것은 원시 문자 코드를 비교하는 도구에서 발생합니다. 모든 대문자가 모든 소문자보다 앞에 옵니다. 이 도구는 로케일 인식 정렬을 사용하고 기본적으로 대소문자를 무시하므로, 사람이 기대하는 순서를 얻게 됩니다. 엄격한 버전이 필요한 경우 &quot;대소문자 구분&quot;을 켜세요.</p></div></details><details class="faq"><summary>왜 항목 10이 항목 2보다 먼저 오나요?</summary><div><p>텍스트로 비교하면 &quot;1&quot;은 &quot;2&quot;보다 작으므로, &quot;항목 10&quot;이 먼저 정렬됩니다. &quot;자연수 순서&quot;를 켜면 숫자 부분이 숫자로 비교되어 항목 1, 항목 2, 항목 10이 됩니다. 기본적으로 켜져 있습니다.</p></div></details><details class="faq"><summary>셔플이 정말로 무작위인가요?</summary><div><p>모든 가능한 순서가 동일한 확률로 발생하는 Fisher-Yates 셔플을 사용합니다. 무작위 비교 함수를 정렬 함수에 전달하여 셔플하는 것은 일반적인 방법이며 편향된 결과를 측정 가능하게 만듭니다.</p></div></details></section><section class="refs-related"><h2>관련 도구</h2><div class="rel"><a class="relcard" href="word-counter"><strong>단어 수 세기</strong><span>실시간 카운트, 학술 제외 기능 및 인도어/CJK 스크립트의 올바른 세그멘테이션 지원.</span></a><a class="relcard" href="case-converter"><strong>대소문자 변환기</strong><span>13가지 변환. 모든 것을 대문자로 만들지 않고 실제 스타일 가이드 규칙을 따르는 제목 대문자.</span></a><a class="relcard" href="readability-checker"><strong>가독성 검사기</strong><span>6개의 공식과 점수를 끌어내리고 있는 구체적인 문장 — 숫자만이 아닙니다.</span></a></div></section></div>
+<p>빈 줄은 기본적으로 삭제됩니다. 한쪽 끝에 공백 블록이 있는 정렬된 목록은 거의 아무도 원하지 않는 것이기 때문입니다. 빈 줄에 의미가 있다면 끄세요.</p></section><section class="refs-faq"><h2>자주 묻는 질문</h2><details class="faq"><summary>왜 제 목록이 대문자가 먼저 정렬되었나요?</summary><div><p>이것은 원시 문자 코드를 비교하는 도구에서 발생합니다. 모든 대문자가 모든 소문자보다 앞에 옵니다. 이 도구는 로케일 인식 정렬을 사용하고 기본적으로 대소문자를 무시하므로, 사람이 기대하는 순서를 얻게 됩니다. 엄격한 버전이 필요한 경우 &quot;대소문자 구분&quot;을 켜세요.</p></div></details><details class="faq"><summary>왜 항목 10이 항목 2보다 먼저 오나요?</summary><div><p>텍스트로 비교하면 &quot;1&quot;은 &quot;2&quot;보다 작으므로, &quot;항목 10&quot;이 먼저 정렬됩니다. &quot;자연수 순서&quot;를 켜면 숫자 부분이 숫자로 비교되어 항목 1, 항목 2, 항목 10이 됩니다. 기본적으로 켜져 있습니다.</p></div></details><details class="faq"><summary>셔플이 정말로 무작위인가요?</summary><div><p>모든 가능한 순서가 동일한 확률로 발생하는 Fisher-Yates 셔플을 사용합니다. 무작위 비교 함수를 정렬 함수에 전달하여 셔플하는 것은 일반적인 방법이며 편향된 결과를 측정 가능하게 만듭니다.</p></div></details></section><section class="refs-related"><h2>관련 도구</h2><div class="rel"><a class="relcard" href="remove-line-breaks"><strong>줄 바꿈 제거</strong><span>PDF 열이나 이메일 클라이언트로 인해 깨진 줄을 실제 단락 구분을 유지하면서 연결합니다.</span></a><a class="relcard" href="remove-duplicate-lines"><strong>중복 줄 제거</strong><span>삭제 전에 반복을 확인. 대소문자와 공백이 차이로 카운트되는지를 제어 가능.</span></a><a class="relcard" href="word-counter"><strong>단어 수 세기</strong><span>실시간 카운트, 학술 제외 기능 및 인도어/CJK 스크립트의 올바른 세그멘테이션 지원.</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
@@ -175,7 +176,7 @@
     </div>
     <div class="pal__list" id="palList"></div>
     <div class="pal__ft">
-      <span><kbd>↑</kbd><kbd>↓</kbd> 도구</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> 도구</span><span><kbd>↵</kbd> 실행</span><span><kbd>esc</kbd> 닫기</span>
     </div>
   </div>
 </div>

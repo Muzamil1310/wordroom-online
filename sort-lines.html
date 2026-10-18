@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines">
+
 <meta property="og:title" content="Sort Lines Alphabetically — Online Line Sorter">
 <meta property="og:description" content="Sort any list of lines alphabetically, by length, in reverse or shuffled. Supports natural number ordering and locale-aware alphabetising for non-English lists.">
 <meta property="og:url" content="https://wordroomonline.com/sort-lines">
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sort Lines Alphabetically — Online Line Sorter">
 <meta name="twitter:description" content="Sort any list of lines alphabetically, by length, in reverse or shuffled. Supports natural number ordering and locale-aware alphabetising for non-English lists.">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
@@ -31,7 +32,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <link rel="shortcut icon" href="assets/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
 <link rel="manifest" href="assets/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
@@ -155,7 +156,7 @@ It sorts as you go."></textarea>
 <li><strong>Reverse current order</strong> — flips the list without sorting it, which is what you usually want for a chronological log.</li>
 <li><strong>Shuffle</strong> — a Fisher–Yates shuffle, so every ordering is equally likely. Naive shuffles using a random comparator are biased.</li>
 </ul>
-<p>Empty lines are dropped by default, since a sorted list with a block of blanks at one end is rarely what anyone wants. Switch it off if the blank lines carry meaning.</p></section><section class="refs-faq"><h2>Common questions</h2><details class="faq"><summary>Why did my list sort with capitals first?</summary><div><p>That happens with tools that compare raw character codes, where every uppercase letter precedes every lowercase one. This tool uses locale-aware collation and ignores case by default, so you get the ordering a person would expect. Switch on Case sensitive if you need the strict version.</p></div></details><details class="faq"><summary>Why does item 10 come before item 2?</summary><div><p>Compared as text, &quot;1&quot; is less than &quot;2&quot;, so &quot;item 10&quot; sorts first. Turn on Natural number order to compare the numeric runs as numbers, which gives item 1, item 2, item 10. It is on by default.</p></div></details><details class="faq"><summary>Is the shuffle actually random?</summary><div><p>It uses a Fisher-Yates shuffle, where every possible ordering is equally likely. Shuffling by passing a random comparator to a sort function is a common shortcut and produces measurably biased results.</p></div></details></section><section class="refs-related"><h2>Related tools</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Word counter</strong><span>Live counts as you type, with academic exclusions and correct segmentation for Indic and CJK scripts.</span></a><a class="relcard" href="case-converter"><strong>Case converter</strong><span>Thirteen conversions, with title case that follows actual style-guide rules rather than capitalising everything.</span></a><a class="relcard" href="readability-checker"><strong>Readability checker</strong><span>Six formulas, plus the specific sentences holding your score back — not just a number.</span></a></div></section></div>
+<p>Empty lines are dropped by default, since a sorted list with a block of blanks at one end is rarely what anyone wants. Switch it off if the blank lines carry meaning.</p></section><section class="refs-faq"><h2>Common questions</h2><details class="faq"><summary>Why did my list sort with capitals first?</summary><div><p>That happens with tools that compare raw character codes, where every uppercase letter precedes every lowercase one. This tool uses locale-aware collation and ignores case by default, so you get the ordering a person would expect. Switch on Case sensitive if you need the strict version.</p></div></details><details class="faq"><summary>Why does item 10 come before item 2?</summary><div><p>Compared as text, &quot;1&quot; is less than &quot;2&quot;, so &quot;item 10&quot; sorts first. Turn on Natural number order to compare the numeric runs as numbers, which gives item 1, item 2, item 10. It is on by default.</p></div></details><details class="faq"><summary>Is the shuffle actually random?</summary><div><p>It uses a Fisher-Yates shuffle, where every possible ordering is equally likely. Shuffling by passing a random comparator to a sort function is a common shortcut and produces measurably biased results.</p></div></details></section><section class="refs-related"><h2>Related tools</h2><div class="rel"><a class="relcard" href="remove-line-breaks"><strong>Remove line breaks</strong><span>Join lines broken by a PDF column or an email client, while keeping genuine paragraph breaks.</span></a><a class="relcard" href="remove-duplicate-lines"><strong>Remove duplicate lines</strong><span>Find repeats before you delete them, with control over whether case and whitespace count as a difference.</span></a><a class="relcard" href="word-counter"><strong>Word counter</strong><span>Live counts as you type, with academic exclusions and correct segmentation for Indic and CJK scripts.</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">

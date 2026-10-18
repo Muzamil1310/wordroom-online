@@ -132,7 +132,12 @@
           noSample: 'Una vista previa antes y después aparecerá aquí.',
           tool_wordCounter: 'Contador de palabras', tool_caseConverter: 'Convertidor de mayúsculas', tool_readabilityChecker: 'Verificador de legibilidad',
           tool_removeLineBreaks: 'Eliminar saltos de línea', tool_sortLines: 'Ordenar líneas', tool_removeDuplicateLines: 'Eliminar líneas duplicadas',
+          tool_base64: 'Codificador / decodificador Base64', tool_urlEncoder: 'Codificador / decodificador URL', tool_regexTester: 'Probador de regex',
+          tool_passwordGenerator: 'Generador de contraseñas', tool_jsonFormatter: 'Formateador JSON', tool_jsonValidator: 'Validador JSON',
+          tool_jsonMinifier: 'Minificador JSON', tool_jwtDecoder: 'Decodificador JWT', tool_uuidGenerator: 'Generador de UUID',
+          tool_hashGenerator: 'Generador de hashes', tool_slugGenerator: 'Generador de slugs',
           group_count: 'Contar', group_convert: 'Convertir', group_analyse: 'Analizar', group_cleanUp: 'Limpiar',
+          group_encode: 'Codificar', group_developer: 'Desarrollador', group_generate: 'Generar',
           pal_tools: 'Herramientas',
           toast_uppercase: 'Convertido a mayúsculas', toast_lowercase: 'Convertido a minúsculas',
           toast_titleCase: 'Convertido a mayúsculas de título', toast_sentenceCase: 'Convertido a mayúsculas de oración',
@@ -205,7 +210,12 @@
           noSample: '変更前と変更後のライブプレビューがここに表示されます。',
           tool_wordCounter: 'ワードカウンター', tool_caseConverter: 'ケースコンバーター', tool_readabilityChecker: '可読性チェッカー',
           tool_removeLineBreaks: '改行を除去', tool_sortLines: '行を並べ替え', tool_removeDuplicateLines: '重複行を除去',
+          tool_base64: 'Base64エンコーダー/デコーダー', tool_urlEncoder: 'URLエンコーダー/デコーダー', tool_regexTester: '正規表現テスター',
+          tool_passwordGenerator: 'パスワードジェネレーター', tool_jsonFormatter: 'JSONフォーマッター', tool_jsonValidator: 'JSONバリデーター',
+          tool_jsonMinifier: 'JSONミニファイア', tool_jwtDecoder: 'JWTデコーダー', tool_uuidGenerator: 'UUIDジェネレーター',
+          tool_hashGenerator: 'ハッシュジェネレーター', tool_slugGenerator: 'スラグジェネレーター',
           group_count: 'カウント', group_convert: '変換', group_analyse: '分析', group_cleanUp: '整理',
+          group_encode: 'エンコード', group_developer: '開発者', group_generate: '生成',
           pal_tools: 'ツール',
           toast_uppercase: '大文字に変換しました', toast_lowercase: '小文字に変換しました',
           toast_titleCase: 'タイトルケースに変換しました', toast_sentenceCase: 'センテンスケースに変換しました',
@@ -278,7 +288,12 @@
           noSample: 'Un aperçu avant/après apparaît ici.',
           tool_wordCounter: 'Compteur de mots', tool_caseConverter: 'Convertisseur de casse', tool_readabilityChecker: 'Vérificateur de lisibilité',
           tool_removeLineBreaks: 'Supprimer les sauts de ligne', tool_sortLines: 'Trier les lignes', tool_removeDuplicateLines: 'Supprimer les lignes en double',
+          tool_base64: 'Encodeur / décodeur Base64', tool_urlEncoder: 'Encodeur / décodeur URL', tool_regexTester: 'Testeur regex',
+          tool_passwordGenerator: 'Générateur de mots de passe', tool_jsonFormatter: 'Formateur JSON', tool_jsonValidator: 'Validateur JSON',
+          tool_jsonMinifier: 'Minificateur JSON', tool_jwtDecoder: 'Décodeur JWT', tool_uuidGenerator: 'Générateur UUID',
+          tool_hashGenerator: 'Générateur de hachage', tool_slugGenerator: 'Générateur de slugs',
           group_count: 'Compter', group_convert: 'Convertir', group_analyse: 'Analyser', group_cleanUp: 'Nettoyer',
+          group_encode: 'Encoder', group_developer: 'Développeur', group_generate: 'Générer',
           pal_tools: 'Outils',
           toast_uppercase: 'Converti en majuscules', toast_lowercase: 'Converti en minuscules',
           toast_titleCase: 'Converti en majuscules de titre', toast_sentenceCase: 'Converti en majuscules de phrase',
@@ -351,7 +366,12 @@
           noSample: 'Eine Live-Vorher-Nachher-Vorschau erscheint hier.',
           tool_wordCounter: 'Wortzähler', tool_caseConverter: 'Fallkonverter', tool_readabilityChecker: 'Lesbarkeitsprüfer',
           tool_removeLineBreaks: 'Zeilenumbrüche entfernen', tool_sortLines: 'Zeilen sortieren', tool_removeDuplicateLines: 'Doppelte Zeilen entfernen',
+          tool_base64: 'Base64-Kodierer/Dekodierer', tool_urlEncoder: 'URL-Kodierer/Dekodierer', tool_regexTester: 'Regex-Tester',
+          tool_passwordGenerator: 'Passwort-Generator', tool_jsonFormatter: 'JSON-Formatierer', tool_jsonValidator: 'JSON-Validierer',
+          tool_jsonMinifier: 'JSON-Minifizierer', tool_jwtDecoder: 'JWT-Dekodierer', tool_uuidGenerator: 'UUID-Generator',
+          tool_hashGenerator: 'Hash-Generator', tool_slugGenerator: 'Slug-Generator',
           group_count: 'Zählen', group_convert: 'Konvertieren', group_analyse: 'Analysieren', group_cleanUp: 'Aufräumen',
+          group_encode: 'Codieren', group_developer: 'Entwickler', group_generate: 'Generieren',
           pal_tools: 'Tools',
           toast_uppercase: 'In Großbuchstaben konvertiert', toast_lowercase: 'In Kleinbuchstaben konvertiert',
           toast_titleCase: 'In Überschriftengroßschreibung konvertiert', toast_sentenceCase: 'In Satzgroßschreibung konvertiert',
@@ -424,7 +444,12 @@
           noSample: 'Uma pré-visualização antes e depois aparecerá aqui.',
           tool_wordCounter: 'Contador de palavras', tool_caseConverter: 'Conversor de maiúsculas', tool_readabilityChecker: 'Verificador de legibilidade',
           tool_removeLineBreaks: 'Remover quebras de linha', tool_sortLines: 'Ordenar linhas', tool_removeDuplicateLines: 'Remover linhas duplicadas',
+          tool_base64: 'Codificador / decodificador Base64', tool_urlEncoder: 'Codificador / decodificador URL', tool_regexTester: 'Testador de regex',
+          tool_passwordGenerator: 'Gerador de senhas', tool_jsonFormatter: 'Formatador JSON', tool_jsonValidator: 'Validador JSON',
+          tool_jsonMinifier: 'Minificador JSON', tool_jwtDecoder: 'Decodificador JWT', tool_uuidGenerator: 'Gerador de UUID',
+          tool_hashGenerator: 'Gerador de hashes', tool_slugGenerator: 'Gerador de slugs',
           group_count: 'Contar', group_convert: 'Converter', group_analyse: 'Analisar', group_cleanUp: 'Limpar',
+          group_encode: 'Codificar', group_developer: 'Desenvolvedor', group_generate: 'Gerar',
           pal_tools: 'Ferramentas',
           toast_uppercase: 'Convertido para maiúsculas', toast_lowercase: 'Convertido para minúsculas',
           toast_titleCase: 'Convertido para maiúsculas de título', toast_sentenceCase: 'Convertido para maiúsculas de frase',
@@ -497,7 +522,12 @@
           noSample: '실시간 변경 전/후 미리보기가 여기에 나타납니다.',
           tool_wordCounter: '단어 수 세기', tool_caseConverter: '대소문자 변환기', tool_readabilityChecker: '가독성 검사기',
           tool_removeLineBreaks: '줄바꿈 제거', tool_sortLines: '줄 정렬', tool_removeDuplicateLines: '중복 줄 제거',
+          tool_base64: 'Base64 인코더/디코더', tool_urlEncoder: 'URL 인코더/디코더', tool_regexTester: '정규식 테스터',
+          tool_passwordGenerator: '비밀번호 생성기', tool_jsonFormatter: 'JSON 포맷터', tool_jsonValidator: 'JSON 검증기',
+          tool_jsonMinifier: 'JSON 미니파이어', tool_jwtDecoder: 'JWT 디코더', tool_uuidGenerator: 'UUID 생성기',
+          tool_hashGenerator: '해시 생성기', tool_slugGenerator: '슬러그 생성기',
           group_count: '세기', group_convert: '변환', group_analyse: '분석', group_cleanUp: '정리',
+          group_encode: '인코딩', group_developer: '개발자', group_generate: '생성',
           pal_tools: '도구',
           toast_uppercase: '대문자로 변환됨', toast_lowercase: '소문자로 변환됨',
           toast_titleCase: '제목 대문자로 변환됨', toast_sentenceCase: '문장 대문자로 변환됨',
@@ -570,7 +600,12 @@
           noSample: 'Un\'anteprima prima/dopo apparirà qui.',
           tool_wordCounter: 'Contaparole', tool_caseConverter: 'Convertitore di maiuscole', tool_readabilityChecker: 'Controllore di leggibilità',
           tool_removeLineBreaks: 'Rimuovere interruzioni di riga', tool_sortLines: 'Ordinare righe', tool_removeDuplicateLines: 'Rimuovere righe duplicate',
+          tool_base64: 'Codificatore/decodificatore Base64', tool_urlEncoder: 'Codificatore/decodificatore URL', tool_regexTester: 'Tester regex',
+          tool_passwordGenerator: 'Generatore di password', tool_jsonFormatter: 'Formattatore JSON', tool_jsonValidator: 'Validatore JSON',
+          tool_jsonMinifier: 'Minificatore JSON', tool_jwtDecoder: 'Decodificatore JWT', tool_uuidGenerator: 'Generatore UUID',
+          tool_hashGenerator: 'Generatore di hash', tool_slugGenerator: 'Generatore di slug',
           group_count: 'Conta', group_convert: 'Converti', group_analyse: 'Analizza', group_cleanUp: 'Pulisci',
+          group_encode: 'Codifica', group_developer: 'Sviluppatore', group_generate: 'Genera',
           pal_tools: 'Strumenti',
           toast_uppercase: 'Convertito in maiuscole', toast_lowercase: 'Convertito in minuscole',
           toast_titleCase: 'Convertito in maiuscole di titolo', toast_sentenceCase: 'Convertito in maiuscole di frase',
@@ -643,7 +678,12 @@
           noSample: 'Здесь появится предпросмотр «до и после».',
           tool_wordCounter: 'Счётчик слов', tool_caseConverter: 'Преобразователь регистра', tool_readabilityChecker: 'Проверка читаемости',
           tool_removeLineBreaks: 'Удаление переносов строк', tool_sortLines: 'Сортировка строк', tool_removeDuplicateLines: 'Удаление дубликатов строк',
+          tool_base64: 'Кодировщик/декодировщик Base64', tool_urlEncoder: 'Кодировщик/декодировщик URL', tool_regexTester: 'Тестер регулярных выражений',
+          tool_passwordGenerator: 'Генератор паролей', tool_jsonFormatter: 'Форматировщик JSON', tool_jsonValidator: 'Валидатор JSON',
+          tool_jsonMinifier: 'Минификатор JSON', tool_jwtDecoder: 'Декодировщик JWT', tool_uuidGenerator: 'Генератор UUID',
+          tool_hashGenerator: 'Генератор хешей', tool_slugGenerator: 'Генератор слагов',
           group_count: 'Подсчёт', group_convert: 'Преобразование', group_analyse: 'Анализ', group_cleanUp: 'Очистка',
+          group_encode: 'Кодирование', group_developer: 'Разработчик', group_generate: 'Генерация',
           pal_tools: 'Инструменты',
           toast_uppercase: 'Преобразовано в ПРОПИСНЫЕ', toast_lowercase: 'Преобразовано в строчные',
           toast_titleCase: 'Преобразовано в заглавный регистр', toast_sentenceCase: 'Преобразовано в регистр предложений',
@@ -750,23 +790,23 @@
 
   /* ---------------- Command palette ---------------- */
   const TOOLS = [
-    ['tool_wordCounter', 'word-counter.html', 'group_count'],
-    ['tool_caseConverter', 'case-converter.html', 'group_convert'],
-    ['tool_readabilityChecker', 'readability-checker.html', 'group_analyse'],
-    ['tool_removeLineBreaks', 'remove-line-breaks.html', 'group_cleanUp'],
-    ['tool_sortLines', 'sort-lines.html', 'group_cleanUp'],
-    ['tool_removeDuplicateLines', 'remove-duplicate-lines.html', 'group_cleanUp'],
-    ['tool_base64', 'base64-encoder-decoder.html', 'group_encode'],
-    ['tool_urlEncoder', 'url-encoder-decoder.html', 'group_encode'],
-    ['tool_regexTester', 'regex-tester.html', 'group_developer'],
-    ['tool_passwordGenerator', 'password-generator.html', 'group_generate'],
-    ['tool_jsonFormatter', 'json-formatter.html', 'group_developer'],
-    ['tool_jsonValidator', 'json-validator.html', 'group_developer'],
-    ['tool_jsonMinifier', 'json-minifier.html', 'group_developer'],
-    ['tool_jwtDecoder', 'jwt-decoder.html', 'group_developer'],
-    ['tool_uuidGenerator', 'uuid-generator.html', 'group_generate'],
-    ['tool_hashGenerator', 'hash-generator.html', 'group_developer'],
-    ['tool_slugGenerator', 'slug-generator.html', 'group_convert'],
+    ['tool_wordCounter', 'word-counter', 'group_count'],
+    ['tool_caseConverter', 'case-converter', 'group_convert'],
+    ['tool_readabilityChecker', 'readability-checker', 'group_analyse'],
+    ['tool_removeLineBreaks', 'remove-line-breaks', 'group_cleanUp'],
+    ['tool_sortLines', 'sort-lines', 'group_cleanUp'],
+    ['tool_removeDuplicateLines', 'remove-duplicate-lines', 'group_cleanUp'],
+    ['tool_base64', 'base64-encoder-decoder', 'group_encode'],
+    ['tool_urlEncoder', 'url-encoder-decoder', 'group_encode'],
+    ['tool_regexTester', 'regex-tester', 'group_developer'],
+    ['tool_passwordGenerator', 'password-generator', 'group_generate'],
+    ['tool_jsonFormatter', 'json-formatter', 'group_developer'],
+    ['tool_jsonValidator', 'json-validator', 'group_developer'],
+    ['tool_jsonMinifier', 'json-minifier', 'group_developer'],
+    ['tool_jwtDecoder', 'jwt-decoder', 'group_developer'],
+    ['tool_uuidGenerator', 'uuid-generator', 'group_generate'],
+    ['tool_hashGenerator', 'hash-generator', 'group_developer'],
+    ['tool_slugGenerator', 'slug-generator', 'group_convert'],
   ];
 
   const editor = $('#editor');
@@ -798,9 +838,10 @@
       return 1;
     };
 
+    const PRE = document.documentElement.lang && document.documentElement.lang !== 'en' ? '/' + document.documentElement.lang : '';
     function render() {
       const q = input.value.trim().toLowerCase();
-      const tools = TOOLS.map(([labelKey, href, grpKey]) => ({ label: _t(labelKey), href, grp: _t(grpKey), s: score(_t(labelKey), q) })).filter((x) => x.s);
+      const tools = TOOLS.map(([labelKey, href, grpKey]) => ({ label: _t(labelKey), href: PRE + '/' + href, grp: _t(grpKey), s: score(_t(labelKey), q) })).filter((x) => x.s);
       tools.sort((a, b) => b.s - a.s);
       items = [...tools];
       if (!items.length) { list.innerHTML = `<p class="pal__none">${_t('noMatch')}</p>`; return; }
@@ -968,11 +1009,11 @@ the paragraph split while joining these lines.`;
   SAMPLE['base64-encoder-decoder'] = 'Hello, WordRoom — encode this text safely.';
   SAMPLE['url-encoder-decoder'] = 'https://wordroomonline.com/search?q=hello world&lang=en';
   SAMPLE['regex-tester'] = `Email: hello@example.com\nSupport: support@example.com\nPhone: +1-555-0134`;
-  SAMPLE['json-formatter'] = '{"name":"WordRoom","tools":11,"private":true,"tags":["text","developer"]}';
+  SAMPLE['json-formatter'] = '{"name":"WordRoom","tools":17,"private":true,"tags":["text","developer"]}';
   SAMPLE['json-validator'] = '{"name":"WordRoom","valid":true}';
   SAMPLE['json-minifier'] = `{
   "name": "WordRoom",
-  "tools": 11,
+  "tools": 17,
   "private": true
 }`;
   SAMPLE['jwt-decoder'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjMiLCJuYW1lIjoiV29yZFJvb20iLCJpYXQiOjE3MDAwMDAwMDB9.signature';

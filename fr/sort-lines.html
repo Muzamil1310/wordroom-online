@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/sort-lines">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/sort-lines">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/sort-lines">
+
 <meta property="og:title" content="Trier les Lignes par Ordre Alphabétique — Trieur en Ligne">
 <meta property="og:description" content="Triez n&#x27;importe quelle liste de lignes par ordre alphabétique, par longueur, à l&#x27;envers ou mélangé. Prend en charge l&#x27;ordre numérique naturel et le tri alphabétique adapté à la langue pour les listes non anglaises.">
 <meta property="og:url" content="https://wordroomonline.com/fr/sort-lines">
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Trier les Lignes par Ordre Alphabétique — Trieur en Ligne">
 <meta name="twitter:description" content="Triez n&#x27;importe quelle liste de lignes par ordre alphabétique, par longueur, à l&#x27;envers ou mélangé. Prend en charge l&#x27;ordre numérique naturel et le tri alphabétique adapté à la langue pour les listes non anglaises.">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
@@ -31,7 +32,7 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
 <link rel="manifest" href="../assets/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
@@ -55,7 +56,7 @@
   <button class="iconbtn" id="railToggle" aria-label="Ouvrir le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <a class="hdr__brand" href="/fr/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
-  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Confidentialité</span></span>
+  <span class="privacy" title="Tout est calculé dans votre navigateur. Votre texte n'est jamais envoyé."><span class="privacy__dot"></span><span>Confidentialité</span></span>
   <div class="lang-switcher" id="langSwitcher">
   <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
     <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/fr.png" alt="" width="16" height="12">
@@ -155,7 +156,7 @@ Elle se trie au fur et à mesure."></textarea>
 <li><strong>Inverser l'ordre actuel</strong> — retourne la liste sans la trier, ce que vous voulez généralement pour un journal chronologique.</li>
 <li><strong>Mélanger</strong> — un mélange Fisher–Yates, donc chaque ordre possible est également probable. Les mélanges naifs utilisant un comparateur aléatoire sont biaisés.</li>
 </ul>
-<p>Les lignes vides sont supprimées par défaut, car une liste triée avec un bloc de blancs à une extrémité est rarement ce que les gens veulent. Désactivez-le si les lignes vides portent un sens.</p></section><section class="refs-faq"><h2>Questions fréquentes</h2><details class="faq"><summary>Pourquoi ma liste s&#x27;est-elle triée avec les majuscules en premier ?</summary><div><p>Cela se produit avec les outils qui comparent les codes de caractères bruts, où chaque lettre majuscule précède chaque minuscule. Cet outil utilise une comparaison adaptée à la langue et ignore la casse par défaut, donc vous obtenez l&#x27;ordre qu&#x27;une personne attendrait. Activez la sensibilité à la casse si vous avez besoin de la version stricte.</p></div></details><details class="faq"><summary>Pourquoi l&#x27;élément 10 vient-il avant l&#x27;élément 2 ?</summary><div><p>Comparés comme texte, &quot;1&quot; est inférieur à &quot;2&quot;, donc &quot;élément 10&quot; se trie en premier. Activez l&#x27;ordre numérique naturel pour comparer les portions numériques en tant que nombres, ce qui donne élément 1, élément 2, élément 10. C&#x27;est activé par défaut.</p></div></details><details class="faq"><summary>Le mélange est-il vraiment aléatoire ?</summary><div><p>Il utilise un mélange Fisher-Yates, où chaque ordre possible est également probable. Mélanger en passant un comparateur aléatoire à une fonction de tri est un raccourci courant et produit des résultats biaisés mesurables.</p></div></details></section><section class="refs-related"><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions académiques et segmentation correcte pour les écritures indiennes et CJK.</span></a><a class="relcard" href="case-converter"><strong>Convertisseur de casse</strong><span>Treize conversions, avec des majuscules de titre qui suivent les véritables règles de style au lieu de tout capitaliser.</span></a><a class="relcard" href="readability-checker"><strong>Vérificateur de lisibilité</strong><span>Six formules, plus les phrases spécifiques qui freinent votre score — pas seulement un nombre.</span></a></div></section></div>
+<p>Les lignes vides sont supprimées par défaut, car une liste triée avec un bloc de blancs à une extrémité est rarement ce que les gens veulent. Désactivez-le si les lignes vides portent un sens.</p></section><section class="refs-faq"><h2>Questions fréquentes</h2><details class="faq"><summary>Pourquoi ma liste s&#x27;est-elle triée avec les majuscules en premier ?</summary><div><p>Cela se produit avec les outils qui comparent les codes de caractères bruts, où chaque lettre majuscule précède chaque minuscule. Cet outil utilise une comparaison adaptée à la langue et ignore la casse par défaut, donc vous obtenez l&#x27;ordre qu&#x27;une personne attendrait. Activez la sensibilité à la casse si vous avez besoin de la version stricte.</p></div></details><details class="faq"><summary>Pourquoi l&#x27;élément 10 vient-il avant l&#x27;élément 2 ?</summary><div><p>Comparés comme texte, &quot;1&quot; est inférieur à &quot;2&quot;, donc &quot;élément 10&quot; se trie en premier. Activez l&#x27;ordre numérique naturel pour comparer les portions numériques en tant que nombres, ce qui donne élément 1, élément 2, élément 10. C&#x27;est activé par défaut.</p></div></details><details class="faq"><summary>Le mélange est-il vraiment aléatoire ?</summary><div><p>Il utilise un mélange Fisher-Yates, où chaque ordre possible est également probable. Mélanger en passant un comparateur aléatoire à une fonction de tri est un raccourci courant et produit des résultats biaisés mesurables.</p></div></details></section><section class="refs-related"><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="remove-line-breaks"><strong>Supprimer les sauts de ligne</strong><span>Rejoignez les lignes cassées par une colonne de PDF ou un client de messagerie, tout en gardant les vrais sauts de paragraphe.</span></a><a class="relcard" href="remove-duplicate-lines"><strong>Supprimer les lignes en double</strong><span>Trouvez les répétitions avant de les supprimer, avec contrôle sur la casse et les espaces.</span></a><a class="relcard" href="word-counter"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions académiques et segmentation correcte pour les écritures indiennes et CJK.</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
@@ -175,7 +176,7 @@ Elle se trie au fur et à mesure."></textarea>
     </div>
     <div class="pal__list" id="palList"></div>
     <div class="pal__ft">
-      <span><kbd>↑</kbd><kbd>↓</kbd> Outils</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> Outils</span><span><kbd>↵</kbd> exécuter</span><span><kbd>esc</kbd> fermer</span>
     </div>
   </div>
 </div>

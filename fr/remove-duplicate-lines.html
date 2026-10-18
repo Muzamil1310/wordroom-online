@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-duplicate-lines">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines">
+
 <meta property="og:title" content="Supprimer les Lignes en Double — Trouver et Supprimer les Répétitions">
 <meta property="og:description" content="Trouvez et supprimez les lignes en double de toute liste. Choisissez si la casse et les espaces comptent, et inspectez quelles valeurs se répètent avant de supprimer.">
 <meta property="og:url" content="https://wordroomonline.com/fr/remove-duplicate-lines">
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Supprimer les Lignes en Double — Trouver et Supprimer les Répétitions">
 <meta name="twitter:description" content="Trouvez et supprimez les lignes en double de toute liste. Choisissez si la casse et les espaces comptent, et inspectez quelles valeurs se répètent avant de supprimer.">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
@@ -31,7 +32,7 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
 <link rel="manifest" href="../assets/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
@@ -55,7 +56,7 @@
   <button class="iconbtn" id="railToggle" aria-label="Ouvrir le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <a class="hdr__brand" href="/fr/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
-  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Confidentialité</span></span>
+  <span class="privacy" title="Tout est calculé dans votre navigateur. Votre texte n'est jamais envoyé."><span class="privacy__dot"></span><span>Confidentialité</span></span>
   <div class="lang-switcher" id="langSwitcher">
   <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
     <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/fr.png" alt="" width="16" height="12">
@@ -149,7 +150,7 @@
 <p><strong>La casse compte-t-elle ?</strong> Pour les adresses e-mail, non — la partie locale est techniquement sensible à la casse mais effectivement jamais traitée de cette façon, donc <code>Hello@example.com</code> et <code>hello@example.com</code> sont la même adresse. Pour les mots de passe ou les identifiants, la casse compte absolument. La valeur par défaut ici est insensible à la casse.</p>
 <p><strong>L'espace environnant compte-t-il ?</strong> Presque jamais. Une ligne avec un espace final est la même valeur qu'une sans, et les listes copiées depuis des tableurs sont pleines de ces espaces. La valeur par défaut est de rogner avant de comparer.</p>
 <p><strong>Quelle copie survit ?</strong> Cet outil garde la première occurrence et préserve l'ordre original de ce qui reste, donc votre liste n'est pas silencieusement retriée. Si vous voulez aussi qu'elle soit triée, c'est une action séparée.</p></section><section><h2>Inspectez avant de supprimer</h2><p>Le comportement par défaut de la plupart des outils de déduplication est de rendre une liste plus courte sans rien vous dire sur ce qui a disparu. C'est bien quand vous faites confiance à l'entrée et risqué quand vous ne le faites pas — un espace de tête inattendu ou une différence de casse inattendue peut signifier que l'outil a supprimé quelque chose dont vous aviez besoin, ou gardé quelque chose que vous pensiez être un doublon.</p>
-<p>Le panel montre combien de lignes ont été supprimées, combien de valeurs distinctes se sont répétées, et quelles valeurs se sont le plus répétées, avant que vous n'appliquiez quoi que ce soit. « Garder uniquement les doublons » inverse l'opération pour que vous puissiez voir exactement ce qui se répète — utile pour auditer une liste de diffusion ou trouver des collages accidentels dans un ensemble de mots-clés.</p></section><section class="refs-faq"><h2>Questions fréquentes</h2><details class="faq"><summary>Conserve-t-il la première ou la dernière copie ?</summary><div><p>La première, et l&#x27;ordre des lignes restantes est préservé. Votre liste n&#x27;est pas silencieusement retriée. Si vous voulez aussi qu&#x27;elle soit triée, c&#x27;est une action séparée.</p></div></details><details class="faq"><summary>Les lignes qui diffèrent uniquement par la casse sont-elles des doublons ?</summary><div><p>Par défaut oui, ce qui est généralement correct pour les adresses e-mail et les mots-clés. Activez la sensibilité à la casse quand la casse est significative, comme pour les mots de passe, les identifiants et le code.</p></div></details><details class="faq"><summary>Puis-je voir les doublons avant de les supprimer ?</summary><div><p>Oui. Le panel liste combien de lignes se répètent et quelles valeurs se répètent le plus en tapant, et &quot;Conserver uniquement les doublons&quot; inverse l&#x27;opération pour que vous puissiez inspecter exactement ce qui se répète.</p></div></details></section><section class="refs-related"><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions académiques et segmentation correcte pour les écritures indiennes et CJK.</span></a><a class="relcard" href="case-converter"><strong>Convertisseur de casse</strong><span>Treize conversions, avec des majuscules de titre qui suivent les véritables règles de style au lieu de tout capitaliser.</span></a><a class="relcard" href="readability-checker"><strong>Vérificateur de lisibilité</strong><span>Six formules, plus les phrases spécifiques qui freinent votre score — pas seulement un nombre.</span></a></div></section></div>
+<p>Le panel montre combien de lignes ont été supprimées, combien de valeurs distinctes se sont répétées, et quelles valeurs se sont le plus répétées, avant que vous n'appliquiez quoi que ce soit. « Garder uniquement les doublons » inverse l'opération pour que vous puissiez voir exactement ce qui se répète — utile pour auditer une liste de diffusion ou trouver des collages accidentels dans un ensemble de mots-clés.</p></section><section class="refs-faq"><h2>Questions fréquentes</h2><details class="faq"><summary>Conserve-t-il la première ou la dernière copie ?</summary><div><p>La première, et l&#x27;ordre des lignes restantes est préservé. Votre liste n&#x27;est pas silencieusement retriée. Si vous voulez aussi qu&#x27;elle soit triée, c&#x27;est une action séparée.</p></div></details><details class="faq"><summary>Les lignes qui diffèrent uniquement par la casse sont-elles des doublons ?</summary><div><p>Par défaut oui, ce qui est généralement correct pour les adresses e-mail et les mots-clés. Activez la sensibilité à la casse quand la casse est significative, comme pour les mots de passe, les identifiants et le code.</p></div></details><details class="faq"><summary>Puis-je voir les doublons avant de les supprimer ?</summary><div><p>Oui. Le panel liste combien de lignes se répètent et quelles valeurs se répètent le plus en tapant, et &quot;Conserver uniquement les doublons&quot; inverse l&#x27;opération pour que vous puissiez inspecter exactement ce qui se répète.</p></div></details></section><section class="refs-related"><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="remove-line-breaks"><strong>Supprimer les sauts de ligne</strong><span>Rejoignez les lignes cassées par une colonne de PDF ou un client de messagerie, tout en gardant les vrais sauts de paragraphe.</span></a><a class="relcard" href="sort-lines"><strong>Trier les lignes</strong><span>Triez par ordre alphabétique, par longueur, inversez ou mélangez — avec ordre numérique naturel et comparaison linguistique.</span></a><a class="relcard" href="word-counter"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions académiques et segmentation correcte pour les écritures indiennes et CJK.</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
@@ -169,7 +170,7 @@
     </div>
     <div class="pal__list" id="palList"></div>
     <div class="pal__ft">
-      <span><kbd>↑</kbd><kbd>↓</kbd> Outils</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> Outils</span><span><kbd>↵</kbd> exécuter</span><span><kbd>esc</kbd> fermer</span>
     </div>
   </div>
 </div>

@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/jwt-decoder">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/jwt-decoder">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/jwt-decoder">
+
 <meta property="og:title" content="Décodeur JWT — Décodez les JSON Web Tokens en Ligne">
 <meta property="og:description" content="Décodez l&#x27;en-tête et le charge utile d&#x27;un JSON Web Token localement dans votre navigateur. L&#x27;outil ne vérifie pas les signatures et n&#x27;envoie pas votre token à un serveur.">
 <meta property="og:url" content="https://wordroomonline.com/fr/jwt-decoder">
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Décodeur JWT — Décodez les JSON Web Tokens en Ligne">
 <meta name="twitter:description" content="Décodez l&#x27;en-tête et le charge utile d&#x27;un JSON Web Token localement dans votre navigateur. L&#x27;outil ne vérifie pas les signatures et n&#x27;envoie pas votre token à un serveur.">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
@@ -31,7 +32,7 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
 <link rel="manifest" href="../assets/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
@@ -55,7 +56,7 @@
   <button class="iconbtn" id="railToggle" aria-label="Ouvrir le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <a class="hdr__brand" href="/fr/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
-  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>Confidentialité</span></span>
+  <span class="privacy" title="Tout est calculé dans votre navigateur. Votre texte n'est jamais envoyé."><span class="privacy__dot"></span><span>Confidentialité</span></span>
   <div class="lang-switcher" id="langSwitcher">
   <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
     <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/fr.png" alt="" width="16" height="12">
@@ -145,7 +146,7 @@
   </div>
   <aside class="panel" id="panel" aria-label="Tool options and results"></aside>
 </div>
-<div class="refs"><section class="refs-faq"><h2>Questions fréquentes</h2><details class="faq"><summary>Qu&#x27;est-ce qu&#x27;un JWT ?</summary><div><p>Un JSON Web Token est un format de token compact et sûr pour les URL utilisé pour l&#x27;authentification et l&#x27;échange de données.</p></div></details><details class="faq"><summary>Cet outil vérifie-t-il les signatures JWT ?</summary><div><p>Non, intentionnellement. La vérification des signatures nécessite la clé de signature, que cet outil ne possède pas.</p></div></details><details class="faq"><summary>Quelles informations se trouvent dans l&#x27;en-tête et la charge utile ?</summary><div><p>L&#x27;en-tête contient typiquement l&#x27;algorithme et le type de token. La charge utile contient les revendications : émetteur, sujet, expiration, émission.</p></div></details></section><section class="refs-related"><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="word-counter"><strong>Compteur de mots</strong><span>Comptages en direct pendant que vous tapez, avec exclusions académiques et segmentation correcte pour les écritures indiennes et CJK.</span></a><a class="relcard" href="case-converter"><strong>Convertisseur de casse</strong><span>Treize conversions, avec des majuscules de titre qui suivent les véritables règles de style au lieu de tout capitaliser.</span></a><a class="relcard" href="readability-checker"><strong>Vérificateur de lisibilité</strong><span>Six formules, plus les phrases spécifiques qui freinent votre score — pas seulement un nombre.</span></a></div></section></div>
+<div class="refs"><section class="refs-faq"><h2>Questions fréquentes</h2><details class="faq"><summary>Qu&#x27;est-ce qu&#x27;un JWT ?</summary><div><p>Un JSON Web Token est un format de token compact et sûr pour les URL utilisé pour l&#x27;authentification et l&#x27;échange de données.</p></div></details><details class="faq"><summary>Cet outil vérifie-t-il les signatures JWT ?</summary><div><p>Non, intentionnellement. La vérification des signatures nécessite la clé de signature, que cet outil ne possède pas.</p></div></details><details class="faq"><summary>Quelles informations se trouvent dans l&#x27;en-tête et la charge utile ?</summary><div><p>L&#x27;en-tête contient typiquement l&#x27;algorithme et le type de token. La charge utile contient les revendications : émetteur, sujet, expiration, émission.</p></div></details></section><section class="refs-related"><h2>Outils connexes</h2><div class="rel"><a class="relcard" href="regex-tester"><strong>Testeur regex</strong><span>Écrivez un regex JavaScript, testez-le contre votre texte et inspectez chaque correspondance et groupe de capture instantanément.</span></a><a class="relcard" href="json-formatter"><strong>Formateur JSON</strong><span>Transformez le JSON compact ou désordonné en JSON propre et lisible en un clic.</span></a><a class="relcard" href="json-validator"><strong>Validateur JSON</strong><span>Vérifiez si le JSON est valide et obtenez une erreur de syntaxe claire lorsque ce n'est pas le cas.</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
@@ -165,7 +166,7 @@
     </div>
     <div class="pal__list" id="palList"></div>
     <div class="pal__ft">
-      <span><kbd>↑</kbd><kbd>↓</kbd> Outils</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> Outils</span><span><kbd>↵</kbd> exécuter</span><span><kbd>esc</kbd> fermer</span>
     </div>
   </div>
 </div>

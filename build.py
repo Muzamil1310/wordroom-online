@@ -460,7 +460,7 @@ REFS.update({
 })
 
 
-def rail(active, locale="en"):
+def rail(active, locale="en", root_abs=False):
     loc_groups = _GROUPS_T.get(locale, _GROUPS_T["en"])
     out = []
     for g in EN_GROUPS:
@@ -470,25 +470,32 @@ def rail(active, locale="en"):
         for t in links:
             cur = ' aria-current="page"' if t["slug"] == active else ''
             nav_label = TOOLS_T.get(locale, TOOLS_T["en"]).get(t["slug"], {}).get("nav", t["nav"])
-            out.append(f'    <a class="rail__link" href="{t["slug"]}"{cur}>{ICONS[t["icon"]]}<span>{nav_label}</span></a>')
+            href = ("/" + t["slug"]) if root_abs else t["slug"]
+            out.append(f'    <a class="rail__link" href="{href}"{cur}>{ICONS[t["icon"]]}<span>{nav_label}</span></a>')
         out.append('  </div>')
     return "\n".join(out)
 
-def head(title, desc, canonical, schema, locale="en", slug=None):
+def head(title, desc, canonical, schema, locale="en", slug=None, root_abs=False, noindex=False):
+    # Root-absolute asset paths are used by the error pages, which can be served
+    # at arbitrary depths where relative paths would not resolve.
+    a = "/assets" if root_abs else ("../assets" if locale != "en" else "assets")
     hreflang_links = []
-    for lc, ln in LANGUAGES.items():
-        if slug:
-            page_part = f"/{slug}"
-        else:
-            page_part = "/"
-        if lc == "en":
-            hreflang_links.append(f'<link rel="alternate" hreflang="{lc}" href="{BASE}{page_part}">')
-        else:
-            hreflang_links.append(f'<link rel="alternate" hreflang="{lc}" href="{BASE}/{lc}{page_part}">')
-    # x-default points to English
-    default_part = f"/{slug}" if slug else "/"
-    hreflang_links.append(f'<link rel="alternate" hreflang="x-default" href="{BASE}{default_part}">')
+    if not noindex:
+        for lc, ln in LANGUAGES.items():
+            if slug:
+                page_part = f"/{slug}"
+            else:
+                page_part = "/"
+            if lc == "en":
+                hreflang_links.append(f'<link rel="alternate" hreflang="{lc}" href="{BASE}{page_part}">')
+            else:
+                hreflang_links.append(f'<link rel="alternate" hreflang="{lc}" href="{BASE}/{lc}{page_part}">')
+        # x-default points to English
+        default_part = f"/{slug}" if slug else "/"
+        hreflang_links.append(f'<link rel="alternate" hreflang="x-default" href="{BASE}{default_part}">')
     hreflang_str = "\n".join(hreflang_links)
+    canonical_tag = "" if noindex else f'<link rel="canonical" href="{canonical}">'
+    robots_tag = '<meta name="robots" content="noindex, follow">' if noindex else ""
     return f"""<!DOCTYPE html>
 <html lang="{locale}">
 <head>
@@ -496,8 +503,9 @@ def head(title, desc, canonical, schema, locale="en", slug=None):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} | {SITE}</title>
 <meta name="description" content="{html.escape(desc)}">
-<link rel="canonical" href="{canonical}">
+{canonical_tag}
 {hreflang_str}
+{robots_tag}
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{canonical}">
@@ -505,23 +513,23 @@ def head(title, desc, canonical, schema, locale="en", slug=None):
 <meta property="og:locale" content="{locale.replace('-', '_')}">
 <meta property="og:site_name" content="{SITE}">
 <meta property="og:image" content="{BASE}/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{html.escape(title)}">
 <meta name="twitter:description" content="{html.escape(desc)}">
 <meta name="twitter:image" content="{BASE}/assets/og-image.png">
-<link rel="icon" type="image/png" href="{'../assets' if locale != 'en' else 'assets'}/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="{'../assets' if locale != 'en' else 'assets'}/favicon.svg" />
-<link rel="shortcut icon" href="{'../assets' if locale != 'en' else 'assets'}/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="{'../assets' if locale != 'en' else 'assets'}/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
-<link rel="manifest" href="{'../assets' if locale != 'en' else 'assets'}/site.webmanifest" />
+<link rel="icon" type="image/png" href="{a}/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="{a}/favicon.svg" />
+<link rel="shortcut icon" href="{a}/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="{a}/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
+<link rel="manifest" href="{a}/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@400,500,600&display=swap">
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=gambetta@400,500,600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="{'../assets' if locale != 'en' else 'assets'}/base.css">
-<link rel="stylesheet" href="{'../assets' if locale != 'en' else 'assets'}/app.css">
+<link rel="stylesheet" href="{a}/base.css">
+<link rel="stylesheet" href="{a}/app.css">
 <script type="application/ld+json">{json.dumps(schema)}</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H94B49VY8R"></script>
@@ -563,12 +571,12 @@ def lang_switcher(locale, slug=None):
   </nav>
 </div>'''
 
-def shell(active, body, locale="en", slug=None):
+def shell(active, body, locale="en", slug=None, root_abs=False):
     ui = UI.get(locale, UI["en"])
     prefix = f"/{locale}" if locale != "en" else ""
     home_href = f"{prefix}/" if locale != "en" else "/"
-    # JS/CSS paths: English root = assets/, localized = ../assets/
-    a = "../assets" if locale != "en" else "assets"
+    # JS/CSS paths: English root = assets/, localized = ../assets/, error pages (any depth) = /assets/
+    a = "/assets" if root_abs else ("../assets" if locale != "en" else "assets")
     # Footer links
     footer_pages = ["privacy", "about", "terms", "contact"]
     footer_links = []
@@ -594,7 +602,7 @@ def shell(active, body, locale="en", slug=None):
   <button class="iconbtn" id="railToggle" aria-label="{u(locale, 'open_menu')}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <a class="hdr__brand" href="{home_href}">{LOGO_TPL.format(asset_path=a)}<span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
-  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>{u(locale, 'privacy')}</span></span>
+  <span class="privacy" title="{u(locale, 'privacy_title')}"><span class="privacy__dot"></span><span>{u(locale, 'privacy')}</span></span>
   {lang_switcher(locale, slug)}
   <button class="kbtrigger" data-pal-open type="button" aria-label="{u(locale, 'search')}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>{u(locale, 'search')}</span><kbd>⌘K</kbd></button>
   <button class="iconbtn" data-theme-toggle aria-label="{u(locale, 'switch_theme')}"></button>
@@ -603,7 +611,7 @@ def shell(active, body, locale="en", slug=None):
 <div class="rail__scrim" aria-hidden="true"></div>
 <nav class="rail" aria-label="Tools">
   <button class="iconbtn rail__close" aria-label="{u(locale, 'close_menu')}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-{rail(active, locale)}
+{rail(active, locale, root_abs)}
 </nav>
 
 <main class="main"><div class="wrap">
@@ -620,7 +628,7 @@ def shell(active, body, locale="en", slug=None):
     </div>
     <div class="pal__list" id="palList"></div>
     <div class="pal__ft">
-      <span><kbd>↑</kbd><kbd>↓</kbd> {u(locale, 'tools')}</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> {u(locale, 'tools')}</span><span><kbd>↵</kbd> {u(locale, 'run')}</span><span><kbd>esc</kbd> {u(locale, 'close')}</span>
     </div>
   </div>
 </div>
@@ -674,7 +682,13 @@ def refs_html(slug, locale="en"):
         parts.append(f'<section class="refs-faq"><h2>{_FAQ_H.get(locale, "Common questions")}</h2>' + "".join(
             f'<details class="faq"><summary>{html.escape(q)}</summary><div><p>{html.escape(a)}</p></div></details>'
             for q, a in faqs) + "</section>")
-    rel = [t for t in TOOLS if t["slug"] != slug][:3]
+    rel_candidates = [t for t in TOOLS if t["slug"] != slug]
+    # Prefer tools from the same group, then fall back to the rest — so the JSON
+    # minifier suggests its siblings rather than the word counter.
+    this_group = next((t["group"] for t in TOOLS if t["slug"] == slug), None)
+    same_group = [t for t in rel_candidates if t["group"] == this_group]
+    others = [t for t in rel_candidates if t["group"] != this_group]
+    rel = (same_group + others)[:3]
     loc_tools = TOOLS_T.get(locale, TOOLS_T.get("en", {}))
     parts.append(f'<section class="refs-related"><h2>{_REL_H.get(locale, "Related tools")}</h2><div class="rel">' + "".join(
         f'<a class="relcard" href="{t["slug"]}"><strong>{loc_tools.get(t["slug"], {}).get("nav", t["nav"])}</strong><span>{loc_tools.get(t["slug"], {}).get("lede", t["lede"])}</span></a>' for t in rel
@@ -865,5 +879,32 @@ for s in STATIC_PAGES:
 (OUT / "llms.txt").write_text(
     "# WordRoom\n\nPrivate, client-side text and writing utilities. No upload, no account.\n\n"
     + "".join(f"- [{t['nav']}](https://wordroomonline.com/{t['slug']}): {t['desc']}\n" for t in TOOLS), encoding="utf-8")
+
+# 404 / 500 — generated here so they can never go stale like the hand-written
+# copies did (those were missing 11 of the 17 rail links). They use
+# root-absolute asset/link paths because Cloudflare serves them at arbitrary
+# depths, and noindex because they must never appear in search results.
+ERROR_PAGES = {
+    "404": dict(title="Page Not Found", desc="The page you are looking for does not exist.",
+                icon='<circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/>',
+                h1="Page not found", p="The page you are looking for does not exist or has been moved."),
+    "500": dict(title="Server Error", desc="An unexpected error occurred. Please try again in a moment.",
+                icon='<circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>',
+                h1="Something went wrong", p="An unexpected error occurred. Please try again in a moment."),
+}
+for code, e in ERROR_PAGES.items():
+    err_schema = {"@context": "https://schema.org", "@type": "WebPage",
+                  "name": e["h1"], "url": f"{BASE}/{code}", "description": e["desc"]}
+    err_body = f"""<div class="empty" style="padding-block:var(--space-20)">
+  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">{e['icon']}</svg>
+  <h1 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:500;margin-top:var(--space-6)">{e['h1']}</h1>
+  <p style="max-width:36ch;margin-top:var(--space-3)">{e['p']}</p>
+  <a class="btn" href="/" style="margin-top:var(--space-6)">Back to home</a>
+</div>"""
+    (OUT / f"{code}.html").write_text(
+        head(e["title"], e["desc"], f"{BASE}/{code}", err_schema, "en", None,
+             root_abs=True, noindex=True)
+        + shell(code, err_body, "en", None, root_abs=True), encoding="utf-8")
+    page_count += 1
 
 print(f"built {page_count} pages across {len(LANGUAGES)} languages")

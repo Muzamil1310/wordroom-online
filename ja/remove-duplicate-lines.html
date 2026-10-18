@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-duplicate-lines">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-duplicate-lines">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-duplicate-lines">
+
 <meta property="og:title" content="重複行を除去 — 重複を見つけて削除">
 <meta property="og:description" content="あらゆるリストから重複行を見つけ出し削除。大文字小文字と周囲の空白がカウントされるかどうかを選択でき、削除前にどの値が重複しているかを確認できます。">
 <meta property="og:url" content="https://wordroomonline.com/ja/remove-duplicate-lines">
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="ja">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="重複行を除去 — 重複を見つけて削除">
 <meta name="twitter:description" content="あらゆるリストから重複行を見つけ出し削除。大文字小文字と周囲の空白がカウントされるかどうかを選択でき、削除前にどの値が重複しているかを確認できます。">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
@@ -31,7 +32,7 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
 <link rel="manifest" href="../assets/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
@@ -55,7 +56,7 @@
   <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <a class="hdr__brand" href="/ja/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
-  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
+  <span class="privacy" title="すべての処理はブラウザ内で実行されます。テキストがアップロードされることはありません。"><span class="privacy__dot"></span><span>プライバシー</span></span>
   <div class="lang-switcher" id="langSwitcher">
   <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
     <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/jp.png" alt="" width="16" height="12">
@@ -149,7 +150,7 @@
 <p><strong>大文字小文字が重要ですか？</strong> メールアドレスの場合、いいえ — ローカル部分は技術的に大文字区別ですが、実際には決してそのように扱われないため、<code>Hello@example.com</code>と<code>hello@example.com</code>は同じアドレスです。パスワードやIDの場合は大文字小文字が絶対に重要です。デフォルトは大文字区別なしです。</p>
 <p><strong>周囲の空白が重要ですか？</strong> ほぼ重要ではありません。トレーリングスペースがある行はない行と同じ値で、スプレッドシートからコピーされたリストにはそれらが一杯です。デフォルトは比較前にトリムすることです。</p>
 <p><strong>どのコピーが残りますか？</strong> このツールは最初の出現を保持し、残りの元の順序を保持するため、リストは暗黙的に再ソートされません。ソートも必要なら、それは別の操作です。</p></section><section><h2>削除前にインスペクト</h2><p>ほとんどの重複削除ツールのデフォルトの動作は、短いリストを返して何が失われたかを何も言わないことです。これは入力を信頼している場合には問題ありませんが、信頼していない場合にはリスクがあります — 冒頭の余分なスペースや予期しない大文字小文字の違いは、ツールが必要だったものを削除したか、重複だと思っていたものを保持したことを意味する可能性があります。</p>
-<p>パネルは適用前に、何行が削除されたか、いくつの一意の値が繰り返されたか、どの値が最も繰り返されたかを表示します。「重複のみを保持」は操作を反転させて、正確に何が繰り返されているかを確認できるようにします — メーリングリストの監査やキーワードセットでの偶然のコピペを検出するのに便利です。</p></section><section class="refs-faq"><h2>よくある質問</h2><details class="faq"><summary>最初のコピーと最後のコピーのどちらを保持しますか？</summary><div><p>最初のコピーを保持し、残りの行の順序は保持されます。リストは暗黙的に再ソートされません。ソートも必要なら、それは別の操作です。</p></div></details><details class="faq"><summary>大文字小文字のみが異なる行は重複ですか？</summary><div><p>デフォルトでははい。これは通常メールアドレスとキーワードで正しいです。パスワード、ID、コードなど大文字小文字が意味を持つ場合は「大文字小文字を区別」をオンにしてください。</p></div></details><details class="faq"><summary>削除前に重複を確認できますか？</summary><div><p>はい。パネルは入力しながら繰り返される行数と最も繰り返される値をリストし、「重複のみを保持」は操作を反転させて、何が繰り返されているかを正確に確認できます。</p></div></details></section><section class="refs-related"><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。</span></a><a class="relcard" href="case-converter"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。</span></a><a class="relcard" href="readability-checker"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。</span></a></div></section></div>
+<p>パネルは適用前に、何行が削除されたか、いくつの一意の値が繰り返されたか、どの値が最も繰り返されたかを表示します。「重複のみを保持」は操作を反転させて、正確に何が繰り返されているかを確認できるようにします — メーリングリストの監査やキーワードセットでの偶然のコピペを検出するのに便利です。</p></section><section class="refs-faq"><h2>よくある質問</h2><details class="faq"><summary>最初のコピーと最後のコピーのどちらを保持しますか？</summary><div><p>最初のコピーを保持し、残りの行の順序は保持されます。リストは暗黙的に再ソートされません。ソートも必要なら、それは別の操作です。</p></div></details><details class="faq"><summary>大文字小文字のみが異なる行は重複ですか？</summary><div><p>デフォルトでははい。これは通常メールアドレスとキーワードで正しいです。パスワード、ID、コードなど大文字小文字が意味を持つ場合は「大文字小文字を区別」をオンにしてください。</p></div></details><details class="faq"><summary>削除前に重複を確認できますか？</summary><div><p>はい。パネルは入力しながら繰り返される行数と最も繰り返される値をリストし、「重複のみを保持」は操作を反転させて、何が繰り返されているかを正確に確認できます。</p></div></details></section><section class="refs-related"><h2>関連ツール</h2><div class="rel"><a class="relcard" href="remove-line-breaks"><strong>改行を除去</strong><span>PDFのカラムやメールクライアントで壊れた行を結合しつつ、本物の段落区切りを保持。</span></a><a class="relcard" href="sort-lines"><strong>行を並べ替え</strong><span>アルファベット順、長さ順、逆順、シャッフル — 自然数の順序付けとロケール対応の照合順序。</span></a><a class="relcard" href="word-counter"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
@@ -169,7 +170,7 @@
     </div>
     <div class="pal__list" id="palList"></div>
     <div class="pal__ft">
-      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> 実行</span><span><kbd>esc</kbd> 閉じる</span>
     </div>
   </div>
 </div>

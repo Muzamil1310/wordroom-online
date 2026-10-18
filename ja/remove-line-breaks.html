@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="it" href="https://wordroomonline.com/it/remove-line-breaks">
 <link rel="alternate" hreflang="ru" href="https://wordroomonline.com/ru/remove-line-breaks">
 <link rel="alternate" hreflang="x-default" href="https://wordroomonline.com/remove-line-breaks">
+
 <meta property="og:title" content="改行を除去 — PDFから貼り付けたテキストを修正">
 <meta property="og:description" content="PDFやメールからコピーしたテキストの不要な改行を除去しつつ、正しい段落区切りを保持。行のトリムと二重スペースの統合も行います。">
 <meta property="og:url" content="https://wordroomonline.com/ja/remove-line-breaks">
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="ja">
 <meta property="og:site_name" content="WordRoom">
 <meta property="og:image" content="https://wordroomonline.com/assets/og-image.png">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="改行を除去 — PDFから貼り付けたテキストを修正">
 <meta name="twitter:description" content="PDFやメールからコピーしたテキストの不要な改行を除去しつつ、正しい段落区切りを保持。行のトリムと二重スペースの統合も行います。">
 <meta name="twitter:image" content="https://wordroomonline.com/assets/og-image.png">
@@ -31,7 +32,7 @@
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="shortcut icon" href="../assets/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Word Room" />
+<meta name="apple-mobile-web-app-title" content="WordRoom" />
 <link rel="manifest" href="../assets/site.webmanifest" />
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <!-- Fontshare silently drops the second family in a combined f[] request, so one link per family. -->
@@ -55,7 +56,7 @@
   <button class="iconbtn" id="railToggle" aria-label="メニューを開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <a class="hdr__brand" href="/ja/"><img width="22" height="22" src="../assets/favicon.svg" alt="" aria-hidden="true"><span>WordRoom</span></a>
   <span class="hdr__spacer"></span>
-  <span class="privacy" title="Every calculation runs in your browser. Your text is never uploaded."><span class="privacy__dot"></span><span>プライバシー</span></span>
+  <span class="privacy" title="すべての処理はブラウザ内で実行されます。テキストがアップロードされることはありません。"><span class="privacy__dot"></span><span>プライバシー</span></span>
   <div class="lang-switcher" id="langSwitcher">
   <button class="lang-switcher__btn" type="button" aria-haspopup="listbox" aria-expanded="false">
     <img class="lang-switcher__flag" src="https://flagcdn.com/16x12/jp.png" alt="" width="16" height="12">
@@ -155,7 +156,7 @@
 <li><strong>余分なスペースを統合</strong>して結合を整えます。</li>
 <li><strong>空行を最後に除去</strong>し、実際の構造が見えるようにします。</li>
 </ol>
-<p>区切りはこのツールが意図的に推測しないケースです。PDFはしばしばハイフンで単語を行間で区切ります。「compre-」と「hension」を自動的に再結合すると「state-of-the-art」などの本物のハイフンも破壊されるため、安全な振る舞いはそれらを残し、残ったハイフンを自分で検索することです。</p></section><section class="refs-faq"><h2>よくある質問</h2><details class="faq"><summary>PDFからコピーしたテキストにあちこち改行があるのはなぜですか？</summary><div><p>PDFはグリフの位置を保存し、段落は保存しません。コピーすると、ビューアは視覚的な行が終わった場所、つまり文末ではなくカラムの端に改行を挿入します。構造はそもそもファイルにありませんでした。</p></div></details><details class="faq"><summary>段落区切りが壊れますか？</summary><div><p>「段落区切りを保持」がオンの場合は壊れません。これがデフォルトです。段落内の単一の改行はスペースになり、段落間の空行は保持されます。意図的にすべてを1行にしたい場合のみオフにしてください。</p></div></details><details class="faq"><summary>行間にハイフンで分割された単語を再結合しますか？</summary><div><p>意図的にいいえ。&quot;compre-&quot;と&quot;hension&quot;を再結合すると&quot;state-of-the-art&quot;などの本物のハイフンも破壊されます。辞書なしに区別する確実な方法はありません。クリーニング後に残ったハイフンを自分で検索してください。</p></div></details></section><section class="refs-related"><h2>関連ツール</h2><div class="rel"><a class="relcard" href="word-counter"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。</span></a><a class="relcard" href="case-converter"><strong>ケースコンバーター</strong><span>13種の変換。すべてを大文字にするのではなく、実際のスタイルガイドルールに従うタイトルケース。</span></a><a class="relcard" href="readability-checker"><strong>可読性チェッカー</strong><span>6つの式に加え、スコアを下げている具体的な文を表示 — 数字だけでなく。</span></a></div></section></div>
+<p>区切りはこのツールが意図的に推測しないケースです。PDFはしばしばハイフンで単語を行間で区切ります。「compre-」と「hension」を自動的に再結合すると「state-of-the-art」などの本物のハイフンも破壊されるため、安全な振る舞いはそれらを残し、残ったハイフンを自分で検索することです。</p></section><section class="refs-faq"><h2>よくある質問</h2><details class="faq"><summary>PDFからコピーしたテキストにあちこち改行があるのはなぜですか？</summary><div><p>PDFはグリフの位置を保存し、段落は保存しません。コピーすると、ビューアは視覚的な行が終わった場所、つまり文末ではなくカラムの端に改行を挿入します。構造はそもそもファイルにありませんでした。</p></div></details><details class="faq"><summary>段落区切りが壊れますか？</summary><div><p>「段落区切りを保持」がオンの場合は壊れません。これがデフォルトです。段落内の単一の改行はスペースになり、段落間の空行は保持されます。意図的にすべてを1行にしたい場合のみオフにしてください。</p></div></details><details class="faq"><summary>行間にハイフンで分割された単語を再結合しますか？</summary><div><p>意図的にいいえ。&quot;compre-&quot;と&quot;hension&quot;を再結合すると&quot;state-of-the-art&quot;などの本物のハイフンも破壊されます。辞書なしに区別する確実な方法はありません。クリーニング後に残ったハイフンを自分で検索してください。</p></div></details></section><section class="refs-related"><h2>関連ツール</h2><div class="rel"><a class="relcard" href="sort-lines"><strong>行を並べ替え</strong><span>アルファベット順、長さ順、逆順、シャッフル — 自然数の順序付けとロケール対応の照合順序。</span></a><a class="relcard" href="remove-duplicate-lines"><strong>重複行を除去</strong><span>削除前に重複を確認。大文字小文字と空白が違いとしてカウントされるかどうかを制御可能。</span></a><a class="relcard" href="word-counter"><strong>ワードカウンター</strong><span>入力的同时にリアルタイムカウント。学術除外機能とインド系・CJKスクリプトの正しいセグメンテーションに対応。</span></a></div></section></div>
 </div></main>
 <footer class="ftr">
   <div class="wrap">
@@ -175,7 +176,7 @@
     </div>
     <div class="pal__list" id="palList"></div>
     <div class="pal__ft">
-      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> run</span><span><kbd>esc</kbd> close</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> ツール</span><span><kbd>↵</kbd> 実行</span><span><kbd>esc</kbd> 閉じる</span>
     </div>
   </div>
 </div>
