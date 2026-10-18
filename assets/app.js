@@ -967,7 +967,7 @@ same problem, and you want to keep
 the paragraph split while joining these lines.`;
   SAMPLE['base64-encoder-decoder'] = 'Hello, WordRoom — encode this text safely.';
   SAMPLE['url-encoder-decoder'] = 'https://wordroomonline.com/search?q=hello world&lang=en';
-  SAMPLE['regex-tester'] = `Email: hello@example.com\nSupport: support@example.com\nPhone: +91 98765 43210`;
+  SAMPLE['regex-tester'] = `Email: hello@example.com\nSupport: support@example.com\nPhone: +1-555-0134`;
   SAMPLE['json-formatter'] = '{"name":"WordRoom","tools":11,"private":true,"tags":["text","developer"]}';
   SAMPLE['json-validator'] = '{"name":"WordRoom","valid":true}';
   SAMPLE['json-minifier'] = `{
