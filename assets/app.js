@@ -947,13 +947,14 @@ item 1
 Mumbai
 chennai`,
     'remove-duplicate-lines':
-`redacted@example.com
-hello@example.com
-REDACTED@EXAMPLE.COM
+`hello@example.com
 support@example.com
+HELLO@EXAMPLE.COM
+team@example.com
 hello@example.com
   hello@example.com  
-team@example.com`,
+jane@example.org
+john@example.org`,
   };
   SAMPLE['case-converter'] = 'the state-of-the-art guide to seo for small businesses in india\nHOW TO CONVERT TEXT TO TITLE CASE\nmy_first_variable name';
   SAMPLE['remove-line-breaks'] = `This paragraph was pasted out of a PDF,
