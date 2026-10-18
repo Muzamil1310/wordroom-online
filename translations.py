@@ -1980,6 +1980,14 @@ FAQS_T = {
              "Palabras divididas por 238 palabras por minuto, la tasa media de lectura silenciosa para prosa en inglés del metaanálisis de Brysbaert de 2019. El tiempo de habla usa deliberadamente 130 palabras por minuto."),
             ("¿Cuenta correctamente las palabras en telugu o hindi?",
              "Sí. La herramienta detecta el script y aplica las reglas de límite de palabras Unicode en lugar de dividir por espacios, por lo que las marcas de combinación y los conjuntos se manejan correctamente. Los documentos con scripts mixtos se cuentan con las reglas del script no latino dominante."),
+            ("¿Cómo cuento palabras en un texto en línea?",
+             "Pega tu texto en el editor de arriba. El recuento de palabras, caracteres, oraciones y párrafos se actualiza en vivo mientras escribes. No se envía nada a un servidor: todo el cálculo ocurre en tu navegador."),
+            ("¿Es esta una herramienta gratuita para contar palabras?",
+             "Sí. La herramienta es totalmente gratuita, sin registro y sin límite de subida de archivos. Todo el procesamiento se realiza localmente en tu navegador."),
+            ("¿Puedo usarla como contador de palabras para ensayos?",
+             "Sí. Pega tu ensayo en el editor y el recuento de palabras se actualiza en tiempo real. Activa el modo académico para excluir citas y listas de referencias del total contable, siguiendo las convenciones de tu institución."),
+            ("¿Cómo funciona el analizador de texto en línea?",
+             "La herramienta usa las reglas de segmentación Unicode para contar palabras correctamente en todos los scripts — inglés, chino, japonés, hindi, telugu y más. Cuenta racimos de grafemas para el recuento de caracteres, de modo que los emoji y las marcas de combinación se manejan bien."),
         ],
         "case-converter": [
             ("¿Cuál es la diferencia entre mayúsculas de título y capitalizar cada palabra?",
@@ -2126,6 +2134,14 @@ FAQS_T = {
              "Brysbaertの2019年のメタ分析による英語プローズの平均無声読書速度238語/分で割ります。発話時間は意図的に保守的な130語/分を使用しています。"),
             ("テルグ語やヒンディー語の単語を正しくカウントしますか？",
              "はい。ツールはスクリプトを検出し、スペースで分割するのではなく、そのスクリプトにUnicodeの語境界ルールを適用します。結合記号や合字が適切に処理されます。混合スクリプトのドキュメントは、主要な非ラテンスクリプトのルールでカウントされます。"),
+            ("オンラインでテキストの語数はどう数えますか？",
+             "上のエディターにテキストを貼り付けてください。単語数、文字数、文の数、段落数は入力と同時にリアルタイムで更新されます。サーバーに送信されるものは何もなく、すべての計算はブラウザ内で行われます。"),
+            ("無料の語数カウントツールですか？",
+             "はい。このツールは完全無料で、登録もファイルアップロードの制限もありません。すべての処理はブラウザ内でローカルに行われます。"),
+            ("エッセイの語数チェックに使えますか？",
+             "はい。エッセイをエディターに貼り付けると、単語数はリアルタイムで更新されます。学術モードをオンにすると、引用と参考文献リストをカウント対象から除外でき、所属機関の慣例に合わせられます。"),
+            ("オンラインのテキスト解析はどう動きますか？",
+             "このツールはUnicodeのセグメンテーション規則を使い、英語・中国語・日本語・ヒンディー語・テルグ語など、すべての文字体系で正しく単語を数えます。文字数はグラフェムクラスター単位で数えるため、絵文字や結合文字も正しく扱われます。"),
         ],
         "case-converter": [
             ("タイトルケースと各単語の大文字化の違いは何ですか？",
@@ -2272,6 +2288,14 @@ FAQS_T = {
              "Mots divisés par 238 mots par minute, le taux moyen de lecture silencieuse pour la prose anglaise de la méta-analyse de Brysbaert de 2019. Le temps de parole utilise délibérément 130 mots par minute."),
             ("Compte-t-il correctement les mots en télougou ou en hindi ?",
              "Oui. L'outil détecte l'écriture et applique les règles de frontière de mots Unicode au lieu de séparer sur les espaces, donc les marques de combinaison et les conjonctions sont correctement gérées. Les documents à écriture mixte sont comptés avec les règles de l'écriture non latine dominante."),
+            ("Comment compter les mots d'un texte en ligne ?",
+             "Collez votre texte dans l'éditeur ci-dessus. Le nombre de mots, de caractères, de phrases et de paragraphes se met à jour en direct au fil de votre saisie. Rien n'est envoyé à un serveur — tout le calcul se fait dans votre navigateur."),
+            ("Cet outil de comptage de mots est-il gratuit ?",
+             "Oui. L'outil est entièrement gratuit, sans inscription ni limite de téléversement de fichiers. Tout le traitement s'effectue localement dans votre navigateur."),
+            ("Puis-je l'utiliser comme compteur de mots pour une dissertation ?",
+             "Oui. Collez votre dissertation dans l'éditeur et le nombre de mots se met à jour en temps réel. Activez le mode académique pour exclure les citations et les listes de références du total comptable, en suivant les conventions de votre établissement."),
+            ("Comment fonctionne l'analyseur de texte en ligne ?",
+             "L'outil utilise les règles de segmentation Unicode pour compter les mots correctement dans tous les systèmes d'écriture — anglais, chinois, japonais, hindi, télougou et autres. Il compte les graphèmes pour les caractères, afin que les émojis et les signes de combinaison soient correctement gérés."),
         ],
         "case-converter": [
             ("Quelle est la différence entre les majuscules de titre et capitaliser chaque mot ?",
@@ -2418,6 +2442,14 @@ FAQS_T = {
              "Wörter geteilt durch 238 Wörter pro Minute, die durchschnittliche stille Leserate für englische Prosa aus Brysbaerts Meta-Analyse von 2019. Die Sprechzeit verwendet bewusst 130 Wörter pro Minute."),
             ("Zählt es Wörter in Telugu oder Hindi korrekt?",
              "Ja. Das Tool erkennt die Schrift und wendet die Unicode-Wortgrenzregeln dafür an, anstatt bei Leerzeichen zu trennen, sodass Kombinationszeichen und Verbundbuchstaben korrekt behandelt werden. Dokumente mit gemischten Schriften werden mit den Regeln der dominanten nicht-lateinischen Schrift gezählt."),
+            ("Wie zähle ich Wörter in einem Text online?",
+             "Fügen Sie Ihren Text in den Editor oben ein. Wortzahl, Zeichenzahl, Satz- und Absatzzahl aktualisieren sich live beim Tippen. Nichts wird an einen Server gesendet — jede Berechnung läuft in Ihrem Browser."),
+            ("Ist dieses Wortzählwerkzeug kostenlos?",
+             "Ja. Das Tool ist völlig kostenlos, ohne Anmeldung und ohne Datei-Upload-Limit. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser."),
+            ("Kann ich es als Essay-Wortzähler verwenden?",
+             "Ja. Fügen Sie Ihren Essay in den Editor ein und die Wortzahl aktualisiert sich in Echtzeit. Schalten Sie den Akademischen Modus ein, um Zitate und Quellenlisten von der zählbaren Summe auszuschließen und die Konventionen Ihrer Institution anzupassen."),
+            ("Wie funktioniert der Online-Textanalysator?",
+             "Das Tool nutzt Unicode-Segmentierungsregeln, um Wörter in allen Schriften korrekt zu zählen — Englisch, Chinesisch, Japanisch, Hindi, Telugu und mehr. Für die Zeichenzahl werden Graphemcluster gezählt, sodass Emoji und Kombinationszeichen korrekt behandelt werden."),
         ],
         "case-converter": [
             ("Was ist der Unterschied zwischen Überschriftengroßschreibung und Großschreibung jedes Wortes?",
@@ -2564,6 +2596,14 @@ FAQS_T = {
              "Palavras divididas por 238 palavras por minuto, a taxa média de leitura silenciosa para prosa em inglês da meta-análise de Brysbaert de 2019. O tempo de fala usa deliberadamente 130 palavras por minuto."),
             ("Conta corretamente palavras em telugo ou hindi?",
              "Sim. A ferramenta detecta a escrita e aplica as regras de limite de palavras Unicode em vez de separar por espaços, então marcas de combinação e conjuntos são tratados corretamente. Documentos com escritas misturadas são contados com as regras da escrita não latina dominante."),
+            ("Como contar palavras em um texto online?",
+             "Cole seu texto no editor acima. A contagem de palavras, caracteres, frases e parágrafos é atualizada ao vivo enquanto você digita. Nada é enviado a um servidor — todos os cálculos acontecem no seu navegador."),
+            ("Esta é uma ferramenta gratuita de contagem de palavras?",
+             "Sim. A ferramenta é totalmente gratuita, sem cadastro e sem limite de upload de arquivos. Todo o processamento acontece localmente no seu navegador."),
+            ("Posso usá-la como contador de palavras para redações?",
+             "Sim. Cole sua redação no editor e a contagem de palavras é atualizada em tempo real. Ative o modo acadêmico para excluir citações e listas de referência do total contável, seguindo as convenções da sua instituição."),
+            ("Como funciona o analisador de texto online?",
+             "A ferramenta usa regras de segmentação Unicode para contar palavras corretamente em todas as escritas — inglês, chinês, japonês, hindi, telugu e mais. Ela conta grafemas na contagem de caracteres, para que emoji e marcas de combinação sejam tratados corretamente."),
         ],
         "case-converter": [
             ("Qual é a diferença entre maiúsculas de título e capitalizar cada palavra?",
@@ -2710,6 +2750,14 @@ FAQS_T = {
              "Brysbaert의 2019년 메타분석에서 영어 산문의 평균 무독 속도인 분당 238단어로 나눕니다. 말하기 시간은 의도적으로 보수적인 분당 130단어를 사용합니다."),
             ("텔루구어나 힌디어 단어를 올바르게 셉니까?",
              "예. 도구는 스크립트를 감지하고 공백으로 분할하는 대신 해당 스크립트의 Unicode 단어 경계 규칙을 적용합니다. 결합 기호와 결합 자가 올바르게 처리됩니다. 혼합 스크립트 문서는 지배적인 비라틴 스크립트의 규칙으로 계산됩니다."),
+            ("온라인에서 텍스트의 단어 수는 어떻게 셉니까?",
+             "위 에디터에 텍스트를 붙여넣으세요. 단어 수, 문자 수, 문장 수, 단락 수는 입력과 동시에 실시간으로 업데이트됩니다. 서버로 전송되는 것은 없으며 모든 계산은 브라우저에서 이루어집니다."),
+            ("단어 수를 세는 무료 도구인가요?",
+             "예. 이 도구는 완전히 무료이며 가입도 파일 업로드 제한도 없습니다. 모든 처리는 브라우저에서 로컬로 실행됩니다."),
+            ("에세이 단어 수 확인용으로 사용할 수 있나요?",
+             "예. 에세이를 에디터에 붙여넣으면 단어 수가 실시간으로 업데이트됩니다. 학술 모드를 켜면 인용과 참고문헌 목록을 총계에서 제외할 수 있어 소속 기관의 관례에 맞출 수 있습니다."),
+            ("온라인 텍스트 분석기는 어떻게 작동하나요?",
+             "이 도구는 Unicode 분할 규칙을 사용해 영어, 중국어, 일본어, 힌디어, 텔루구어 등 모든 스크립트에서 단어를 올바르게 셉니다. 문자 수는 글자 모음을 세기 때문에 이모지와 결합 기호가 올바르게 처리됩니다."),
         ],
         "case-converter": [
             ("제목 대문자와 각 단어 대문자의 차이점은 무엇인가요?",
@@ -2856,6 +2904,14 @@ FAQS_T = {
              "Parole divise per 238 parole al minuto, il tasso medio di lettura silenziosa per la prosa inglese della meta-analisi di Brysbaert del 2019. Il tempo di parola usa deliberatamente 130 parole al minuto."),
             ("Conta correttamente le parole in telugu o hindi?",
              "Sì. Lo strumento rileva la scrittura e applica le regole dei confini delle parole Unicode invece di separare sugli spazi, quindi i segni di combinazione e i congiunti sono gestiti correttamente. I documenti con scritture miste sono conteggiati con le regole della scrittura non latina dominante."),
+            ("Come conto le parole di un testo online?",
+             "Incollate il testo nell'editor qui sopra. Il conteggio di parole, caratteri, frasi e paragrafi si aggiorna in diretta mentre digitate. Nulla viene inviato a un server — ogni calcolo avviene nel vostro browser."),
+            ("Questo strumento di conteggio parole è gratuito?",
+             "Sì. Lo strumento è completamente gratuito, senza registrazione e senza limiti di caricamento file. Tutta l'elaborazione avviene localmente nel vostro browser."),
+            ("Posso usarlo come contatore di parole per i saggi?",
+             "Sì. Incollate il saggio nell'editor e il conteggio delle parole si aggiorna in tempo reale. Attivate la modalità accademica per escludere citazioni ed elenchi di riferimento dal totale conteggiabile, in linea con le convenzioni della vostra istituzione."),
+            ("Come funziona l'analizzatore di testo online?",
+             "Lo strumento usa le regole di segmentazione Unicode per contare correttamente le parole in tutte le scritture — inglese, cinese, giapponese, hindi, telugu e altre. Conta i graffi per il conteggio dei caratteri, così emoji e segni di combinazione sono gestiti correttamente."),
         ],
         "case-converter": [
             ("Qual è la differenza tra maiuscolo di titolo e maiuscolizzazione di ogni parola?",
@@ -3002,6 +3058,14 @@ FAQS_T = {
              "Слова делятся на 238 слов в минуту — средняя скорость чтения английской прозы из метаанализа Brysbaert 2019 года. Время речи намеренно использует 130 слов в минуту."),
             ("Правильно ли считает слова на телугу или хинди?",
              "Да. Инструмент определяет письменность и применяет правила границ слов Unicode вместо разделения по пробелам, поэтому знаки вdrv и лигатуры обрабатываются корректно. Документы со смешанными письменностями считаются по правилам доминирующей не-латинской письменности."),
+            ("Как посчитать слова в тексте онлайн?",
+             "Вставьте текст в редактор выше. Счётчик слов, символов, предложений и абзацев обновляется вживую по мере набора. Никуда не отправляется — все вычисления происходят в вашем браузере."),
+            ("Это бесплатный инструмент для подсчёта слов?",
+             "Да. Инструмент полностью бесплатный, без регистрации и без ограничений на загрузку файлов. Вся обработка выполняется локально в вашем браузере."),
+            ("Можно ли использовать его для подсчёта слов в эссе?",
+             "Да. Вставьте эссе в редактор — счётчик слов обновляется в реальном времени. Включите академический режим, чтобы исключить цитаты и списки литературы из итогового счётчика и соответствовать конвенциям вашего учреждения."),
+            ("Как работает онлайн-анализатор текста?",
+             "Инструмент использует правила сегментации Unicode, чтобы правильно считать слова во всех письменностях — английской, китайской, японской, хинди, телугу и других. Символы считаются по графемам, поэтому эмодзи и комбинируемые знаки обрабатываются корректно."),
         ],
         "case-converter": [
             ("Какова разница между заглавным регистром и выделением каждого слова заглавной буквой?",
@@ -3265,6 +3329,10 @@ REFS_T = {
             ("Tiempo de lectura y de habla", """<p>El tiempo de lectura aquí usa 238 palabras por minuto, la tasa media de lectura silenciosa para prosa en inglés del metaanálisis de Brysbaert de 2019 de 190 estudios. Muchos sitios usan 200 o 250 sin decir de dónde viene la cifra; la diferencia en un texto de 3.000 palabras es de más de dos minutos.</p>
 <p>El tiempo de habla usa 130 palabras por minuto, que es deliberadamente más lento que el habla conversacional. Los presentadores leen el texto preparado más rápido de lo que deberían cuando están nerviosos, y los tiempos de ensayo que asumen 150 palabras por minuto tienden a hacer que la gente se pase. Si estás cronometrando un discurso, trata la cifra como un mínimo y ensaya en voz alta.</p>
 <p>Ambas cifras son promedios entre lectores y tipos de texto. La prosa técnica densa se lee más lento; la narrativa familiar se lee más rápido.</p>"""),
+            ("Usa este contador de palabras para ensayos, artículos y trabajos", """<p>Tanto si escribes un ensayo universitario, un artículo de blog como un informe profesional, esta herramienta gratuita de recuento de palabras te da un dato preciso en tiempo real. Los estudiantes la usan para respetar los límites de palabras de las tareas; los periodistas, para alcanzar la extensión de sus artículos; los académicos, para comprobar capítulos de tesis frente a los requisitos del departamento.</p>
+<p>Pega tu texto y el contador se actualiza al instante: sin botones que pulsar ni páginas que recargar. El contador de caracteres funciona junto al de palabras, de modo que siempre ves ambos totales. Para ensayos con límites estrictos, activa el modo académico para excluir citas, listas de referencias y notas al pie del total contable.</p>"""),
+            ("Contador de palabras y caracteres con resultados en vivo", """<p>Este contador de palabras y caracteres te muestra ambos totales a la vez mientras escribes. El recuento de palabras usa las reglas de límite de palabras Unicode, así que funciona correctamente con inglés, chino, japonés, hindi, telugu y cualquier otro script. El recuento de caracteres usa racimos de grafemas, de modo que un emoji de bandera cuenta como un carácter, no como cuatro.</p>
+<p>Para artículos y entradas de blog, la estimación de tiempo de lectura te indica cuánto tardará tu texto en leerse. Para discursos, la estimación de tiempo de habla te da una base de ensayo a 130 palabras por minuto.</p>"""),
         ],
         "case-converter": [
             ("Las mayúsculas de título son una decisión de estilo, no una regla", """<p>La mayoría de los convertidores de mayúsculas implementan las mayúsculas de título como "capitalizar la primera letra de cada palabra". Ninguna guía de estilo dice eso realmente. Cada guía importante pone en minúsculas ciertas palabras cortas a menos que estén primera o última en el título, y no coinciden en qué palabras califican.</p>
@@ -3367,6 +3435,10 @@ REFS_T = {
             ("読書時間と発話時間", """<p>ここで使用される読書時間は分238語で、Brysbaertの2019年の190の研究のメタ分析で見つかった英語プローズの平均無声読書速度です。多くのサイトは数字の出所を言わずに200または250を使っています。3,000語の文章での差は2分以上です。</p>
 <p>発話時間は意図的に保守的な分130語を使用しています。これは会話速度よりゆっくりです。プレゼンターは緊張時に準備されたテキスを読むのが速すぎる傾向があり、分150語と仮定するリハーサルタイミングは時間を超える傾向があります。スピーチの時間を計る場合は、この数字を最低限として扱い、声を出してリハーサルしてください。</p>
 <p>両方の数字は読者とテキストタイプの平均です。密度の高い技術プローズはゆっくり読みます。馴染みのあるナラティブは速く読みます。</p>"""),
+            ("エッセイ・記事・課題にこの語数カウンターを使う", """<p>大学のレポート、ブログ記事、ビジネス文書のいずれでも、この無料の語数カウントツールがリアルタイムで正確な数値を示します。学生は課題の語数制限を守るために、記者は記事のボリュームを満たすために、研究者は学位論文の各章が学部の要件を満たすか確認するために使っています。</p>
+<p>テキストを貼り付けるとカウンターは即座に更新されます。ボタンを押す必要も、ページを再読み込みする必要もありません。文字カウンターは語数カウンターと並行して動作するため、どちらの合計も常に確認できます。語数制限が厳しいレポートでは、学術モードをオンにして、引用・参考文献リスト・脚注をカウント対象から除外してください。</p>"""),
+            ("リアルタイム結果の単語数・文字数カウンター", """<p>この単語数・文字数カウンターは、入力と同時に両方の合計を表示します。単語数はUnicodeの単語境界規則を使うため、英語、中国語、日本語、ヒンディー語、テルグ語などあらゆる文字体系で正しく機能します。文字数はグラフェムクラスターで数えるため、旗の絵文字は4文字ではなく1文字としてカウントされます。</p>
+<p>記事やブログ投稿では、読了時間の見積もりで読み通すのにかかる時間がわかります。スピーチでは、発話時間の見積もりが分あたり130単語のリハーサル基準になります。</p>"""),
         ],
         "case-converter": [
             ("タイトルケースはスタイルの決断であり、ルールではない", """<p>ほとんどのケースコンバーターはタイトルケースを「各単語の最初の文字を大文字にする」として実装しています。どんなスタイルガイドも実際にはそう言いません。すべての主要ガイドは、最初や最後の単語でない限り、特定の短い単語を小文字にしますが、どの単語が該当するかについては一致しません。</p>
@@ -3469,6 +3541,10 @@ REFS_T = {
             ("Temps de lecture et de parole", """<p>Le temps de lecture ici utilise 238 mots par minute, le taux moyen de lecture silencieuse pour la prose anglaise de la méta-analyse de Brysbaert de 2019 de 190 études. Beaucoup de sites utilisent 200 ou 250 sans dire d'où vient le chiffre ; la différence sur un texte de 3 000 mots est de plus de deux minutes.</p>
 <p>Le temps de parole utilise 130 mots par minute, ce qui est délibérément plus lent que la parole conversationnelle. Les présentateurs lisent le texte préparé plus vite qu'ils ne le devraient quand ils sont nerveux, et les temps de répétition qui supposent 150 mots par minute ont tendance à faire dépasser les gens. Si vous chronométrez un discours, traitez le chiffre comme un minimum et répétez à voix haute.</p>
 <p>Les deux chiffres sont des moyennes entre les lecteurs et les types de texte. La prose technique dense se lit plus lentement ; le récit familier se lit plus vite.</p>"""),
+            ("Utilisez ce compteur de mots pour les dissertations, les articles et les travaux", """<p>Que vous rédigiez une dissertation universitaire, un article de blog ou un rapport professionnel, cet outil gratuit de comptage de mots vous donne un résultat précis en temps réel. Les étudiants l'utilisent pour respecter les limites de mots d'un devoir, les journalistes pour atteindre le format voulu d'un article, les universitaires pour vérifier les chapitres d'une thèse par rapport aux exigences du département.</p>
+<p>Collez votre texte et le compteur se met à jour instantanément — aucun bouton à cliquer, aucune page à recharger. Le compteur de caractères fonctionne en parallèle du compteur de mots, vous voyez donc toujours les deux totaux. Pour les dissertations à limite stricte, activez le mode académique pour exclure les citations, les listes de références et les notes de bas de page du total comptable.</p>"""),
+            ("Compteur de mots et de caractères avec résultats en direct", """<p>Ce compteur de mots et de caractères vous donne les deux totaux simultanément pendant que vous tapez. Le nombre de mots utilise les règles de frontière de mots Unicode, il fonctionne donc correctement pour l'anglais, le chinois, le japonais, le hindi, le télougou et tous les autres systèmes d'écriture. Le nombre de caractères utilise les graphèmes, un émoji de drapeau compte donc comme un caractère, non quatre.</p>
+<p>Pour les articles et les billets de blog, l'estimation du temps de lecture indique la durée de lecture de votre texte. Pour les discours, l'estimation du temps de parole fournit une base de répétition à 130 mots par minute.</p>"""),
         ],
         "case-converter": [
             ("Les majuscules de titre sont une décision de style, pas une règle", """<p>La plupart des convertisseurs de casse implémentent les majuscules de titre comme « capitaliser la première lettre de chaque mot ». Aucun guide de style ne dit en fait cela. Chaque guide majeur met en minuscules certains mots courts sauf s'ils tombent en premier ou dernier dans le titre, et ils ne sont pas d'accord sur quels mots qualifient.</p>
@@ -3571,6 +3647,10 @@ REFS_T = {
             ("Lese- und Sprechzeit", """<p>Die Lesezeit verwendet hier 238 Wörter pro Minute, die durchschnittliche stille Leserate für englische Prosa aus Brysbaerts Meta-Analyse von 2019 mit 190 Studien. Viele Seiten verwenden 200 oder 250, ohne zu sagen, woher die Zahl kommt; der Unterschied bei einem 3.000-Wörter-Text beträgt über zwei Minuten.</p>
 <p>Die Sprechzeit verwendet absichtlich 130 Wörter pro Minute, was langsamer ist als die Conversationsgeschwindigkeit. Referenten lesen vorbereitete Texte schneller, als sie sollten, wenn sie nervös sind, und Probetermine, die 150 Wörter pro Minute annehmen, führen dazu, dass Menschen die Zeit überschreiten. Wenn Sie eine Rede timen, behandeln Sie die Zahl als Untergrenze und üben Sie laut.</p>
 <p>Beide Zahlen sind Durchschnitte über Leser und Texttypen. Dichte technische Prosa wird langsamer gelesen; vertraute Erzählung wird schneller gelesen.</p>"""),
+            ("Nutzen Sie diesen Wortzähler für Essays, Artikel und Aufgaben", """<p>Ob Sie einen Uni-Essay, einen Blogartikel oder einen professionellen Bericht schreiben — dieses kostenlose Wortzählwerkzeug liefert in Echtzeit eine genaue Zahl. Studierende nutzen es, um sich an die Wortlimits von Aufgaben zu halten; Journalisten, um die gewünschte Artikelstärke zu treffen; Wissenschaftler, um Thesis-Kapitel gegen die Anforderungen der Fakultät zu prüfen.</p>
+<p>Fügen Sie Ihren Text ein, und der Zähler aktualisiert sich sofort — kein Knopfdruck, kein Neuladen der Seite. Die Zeichenzählung läuft parallel zur Wortzählung, sodass Sie immer beide Summen sehen. Bei Essays mit strengen Wortlimits schalten Sie den Akademischen Modus ein, um Zitate, Quellenlisten und Fußnoten von der zählbaren Summe auszuschließen.</p>"""),
+            ("Wort- und Zeichenzähler mit Live-Ergebnissen", """<p>Dieser Wort- und Zeichenzähler zeigt beide Summen gleichzeitig beim Tippen. Die Wortzählung nutzt Unicode-Wortgrenzregeln und funktioniert damit korrekt für Englisch, Chinesisch, Japanisch, Hindi, Telugu und jede andere Schrift. Die Zeichenzählung nutzt Graphemcluster, sodass ein Emoji mit Flagge als ein Zeichen zählt, nicht als vier.</p>
+<p>Für Artikel und Blogbeiträge zeigt die Schätzung der Lesezeit, wie lange Ihr Text zum Lesen braucht. Für Reden liefert die Schätzung der Sprechzeit eine Probenbasis von 130 Wörtern pro Minute.</p>"""),
         ],
         "case-converter": [
             ("Überschriftengroßschreibung ist eine Stilentcheidung, keine Regel", """<p>Die meisten Fallkonverter implementieren Überschriftengroßschreibung als „den ersten Buchstaben jedes Wortes großschreiben." Kein Styleguide sagt das tatsächlich. Jeder große Guide kleinschreibt bestimmte kurze Wörter, es sei denn, sie stehen an erster oder letzter Stelle im Titel, und sie sind sich nicht einig, welche Wörter qualifizieren.</p>
@@ -3673,6 +3753,10 @@ REFS_T = {
             ("Tempo de leitura e fala", """<p>O tempo de leitura aqui usa 238 palavras por minuto, a taxa média de leitura silenciosa para prosa inglesa da meta-análise de Brysbaert de 2019 de 190 estudos. Muitos sites usam 200 ou 250 sem dizer de onde veio o número; a diferença em um texto de 3.000 palavras é de mais de dois minutos.</p>
 <p>O tempo de fala usa deliberadamente 130 palavras por minuto, que é mais lento que a velocidade da fala conversacional. Apresentadores leem texto preparado mais rápido do que deveriam quando estão nervosos, e os tempos de ensaio que assumem 150 palavras por minuto tendem a fazer as pessoas ultrapassarem o tempo. Se você está cronometrando um discurso, trate o número como um mínimo e ensaie em voz alta.</p>
 <p>Ambos os números são médias entre leitores e tipos de texto. Prosa técnica densa é lida mais devagar; narrativa familiar é lida mais rápido.</p>"""),
+            ("Use este contador de palavras para redações, artigos e trabalhos", """<p> quer você esteja escrevendo uma redação universitária, um artigo de blog ou um relatório profissional, esta ferramenta gratuita de contagem de palavras dá a você um número preciso em tempo real. Estudantes a usam para respeitar os limites de palavras das tarefas; jornalistas, para bater a extensão dos artigos; acadêmicos, para conferir capítulos de tese em relação aos requisitos do departamento.</p>
+<p>Cole seu texto e o contador atualiza na hora — nenhum botão para clicar, nenhuma página para recarregar. O contador de caracteres funciona ao lado do contador de palavras, então você sempre vê os dois totais. Para redações com limites rigorosos, ative o modo acadêmico para excluir citações, listas de referência e notas de rodapé do total contável.</p>"""),
+            ("Contador de palavras e caracteres com resultados ao vivo", """<p>Este contador de palavras e caracteres mostra os dois totais simultaneamente enquanto você digita. A contagem de palavras usa regras de limite de palavras Unicode, então funciona corretamente para inglês, chinês, japonês, hindi, telugu e qualquer outra escrita. A contagem de caracteres usa grafemas, então um emoji de bandeira conta como um caractere, não quatro.</p>
+<p>Para artigos e posts de blog, a estimativa de tempo de leitura indica quanto tempo seu texto leva para ser lido. Para discursos, a estimativa de tempo de fala dá uma base de ensaio a 130 palavras por minuto.</p>"""),
         ],
         "case-converter": [
             ("Maiúsculas de título são uma decisão de estilo, não uma regra", """<p>A maioria dos conversores de maiúsculas implementa maiúsculas de título como \"capitalizar a primeira letra de cada palavra\". Nenhuma guia de estilo diz isso na verdade. Cada guia importante coloca em minúsculas certas palavras curtas, a menos que sejam a primeira ou última palavra do título, e eles discordam sobre quais palavras qualificam.</p>
@@ -3775,6 +3859,10 @@ REFS_T = {
             ("읽기 시간과 말하기 시간", """<p>여기서 사용되는 읽기 시간은 분당 238단어로, Brysbaert의 2019년 190개 연구 메타분석에서 발견된 영어 산문의 평균 무성독서 속도입니다. 많은 사이트가 숫자의 출처를 말하지 않고 200 또는 250을 사용합니다. 3,000단어 기사에서의 차이는 2분 이상입니다.</p>
 <p>말하기 시간은 의도적으로 보수적인 분당 130단어를 사용합니다. 이는 대화 속도보다 느립니다. 발표자는 긴장할 때 준비된 텍스트를 빨리 읽는 경향이 있으며, 분당 150단어를 가정하는 리허설 타이밍은 시간을 초과하는 경향이 있습니다. 연설의 시간을 재는 경우, 이 숫자를 최소로 취하고 소리 내어 리허설하세요.</p>
 <p>양쪽 숫자는 독자와 텍스트 유형의 평균입니다. 밀도 높은 기술 산문은 천천히 읽힙니다. 익숙한 내러티브는 빨리 읽힙니다.</p>"""),
+            ("에세이, 기사, 과제에 이 단어 카운터를 사용하세요", """<p>대학 에세이, 블로그 글, 업무 보고서 중 무엇을 쓰든 이 무료 단어 수 도구가 실시간으로 정확한 수치를 제공합니다. 학생은 과제의 단어 제한을 지키기 위해, 기자는 기사 분량을 맞추기 위해, 학자는 학위 논문 각 장이 학부 요건을 충족하는지 확인하기 위해 사용합니다.</p>
+<p>텍스트를 붙여넣으면 카운터가 즉시 업데이트됩니다. 누를 버튼도, 다시 불러올 페이지도 없습니다. 문자 카운터는 단어 카운터와 나란히 작동하므로 두 합계를 항상 볼 수 있습니다. 단어 제한이 엄격한 에세이는 학술 모드를 켜서 인용, 참고문헌 목록, 각주를 총계에서 제외하세요.</p>"""),
+            ("실시간 결과의 단어·문자 카운터", """<p>이 단어·문자 카운터는 입력과 동시에 두 합계를 동시에 보여줍니다. 단어 수는 Unicode 단어 경계 규칙을 사용하므로 영어, 중국어, 일본어, 힌디어, 텔루구어 등 모든 스크립트에서 올바르게 작동합니다. 문자 수는 글자 모음을 세므로 깃발 이모지는 네 문자가 아니라 한 문자로 셉니다.</p>
+<p>기사와 블로그 글에서는 예상 읽기 시간으로 글을 읽는 데 걸리는 시간을 알 수 있습니다. 연설에서는 예상 발화 시간이 분당 130단어의 리허설 기준이 됩니다.</p>"""),
         ],
         "case-converter": [
             ("제목 대문자는 스타일 결정이지 규칙이 아닙니다", """<p>대부분의 대소문자 변환기는 제목 대문자를 "각 단어의 첫 글자를 대문자로 만드는 것"으로 구현합니다. 어떤 스타일 가이드도 실제로 그렇게 말하지 않습니다. 모든 주요 가이드는 제목에서 첫 번째나 마지막 단어가 아닌 한 특정 짧은 단어를 소문자로 만들며, 어떤 단어가 해당하는지에 대해서는 동의하지 않습니다.</p>
@@ -3877,6 +3965,10 @@ REFS_T = {
             ("Tempo di lettura e di parola", """<p>Il tempo di lettura qui usa 238 parole al minuto, la velocità media di lettura silenziosa per la prosa inglese della meta-analisi di Brysbaert del 2019 di 190 studi. Molti siti usano 200 o 250 senza dire da dove viene la cifra; la differenza su un pezzo di 3.000 parole è di oltre due minuti.</p>
 <p>Il tempo di parola usa deliberatamente 130 parole al minuto, che è più lento della velocità conversazionale. I presentatori leggono il testo preparato più velocemente di quanto dovrebbero quando sono nervosi, e i tempi di prova che presumono 150 parole al minuto tendono a far sì che le persone superino il tempo. Se state cronometrando un discorso, trattate la cifra come un minimo e provate ad alta voce.</p>
 <p>Entrambe le cifre sono medie tra lettori e tipi di testo. La prosa tecnica densa si legge più lentamente; la narrazione familiare si legge più velocemente.</p>"""),
+            ("Usate questo contatore di parole per saggi, articoli e compiti", """<p>Che stiate scrivendo un saggio universitario, un articolo di blog o una relazione professionale, questo strumento gratuito di conteggio parole vi dà un numero preciso in tempo reale. Gli studenti lo usano per restare nei limiti di parole dei compiti, i giornalisti per raggiungere la lunghezza desiderata degli articoli, gli accademici per verificare i capitoli della tesi rispetto ai requisiti del dipartimento.</p>
+<p>Incollate il testo e il contatore si aggiorna all'istante — nessun pulsante da premere, nessuna pagina da ricaricare. Il contatore dei caratteri lavora a fianco di quello delle parole, così vedete sempre entrambi i totali. Per i saggi con limiti rigidi attivate la modalità accademica per escludere citazioni, elenchi di riferimento e note a piè di pagina dal totale conteggiabile.</p>"""),
+            ("Contatore di parole e caratteri con risultati in diretta", """<p>Questo contatore di parole e caratteri vi mostra entrambi i totali mentre digitate. Il conteggio delle parole usa le regole dei confini delle parole Unicode, quindi funziona correttamente per inglese, cinese, giapponese, hindi, telugu e ogni altra scrittura. Il conteggio dei caratteri si basa sui graffi, così un emoji di bandiera conta come un carattere, non quattro.</p>
+<p>Per articoli e post di blog, la stima del tempo di lettura indica quanto tempo richiede la lettura del vostro testo. Per i discorsi, la stima del tempo di parola offre una base di prova a 130 parole al minuto.</p>"""),
         ],
         "case-converter": [
             ("Le maiuscole di titolo sono una decisione di stile, non una regola", """<p>La maggior parte dei convertitori di maiuscole implementa le maiuscole di titolo come \"maiuscolizzare la prima lettera di ogni parola\". Nessuna guida di stile dice in realtà questo. Ogni guida principale mette in minuscolo certe parole corte a meno che non siano la prima o l'ultima parola del titolo, e non concordano su quali parole qualificano.</p>
@@ -3979,6 +4071,10 @@ REFS_T = {
             ("Время чтения и речи", """<p>Время чтения здесь использует 238 слов в минуту — среднюю скорость безмолвного чтения английской прозы из метаанализа Brysbaert 2019 года (190 исследований). Многие сайты используют 200 или 250, не говоря, откуда взята цифра; разница на тексте в 3000 слов составляет более двух минут.</p>
 <p>Время речи намеренно использует 130 слов в минуту, что медленнее разговорной речи. Докладчики читают подготовленный текст быстрее, чем следует, когда нервничают, и тайминги репетиций, основанные на 150 словах в минуту, часто приводят к превышению времени. Если вы засекаете время речи, относитесь к цифре как к минимуму и репетируйте вслух.</p>
 <p>Обе цифры — средние по читателям и типам текста. Плотная техническая проза читается медленнее; знакомое повествование — быстрее.</p>"""),
+            ("Используйте этот счётчик слов для эссе, статей и заданий", """<p>Пишете ли вы университетское эссе, статью для блога или профессиональный отчёт — этот бесплатный инструмент даёт точный результат в реальном времени. Студенты используют его, чтобы соблюдать лимиты объёма заданий; журналисты — чтобы попасть в нужный объём статьи; учёные — чтобы сверить главы диссертации с требованиями кафедры.</p>
+<p>Вставьте текст, и счётчик обновится мгновенно — нажимать кнопки и перезагружать страницу не нужно. Счётчик символов работает параллельно со счётчиком слов, поэтому вы всегда видите оба итога. Для эссе с жёстким лимитом включите академический режим, чтобы исключить цитаты, списки литературы и сноски из итогового счётчика.</p>"""),
+            ("Счётчик слов и символов с результатами в реальном времени", """<p>Этот счётчик слов и символов показывает оба итога одновременно при наборе текста. Подсчёт слов использует правила границ Unicode, поэтому корректно работает для английского, китайского, японского, хинди, телугу и любой другой письменности. Символы считаются по графемам, поэтому эмодзи флага засчитывается как один символ, а не как четыре.</p>
+<p>Для статей и записей в блоге оценка времени чтения показывает, сколько займёт чтение вашего текста. Для речей оценка времени произношения даёт отправную точку репетиции — 130 слов в минуту.</p>"""),
         ],
         "case-converter": [
             ("Заглавный регистр — это решение стиля, а не правило", """<p>Большинство преобразователей регистра реализуют заглавный регистр как «выделение заглавной буквой каждого слова». Ни одно руководство по стилю на самом деле этого не говорит. Каждое крупное руководство переводит в строчные определённые короткие слова, если они не первые или последние в заголовке, и они расходятся в том, какие слова подходят.</p>
